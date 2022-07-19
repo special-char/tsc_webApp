@@ -11,21 +11,18 @@ const Card = ({
     <div className="circles">
       <div className="p-12 flex flex-col items-center">
         <div
-          className={`circle z-30 absolute rounded-full bg-transparent border-4 h-20 w-20 p-2 -m-2 ${bColor}`}
-        ></div>
-        <div
-          className={`flex items-center justify-center rounded-full  border-red-100 border-2 h-16 w-16 ${color}`}
+          className={`flex items-center justify-center rounded-full h-60 w-60`}
         >
           {svg}
         </div>
         <div className="heading m-4 flex flex-col items-center">
           <h3
-            className="text-xl font-semibold m-4"
+            className="text-2xl text-white font-bold m-4"
             style={{ padding: "10px 0" }}
           >
             {title}
           </h3>
-          <p className="text-base text-gray-600 text-center">{desc}</p>
+          <p className="text-lg text-white text-center">{desc}</p>
         </div>
       </div>
     </div>
