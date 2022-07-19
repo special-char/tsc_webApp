@@ -1,7 +1,7 @@
 import Head from "next/head";
 // import Button from "../components/Button";
 import styles from "../styles/Home.module.css";
-import Features from "./PageSections/Features";
+import Features from "../PageSections/Features";
 
 export default function Home() {
   return (
