@@ -1,18 +1,15 @@
 import React from "react";
-import Card from "../Card";
+import WhyCourse from "../WhyCourse";
 
 const Features = () => {
   return (
     <>
-      <section
-        className="Feature flex flex-col items-center w-full"
-        id="Features"
-      >
-        <h2 className="text-5xl pt-32 text-white font-serif">
+      <section className="Feature flex-col items-center justify-center bg-[#1e3d60]">
+        <h2 className="text-2xl mb-10 lg:text-5xl pt-32 flex text-center justify-center text-white font-serif">
           Why learn with our courses?
         </h2>
-        <div className="flex flex-row items-center justify-center p-14">
-          <Card
+        <div className="flex flex-col lg:flex-row items-center justify-center">
+          <WhyCourse
             svg={
               <svg
                 width="233"
@@ -240,7 +237,7 @@ const Features = () => {
               "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua."
             }
           />
-          <Card
+          <WhyCourse
             color="bg-blue-500"
             bColor="border-blue-300"
             svg={
@@ -870,7 +867,7 @@ const Features = () => {
               "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua."
             }
           />
-          <Card
+          <WhyCourse
             color="bg-orange-500"
             bColor="border-orange-300"
             svg={
@@ -1177,7 +1174,7 @@ const Features = () => {
             }
           />
         </div>
-        <div>
+        <div className=" flex item-center justify-center">
           <svg
             width="77"
             height="206"

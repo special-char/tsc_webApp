@@ -1,5 +1,5 @@
 import Head from "next/head";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import Features from "../components/PageSections/Features";
 // import Button from "../components/Button";
 import styles from "../styles/Home.module.css";
@@ -15,7 +15,7 @@ export default function Home() {
       <main>
         {/* <Button /> */}
         <Features />
-        {/* <Footer /> */}
+        <Footer />
       </main>
     </div>
   );
