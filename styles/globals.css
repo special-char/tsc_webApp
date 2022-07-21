@@ -1,12 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-title-primary:#064ea4;
+    --color-title-secondary:#ffffff;
+    --color-text-muted:#62778f;
+    --color-bg-primary:#064ea4;
+    --color-bg-secondary:#ffffff;
+    --color-text-inverted:#ffffff;
+    --color-button-accent:#064ea4;
+    --color-button-accent-hover:#0f437f;
+    --color-button-muted:#e7eaee;
+    --color-button-muted-hover:#becad7;
+    --color-shape-primary:#fcdf69;
+    --color-shape-secondary:#e1edfb;
+    --color-shape-tertiary:#f99d77;
+    --color-text-card-title:#1e3d60;
+    --color-text-card-muted:#62778f;
+  }
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 }
 
 a {
@@ -17,6 +37,7 @@ a {
 * {
   box-sizing: border-box;
 }
-.Feature {
-  background-color: #1e3d60;
+.links>li {
+  padding: 10px 0px;
+  font-size: 18px;
 }

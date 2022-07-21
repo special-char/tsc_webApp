@@ -25,6 +25,12 @@ const CourseSection = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
             facilis? Natus reiciendis, ips="um eligendi.
           </CourseCard>
+          <div className="absolute z-10">
+          <Button buttonText={'<'} buttonClass={'absolute z-10 top-48 -left-2 w-20 h-20 bg-[#FFFFFF] text-black text-2xl px-0 py-0 font-bold lg:'}/>
+            <Button buttonText={'>'} buttonClass={'absolute z-10 top-48 left-72 w-20 h-20 bg-[#FFFFFF] text-black text-2xl font-bold text-white '} />
+          </div>
+        <div className="flex flex-col   lg:flex-row">
+        
           <CourseCard
             svg="https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-800.jpeg"
             svg2="https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f1ff9fd9e0e1686d26497_image-3-profile-picture-small-teacher-education-x-template.jpg"
@@ -80,6 +86,3 @@ const CourseSection = () => {
 };
 
 export default CourseSection;
-
-// top-48 -left-2
-// top-48 left-72
