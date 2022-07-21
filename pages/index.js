@@ -1,5 +1,7 @@
+import Industry from "@components/Industry";
+import CourseSection from "@components/PageSections/CourseSection";
 import Head from "next/head";
-import CourseSection from "../components/PageSections/CourseSection";
+// import CourseSection from "../components/PageSections/CourseSection";
 // import Footer from "../components/Footer";
 import Footer from "../components/Footer";
 import Features from "../components/PageSections/Features";
@@ -20,6 +22,7 @@ export default function Home() {
         {/* <Features /> */}
         <HomeSection />
         <CourseSection />
+        <Industry />
         {/* <Footer /> */}
         <Features />
         <Footer />
