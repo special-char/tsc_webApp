@@ -1,5 +1,7 @@
 import React from 'react'
 import cn from "classnames";
+
+import Button from './Button';
 import Image from './Image';
 
 const CourseCard = ({
@@ -16,7 +18,7 @@ const CourseCard = ({
     <>
     <div
         className={cn(
-          "w-[570px] h-3/3  m-3 shadow-lg rounded-2xl hover:scale-105 duration-300 relative",
+          "w-auto h-3/3 p-3 shadow-lg rounded-2xl  hover:-translate-y-4 duration-300 relative",
           {
             [className]: !!className,
           }
@@ -24,11 +26,13 @@ const CourseCard = ({
       >
         <div>
           <Image
-            imgClass={'rounded-t-[50px]'}
+            imgClass={'rounded-t-3xl'}
             src={svg}
           />
           <div className="">
-            <a href="http://">
+            <Button buttonText={'7hr 24min'} buttonClass={'absolute bg-[#e7eaee] px-4 py-3 font-bold top-10 right-10'}/>
+            <Button buttonText={'99.00 USD'} buttonClass={'absolute bg-[#064ea4] px-4 py-3 font-bold text-white top-24 right-10'} />
+            {/* <a href="http://">
               <p className="absolute top-6 left-96 py-6 px-14 lg:top-5 lg:left-[50%] lg:px-6 lg:py-2   bg-white font-bold  rounded-full">
                 7hr 24m
               </p>
@@ -37,11 +41,11 @@ const CourseCard = ({
               <p className="absolute top-28 text-xl left-96 py-6 px-10 lg:top-5 lg:left-[72%] lg:px-4 lg:py-2 bg-blue-600 font-bold text-white  rounded-full">
                 99.00 USD
               </p>
-            </a>
+            </a> */}
           </div>
         </div>
         <div>
-          <div className="p-10">
+          <div className="p-7">
             <h1
               className={cn("font-bold text-2xl text-[#064ea4] mb-3", {
                 [labelClassName]: !!labelClassName,
@@ -50,7 +54,7 @@ const CourseCard = ({
               {props.label}
             </h1>
             <p
-              className={cn("text-xl mb-3 text-[#62778f]", {
+              className={cn("text-xl  text-[#62778f]", {
                 [childClassName]: !!childClassName,
               })}
             >

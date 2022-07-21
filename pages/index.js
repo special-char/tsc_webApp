@@ -17,7 +17,7 @@ export default function Home() {
       <main>
         {/* <Button /> */}
         {/* <Features /> */}
-        {/* <HomeSection/> */}
+        <HomeSection/>
         <CourseSection/>
         {/* <Footer /> */}
       </main>

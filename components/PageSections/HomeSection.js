@@ -5,7 +5,7 @@ import Image from '../Image'
 const HomeSection = () => {
   return (
     <>
-      <div className="h-auto sm:w-full lg:w-full relative border overflow-hidden pt-16 pb-16">
+      <div className="h-auto  lg:w-full relative border overflow-hidden pt-16 pb-16">
       <div className="bg-yellow-400 rounded-full w-[500px] h-[500px] absolute -top-96 -left-96 lg:-top-80 lg:-left-64 -z-10"></div>
       <div className="bg-blue-900  w-full h-[300px] absolute top-3/4 -z-10 lg:top-0 lg:h-[100%] lg:w-5/12 lg:right-0"></div>
       <div className="bg-[#F99D77] rounded-full w-[500px] h-[500px] absolute  -bottom-80 -right-72 lg:top-3/4 lg:bottom-0 lg:-right-52 -z-10"></div>
