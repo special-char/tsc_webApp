@@ -1,6 +1,9 @@
 import Head from "next/head";
+import CourseSection from "../components/PageSections/CourseSection";
+// import Footer from "../components/Footer";
 import Footer from "../components/Footer";
 import Features from "../components/PageSections/Features";
+import HomeSection from "../components/PageSections/HomeSection";
 // import Button from "../components/Button";
 import styles from "../styles/Home.module.css";
 
@@ -14,6 +17,10 @@ export default function Home() {
       </Head>
       <main>
         {/* <Button /> */}
+        {/* <Features /> */}
+        <HomeSection />
+        <CourseSection />
+        {/* <Footer /> */}
         <Features />
         <Footer />
       </main>

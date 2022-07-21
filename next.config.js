@@ -1,7 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-}
+  images: {
+    domains: ["tailwindui.com", "images.unsplash.com", "res.cloudinary.com"],
+    formats: ["image/avif", "image/webp"],
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+    });
 
-module.exports = nextConfig
+    return config;
+  },
+  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  swcMinify: true,
+};
+
+module.exports = nextConfig;
