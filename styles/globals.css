@@ -37,6 +37,7 @@ a {
 * {
   box-sizing: border-box;
 }
-.Feature {
-  background-color: #1e3d60;
+.links>li {
+  padding: 10px 0px;
+  font-size: 18px;
 }
