@@ -6,6 +6,7 @@ import Features from "../components/PageSections/Features";
 import HomeSection from "../components/PageSections/HomeSection";
 // import Button from "../components/Button";
 import styles from "../styles/Home.module.css";
+import BrowseCourse from "@components/PageSections/coursesByCategory";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         {/* <Features /> */}
         <HomeSection />
         <CourseSection />
+        <BrowseCourse/>
         {/* <Footer /> */}
         <Features />
         <Footer />
