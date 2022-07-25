@@ -1,7 +1,7 @@
 import React from "react";
 import cn from "classnames";
-import Button from "./Button";
-import Image from "./Image";
+import Button from "../Button";
+import Image from "../Image";
 
 const Card = ({
   svg,
