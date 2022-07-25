@@ -1,17 +1,14 @@
-import React from 'react'
-import Button from '../Button'
-import Image from '../Image'
+import React from "react";
+import Button from "../Button";
+import Image from "../Image";
 
 const HomeSection = () => {
   return (
     <>
-      <div className="h-auto sm:w-full lg:w-full relative border overflow-hidden pt-16 pb-16">
-      <div className="bg-yellow-400 rounded-full w-[500px] h-[500px] absolute -top-96 -left-96 lg:-top-80 lg:-left-64 -z-10"></div>
-      <div className="bg-blue-900  w-full h-[300px] absolute top-3/4 -z-10 lg:top-0 lg:h-[100%] lg:w-5/12 lg:right-0"></div>
-      <div className="bg-[#F99D77] rounded-full w-[500px] h-[500px] absolute  -bottom-80 -right-72 lg:top-3/4 lg:bottom-0 lg:-right-52 -z-10"></div>
-        <div className="max-w-[1209px] mx-auto px-[16px] grid sm:grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="w-auto flex flex-col lg:flex-col justify-around ">
-            <div className="flex flex-col justify-items-center lg:flex-col z">
+      <div className="h-auto lg:w-full  relative border overflow-hidden pt-16 pb-16">
+        <div className="max-w-[1209px] mx-auto px-[16px] grid sm:grid-cols-1  md:grid-col-1 md:mx-auto lg:grid-cols-2 gap-12">
+          <div className="w-auto flex flex-col lg:flex-col justify-around">
+            <div className="flex flex-col justify-items-center lg:flex-col ">
               <div className="flex flex-col text-center lg:text-left">
                 <h1 className="text-3xl lg:text-5xl leading-[1.3em] text-[#064ea4] font-bold mb-5">
                   Grow your skills,define your future
@@ -21,7 +18,7 @@ const HomeSection = () => {
                   you the right skills to be prepared for tomorrow.
                 </p>
               </div>
-              <div className="flex flex-col lg:flex-row gap-6 ">
+              <div className="flex flex-col md:flex-row md:justify-center lg:flex-row gap-6 ">
                 <Button
                   buttonText="EXPLORE COURSES"
                   buttonClass="bg-[#064ea4] font-bold text-white px-10 py-3 lg:px-12 lg:py-5"
@@ -40,9 +37,12 @@ const HomeSection = () => {
             />
           </div>
         </div>
+        <div className="bg-yellow-400 rounded-full w-[500px] h-[500px] absolute -top-96 -left-96 lg:-top-80 lg:-left-64 -z-10"></div>
+        <div className="bg-blue-900  w-full h-[300px] absolute top-3/4 -z-10 lg:top-0 lg:h-[100%] lg:w-5/12 lg:right-0"></div>
+        <div className="bg-[#F99D77] rounded-full w-[500px] h-[500px] absolute  -bottom-80 -right-72 lg:top-3/4 lg:bottom-0 lg:-right-52 -z-10"></div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default HomeSection
+export default HomeSection;

@@ -4,21 +4,17 @@ import cn from "classnames";
 const Button = ({
   buttonText,
   buttonClass,
-  onClick,
-  type,
-  disabled,
   buttonIcon,
+  ...props
 }) => {
   return (
     <button
-      onClick={onClick}
-      type={type}
-      disabled={disabled}
       className={cn(
         "px-4 py-2 rounded-full text-sm font-medium cursor-pointer",
-        [buttonClass],
-        !!buttonClass
+        { [buttonClass]: !!buttonClass },
+
       )}
+      {...props}
     >
       {buttonText} {buttonIcon}
     </button>
