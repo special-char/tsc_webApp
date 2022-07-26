@@ -67,7 +67,7 @@ const Footer = () => {
             Pages
           </h3>
           <div className="links-1 w-full flex md:flex md:gap-4 justify-between">
-            <ul className="links text-gray-300">
+            <ul className="links">
               <li>Home</li>
               <li>About</li>
               <li>Courses</li>

@@ -74,20 +74,3 @@ const CourseSection = () => {
 };
 
 export default CourseSection;
-
-{
-  /* <div className="">
-<Button buttonText="xyz" buttonClass={'absolute bg-[#e7eaee] px-4 py-3 font-bold top-10 right-10'}/>
-<Button buttonText="abc" buttonClass={'absolute bg-[#064ea4] px-4 py-3 font-bold text-white top-24 right-10'} />
-{/* <a href="http://">
-  <p className="absolute top-6 left-96 py-6 px-14 lg:top-5 lg:left-[50%] lg:px-6 lg:py-2   bg-white font-bold  rounded-full">
-    7hr 24m
-  </p>
-</a>
-<a href="http://">
-  <p className="absolute top-28 text-xl left-96 py-6 px-10 lg:top-5 lg:left-[72%] lg:px-4 lg:py-2 bg-blue-600 font-bold text-white  rounded-full">
-    99.00 USD
-  </p>
-</a> */
-}
-// </div>

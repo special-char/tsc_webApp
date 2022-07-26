@@ -94,7 +94,7 @@
   }
 
   img {
-    @apply inline-block max-w-full align-middle;
+    @apply inline-block max-w-full;
   }
 
   code {}
@@ -267,47 +267,6 @@
     }
   }
 
-  .card {
-    @apply overflow-hidden rounded-[20px] bg-neutral-100 shadow-base flex flex-col min-h-full;
-    transform: translate(0px, 0px);
-    transition: box-shadow 300ms ease, transform 300ms ease;
-    transform-style: preserve-3d;
-    color: #62778f;
-    text-decoration: none;
-    &:hover {
-      box-shadow: 0 15px 15px 0.01px rgba(30, 61, 96, 0.03);
-      transform: translate3d(0px, -10px, 0.01px);
-      color: #62778f;
-    }
-    &.compact {
-      .card-body {
-        @apply p-4 text-sm;
-      }
-    }
-    &-body {
-      @apply flex flex-col flex-auto px-6 pt-8 pb-10 sm:px-10 sm:pt-9 sm:pb-10 md:px-12 md:pb-12 md:pt-11;
-      :where(p) {
-        @apply flex-grow line-clamp-2 mb-6 sm:mb-7 md:mb-8;
-      }
-      :last-child {
-        @apply mb-0;
-      }
-    }
-    &-date {
-      @apply mb-4 line-clamp-1 text-neutral-600 font-bold text-base;
-    }
-    &-title {
-      @apply flex items-center line-clamp-1 mb-[6px] sm:mb-[10px] md:mb-3;
-    }
-    &-actions {
-      @apply flex flex-wrap items-start;
-    }
-    & figure {
-      @apply flex items-center justify-center min-h-[200px] mb-0;
-    }
-  }
-
-  
   .nav-link {
     transition: color 350ms ease;
     color: theme('colors.neutral.700');
@@ -315,13 +274,13 @@
     font-weight: 700;
     text-decoration: none;
   }
-
-  .author {
-    @apply flex items-center gap-5;
-
-    &__name {
-      @apply text-lg font-bold text-neutral-700;
-    }
+  .perks {
+    @apply flex flex-col items-center gap-2 justify-center text-center min-w-[343px];
+   &__title {
+    @apply text-neutral-100
+   }
+   &__description {
+    @apply text-neutral-100 text-center
+   }
   }
-
 }
