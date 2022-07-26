@@ -121,6 +121,61 @@ export default function Home() {
                 <div className="author__name">Yagnesh Modh</div>
               </div>
             </div>
+            <input
+              type="radio"
+              name="rating"
+              className="mask mask--heart bg-secondary2"
+            />
+            <input
+              type="radio"
+              name="rating"
+              className="mask mask--heart bg-secondary2"
+            />
+            <input
+              type="radio"
+              name="rating"
+              className="mask mask--heart bg-secondary2"
+            />
+            <input
+              type="radio"
+              name="rating"
+              className="mask mask--heart bg-secondary2"
+              checked
+            />
+            <input
+              type="radio"
+              name="rating"
+              className="mask mask--heart bg-secondary2"
+            />
+          </div>
+
+          <div className="card w-1/3">
+            <figure>
+              <img
+                src="https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-1080.jpeg"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body">
+              <div className="card-date">April 20, 2022</div>
+              <h3 className="card-title">Graphic Design 101</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis, nobis libero labore temporibus mollitia neque est
+                adipisci enim delectus fugit voluptate unde quisquam
+                perspiciatis earum, minus cum dolore molestias error!
+              </p>
+              <div className="card-actions">
+                <div className="author">
+                  <div className="avatar">
+                    <div className="w-12">
+                      <img src="https://placeimg.com/192/192/people" />
+                    </div>
+                  </div>
+                  <div className="author__name">Yagnesh Modh</div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="card w-1/3">
@@ -139,41 +194,59 @@ export default function Home() {
                 perspiciatis earum, minus cum dolore molestias error!
               </p>
             </div>
+
+            <div className="card w-1/3">
+              <figure>
+                <img
+                  src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607f500fe9f6c983c68e88ef_image-1-courses-categories-education-x-template.svg"
+                  alt="Shoes"
+                />
+              </figure>
+              <div className="card-body">
+                <h3 className="card-title">Graphic Design 101</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis, nobis libero labore temporibus mollitia neque est
+                  adipisci enim delectus fugit voluptate unde quisquam
+                  perspiciatis earum, minus cum dolore molestias error!
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="perks-wrapper bg-neutral-700">
-          <div className="perks-container max-w-[1810px] px-5 mx-auto flex flex-wrap gap-7 py-10">
-            <div className="flex-1">
-              <div className="min-w-[300px] perks">
-                <Svg />
-                <span className="perks__title">1. Learn</span>
-                <p className="perks__description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  maxime nemo ut sequi alias! Architecto exercitationem
-                  blanditiis in alias enim?
-                </p>
+          <div className="perks-wrapper bg-neutral-700">
+            <div className="perks-container max-w-[1810px] px-5 mx-auto flex flex-wrap gap-7 py-10">
+              <div className="flex-1">
+                <div className="min-w-[300px] perks">
+                  <Svg />
+                  <span className="perks__title">1. Learn</span>
+                  <p className="perks__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                    maxime nemo ut sequi alias! Architecto exercitationem
+                    blanditiis in alias enim?
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex-1">
-              <div className="min-w-[300px] perks">
-                <Svg1 />
-                <h3>1. Learn</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  maxime nemo ut sequi alias! Architecto exercitationem
-                  blanditiis in alias enim?
-                </p>
+              <div className="flex-1">
+                <div className="min-w-[300px] perks">
+                  <Svg1 />
+                  <h3>1. Learn</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                    maxime nemo ut sequi alias! Architecto exercitationem
+                    blanditiis in alias enim?
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex-1">
-              <div className="min-w-[300px] perks">
-                <Svg2 />
-                <h3>1. Learn</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  maxime nemo ut sequi alias! Architecto exercitationem
-                  blanditiis in alias enim?
-                </p>
+              <div className="flex-1">
+                <div className="min-w-[300px] perks">
+                  <Svg2 />
+                  <h3>1. Learn</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                    maxime nemo ut sequi alias! Architecto exercitationem
+                    blanditiis in alias enim?
+                  </p>
+                </div>
               </div>
             </div>
           </div>
