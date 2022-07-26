@@ -1,7 +1,7 @@
 import React from "react";
 // import { ReactComponentElement as FacebookSvg } from "../public/assets/images/svgs/icons8-facebook.svg";
 import "../styles/Footer.module.css";
-import MailSvg from "../public/icons/mail.svg";
+import MailSvg from "../public/mail.svg";
 
 const Footer = () => {
   return (
