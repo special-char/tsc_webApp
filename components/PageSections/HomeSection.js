@@ -1,6 +1,6 @@
-import React from 'react'
-import Button from '../Button'
-import Image from '../Image'
+import React from "react";
+import Button from "../Button";
+import Image from "../Image";
 
 const HomeSection = () => {
   return (
@@ -38,11 +38,11 @@ const HomeSection = () => {
           </div>
         </div>
         <div className="bg-yellow-400 rounded-full w-[500px] h-[500px] absolute -top-96 -left-96 lg:-top-80 lg:-left-64 -z-10"></div>
-      <div className="bg-blue-900  w-full h-[300px] absolute top-3/4 -z-10 lg:top-0 lg:h-[100%] lg:w-5/12 lg:right-0"></div>
-      <div className="bg-[#F99D77] rounded-full w-[500px] h-[500px] absolute  -bottom-80 -right-72 lg:top-3/4 lg:bottom-0 lg:-right-52 -z-10"></div>
+        <div className="bg-blue-900  w-full h-[300px] absolute top-3/4 -z-10 lg:top-0 lg:h-[100%] lg:w-5/12 lg:right-0"></div>
+        <div className="bg-[#F99D77] rounded-full w-[500px] h-[500px] absolute  -bottom-80 -right-72 lg:top-3/4 lg:bottom-0 lg:-right-52 -z-10"></div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default HomeSection
+export default HomeSection;
