@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.css";
 import BrowseCourse from "@components/PageSections/coursesByCategory";
 import Chip from "@components/chip";
 import PlayIcon from '../public/icons/play.svg'
+import EducationCourses from "@components/PageSections/educationCourses";
 
 export default function Home() {
   return (
@@ -58,7 +59,6 @@ export default function Home() {
           <input type="radio" name="rating" class="mask mask--heart bg-secondary2" checked />
           <input type="radio" name="rating" class="mask mask--heart bg-secondary2" />
         </div>
-
         <div className="card">
           <figure>
             <img src="" alt="" />
@@ -72,6 +72,7 @@ export default function Home() {
         </div>
 
       </div>
+      <EducationCourses/>
     </div>
   );
 }
