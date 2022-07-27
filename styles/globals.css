@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-sans text-lg text-neutral-600;
+    @apply font-sans text-lg text-neutral-600 ;
   }
 
   h1 {
@@ -274,4 +274,5 @@
     font-weight: 700;
     text-decoration: none;
   }
+
 }

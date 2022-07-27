@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className=" mx-auto md:flex-col justify-evenly md:justify-evenly">
+        <div className=" mx-auto md:flex-col justify-evenly">
           <h4 className="w-full text-secondary1 py-8 pl-10">Pages</h4>
           <div className=" w-full flex md:flex md:gap-4 justify-between">
             <ul className="  text-neutral-400">
