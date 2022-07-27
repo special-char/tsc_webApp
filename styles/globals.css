@@ -165,7 +165,12 @@
   }
 
   .chip {
-    @apply inline-flex items-center gap-2 py-4 px-6 rounded-full shadow-base text-xs font-bold;
+    @apply py-3 px-4 sm:px-6 rounded-full;
+
+    &.icon {
+      @apply flex py-4 px-6 gap-2;
+    }
+
 
     &--primary {
       @apply bg-primary text-neutral-100;
@@ -268,7 +273,7 @@
   }
 
   .card {
-    @apply overflow-hidden rounded-[20px] bg-neutral-100 shadow-base flex flex-col min-h-full;
+    @apply overflow-hidden rounded-[20px] bg-neutral-100 shadow-base flex flex-col min-h-full relative;
     transform: translate(0px, 0px);
     transition: box-shadow 300ms ease, transform 300ms ease;
     transform-style: preserve-3d;
@@ -283,6 +288,9 @@
       .card-body {
         @apply p-4 text-sm;
       }
+    }
+    &-tags {
+      @apply absolute flex flex-col sm:flex-row gap-2 top-6 sm:top-8 right-4 sm:right-6;
     }
     &-body {
       @apply flex flex-col flex-auto px-6 pt-8 pb-10 sm:px-10 sm:pt-9 sm:pb-10 md:px-12 md:pb-12 md:pt-11;

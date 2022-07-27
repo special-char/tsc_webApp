@@ -61,8 +61,18 @@ export default function Home() {
 
         <div className="card w-1/3">
           <figure><img src="https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-1080.jpeg" alt="Shoes" /></figure>
+          {/* <div className="card-tags">
+            <div className="chip icon chip--primary">
+              <span>X</span>
+              <span>12 Courses</span>
+            </div>
+            <div className="chip icon chip--primary">
+              <span>X</span>
+              <span>12 Courses</span>
+            </div>
+          </div> */}
           <div className="card-body">
-            <div className="card-date">April 20, 2022</div>
+            {/* <div className="card-date">April 20, 2022</div> */}
             <h3 className="card-title">Graphic Design 101</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nobis libero labore temporibus mollitia neque est adipisci enim delectus fugit voluptate unde quisquam perspiciatis earum, minus cum dolore molestias error!</p>
             <div className="card-actions">
