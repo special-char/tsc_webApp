@@ -1,72 +1,34 @@
 import React from "react";
+import Image from "next/image";
 
-const Testimonial = function ({
+const Testimonial = ({
   img,
-  children,
-  name,
+  svg,
   designation,
-  imgWidth,
-  imgHeight,
-}) {
+  name,
+  description,
+  ...props
+}) => {
   return (
-    <div className="p-4 ">
-      <h2 className="px-4 flex text-center justify-center">
-        What our students say about us
-      </h2>
-      <div className="flex flex-col md:flex-row md:w-full">
-        <div className="p-4 flex  border-spacing-2 drop-shadow-2xl bg-neutral-100 ">
-          <div className="flex flex-col md:flex-row text-center justify-center md:px-20 md:py-10 md:gap-8">
-            <div class="avatar items-center justify-center py-8">
-              <div class="">
-                <img src="https://placeimg.com/192/192/people" />
-              </div>
-            </div>
-            <div className="md:flex md:flex-col md:text-left md:justify-center">
-              <p>
-                “Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint”
-              </p>
-              <h4>Katherine Cutts</h4>
-              <p>Junior Designer at Facebook</p>
-            </div>
-          </div>
+    <>
+      <div className="flex items-center w-[700px] p-12 gap-9 rounded-3xl shadow-2xl border-spacing-2 drop-shadow-md bg-neutral-100">
+        <div className="relative rounded-full w-44 h-44 ">
+          <Image
+            className="avatar rounded-full"
+            layout="fill"
+            src={img}
+            {...props}
+          />
         </div>
-        <div className="p-4 flex  border-spacing-2 drop-shadow-2xl bg-neutral-100 ">
-          <div className="flex flex-col md:flex-row text-center justify-center md:px-20 md:py-10 md:gap-8">
-            <div class="avatar items-center justify-center py-8">
-              <div class="">
-                <img src="https://placeimg.com/192/192/people" />
-              </div>
-            </div>
-            <div className="md:flex md:flex-col md:text-left md:justify-center">
-              <p>
-                “Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint”
-              </p>
-              <h4>Katherine Cutts</h4>
-              <p>Junior Designer at Facebook</p>
-            </div>
-          </div>
-        </div>
-        <div className="p-4 flex  border-spacing-2 drop-shadow-2xl bg-neutral-100 ">
-          <div className="flex flex-col md:flex-row text-center justify-center md:px-20 md:py-10 md:gap-8">
-            <div class="avatar items-center justify-center py-8">
-              <div class="">
-                <img src="https://placeimg.com/192/192/people" />
-              </div>
-            </div>
-            <div className="md:flex md:flex-col md:text-left md:justify-center">
-              <p>
-                “Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint”
-              </p>
-              <h4>Katherine Cutts</h4>
-              <p>Junior Designer at Facebook</p>
-            </div>
-          </div>
+
+        <div className="flex-col text-content-wrapper flex-1 flex gap-4">
+          {svg}
+          <p className="text-lg font-normal text-neutral-600">{description}</p>
+          <h4 className="font-bold text-lg text-neutral-700">{name}</h4>
+          <p className="text-lg font-normal text-neutral-600">{designation}</p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
