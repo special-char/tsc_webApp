@@ -11,7 +11,7 @@ const Industry = () => {
             eiusmod tempor incididunt.
           </p>
           <div className="flex flex-col gap-8 md:w-1/2">
-            <button className="btn btn--primary">BROWSE TEACHERS</button>
+            <button className=""btn btn--primary>BROWSE TEACHERS</button>
             <button className="btn btn--secondary ">BROWSE TEACHERS</button>
           </div>
         </div>

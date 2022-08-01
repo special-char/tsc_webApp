@@ -1,7 +1,7 @@
 import Card from "@components/Card";
 import Image from "@components/Image";
 import React from "react";
-import Button from "../Button";
+import Button from "../../Button";
 
 const CourseSection = () => {
   return (

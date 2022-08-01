@@ -1,5 +1,5 @@
 import React from "react";
-import WhyCourse from "../WhyCourse";
+import WhyCourse from "../../WhyCourse";
 import LearnSvg from "/public/learn.svg";
 import GraduateSvg from "/public/Graduate.svg";
 import WorkSvg from "/public/work.svg";
