@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 @layer base {
   body {
     @apply font-sans text-lg text-neutral-600;
@@ -46,7 +51,7 @@
   }
 
   a {
-    @apply text-primary underline;
+    @apply text-primary no-underline;
     -webkit-transition: color 300ms ease;
     transition: color 300ms ease;
   }
@@ -114,6 +119,9 @@
   th {}
 
   td {}
+  .section {
+    transition: flex 1000ms 150ms ease-in-out ;
+  }
 }
 
 @layer components {
@@ -332,5 +340,21 @@
       @apply text-lg font-bold text-neutral-700;
     }
   }
-
+}
+.section {
+  transition: flex 1000ms 150ms ease-in-out ; 
+}
+.training-section:hover {
+  flex: 1.5;
+}
+.training-section:hover .right-arrow {
+  transition: transform 1000ms 150ms ease-in-out;
+  transform: rotate(180deg)
+}
+.development-section:hover {
+  flex: 1.5;
+}
+.development-section:hover .left-arrow {
+  transition: transform 1000ms 150ms ease-in-out;
+  transform: rotate(180deg)
 }

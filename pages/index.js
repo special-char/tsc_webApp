@@ -1,358 +1,54 @@
-import Head from "next/head";
-import CourseSection from "../components/PageSections/CourseSection";
-import Footer from "../components/Footer";
-import Features from "../components/PageSections/Features";
-import HomeSection from "../components/PageSections/HomeSection";
-import styles from "../styles/Home.module.css";
-import BrowseCourse from "@components/PageSections/coursesByCategory";
-import Chip from "@components/chip";
-import PlayIcon from "../public/icons/play.svg";
-import Svg from "@public/icons/kidOnLaptop.svg";
-import Svg1 from "@public/icons/graduate.svg";
-import Svg2 from "@public/icons/studying.svg";
-import { useEffect } from "react";
-import CourseByCategory from "@components/PageSections/courseByCategory";
-import ResourcesSection from "@components/PageSections/resourcesSection";
-import PlayIcon from "../public/icons/play.svg";
-import EducationCourses from "@components/PageSections/educationCourses";
-
-export default function Home() {
+import Image from "next/image";
+import React from "react";
+import RightArrow from "@public/icons/rArrow.svg";
+import LeftArrow from "@public/icons/lArrow.svg";
+const Home = () => {
   return (
-    <div>
-      <p id="para"></p>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <h2>Lorem ipsum dolor sit amet.</h2>
-      <h3>Lorem ipsum dolor sit amet.</h3>
-      <h4>Lorem ipsum dolor sit amet.</h4>
-      <h5>Lorem ipsum dolor sit amet.</h5>
-      <h6>Lorem ipsum dolor sit amet.</h6>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, qui!
-      </p>
-      <p className="small">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, qui!
-      </p>
-      <p className="large">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, qui!
-      </p>
-      <a href="">Lorem, ipsum.</a>
-      <blockquote>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-        excepturi ducimus magni? Magni perspiciatis ad quaerat porro dicta,
-        incidunt aperiam amet laboriosam sunt quam tenetur ratione deserunt
-        officia odio qui!
-      </blockquote>
-
-      <div>
-        <button className="btn btn--primary btn--large">Explore Courses</button>
-        <button className="btn btn--primary">Explore Courses</button>
-        <button className="btn btn--primary btn--small">Explore Courses</button>
-        <button className="btn btn--secondary">Explore Courses</button>
-        <button className="btn btn--white">Explore Courses</button>
-
-        <button className="btn btn--round btn--secondary w-24">
-          <span className="text-3xl">K</span>
-        </button>
-
-        <div className="chip chip--primary">
-          <span>X</span>
-          <span>12 Courses</span>
-        </div>
-
-        <div className="avatar">
-          <div className="w-14">
-            <img src="https://placeimg.com/192/192/people" />
-          </div>
-        </div>
-        <div className="flex">
-          <div className="avatar">
-            <div className="w-48">
-              <img src="https://placeimg.com/192/192/people" />
+    <>
+      <div className="index-wrapper flex flex-wrap items-center">
+        <div className="training-section section  flex-1 h-screen">
+          <div className="w-full h-screen bg-secondary3 overflow-hidden relative">
+            <Image
+              src={
+                "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+              }
+              layout="fill"
+              objectFit="cover"
+              objectPosition={"center"}
+            />
+            <div className="w-full h-full px-2 absolute flex justify-between items-center bg-secondary3 opacity-60 z-50">
+              <div className="flex flex-col flex-wrap items-start justify-center">
+                <h1 className="m-0 text-neutral-100">Training</h1>
+                <button className="btn btn--primary">Explore</button>
+              </div>
+              <RightArrow className="right-arrow w-4 h-4" />
             </div>
           </div>
-          <div className="px-5 py-5">
-            <p>
-              “Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint”
-            </p>
-          </div>
         </div>
-
-        <div className="avatar placeholder bg-primary rounded-full">
-          <div className="w-14">
-            <span className="text-lg">YM</span>
-          </div>
-        </div>
-
-        <div className="rating">
-          <input
-            type="radio"
-            name="rating"
-            className="mask mask--heart bg-secondary2"
-          />
-          <input
-            type="radio"
-            name="rating"
-            className="mask mask--heart bg-secondary2"
-          />
-          <input
-            type="radio"
-            name="rating"
-            className="mask mask--heart bg-secondary2"
-          />
-          <input
-            type="radio"
-            name="rating"
-            className="mask mask--heart bg-secondary2"
-            checked
-          />
-          <input
-            type="radio"
-            name="rating"
-            className="mask mask--heart bg-secondary2"
-          />
-        </div>
-
-        <div className="card w-1/3">
-          <figure>
-            <img
-              src="https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-1080.jpeg"
-              alt="Shoes"
+        <div className="section development-section flex-1 h-screen relative ">
+          <div className="w-full h-screen overflow-hidden relative">
+            <Image
+              src={
+                "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+              }
+              layout="fill"
+              objectFit="cover"
+              objectPosition={"center"}
             />
-          </figure>
-          <div className="card-body">
-            <div className="card-date">April 20, 2022</div>
-            <h3 className="card-title">Graphic Design 101</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, nobis libero labore temporibus mollitia neque est
-              adipisci enim delectus fugit voluptate unde quisquam perspiciatis
-              earum, minus cum dolore molestias error!
-            </p>
-            <div className="card-actions">
-              <div className="author">
-                <div className="avatar">
-                  <div className="w-12">
-                    <img src="https://placeimg.com/192/192/people" />
-                  </div>
-                </div>
-                <div className="author__name">Yagnesh Modh</div>
+            <div className="w-full h-full px-2 absolute flex justify-between items-center bg-primary opacity-60 z-50">
+              <LeftArrow className="left-arrow w-4 h-4" />
+              <div className="flex-col flex-wrap items-end justify-end">
+                <h1 className="m-0 text-neutral-100">Development</h1>
+                <button className="btn btn--primary">Explore</button>
               </div>
             </div>
-            <input
-              type="radio"
-              name="rating"
-              className="mask mask--heart bg-secondary2"
-            />
-            <input
-              type="radio"
-              name="rating"
-              className="mask mask--heart bg-secondary2"
-            />
-            <input
-              type="radio"
-              name="rating"
-              className="mask mask--heart bg-secondary2"
-            />
-            <input
-              type="radio"
-              name="rating"
-              className="mask mask--heart bg-secondary2"
-              checked
-            />
-            <input
-              type="radio"
-              name="rating"
-              className="mask mask--heart bg-secondary2"
-            />
-          </div>
-
-          <div className="card w-1/3">
-            <figure>
-              <img
-                src="https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-1080.jpeg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <div className="card-date">April 20, 2022</div>
-              <h3 className="card-title">Graphic Design 101</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis, nobis libero labore temporibus mollitia neque est
-                adipisci enim delectus fugit voluptate unde quisquam
-                perspiciatis earum, minus cum dolore molestias error!
-              </p>
-              <div className="card-actions">
-                <div className="author">
-                  <div className="avatar">
-                    <div className="w-12">
-                      <img src="https://placeimg.com/192/192/people" />
-                    </div>
-                  </div>
-                  <div className="author__name">Yagnesh Modh</div>
-                </div>
-              </div>
-              <input
-                type="radio"
-                name="rating"
-                className="mask mask--heart bg-secondary2"
-              />
-              <input
-                type="radio"
-                name="rating"
-                className="mask mask--heart bg-secondary2"
-              />
-              <input
-                type="radio"
-                name="rating"
-                className="mask mask--heart bg-secondary2"
-              />
-              <input
-                type="radio"
-                name="rating"
-                className="mask mask--heart bg-secondary2"
-                checked
-              />
-              <input
-                type="radio"
-                name="rating"
-                className="mask mask--heart bg-secondary2"
-              />
-            </div>
-
-            <div className="card w-1/3">
-              <figure>
-                <img
-                  src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607f500fe9f6c983c68e88ef_image-1-courses-categories-education-x-template.svg"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
-                <h3 className="card-title">Graphic Design 101</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Reiciendis, nobis libero labore temporibus mollitia neque est
-                  adipisci enim delectus fugit voluptate unde quisquam
-                  perspiciatis earum, minus cum dolore molestias error!
-                </p>
-              </div>
-
-              <div className="card w-1/3">
-                <figure>
-                  <img
-                    src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607f500fe9f6c983c68e88ef_image-1-courses-categories-education-x-template.svg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h3 className="card-title">Graphic Design 101</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis, nobis libero labore temporibus mollitia neque
-                    est adipisci enim delectus fugit voluptate unde quisquam
-                    perspiciatis earum, minus cum dolore molestias error!
-                  </p>
-                </div>
-
-                <div className="card w-1/3">
-                  <figure>
-                    <img
-                      src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607f500fe9f6c983c68e88ef_image-1-courses-categories-education-x-template.svg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div className="card-body">
-                    <h3 className="card-title">Graphic Design 101</h3>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Reiciendis, nobis libero labore temporibus mollitia neque
-                      est adipisci enim delectus fugit voluptate unde quisquam
-                      perspiciatis earum, minus cum dolore molestias error!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="perks-wrapper bg-neutral-700">
-                <div className="perks-container max-w-[1810px] px-5 mx-auto flex flex-wrap gap-7 py-10">
-                  <div className="flex-1">
-                    <div className="min-w-[300px] perks">
-                      <Svg />
-                      <span className="perks__title">1. Learn</span>
-                      <p className="perks__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aut maxime nemo ut sequi alias! Architecto
-                        exercitationem blanditiis in alias enim?
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <div className="min-w-[300px] perks">
-                      <Svg1 />
-                      <h3>1. Learn</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aut maxime nemo ut sequi alias! Architecto
-                        exercitationem blanditiis in alias enim?
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <div className="min-w-[300px] perks">
-                      <Svg2 />
-                      <h3>1. Learn</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aut maxime nemo ut sequi alias! Architecto
-                        exercitationem blanditiis in alias enim?
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="card w-1/3">
-                  <figure>
-                    <img
-                      src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607f500fe9f6c983c68e88ef_image-1-courses-categories-education-x-template.svg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div className="card-body">
-                    <h3 className="card-title">Graphic Design 101</h3>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Reiciendis, nobis libero labore temporibus mollitia neque
-                      est adipisci enim delectus fugit voluptate unde quisquam
-                      perspiciatis earum, minus cum dolore molestias error!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="card w-1/3">
-                <figure>
-                  <img
-                    src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607f500fe9f6c983c68e88ef_image-1-courses-categories-education-x-template.svg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h3 className="card-title">Graphic Design 101</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis, nobis libero labore temporibus mollitia neque
-                    est adipisci enim delectus fugit voluptate unde quisquam
-                    perspiciatis earum, minus cum dolore molestias error!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <HomeSection />
-            <CourseByCategory />
-            <CourseSection />
-            <ResourcesSection />
-            <EducationCourses />
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
-}
+};
+Home.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
+export default Home;
