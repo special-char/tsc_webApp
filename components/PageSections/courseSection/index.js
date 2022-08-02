@@ -2,12 +2,12 @@ import React from "react";
 
 const CourseSection = () => {
   return (
-    <div className="px-3 py-10">
+    <section className="px-4 py-10 max-w-[1210px] lg:mx-auto">
       <center>
         <h2 className="mx-6 mb-10">Browse our popular courses</h2>
       </center>
       <div className="flex flex-col w-auto gap-6 lg:max-w-[1150px] lg:mx-auto lg:flex-row lg:justify-center">
-        <div className="card w-3/3 md:w-2/3">
+        <div className="card w-3/3 md:w-2/3 lg:w-3/3">
           <figure>
             <img
               className="rounded-t-2xl"
@@ -37,7 +37,7 @@ const CourseSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
