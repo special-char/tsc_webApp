@@ -1,12 +1,10 @@
+import HomeSection from "@components/PageSections/homeSection";
 import React from "react";
-const Home = () => {
+
+export default function Home() {
   return (
     <>
-      <div className="main-body"></div>
+      <HomeSection />
     </>
   );
-};
-Home.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
-export default Home;
+}
