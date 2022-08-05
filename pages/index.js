@@ -1,10 +1,10 @@
-import HomeSection from "@components/PageSections/homeSection";
+import AboutPage from "@components/PageSections/aboutSection";
 import React from "react";
 
 export default function Home() {
   return (
     <>
-      <HomeSection />
+      <AboutPage />
     </>
   );
 }

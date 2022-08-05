@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Industry = () => {
   return (
-    <div className="wrapper flex py-32 w-screen h-auto lg:h-screen ">
-      <section className=" flex w-full lg:max-w-[1210px] max-w-[320px] md:max-w-[590px] mx-auto items-center justify-center flex-wrap px-4 h-auto">
+    <div className="wrapper flex py-32">
+      <section className="flex w-full lg:max-w-[1210px] mx-auto items-center justify-center flex-wrap px-4 h-full">
         <div className=" flex flex-col lg:text-left lg:flex-1 text-center justify-center">
           <h2>Courses taught by industry leaders around the world</h2>
           <p>
@@ -21,7 +21,7 @@ const Industry = () => {
           </div>
         </div>
 
-        <div className="flex flex-1">
+        <div className="flex flex-1 h-full">
           <div className="aspect-h-image w-full relative">
             <Image
               className="avatar rounded-xl "

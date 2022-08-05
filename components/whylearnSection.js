@@ -3,7 +3,7 @@ import LearnSvg from "@public/icons/learn.svg";
 import WorkSvg from "@public/icons/work.svg";
 import GraduateSvg from "@public/icons/graduate.svg";
 import Whylearn from "./PageSections/homeSection/Whylearn";
-import ArrowSvg from "@public/icons/arrow.svg";
+import OrangearrowSvg from "@public/icons/orangearrow.svg";
 
 const WhylearnSection = () => {
   const WhylearnDetails = [
@@ -52,7 +52,7 @@ const WhylearnSection = () => {
           </div>
         </div>
         <div className="w-full absolute -bottom-32 flex justify-center">
-          <ArrowSvg className="w-20" />
+          <OrangearrowSvg className="w-20" />
         </div>
       </div>
     </>

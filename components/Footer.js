@@ -1,11 +1,12 @@
 import React from "react";
 // import { ReactComponentElement as FacebookSvg } from "../public/assets/images/svgs/icons8-facebook.svg";
 import "../styles/Footer.module.css";
-import MailSvg from "../public/mail.svg";
+import MailSvg from "@public/icons/mail.svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-700 p-4">
+    <section className="Wrapper bg-neutral-700 p-4">
       <div className="flex flex-col border-b-2 md:justify-between md:w-4/5 md:mx-auto border-b-slate-400 md:flex-row">
         <h1 className="text-neutral-100">TSC</h1>
         <p className="text-neutral-100 md:max-w-[468px]">
@@ -42,39 +43,39 @@ const Footer = () => {
           <div className=" w-full flex md:flex md:gap-4 justify-between">
             <ul className="  text-neutral-400">
               <li>
-                <a href="#">Home</a>
+                <Link href="#">Home</Link>
               </li>
               <li>
-                <a href="#">About</a>
+                <Link href="#">About</Link>
               </li>
               <li>
-                <a href="#">Courses</a>
+                <Link href="#">Courses</Link>
               </li>
               <li>
-                <a href="#">Individual Course</a>
+                <Link href="#">Individual Course</Link>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <Link href="#">Blog</Link>
               </li>
               <li>
-                <a href="#">Blog Post</a>
+                <Link href="#">Blog Post</Link>
               </li>
             </ul>
             <ul className="links text-neutral-400">
               <li>
-                <a href="#">Events</a>
+                <Link href="#">Events</Link>
               </li>
               <li>
-                <a href="#">Individual Event</a>
+                <Link href="#">Individual Event</Link>
               </li>
               <li>
-                <a href="#">Teachers</a>
+                <Link href="#">Teachers</Link>
               </li>
               <li>
-                <a href="#">Individual Techers</a>
+                <Link href="#">Individual Techers</Link>
               </li>
               <li>
-                <a href="#">Contact</a>Contact
+                <Link href="#">Contact</Link>Contact
               </li>
             </ul>
           </div>
@@ -83,22 +84,22 @@ const Footer = () => {
           <h4 className="text-secondary1 py-8 pl-6">Utility Pages</h4>
           <ul className="links text-neutral-400 ">
             <li>
-              <a href="#">Start Here</a>
+              <Link href="#">Start Here</Link>
             </li>
             <li>
-              <a href="#">Start Guide</a>
+              <Link href="#">Start Guide</Link>
             </li>
             <li>
-              <a href="#">404 Not Found</a>
+              <Link href="#">404 Not Found</Link>
             </li>
             <li>
-              <a href="#">Password Protected</a>
+              <Link href="#">Password Protected</Link>
             </li>
             <li>
-              <a href="#">LIcenses</a>
+              <Link href="#">LIcenses</Link>
             </li>
             <li>
-              <a href="#">Changelog</a>
+              <Link href="#">Changelog</Link>
             </li>
           </ul>
         </div>
@@ -107,22 +108,22 @@ const Footer = () => {
         <div>{/* <FacebookSvg /> */}</div>
         <div className="text-lg text-secondary1">
           Copyright © TSC | Designed by{" "}
-          <a
+          <Link
             className="underline"
             href="https://pruthvish-portfolio.vercel.app/"
           >
             Pruthvish Modi
-          </a>{" "}
+          </Link>{" "}
           Powered by{" "}
-          <a
+          <Link
             className="underline"
             href="https://pruthvish-portfolio.vercel.app/"
           >
             Pruthvish Design
-          </a>
+          </Link>
         </div>
       </div>
-    </footer>
+    </section>
   );
 };
 
