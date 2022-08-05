@@ -1,7 +1,6 @@
 import React from "react";
-
 const HomeSection = () => {
-  return <main className="flex flex-col w-full items-center gap-10"></main>;
+  return <main>hello from homeSection</main>;
 };
 
 export default HomeSection;

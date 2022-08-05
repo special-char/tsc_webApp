@@ -2,11 +2,11 @@ import React from "react";
 import LearnSvg from "@public/icons/learn.svg";
 import WorkSvg from "@public/icons/work.svg";
 import GraduateSvg from "@public/icons/graduate.svg";
-import Perks from "@components/Perks";
-import ArrowSvg from "@public/icons/arrow.svg";
+import Whylearn from "./PageSections/homeSection/Whylearn";
+import OrangearrowSvg from "@public/icons/orangearrow.svg";
 
-const PerksSection = () => {
-  const perksDetails = [
+const WhylearnSection = () => {
+  const WhylearnDetails = [
     {
       id: 1,
       title: "Learn",
@@ -32,8 +32,8 @@ const PerksSection = () => {
 
   return (
     <>
-      <div className="perks-wrapper bg-neutral-700 text-center relative py-28 h-auto">
-        <div className="container w-full h-full flex flex-col justify-center gap-6 px-6 mx-auto max-w-[1210px] overflow-hidden">
+      <div className=" bg-neutral-700 text-center relative py-28 lg:py-16 lg:h-screen">
+        <div className="container flex flex-col gap-6 px-6 mx-auto max-w-[1210px] overflow-hidden">
           <h2 className="flex-1 text-secondary1">
             Why learn with our courses?
           </h2>
@@ -44,7 +44,7 @@ const PerksSection = () => {
           </div>
         </div>
         <div className="w-full absolute -bottom-32 flex justify-center">
-          <ArrowSvg className="w-20" />
+          <OrangearrowSvg className="w-20" />
         </div>
       </div>
     </>
