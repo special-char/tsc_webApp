@@ -3,10 +3,10 @@ import React from "react";
 
 const StorySection = () => {
   return (
-    <section className="wrapper relative py-32">
+    <section className="wrapper relative py-24 md:py-36 lg:py-44">
       <div className="container max-w-[1210px] relative w-full mx-auto px-3">
-        <div className="flex flex-col-reverse w-full h-full md:container lg:flex-row mx-auto lg:gap-12">
-          <div className="left-section py-5 flex md:w-4/5 flex-col-reverse w-full h-full mx-auto lg:flex-1 lg:flex-col lg:gap-28">
+        <div className="flex flex-col-reverse w-full h-full lg:flex-row lg:gap-12">
+          <div className="left-section py-5 flex flex-col-reverse w-full h-full mx-auto lg:flex-1 lg:flex-col lg:gap-28">
             <div className="image-container w-full min-h-[300px] md:min-h-[600px] lg:min-h-[500px] flex-1 relative">
               <Image
                 objectFit="fill"
@@ -18,7 +18,7 @@ const StorySection = () => {
                 }
               />
             </div>
-            <div className="text-container md:text-center lg:text-left">
+            <div className="text-container md:text-center lg:text-left text-left">
               <h2>The story of our founders</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
@@ -32,7 +32,7 @@ const StorySection = () => {
             </div>
           </div>
           <div className="right-section py-5 flex w-full h-full flex-col lg:flex-col lg:flex-1 lg:gap-16 ">
-            <div className="text-content text-center md:w-4/5 lg:w-full mx-auto lg:text-left pt-10">
+            <div className="text-content text-left lg:w-full mx-auto md:text-center lg:text-left pt-10">
               <h2>The mission behind Education platform</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Whylearn = ({ svg, title, description }) => {
+const Perks = ({ svg, title, description }) => {
   return (
     <>
       <div className="flex-col items-center text-content-wrapper flex-1 flex gap-4">
@@ -12,4 +12,4 @@ const Whylearn = ({ svg, title, description }) => {
   );
 };
 
-export default Whylearn;
+export default Perks;
