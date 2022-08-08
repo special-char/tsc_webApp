@@ -1,6 +1,5 @@
 import React, { memo } from "react";
 import Link from "next/link";
-import styles from "./navbar.module.css";
 const Navbar = () => {
   const navLinks = [
     {
@@ -56,4 +55,4 @@ const Navbar = () => {
 };
 
 Navbar.displayName = "Navbar";
-export default Navbar;
+export default memo(Navbar);

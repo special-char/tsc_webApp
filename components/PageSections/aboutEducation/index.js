@@ -6,7 +6,7 @@ import EducationData from "./aboutEducationData";
 const AboutEducation = () => {
   return (
     <section className="about-education-wrapper h-auto w-full py-44 ">
-      <div className="max-w-[1210px] mx-auto px-3 border-b border-neutral-400">
+      <div className="max-w-[1210px] mx-auto px-3">
         <div className="text-center">
           <h2>About Education</h2>
           <p>

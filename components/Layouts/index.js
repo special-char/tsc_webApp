@@ -4,7 +4,7 @@ import React from "react";
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar />
+      <header>{/* <Navbar /> */}</header>
       <main>{children}</main>
     </>
   );

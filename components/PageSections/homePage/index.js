@@ -6,6 +6,9 @@ import BannerSection from "./bannerSection";
 import PerksSection from "./perksSection";
 import IndustryLeaders from "./industryLeaders";
 import StorySection from "../aboutPage/storySection";
+import EducationCourses from "./educationCourses";
+import AboutEducation from "../aboutEducation";
+import CourseByCategory from "../courseByCategory";
 const HomePage = () => {
   const [isClicked, setIsClicked] = useState(false);
   console.log("isClicked", isClicked);
@@ -14,8 +17,11 @@ const HomePage = () => {
       <main>
         <BannerSection />
         <PerksSection />
-        {/* <IndustryLeaders /> 
-        //about page
+        {/* <IndustryLeaders /> */}
+        <EducationCourses />
+        <AboutEducation />
+        <CourseByCategory />
+        {/* //about page
         <StorySection />*/}
       </main>
       {/* <div className="landing-page-wrapper h-screen flex flex-wrap">

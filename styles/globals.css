@@ -375,3 +375,7 @@ body {
 .right-content::-webkit-scrollbar {
   display: none;
 }
+
+.extended {
+  flex: 10;
+}

@@ -47,17 +47,17 @@ const EducationCourses = () => {
             </div>
             <div className="right-box-content flex flex-1 items-center flex-wrap justify-center gap-7">
               <div className="flex flex-col items-end gap-7">
-                <div className="rounded-lg px-7 pt-12 pb-10 min-w-fit flex flex-col items-center justify-center text-center bg-neutral-100">
+                <div className="rounded-lg w-[200px] h-[200px] pt-12 pb-10 min-w-fit flex flex-col items-center justify-center text-center bg-neutral-100">
                   <h2>9/10</h2>
                   <p>Overall courses satisfaction score</p>
                 </div>
-                <div className="rounded-lg px-7 pt-12 pb-10 min-w-fit flex flex-col items-center justify-center text-center bg-neutral-100 ">
+                <div className="rounded-lg w-[200px] h-[200px] pt-12 pb-10 min-w-fit flex flex-col items-center justify-center text-center bg-neutral-100 ">
                   <h2>96%</h2>
                   <p>Completition rate on all courses</p>
                 </div>
               </div>
               <div className="flex-start flex items-center justify-start ">
-                <div className="rounded-lg px-7 pt-12 pb-10 min-w-fit flex flex-col items-center justify-center  text-center bg-neutral-100">
+                <div className="rounded-lg w-[200px] h-[200px] pt-12 pb-10 min-w-fit flex flex-col items-center justify-center  text-center bg-neutral-100">
                   <h2>10K+</h2>
                   <p>Happy students worldwide</p>
                 </div>
