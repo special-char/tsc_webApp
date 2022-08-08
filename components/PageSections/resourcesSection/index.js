@@ -1,84 +1,85 @@
+import Image from "next/image";
 import React from "react";
+import ResourcesImg1 from "@public/img/resourcesImg1.jpeg";
+import ResourcesSectionData from "./resourcesSectionData";
+import Design from "@public/icons/design.svg";
+// import ResourcesImg2 from "@public/img/resourcesImg2.jpeg";
 
 const ResourcesSection = () => {
   return (
-    <div className="">
-      <div className="mx-auto px-2 pt-20 pb-20 max-w-[1110px]">
+    <section className="h-screen w-screen">
+      <div className="md:w-[80%] mx-auto lg:w-full px-6 py-20 max-w-[1210px]">
         <div className="flex flex-col items-center lg:flex-row lg:justify-between">
           <h2>Resources & News</h2>
           <button className="btn btn--secondary btn--small">BROWSE BLOG</button>
         </div>
-        <div className="flex flex-col pt-10 gap-1 lg:flex-row">
-          <div className="p-3 lg:flex-1 lg:w-auto">
-            <div className="card w-3/3">
-              <figure>
-                <img
-                  className="rounded-t-2xl"
-                  src="https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f23fe55a94aa127fb47b2_image-6-blog-education-x-template-p-1600.jpeg"
-                  alt="Shoes"
-                />
-              </figure>
-              <div className="card-body">
-                <div className="card-date">April 20, 2022</div>
-                <h3 className="card-title">Graphic Design 101</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Reiciendis, nobis libero labore temporibus mollitia neque est
-                  adipisci enim delectus fugit voluptate unde quisquam
-                  perspiciatis earum, minus cum dolore molestias error!
-                </p>
-              </div>
+        <div className="flex flex-col pt-10 lg:flex-row gap-6">
+          <div className="card flex-1 relative">
+            <figure className="!min-h-0">
+              <Image
+                className="rounded-t-2xl object-cover"
+                objectFit="cover"
+                objectPosition={"center"}
+                src={ResourcesImg1}
+                ait="img1"
+              />
+            </figure>
+            <div className="card-body">
+              <div className="card-date">April 20, 2022</div>
+              <h3>
+                How to design a simple, yet unique and memorable brand identity
+              </h3>
+            </div>
+            <div className="chip chip--white px-6 py-2 flex gap-1 items-center top-6 right-6 absolute">
+              <Design className="w-4" />
+              <span className="font-bold">Design</span>
             </div>
           </div>
-          <div className="flex flex-col gap-5 p-3 mx-auto lg:flex-1 lg:flex-col">
-            <div className="flex flex-col lg:flex-row">
-              <div className="flex-1 ">
-                <img
-                  className="lg:rounded-l-2xl"
-                  src="https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2623f3809724753fbc65_image-5-blog-education-x-template-p-800.jpeg"
-                  alt=""
-                />
+
+          <div className="flex flex-col gap-5 mx-auto lg:flex-1">
+            {/* map goes here */}
+            {ResourcesSectionData.map((val) => (
+              <div className="card-new w-full min-w-[270px] flex flex-col md:flex-row flex-1 ">
+                <div className="image flex-1 w-full min-h-full xs:basis-[160px] md:basis-0 relative">
+                  <Image
+                    src={val.photo}
+                    className="xs:rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none"
+                    objectFit="cover"
+                    layout={"fill"}
+                    objectPosition={"center"}
+                    alt="img2"
+                  />
+                </div>
+                <div className="content grow shrink basis-0 px-6 py-5">
+                  <h4>{val.description}</h4>
+                </div>
               </div>
-              <div className="flex-1 lg:px-5 py-5">
-                <h4>
-                  5 marketing trends that you should be prepared for in 2022
-                </h4>
-              </div>
-            </div>
-            <div className="flex flex-col lg:flex-row">
-              <div className="flex-1">
-                <img
-                  className="lg:rounded-l-2xl"
-                  src="https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f256ca6388c4207dbfb28_image-3-blog-education-x-template-p-800.jpeg"
-                  alt=""
-                />
-              </div>
-              <div className="flex-1 lg:px-5 py-5">
-                <h4>
-                  5 marketing trends that you should be prepared for in 2022
-                </h4>
-              </div>
-            </div>
-            <div className="flex flex-col lg:flex-row">
-              <div className="flex-1">
-                <img
-                  className="lg:rounded-l-2xl"
-                  src="https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2405097a4b97dde4f6d2_image-1-blog-education-x-template-p-500.jpeg"
-                  alt=""
-                />
-              </div>
-              <div className="flex-1 lg:px-5 py-5">
-                <h4>
-                  5 marketing trends that you should be prepared for in 2022
-                </h4>
-              </div>
-            </div>
+            ))}
+            {/* map ends here */}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 ResourcesSection.displayName = "ResourcesSection";
 export default ResourcesSection;
+
+{
+  /* <div className="flex flex-col md:flex-row ">
+                <div className="grow shrink basis-[160px] md:basis-0 relative">
+                  <Image
+                    src={val.photo}
+                    className="xs:rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none"
+                    objectFit="cover"
+                    layout={"fill"}
+                    objectPosition={"center"}
+                    alt="img2"
+                  />
+                </div>
+                <div className="flex-1 px-5 py-5">
+                  <h4>{val.description}</h4>
+                </div>
+              </div> */
+}

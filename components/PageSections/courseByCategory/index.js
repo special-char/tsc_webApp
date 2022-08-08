@@ -1,62 +1,29 @@
 import React from "react";
+import CourseCategoryData from "./courseCategoryData";
 
 const CourseByCategory = () => {
   return (
-    <section className="px-4 py-10 lg:max-w-[1210px] lg:mx-auto">
-      <center>
-        <h2 className="mx-6 mb-10">Browse our courses by category</h2>
-      </center>
-      <div className="flex flex-col gap-6  md:flex md:items-center md:w-4/5 md:mx-auto lg:w-full  lg:flex-row ">
-        <div className="card w-3/3 ">
-          <figure>
-            <img
-              src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607f500fe9f6c983c68e88ef_image-1-courses-categories-education-x-template.svg"
-              alt="Shoes"
-            />
-          </figure>
-          <div className="card-body">
-            <h3 className="card-title">Design</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, nobis libero labore temporibus mollitia neque est
-              adipisci enim delectus fugit voluptate unde quisquam perspiciatis
-              earum, minus cum dolore molestias error!
-            </p>
-          </div>
-        </div>
-        <div className="card w-3/3">
-          <figure>
-            <img
-              src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607f5010ea8cee56aa78149a_image-2-courses-categories-education-x-template.svg"
-              alt="Shoes"
-            />
-          </figure>
-          <div className="card-body">
-            <h3 className="card-title">Development</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, nobis libero labore temporibus mollitia neque est
-              adipisci enim delectus fugit voluptate unde quisquam perspiciatis
-              earum, minus cum dolore molestias error!
-            </p>
-          </div>
-        </div>
-        <div className="card w-3/3 ">
-          <figure>
-            <img
-              src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607f500f9c98153a06b9d441_image-3-courses-categories-education-x-template.svg"
-              alt="Shoes"
-            />
-          </figure>
-          <div className="card-body">
-            <h3 className="card-title">Marketing</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, nobis libero labore temporibus mollitia neque est
-              adipisci enim delectus fugit voluptate unde quisquam perspiciatis
-              earum, minus cum dolore molestias error!
-            </p>
-          </div>
+    <section className="main h-screen w-full">
+      <div className="main-container container max-w-[1210px] mx-auto px-3">
+        <center>
+          <h2>Browse our courses by category</h2>
+        </center>
+        <div className="md:w-4/5 md:mx-auto lg:flex lg:gap-3">
+          {CourseCategoryData.map((val) => (
+            <div className="card">
+              <figure className="relative">
+                {val.photo}
+                <div className="chip chip--white px-3 py-2 flex items-center gap-1 absolute top-4 right-4">
+                  <span>{val.icon}</span>
+                  <span className="text-sm font-bold">{val.courses}</span>
+                </div>
+              </figure>
+              <div className="card-body">
+                <h3 className="card-title">{val.label}</h3>
+                <p>{val.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -65,5 +32,3 @@ const CourseByCategory = () => {
 
 CourseByCategory.displayName = "CourseByCategorySection";
 export default CourseByCategory;
-
-// lg:max-w-[1150px] lg:mx-auto lg:px-3 lg:flex-row lg:justify-center
