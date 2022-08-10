@@ -11,8 +11,8 @@ const Testimonial = ({
 }) => {
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center w-full md:w-[700px] p-0 md:p-12 gap-9 rounded-3xl shadow-2xl border-spacing-2 drop-shadow-md bg-neutral-100">
-        <div className="flex flex-col relative rounded-full w-44 h-44 ">
+      <div className=" flex flex-col md:flex-row items-center w-full md:w-[700px] p-0 md:p-12 gap-9 rounded-3xl shadow-2xl border-spacing-2 drop-shadow-md bg-neutral-100">
+        <div className="flex flex-col relative rounded-full w-44 h-44">
           <Image
             className=" avatar rounded-full "
             layout="fill"
@@ -20,7 +20,6 @@ const Testimonial = ({
             {...props}
           />
         </div>
-
         <div className="flex-col text-content-wrapper flex-1 flex gap-4 md:items-start items-center">
           {svg}
           <p className="text-lg font-normal text-neutral-600">{description}</p>
