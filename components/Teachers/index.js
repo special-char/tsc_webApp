@@ -9,7 +9,6 @@ const Teachers = ({
   title,
   description,
   img,
-  ...props
 }) => {
   return (
     <>
@@ -18,7 +17,7 @@ const Teachers = ({
         <figure className="relative h-80">
           <Image layout="fill" objectFit="cover" src={img} alt="" />{" "}
         </figure>{" "}
-        <div className="card__body p-8">
+        <div className="card__body p-8 ">
           <h3 className="card__title">{title}</h3>
           <p>{description}</p>
           <div className="w-48 flex gap-6">

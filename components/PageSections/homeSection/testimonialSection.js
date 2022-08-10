@@ -65,10 +65,10 @@ const TestimonialSection = () => {
   return (
     <>
       <div className="relative overflow-hidden p-4">
-        <h2 className="py-8 md:p-12 text-center justify-center">
+        <h2 className="md:py-8 md:p-12 text-center justify-center">
           What our students say about us
         </h2>
-        <div className="flex flex-col md:flex-row md:inline-flex gap-4 relative">
+        <div className="flex flex-col md:flex-row md:inline-flex gap-4 text-center justify-center md:text-left relative lg:ml-24">
           {testimonialDetails.map((obj) => {
             const name = `${obj.firstName} ${obj.lastName}`;
             return (
@@ -82,11 +82,16 @@ const TestimonialSection = () => {
             );
           })}
         </div>
-        <div className="flex flex-wrap lg:flex-row mx-auto md:justify-evenly items-center justify-center py-20">
+        <div className="flex flex-wrap text-center lg:flex-row mx-auto py-14 ">
           {numberDetails?.map((e, i) => (
-            <div key={i} className=" text-primary text-center justify-center ">
-              <h3 className="text-neutral-700">{e.numbers}</h3>
-              <p className="text-neutral-500">{e.title}</p>
+            <div
+              key={i}
+              className="flex-[50%] lg:flex-1 text-primary text-center justify-center"
+            >
+              <h2 className="text-neutral-700 md:text-4xl text-2xl mb-2 ">
+                {e.numbers}
+              </h2>
+              <p className="text-neutral-500 ">{e.title}</p>
             </div>
           ))}
         </div>
@@ -102,3 +107,4 @@ const TestimonialSection = () => {
 
 TestimonialSection.displayName = "Testimonial Section";
 export default TestimonialSection;
+// flex flex-wrap grid grid-cols-2 md:w-4/6 lg:gap-12 lg:flex-row mx-auto lg:justify-evenly items-center justify-center py-20">
