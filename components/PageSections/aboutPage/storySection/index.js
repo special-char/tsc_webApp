@@ -31,7 +31,7 @@ const StorySection = () => {
               </p>
             </div>
           </div>
-          <div className="right-section py-5 flex w-full h-full flex-col lg:flex-col lg:flex-1 lg:gap-16 ">
+          <div className="right-section md:w-4/5 mx-auto py-5 flex w-full h-full flex-col lg:flex-col lg:flex-1 lg:gap-16 ">
             <div className="text-content text-center md:w-4/5 lg:w-full mx-auto lg:text-left pt-10">
               <h2>The mission behind Education platform</h2>
               <p>

@@ -353,6 +353,10 @@ body {
       @apply text-lg font-bold text-neutral-700;
     }
   }
+
+  .course-card {
+    @apply px-2 py-8 rounded-3xl flex flex-col items-center justify-center text-center bg-neutral-100;
+  }
 }
 .section {
   transition: flex 1000ms 150ms ease-in-out;

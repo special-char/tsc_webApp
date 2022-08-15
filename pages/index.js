@@ -1,4 +1,6 @@
+import Layout from "@components/Layouts";
 import React from "react";
+
 const Home = () => {
   return (
     <>

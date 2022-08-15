@@ -1,18 +1,14 @@
-import Image from "next/image";
 import React from "react";
+import ResourcesSectionData from "@components/PageSections/resourcesSection/resourcesSectionData";
 import ResourcesImg1 from "@public/img/resourcesImg1.jpeg";
-import ResourcesSectionData from "./resourcesSectionData";
 import Design from "@public/icons/design.svg";
+import Image from "next/image";
 import Blog from "@components/BlogComponent";
 
-const ResourcesSection = () => {
+const BlogSection = () => {
   return (
-    <section className="h-auto w-screen">
+    <section className="h-auto w-full">
       <div className=" mx-auto lg:w-full px-6 py-20 max-w-[1210px]">
-        <div className="flex flex-col items-center lg:flex-row lg:justify-between">
-          <h2>Resources & News</h2>
-          <button className="btn btn--secondary btn--small">BROWSE BLOG</button>
-        </div>
         <div className="flex flex-col pt-10 lg:flex-row gap-6">
           <div className="card flex-1 relative">
             <figure className="!min-h-0">
@@ -49,5 +45,5 @@ const ResourcesSection = () => {
   );
 };
 
-ResourcesSection.displayName = "ResourcesSection";
-export default ResourcesSection;
+BlogSection.displayName = "BlogSection";
+export default BlogSection;

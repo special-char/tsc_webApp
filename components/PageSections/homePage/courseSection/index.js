@@ -7,7 +7,7 @@ const CourseSection = () => {
         <h2 className="mx-6 mb-10">Browse our popular courses</h2>
       </center>
       <div className="flex flex-col w-auto gap-6 lg:max-w-[1150px] lg:mx-auto lg:flex-row lg:justify-center">
-        <div className="card w-3/3 md:w-2/3">
+        <div className="card md:w-2/3">
           <figure>
             <img
               className="rounded-t-2xl"

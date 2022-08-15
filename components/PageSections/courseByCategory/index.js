@@ -3,12 +3,12 @@ import CourseCategoryData from "./courseCategoryData";
 
 const CourseByCategory = () => {
   return (
-    <section className="main h-screen w-full">
-      <div className="main-container container max-w-[1210px] mx-auto px-3">
+    <section className="main h-auto w-full">
+      <div className="main-container container max-w-[1210px] mx-auto px-3 py-20">
         <center>
           <h2>Browse our courses by category</h2>
         </center>
-        <div className="md:w-4/5 md:mx-auto lg:flex lg:gap-3">
+        <div className="flex flex-col gap-3 md:w-[552px] md:mx-auto lg:w-[90%] lg:flex-row lg:gap-6">
           {CourseCategoryData.map((val) => (
             <div className="card">
               <figure className="relative">
