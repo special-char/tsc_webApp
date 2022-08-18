@@ -1,5 +1,5 @@
 import React from "react";
-import WorkValuesCard from "@components/WorkValuesCard";
+import WorkValuesCard from "@components/workValuesCard";
 import InovetionSvg from "@public/icons/inovetion.svg";
 import RightSvg from "@public/icons/right.svg";
 import SearchSvg from "@public/icons/search.svg";

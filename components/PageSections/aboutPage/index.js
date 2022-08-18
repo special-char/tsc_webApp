@@ -1,4 +1,4 @@
-import CardGrid from "@components/PageSections/individualTeacher/CardGrid";
+import CardGrid from "@components/pageSections/individualTeacher/CardGrid";
 import React from "react";
 // import AllCoursesSection from "../coursesPage/AllCourses";
 import BlogCoursesSection from "../blogPage/BlogCourses";

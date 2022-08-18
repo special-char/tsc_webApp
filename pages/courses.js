@@ -1,4 +1,4 @@
-import CoursesPage from "@components/PageSections/coursesPage";
+import CoursesPage from "@components/pageSections/coursesPage";
 import React from "react";
 
 const Course = () => {

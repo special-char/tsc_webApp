@@ -2,12 +2,12 @@ import React from "react";
 import Design from "@public/icons/design.svg";
 import Image from "next/image";
 import CourseReview from "./courseReview";
-import Testimonial from "@components/Testimonial";
+import Testimonial from "@components/testimonial";
 import PlayVideo from "@public/icons/playVideo.svg";
-import ChipNavData from "@components/ChipNavigation/chipNavData";
-import ChipNavigation from "@components/ChipNavigation";
+import ChipNavData from "@components/chipNavigation/chipNavData";
+import ChipNavigation from "@components/chipNavigation";
 
-import GetCourseCard from "@components/GetCourseCard";
+import GetCourseCard from "@components/getCourseCard";
 
 const IndividualCourse = () => {
   return (

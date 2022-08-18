@@ -1,5 +1,5 @@
 import React from "react";
-import Offices from "@components/PageSections/aboutPage/Offices";
+import Offices from "@components/pageSections/aboutPage/Offices";
 import BrigeSvg from "@public/icons/brige.svg";
 
 const OfficesSection = () => {

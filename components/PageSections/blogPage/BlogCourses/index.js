@@ -1,5 +1,5 @@
 import React from "react";
-import BlogCourses from "@components/BlogCourses";
+import BlogCourses from "@components/blogCourses";
 import Link from "next/link";
 import Blog1Svg from "@public/icons/blog1.svg";
 import Blog2Svg from "@public/icons/blog2.svg";

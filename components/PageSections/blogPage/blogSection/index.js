@@ -3,8 +3,8 @@ import React from "react";
 import ResourcesImg1 from "@public/img/resourcesImg1.jpeg";
 import Design from "@public/icons/design.svg";
 import Image from "next/image";
-import Blog from "@components/BlogComponent";
-import ResourcesSectionData from "@components/PageSections/homeSection/resourcesSection/resourcesSectionData";
+import Blog from "@components/blogComponent";
+import ResourcesSectionData from "@components/pageSections/homePage/resourcesSection/resourcesSectionData";
 
 const BlogSection = () => {
   return (

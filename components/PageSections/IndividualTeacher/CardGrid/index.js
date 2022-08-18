@@ -1,4 +1,4 @@
-import AllCourses from "@components/Card";
+import AllCourses from "@components/card";
 import React from "react";
 
 const CardGrid = () => {

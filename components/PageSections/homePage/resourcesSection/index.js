@@ -3,7 +3,7 @@ import React from "react";
 import ResourcesImg1 from "@public/img/resourcesImg1.jpeg";
 
 import Design from "@public/icons/design.svg";
-import Blog from "@components/BlogComponent";
+import Blog from "@components/blogComponent";
 import ResourcesSectionData from "./resourcesSectionData";
 
 const ResourcesSection = () => {

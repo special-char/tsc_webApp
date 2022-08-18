@@ -1,5 +1,5 @@
 import React from "react";
-import Teachers from "@components/Teachers";
+import Teachers from "@components/teachers";
 import RightSvg from "@public/icons/right.svg";
 import SearchSvg from "@public/icons/search.svg";
 import GlobleSvg from "@public/icons/globle.svg";

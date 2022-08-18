@@ -1,4 +1,4 @@
-import CourseFeatures from "@components/PageSections/individualCourse/courseData";
+import CourseFeatures from "@components/pageSections/individualCourse/courseData";
 import React from "react";
 import { Field, Form, Formik } from "formik";
 

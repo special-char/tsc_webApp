@@ -1,8 +1,8 @@
-import Footer from "@components/Footer";
-import BlogBanner from "@components/PageSections/blogPage/blogBanner";
-import BlogCoursesSection from "@components/PageSections/blogPage/BlogCourses";
-import BlogSection from "@components/PageSections/blogPage/blogSection";
-import SubscribeToday from "@components/PageSections/blogPage/subscribeToday";
+import Footer from "@components/footer";
+import BlogBanner from "@components/pageSections/blogPage/blogBanner";
+import BlogCoursesSection from "@components/pageSections/blogPage/BlogCourses";
+import BlogSection from "@components/pageSections/blogPage/blogSection";
+import SubscribeToday from "@components/pageSections/blogPage/subscribeToday";
 import React from "react";
 
 const Blog = () => {

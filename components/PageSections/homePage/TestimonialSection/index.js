@@ -1,5 +1,5 @@
 import StarSvg from "@public/icons/star.svg";
-import Testimonial from "@components/Testimonial";
+import Testimonial from "@components/testimonial";
 
 const TestimonialSection = () => {
   const testimonialDetails = [
