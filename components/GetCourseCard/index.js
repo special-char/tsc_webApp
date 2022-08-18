@@ -5,7 +5,7 @@ import { Field, Form, Formik } from "formik";
 const GetCourseCard = () => {
   return (
     <div>
-      <div className="rate-card flex flex-col md:flex-row lg:flex-col px-0 py-9 gap-10 mb-10 ">
+      <div className="rate-card flex flex-col md:flex-row lg:flex-col px-0 py-9 gap-4 mb-10 ">
         <div className="get-course-content mb-10">
           <div className="text-xl text-neutral-700 font-bold">$ 199.00 USD</div>
           <p>

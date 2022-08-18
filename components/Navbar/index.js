@@ -1,57 +1,56 @@
-import React, { memo } from "react";
-import Link from "next/link";
-import styles from "./navbar.module.css";
+import React from "react";
+import "./navbar.module.css";
+
 const Navbar = () => {
-  const navLinks = [
-    {
-      id: 1,
-      name: "home",
-      link: "#",
-    },
-    {
-      id: 2,
-      name: "about",
-      link: "/about",
-    },
-    {
-      id: 3,
-      name: "courses",
-      link: "/courses",
-    },
-    {
-      id: 4,
-      name: "blog",
-      link: "/blog",
-    },
-    {
-      id: 5,
-      name: "contact",
-      link: "/contact",
-    },
-  ];
-  console.log("Navbar called");
   return (
-    <>
-      <section
-        className="navbar-wrapper shadow-dark relative top-0 left-0"
-        id="navbar"
-      >
-        <div className="navbar-container container py-7 mx-auto max-w-7xl">
-          <nav className="nav flex justify-between items-center">
-            <h2 className="m-0">The Special Character</h2>
-            <ul className="nav-links inline-flex gap-10 m-0 p-0">
-              {navLinks.map((link) => {
-                return (
-                  <li className="nav-item m-0 capitalize">
-                    <Link href={link.link}>{link.name}</Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
-        </div>
-      </section>
-    </>
+    <div className="nav-wrapper border-spacing-2 drop-shadow-2xl bg-neutral-100">
+      <div className="nav-content">
+        <nav className="flex items-center  justify-around">
+          <h2>LOGO</h2>
+          <ul className="flex gap-8 text-neutral-700">
+            <li>
+              <a href="#" className="text-neutral-700">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-neutral-700">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-neutral-700">
+                Courses
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-neutral-700">
+                Pages
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-neutral-700">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    // <div
+    //   id="example1"
+    //   style={{
+    //     border: "1px solid",
+    //     padding: "10px",
+    //     boxShadow: "5px 10px",
+    //   }}
+    // >
+    //   <p>
+    //     A div element with a shadow. The first value is the horizontal offset
+    //     and the second value is the vertical offset. The shadow color will be
+    //     inherited from the text color.
+    //   </p>
+    // </div>
   );
 };
 

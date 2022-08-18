@@ -16,7 +16,7 @@ const IndividualCourse = () => {
         <div className="w-full h-[500px] lg:h-[600px] absolute -z-10 bg-neutral-700"></div>
         <div className="h-[500px] w-[500px] rounded-full absolute -right-96 -top-96 md:-right-48 md:-top-80 lg:-right-36 lg:-top-60 -z-10 bg-secondary3"></div>
       </div>
-      <div className="wrapper max-w-[1210px] mx-auto">
+      <div className="wrapper max-w-7xl  mx-auto">
         <div className="wrapper-content h-auto flex flex-col lg:flex-row gap-4 px-4 md:px-6s w-full pt-20">
           <div className="left-section lg:max-w-[63%] h-auto">
             <div className="chip-container chip px-0">
@@ -133,7 +133,7 @@ const IndividualCourse = () => {
               </div>
             </div>
           </div>
-          <div className="right-section max-w-[396px] hidden lg:block">
+          <div className="right-section max-w-sm mx-auto hidden lg:block">
             <div className="rate-card sticky top-3 bg-neutral-100 rounded-2xl flex flex-col px-6 py-9 gap-0 mb-10">
               <GetCourseCard />
             </div>
