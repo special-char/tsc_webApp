@@ -1,5 +1,5 @@
 import React from "react";
-import AllCoursesSection from "./AllCourses";
+import AllCoursesSection from "./allCourses";
 import CourseBanner from "./courseBanner";
 import FeaturedCourse from "./featuredCourses";
 
