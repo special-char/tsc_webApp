@@ -3,8 +3,8 @@ import Image from "next/image";
 const BannerSection = () => {
   return (
     <>
-      <section className="main h-auto w-screen relative overflow-hidden py-16 lg:py-32">
-        <div className="container flex flex-wrap gap-10 max-w-[1210px] mx-auto px-4 h-full">
+      <section className="main flex items-center h-auto relative overflow-hidden py-16 lg:py-32">
+        <div className="container flex flex-wrap items-center justify-center gap-16 max-w-[1210px] mx-auto px-4">
           <div className="text-content flex-1 flex flex-col justify-center">
             <h1 className="font-semibold">
               Grow your skills, define your future
@@ -18,9 +18,8 @@ const BannerSection = () => {
               <button className="btn btn--secondary">LEARN MORE</button>
             </div>
           </div>
-          <div className="relative basis-[500px] aspect-h-image h-auto">
+          <div className="relative basis-[500px] aspect-h-image h-auto rounded-3xl overflow-hidden">
             <Image
-              className="rounded-3xl"
               src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607e15d7c0c9f4037bde6f44_image-home-hero-education-x-template.jpg"
               layout={"fill"}
               objectFit={"cover"}
