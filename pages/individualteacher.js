@@ -1,5 +1,5 @@
-import CardGrid from "@components/PageSections/IndividualTeacher/CardGrid";
-import TeacherIntro from "@components/PageSections/IndividualTeacher/teacherIntro";
+import CardGrid from "@components/PageSections/individualTeacher/CardGrid";
+import TeacherIntro from "@components/PageSections/individualTeacher/teacherIntro";
 
 import React from "react";
 

@@ -12,9 +12,23 @@ const TeachersSection = () => {
       title: "John Carter",
       description:
         "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
-      svg: <RightSvg />,
-      svg2: <RightSvg />,
-      svg3: <RightSvg />,
+      svgData: [
+        {
+          id: 1,
+          svg: <RightSvg className="w-10" />,
+          svgLink: "twitter.com",
+        },
+        {
+          id: 2,
+          svg: <SearchSvg className="w-10" />,
+          svgLink: "/linkedin.com",
+        },
+        {
+          id: 3,
+          svg: <GlobleSvg className="w-10" />,
+          svgLink: "/facebook.com",
+        },
+      ],
       img: "https://res.cloudinary.com/pruthvish/image/upload/v1659699458/607f20a1af14fe2620952c2a_image-6-profile-picture-teacher-education-x-template-p-500_n2tpzc.webp",
     },
     {
@@ -22,9 +36,23 @@ const TeachersSection = () => {
       title: "Sophie Moore",
       description:
         "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
-      svg: <GlobleSvg />,
-      svg2: <GlobleSvg />,
-      svg3: <GlobleSvg />,
+      svgData: [
+        {
+          id: 1,
+          svg: <RightSvg className="w-10" />,
+          svgLink: "/twitter.com",
+        },
+        {
+          id: 2,
+          svg: <SearchSvg className="w-10" />,
+          svgLink: "/linkedin.",
+        },
+        {
+          id: 3,
+          svg: <GlobleSvg className="w-10" />,
+          svgLink: "/facebook.com",
+        },
+      ],
       img: "https://res.cloudinary.com/pruthvish/image/upload/v1659699458/607f20a1af14fe2620952c2a_image-6-profile-picture-teacher-education-x-template-p-500_n2tpzc.webp",
     },
     {
@@ -32,9 +60,23 @@ const TeachersSection = () => {
       title: "Matt Cannon",
       description:
         "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
-      svg: <SearchSvg />,
-      svg2: <GlobleSvg />,
-      svg3: <GlobleSvg />,
+      svgData: [
+        {
+          id: 1,
+          svg: <RightSvg className="w-10" />,
+          svgLink: "/twitter.com",
+        },
+        {
+          id: 2,
+          svg: <SearchSvg className="w-10" />,
+          svgLink: "/linkedin.",
+        },
+        {
+          id: 3,
+          svg: <GlobleSvg className="w-10" />,
+          svgLink: "/facebook.com",
+        },
+      ],
       img: "https://res.cloudinary.com/pruthvish/image/upload/v1659699458/607f20a1af14fe2620952c2a_image-6-profile-picture-teacher-education-x-template-p-500_n2tpzc.webp",
     },
     {
@@ -42,9 +84,23 @@ const TeachersSection = () => {
       title: "Kathie Corl",
       description:
         "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
-      svg: <InovetionSvg />,
-      svg2: <GlobleSvg />,
-      svg3: <GlobleSvg />,
+      svgData: [
+        {
+          id: 1,
+          svg: <RightSvg className="w-10" />,
+          svgLink: "/twitter.com",
+        },
+        {
+          id: 2,
+          svg: <SearchSvg className="w-10" />,
+          svgLink: "/linkedin.",
+        },
+        {
+          id: 3,
+          svg: <GlobleSvg className="w-10" />,
+          svgLink: "/facebook.com",
+        },
+      ],
       img: "https://res.cloudinary.com/pruthvish/image/upload/v1659699458/607f20a1af14fe2620952c2a_image-6-profile-picture-teacher-education-x-template-p-500_n2tpzc.webp",
     },
     {
@@ -52,19 +108,23 @@ const TeachersSection = () => {
       title: "Mike Warren",
       description:
         "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
-      svg: <InovetionSvg />,
-      svg2: <GlobleSvg />,
-      svg3: <GlobleSvg />,
-      img: "https://res.cloudinary.com/pruthvish/image/upload/v1659699458/607f20a1af14fe2620952c2a_image-6-profile-picture-teacher-education-x-template-p-500_n2tpzc.webp",
-    },
-    {
-      id: 6,
-      title: "Andy Smith",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
-      svg: <InovetionSvg />,
-      svg2: <GlobleSvg />,
-      svg3: <GlobleSvg />,
+      svgData: [
+        {
+          id: 1,
+          svg: <RightSvg className="w-10" />,
+          svgLink: "/twitter.com",
+        },
+        {
+          id: 2,
+          svg: <SearchSvg className="w-10" />,
+          svgLink: "/linkedin.",
+        },
+        {
+          id: 3,
+          svg: <GlobleSvg className="w-10" />,
+          svgLink: "/facebook.com",
+        },
+      ],
       img: "https://res.cloudinary.com/pruthvish/image/upload/v1659699458/607f20a1af14fe2620952c2a_image-6-profile-picture-teacher-education-x-template-p-500_n2tpzc.webp",
     },
   ];
@@ -88,18 +148,7 @@ const TeachersSection = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 text-left justify-center gap-9 md:p-8 w-full px-4">
             {TeachersDetails.map((obj) => {
-              return (
-                <Teachers
-                  description={obj.description}
-                  title={obj.title}
-                  svg={obj.svg}
-                  svg2={obj.svg}
-                  svg3={obj.svg}
-                  img={obj.img}
-                  id={obj.id}
-                  key={obj.id}
-                />
-              );
+              return <Teachers {...obj} key={obj.id} />;
             })}
           </div>
         </div>

@@ -1,7 +1,7 @@
 import StarSvg from "@public/icons/star.svg";
 import Testimonial from "@components/Testimonial";
 
-const HomeTestimonialSection = () => {
+const TestimonialSection = () => {
   const testimonialDetails = [
     {
       id: 1,
@@ -105,5 +105,5 @@ const HomeTestimonialSection = () => {
   );
 };
 
-HomeTestimonialSection.displayName = "HomeTestimonialSection";
-export default HomeTestimonialSection;
+TestimonialSection.displayName = "Testimonial Section";
+export default TestimonialSection;

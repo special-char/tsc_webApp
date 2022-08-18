@@ -1,5 +1,5 @@
 import React from "react";
-import AboutPage from "@components/aboutPage";
+import WorkValuesCard from "@components/WorkValuesCard";
 import InovetionSvg from "@public/icons/inovetion.svg";
 import RightSvg from "@public/icons/right.svg";
 import SearchSvg from "@public/icons/search.svg";
@@ -56,7 +56,7 @@ const WorkValues = () => {
           <div className="grid md:grid-cols-2 text-left justify-center gap-9 md:p-8 ">
             {AboutDetails.map((obj) => {
               return (
-                <AboutPage
+                <WorkValuesCard
                   description={obj.description}
                   title={obj.title}
                   svg={obj.svg}

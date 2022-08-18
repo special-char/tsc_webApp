@@ -1,12 +1,10 @@
 import React from "react";
-// import { ReactComponentElement as FacebookSvg } from "../public/assets/images/svgs/icons8-facebook.svg";
-import "../styles/Footer.module.css";
 import MailSvg from "@public/icons/mail.svg";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <section className="Wrapper bg-neutral-700 p-4">
+    <footer className="wrapper bg-neutral-700 p-4">
       <div className="flex flex-col border-b-2 md:justify-between md:w-4/5 md:mx-auto border-b-slate-400 md:flex-row">
         <h1 className="text-neutral-100">TSC</h1>
         <p className="text-neutral-100 md:max-w-[468px]">
@@ -123,7 +121,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

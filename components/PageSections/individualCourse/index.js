@@ -4,8 +4,8 @@ import Image from "next/image";
 import CourseReview from "./courseReview";
 import Testimonial from "@components/Testimonial";
 import PlayVideo from "@public/icons/playVideo.svg";
-import ChipNavData from "@components/chipNavigation/chipNavData";
-import ChipNavigation from "@components/chipNavigation";
+import ChipNavData from "@components/ChipNavigation/chipNavData";
+import ChipNavigation from "@components/ChipNavigation";
 
 import GetCourseCard from "@components/GetCourseCard";
 

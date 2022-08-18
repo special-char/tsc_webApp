@@ -1,6 +1,6 @@
 import React from "react";
 
-const Offices = ({ svg, title, number, address, email }) => {
+const Office = ({ svg, title, number, address, email }) => {
   return (
     <>
       <div className="card  md:w-[40%]">
@@ -24,4 +24,4 @@ const Offices = ({ svg, title, number, address, email }) => {
   );
 };
 
-export default Offices;
+export default Office;

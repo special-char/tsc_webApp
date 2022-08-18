@@ -1,5 +1,5 @@
 import React from "react";
-import Testi from "@components/PageSections/IndividualTeacher";
+import Testi from "@components/PageSections/individualTeacher";
 
 const TeacherIntro = () => {
   const testiDetails = [
@@ -10,9 +10,6 @@ const TeacherIntro = () => {
       description:
         "Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus vestibulum lorem sed risus ultricies.",
       img: "https://placeimg.com/192/192/people",
-      // svg1:
-      // svg2:
-      // svg3:
     },
   ];
 
