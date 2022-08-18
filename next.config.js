@@ -7,6 +7,7 @@ const nextConfig = {
       "images.unsplash.com",
       "res.cloudinary.com",
       "placeimg.com",
+      "assets.website-files.com",
     ],
     formats: ["image/avif", "image/webp"],
   },

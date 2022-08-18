@@ -1,13 +1,10 @@
-import AboutPage from "@components/PageSections/aboutSection";
-import TestimonialSection from "@components/PageSections/homeSection/testimonialSection";
-import Testimonial from "@components/Testimonial";
+import Layout from "@components/layouts";
 import React from "react";
 
-export default function Home() {
-  return (
-    <>
-      <AboutPage />
-      {/* <TestimonialSection /> */}
-    </>
-  );
-}
+const Home = () => {
+  return <></>;
+};
+Home.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
+export default Home;
