@@ -121,7 +121,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
