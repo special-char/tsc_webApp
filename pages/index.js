@@ -1,27 +1,40 @@
-import Layout from "@components/Layouts";
+// import Layout from "@components/Layouts";
 import Image from "next/image";
 import React, { useState } from "react";
 import Training from "@public/icons/training.svg";
 import Larrow from "@public/icons/larrow.svg";
 import Rarrow from "@public/icons/rArrow.svg";
+import classNames from "classnames";
 const Home = () => {
-  const [exploreTraining, setexploreTraining] = useState(false);
-  const [exploreDevelopment, setexploreDevelopment] = useState(false);
+  const [exploreTraining, setExploreTraining] = useState(false);
+  const [exploreDevelopment, setExploreDevelopment] = useState(false);
+  const alignCenter = () => {
+    console.log("alignCenter");
+    setExploreDevelopment(false);
+    setExploreTraining(false);
+  };
+  console.log("exploreTraining", exploreTraining);
+  console.log("exploreDevelopment", exploreDevelopment);
+
   return (
     <>
-      <div className="landing-page-wrapper h-screen flex flex-wrap">
+      <section className="landing-page-wrapper h-screen flex flex-wrap">
+        <div className="brand-logo flex justify-center items-center w-full absolute z-50 ">
+          <Training onClick={() => alignCenter()} className="w-28" />
+        </div>
+        {/*training section*/}
         <div
-          className={`custom-transition flex-1 ${
-            exploreTraining
-              ? "training-extended"
-              : "training-section custom-transition"
-          }`}
+          className={classNames("custom-transition flex-1", {
+            "flex-[10]": exploreTraining,
+            "hover:flex-[1.5]": !exploreTraining,
+          })}
         >
           <div className="relative rounded-3xl h-full">
             <Image
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
               layout={"fill"}
               objectFit={"cover"}
+              priority
             />
             <div
               className={`training-section-background custom-transition bg-neutral-400 w-full h-full z-20 absolute ${
@@ -29,10 +42,22 @@ const Home = () => {
               }`}
             ></div>
 
-            <div className="flex w-full h-full flex-1 absolute z-30">
+            <div
+              className={`${
+                exploreDevelopment
+                  ? "opacity-0"
+                  : "opacity-100 custom-transition duration-500"
+              } transition-all ease-linear duration-75 flex w-full h-full flex-1 absolute z-30`}
+            >
               <Training className="w-1/2 mx-auto" />
             </div>
-            <div className="text-content-wrapper flex items-center justify-center w-full h-full absolute z-30">
+            <div
+              className={`${
+                exploreDevelopment
+                  ? "opacity-0"
+                  : "opacity-100 custom-transition duration-500"
+              } text-content-wrapper flex items-center justify-center w-full h-full absolute z-30`}
+            >
               <div className="text-content w-2/3 flex flex-col basis-[500px]">
                 <h3 className="font-light">CRUISER SKATEBOARD</h3>
                 <h1>MMM AHH ..PUSH IT!</h1>
@@ -41,35 +66,40 @@ const Home = () => {
                   natus maxime hic. Nisi, in reprehenderit?
                 </p>
                 <button
-                  onClick={() => setexploreTraining(true)}
+                  onClick={() => setExploreTraining(true)}
                   className="btn btn--primary w-1/2"
                 >
-                  Explore More
+                  Explore Training
                 </button>
               </div>
             </div>
             <div
-              onClick={() => setexploreTraining(false)}
+              onClick={() => setExploreDevelopment(false)}
               className={`${
                 exploreTraining ? "opacity-0" : "opacity-100"
               } custom-transition float-right px-2 flex justify-end absolute w-full h-full items-center`}
             >
-              <Larrow className="w-4 z-50" />
+              <Larrow
+                className={classNames("w-4 z-50 cursor-pointer", {
+                  "custom-transition transform -rotate-180": exploreDevelopment,
+                })}
+              />
             </div>
           </div>
         </div>
+        {/*development section*/}
         <div
-          className={`custom-transition flex-1 ${
-            exploreDevelopment
-              ? "development-extended"
-              : "training-section custom-transition"
-          }`}
+          className={classNames("custom-transition flex-1 ", {
+            "flex-[10]": exploreDevelopment,
+            "hover:flex-[1.5]": !exploreDevelopment,
+          })}
         >
           <div className="relative rounded-3xl h-full">
             <Image
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
               layout={"fill"}
               objectFit={"cover"}
+              priority
             />
             <div
               className={`training-section-background custom-transition bg-primary w-full h-full z-20 absolute ${
@@ -79,14 +109,18 @@ const Home = () => {
 
             <div
               className={`${
-                exploreTraining ? "opacity-0" : "opacity-100"
+                exploreTraining
+                  ? "opacity-0"
+                  : "opacity-100 custom-transition duration-500"
               } transition-all ease-linear duration-75 flex w-full h-full flex-1 absolute z-30`}
             >
               <Training className="w-1/2 mx-auto" />
             </div>
             <div
               className={`${
-                exploreTraining ? "opacity-0" : "opacity-100"
+                exploreTraining
+                  ? "opacity-0"
+                  : "opacity-100 custom-transition duration-500"
               } transition-all ease-linear duration-75 text-content-wrapper flex items-center justify-center w-full h-full absolute z-30`}
             >
               <div className="text-content w-2/3 flex flex-col basis-[500px]">
@@ -97,36 +131,31 @@ const Home = () => {
                   natus maxime hic. Nisi, in reprehenderit?
                 </p>
                 <button
-                  onClick={() => setexploreDevelopment(true)}
+                  onClick={() => setExploreDevelopment(true)}
                   className="btn btn--primary w-1/2"
                 >
-                  Explore More
+                  Explore development
                 </button>
               </div>
             </div>
             <div
-              // onClick={() => setexploreDevelopment(false)}
-              className={` custom-transition px-2 flex justify-start absolute w-full h-full items-center`}
+              onClick={() => setExploreTraining(false)}
+              className=" px-2 flex justify-start absolute w-full h-full items-center cursor-pointer"
             >
-              <Rarrow className="w-4 z-50" />
+              <Rarrow
+                className={classNames("w-4 z-50 cursor-pointer", {
+                  "custom-transition transform rotate-180": exploreTraining,
+                  "opacity-0 custom-transition": exploreDevelopment,
+                })}
+              />
             </div>
           </div>
         </div>
-        {/* <div className="development-section custom-transition flex-1">
-          <div className="relative rounded-3xl h-full">
-            <Image
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-              layout={"fill"}
-              objectFit={"cover"}
-            />
-            <div className="bg-neutral-700 w-full h-full absolute"></div>
-          </div>
-        </div> */}
-      </div>
+      </section>
     </>
   );
 };
-Home.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};
+// Home.getLayout = function getLayout(page) {
+//   return <Layout>{page}</Layout>;
+// };
 export default Home;
