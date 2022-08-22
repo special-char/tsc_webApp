@@ -329,6 +329,10 @@ body {
     }
   }
 
+  .course-card {
+    @apply w-full px-6 py-10 rounded-3xl flex flex-col items-center justify-center text-center bg-neutral-100;
+  }
+
   .nav-link {
     transition: color 350ms ease;
     color: theme("colors.neutral.700");
