@@ -35,4 +35,5 @@ const BannerSection = () => {
   );
 };
 
+BannerSection.displayName = "BannerSection";
 export default BannerSection;
