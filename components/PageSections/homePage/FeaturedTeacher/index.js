@@ -4,7 +4,7 @@ import Image from "next/image";
 const FeaturedTeacher = () => {
   return (
     <section className="wrapper flex py-24  md:py-44 h-auto">
-      <div className="flex w-full lg:max-w-[1210px] mx-auto md:w-4/5 items-center justify-center flex-wrap px-4 gap-4 md:gap-12">
+      <div className="flex w-full lg:max-w-7xl mx-auto md:w-4/5 items-center justify-center flex-wrap px-4 gap-4 md:gap-12">
         <div className=" flex flex-col md:text-center md:mx-auto lg:text-left lg:flex-1 text-center justify-center">
           <h2>Courses taught by industry leaders around the world</h2>
           <p>

@@ -1,15 +1,18 @@
-// import Layout from "@components/Layouts";
+import Layout from "@components/Layouts";
 import Image from "next/image";
 import React, { useState } from "react";
-import Training from "@public/icons/training.svg";
-import Larrow from "@public/icons/larrow.svg";
+import Training from "@public/icons/Artboard1.svg";
+// import Training from "@public/icons/Artboard1.svg";
+import Larrow from "@public/icons/lArrow.svg";
 import Rarrow from "@public/icons/rArrow.svg";
 import classNames from "classnames";
+import HomePage from "@components/pageSections/homePage";
+import Navbar from "@components/navbar";
+
 const Home = () => {
   const [exploreTraining, setExploreTraining] = useState(false);
   const [exploreDevelopment, setExploreDevelopment] = useState(false);
   const alignCenter = () => {
-    console.log("alignCenter");
     setExploreDevelopment(false);
     setExploreTraining(false);
   };
@@ -22,7 +25,7 @@ const Home = () => {
         <div className="brand-logo flex justify-center items-center w-full absolute z-50 ">
           <Training onClick={() => alignCenter()} className="w-28" />
         </div>
-        {/*training section*/}
+        {/* training section */}
         <div
           className={classNames("custom-transition flex-1", {
             "flex-[10]": exploreTraining,
@@ -87,7 +90,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/*development section*/}
+        {/* development section */}
         <div
           className={classNames("custom-transition flex-1 ", {
             "flex-[10]": exploreDevelopment,
@@ -152,10 +155,12 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* <HomePage /> */}
     </>
   );
 };
-// Home.getLayout = function getLayout(page) {
-//   return <Layout>{page}</Layout>;
-// };
+Home.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
+Home.displayName = "Home";
 export default Home;

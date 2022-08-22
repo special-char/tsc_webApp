@@ -1,4 +1,5 @@
 import Footer from "@components/footer";
+import Layout from "@components/Layouts";
 import BannerAbout from "@components/pageSections/aboutPage/bannerSection";
 import HistorySection from "@components/pageSections/aboutPage/historySection";
 import OfficesSection from "@components/pageSections/aboutPage/officesSection";
@@ -16,11 +17,14 @@ const AboutPage = () => {
       <StorySection />
       <WorkValues />
       <TeachersSection />
-      <HistorySection />
+      {/* <HistorySection /> */}
       <OfficesSection />
       <Footer />
     </>
   );
+};
+AboutPage.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
 };
 
 export default AboutPage;

@@ -24,7 +24,6 @@ const EducationCourses = () => {
       designation: "Developer",
     },
   ];
-  console.log("arr:", arr);
   return (
     <>
       <section className="wrapper bg-primary w-full h-auto overflow-hidden relative px-4 py-20 -z-20">

@@ -1,4 +1,5 @@
 import Footer from "@components/footer";
+import Layout from "@components/Layouts";
 import BlogBanner from "@components/pageSections/blogPage/blogBanner";
 import BlogCoursesSection from "@components/pageSections/blogPage/blogCourses";
 import BlogSection from "@components/pageSections/blogPage/blogSection";
@@ -16,4 +17,7 @@ const Blog = () => {
   );
 };
 
+Blog.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 export default Blog;

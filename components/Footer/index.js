@@ -2,6 +2,18 @@ import React from "react";
 import MailSvg from "@public/icons/mail.svg";
 import Link from "next/link";
 
+const UtilityLink = [
+  {
+    link: "#",
+    title: "Start Here",
+  },
+  {
+    link: "#",
+    title: "Start Guide",
+  },
+  { link: "#", title: "Home" },
+];
+
 const Footer = () => {
   return (
     <footer className="wrapper bg-neutral-700 p-4">
@@ -39,80 +51,57 @@ const Footer = () => {
         <div className=" mx-auto md:flex-col justify-evenly">
           <h4 className="w-full text-secondary1 py-8 pl-10">Pages</h4>
           <div className=" w-full flex md:flex md:gap-4 justify-between">
-            <ul className="  text-neutral-400">
-              <li>
-                <Link href="#">Home</Link>
-              </li>
-              <li>
-                <Link href="#">About</Link>
-              </li>
-              <li>
-                <Link href="#">Courses</Link>
-              </li>
-              <li>
-                <Link href="#">Individual Course</Link>
-              </li>
-              <li>
-                <Link href="#">Blog</Link>
-              </li>
-              <li>
-                <Link href="#">Blog Post</Link>
-              </li>
+            <ul className="text-neutral-400">
+              {UtilityLink.map((val) => {
+                return (
+                  <li>
+                    <Link href={val.link}>
+                      <a>{val.title}</a>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
+
             <ul className="links text-neutral-400">
-              <li>
-                <Link href="#">Events</Link>
-              </li>
-              <li>
-                <Link href="#">Individual Event</Link>
-              </li>
-              <li>
-                <Link href="#">Teachers</Link>
-              </li>
-              <li>
-                <Link href="#">Individual Techers</Link>
-              </li>
-              <li>
-                <Link href="#">Contact</Link>Contact
-              </li>
+              {UtilityLink.map((val) => {
+                return (
+                  <li>
+                    <Link href={val.link}>
+                      <a>{val.title}</a>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
         <div className="md:flex-col pl-4">
           <h4 className="text-secondary1 py-8 pl-6">Utility Pages</h4>
           <ul className="links text-neutral-400 ">
-            <li>
-              <Link href="#">Start Here</Link>
-            </li>
-            <li>
-              <Link href="#">Start Guide</Link>
-            </li>
-            <li>
-              <Link href="#">404 Not Found</Link>
-            </li>
-            <li>
-              <Link href="#">Password Protected</Link>
-            </li>
-            <li>
-              <Link href="#">LIcenses</Link>
-            </li>
-            <li>
-              <Link href="#">Changelog</Link>
-            </li>
+            {UtilityLink.map((val) => {
+              return (
+                <li>
+                  <Link href={val.link}>
+                    <a>{val.title}</a>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
       <div className="flex items-center justify-center">
         <div>{/* <FacebookSvg /> */}</div>
         <div className="text-lg text-secondary1">
-          Copyright © TSC | Designed by{" "}
+          Copyright © TSC | Designed by
           <Link
             className="underline"
             href="https://pruthvish-portfolio.vercel.app/"
           >
             Pruthvish Modi
-          </Link>{" "}
-          Powered by{" "}
+          </Link>
+          Powered by
           <Link
             className="underline"
             href="https://pruthvish-portfolio.vercel.app/"
@@ -125,4 +114,5 @@ const Footer = () => {
   );
 };
 
+Footer.DisplayName = "Footer";
 export default Footer;

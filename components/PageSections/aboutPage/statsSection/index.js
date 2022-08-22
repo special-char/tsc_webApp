@@ -20,7 +20,7 @@ const Achievements = () => {
   ];
   return (
     <div className="w-screen py-24 md:py-36 lg:py-44">
-      <div className="container mx-auto max-w-[1210px] flex flex-col items-center">
+      <div className="container mx-auto max-w-7xl flex flex-col items-center">
         <h2 className="lg:min-w-1/2 text-center">
           A few numbers that we <br /> are proud of
         </h2>

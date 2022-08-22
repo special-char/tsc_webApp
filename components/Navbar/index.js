@@ -4,7 +4,6 @@ const Navbar = () => {
   useEffect(() => {
     const windowWidth = window.innerWidth;
     setWidth(windowWidth);
-    console.log("Navbar called on:", width);
   });
   const [width, setWidth] = useState(0);
   const navLinks = [
@@ -35,15 +34,13 @@ const Navbar = () => {
     },
   ];
   const [hamOpen, setHamOpen] = useState(false);
-  console.log("hamOpen", hamOpen);
-  // const [width, setWidth] = us÷eState(windowWidth);
   return (
     <>
       <section
         className="navbar-wrapper shadow-dark overflow-hidden"
         id="navbar"
       >
-        <div className="navbar-container container mx-auto flex justify-between  py-7 px- max-w-[1210px]">
+        <div className="navbar-container container mx-auto flex justify-between  py-7 px- max-w-7xl">
           <h2 className="m-0">The Special Character</h2>
           <nav className={`nav lg:flex lg:justify-between lg:items-center`}>
             <ul

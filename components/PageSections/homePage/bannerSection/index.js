@@ -4,7 +4,7 @@ const BannerSection = () => {
   return (
     <>
       <section className="main flex items-center h-auto relative overflow-hidden py-16 lg:py-32">
-        <div className="container flex flex-wrap items-center justify-center gap-16 max-w-[1210px] mx-auto px-4">
+        <div className="container flex flex-wrap items-center justify-center gap-16 max-w-7xl mx-auto px-4">
           <div className="text-content flex-1 flex flex-col justify-center">
             <h1 className="font-semibold">
               Grow your skills, define your future
