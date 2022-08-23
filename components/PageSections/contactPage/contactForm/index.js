@@ -48,7 +48,7 @@ const ContactForm = () => {
                         <label className="">Name</label>
                         <Field
                           id="name"
-                          className="bg-secondary1 w-full focus:outline-neutral-500 rounded-full py-4 px-3"
+                          className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-3"
                           name="name"
                           type="text"
                         />
@@ -60,7 +60,7 @@ const ContactForm = () => {
                         <label className="">Email Address</label>
                         <Field
                           id="email"
-                          className="bg-secondary1 w-full focus:outline-neutral-500 rounded-full py-4 px-3"
+                          className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-3"
                           name="email"
                           type="email"
                         />
@@ -74,7 +74,7 @@ const ContactForm = () => {
                         <label className="">Phone Number</label>
                         <Field
                           id="phone"
-                          className="bg-secondary1 w-full focus:outline-neutral-500 rounded-full py-4 px-3"
+                          className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-3"
                           name="phone"
                           type="tel"
                         />
@@ -86,7 +86,7 @@ const ContactForm = () => {
                         <label className="">Subject</label>
                         <Field
                           id="text"
-                          className="bg-secondary1 w-full rounded-full focus:outline-neutral-500 py-4 px-3"
+                          className="bg-neutral-200 w-full rounded-full focus:outline-neutral-500 py-4 px-3"
                           name="subject"
                           type="text"
                         />
@@ -98,7 +98,7 @@ const ContactForm = () => {
                     <label className="">Message</label>
                     <Field
                       id="textarea"
-                      className="bg-secondary1 w-full focus:outline-neutral-500 rounded-2xl py-4 px-3"
+                      className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-2xl py-4 px-3"
                       name="message"
                       as="textarea"
                       rows="5"
