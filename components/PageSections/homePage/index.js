@@ -1,19 +1,26 @@
+import Layout from "@components/Layouts";
 import React from "react";
 import AboutEducation from "./aboutEducation";
+// import BannerSection from "./bannerSection";
 import CourseByCategory from "./courseByCategory";
 import EducationCourses from "./educationCourses";
-import FeaturedTeacher from "./featuredTeacher";
-import WhylearnSection from "./Perks/perksData";
-import PopularCourses from "./popularCourses";
-
+import FeaturedTeacher from "./FeaturedTeacher";
+import PerksSection from "./perksSection";
 import ResourcesSection from "./resourcesSection";
-import TestimonialSection from "./testimonialSection";
+import TestimonialSection from "./TestimonialSection";
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
 
+const BannerSection = dynamic(() => import("./bannerSection"), {
+  suspense: true,
+});
 const HomePage = () => {
   return (
     <>
-      <PopularCourses />
-      <WhylearnSection />
+      <Suspense fallback={`Loading...`}>
+        <BannerSection />
+      </Suspense>
+      <PerksSection />
       <FeaturedTeacher />
       <EducationCourses />
       <AboutEducation />
@@ -24,4 +31,7 @@ const HomePage = () => {
   );
 };
 
+HomePage.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 export default HomePage;

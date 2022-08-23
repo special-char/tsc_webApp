@@ -1,58 +1,82 @@
-import React from "react";
-import "./navbar.module.css";
-
+import React, { memo, useEffect, useState } from "react";
+import Link from "next/link";
 const Navbar = () => {
+  useEffect(() => {
+    const windowWidth = window.innerWidth;
+    setWidth(windowWidth);
+  });
+  const [width, setWidth] = useState(0);
+  const navLinks = [
+    {
+      id: 1,
+      name: "home",
+      link: "/",
+    },
+    {
+      id: 2,
+      name: "about",
+      link: "/about",
+    },
+    {
+      id: 3,
+      name: "courses",
+      link: "/courses",
+    },
+    {
+      id: 4,
+      name: "blog",
+      link: "/blog",
+    },
+    {
+      id: 5,
+      name: "contact",
+      link: "/contact",
+    },
+  ];
+  const [hamOpen, setHamOpen] = useState(false);
   return (
-    <div className="nav-wrapper border-spacing-2 drop-shadow-2xl bg-neutral-100">
-      <div className="nav-content">
-        <nav className="flex items-center  justify-around">
-          <h2>LOGO</h2>
-          <ul className="flex gap-8 text-neutral-700">
-            <li>
-              <a href="#" className="text-neutral-700">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-neutral-700">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-neutral-700">
-                Courses
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-neutral-700">
-                Pages
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-neutral-700">
-                Blog
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    // <div
-    //   id="example1"
-    //   style={{
-    //     border: "1px solid",
-    //     padding: "10px",
-    //     boxShadow: "5px 10px",
-    //   }}
-    // >
-    //   <p>
-    //     A div element with a shadow. The first value is the horizontal offset
-    //     and the second value is the vertical offset. The shadow color will be
-    //     inherited from the text color.
-    //   </p>
-    // </div>
+    <>
+      <section
+        className="navbar-wrapper shadow-dark overflow-hidden"
+        id="navbar"
+      >
+        <div className="navbar-container container mx-auto flex justify-between  py-7 px- max-w-7xl">
+          <h2 className="m-0">The Special Character</h2>
+          <nav className={`nav lg:flex lg:justify-between lg:items-center`}>
+            <ul
+              className={` ${
+                width < 1024 ? "nav-link-mobile" : "nav-link"
+              }  gap-10 m-0 p-0 lg:inline-flex ${
+                hamOpen ? "left-0" : "-left-full"
+              }`}
+            >
+              {navLinks.map((link) => {
+                return (
+                  <li key={link.id} className="nav-item m-0 capitalize">
+                    <Link href={link.link}>
+                      <a className="nav-link text-neutral-700 font-bold">
+                        {link.name}
+                      </a>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+          <div
+            onClick={() => {
+              setHamOpen((val) => !val);
+              console.log("hamOpen", hamOpen);
+            }}
+            className={`menu-btn lg:hidden ${hamOpen && "open"}`}
+          >
+            <div className="menu-btn__burger"></div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
 Navbar.displayName = "Navbar";
-export default Navbar;
+export default memo(Navbar);

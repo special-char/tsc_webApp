@@ -1,7 +1,33 @@
 import React from "react";
-import CompanyHistoryData from "./companyHistoryData";
 
 const HistorySection = () => {
+  const CompanyHistoryData = [
+    {
+      year: "2023",
+      title: "Launched course#500",
+      discription:
+        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id dolor .",
+    },
+    {
+      year: "2022",
+      title: "Reached 100 team members",
+      discription:
+        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id dolor .",
+    },
+    {
+      year: "2021",
+      title: "Launched first course",
+      discription:
+        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id dolor .",
+    },
+    {
+      year: "2020",
+      title: "Education founded",
+      discription:
+        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id dolor .",
+    },
+  ];
+
   return (
     <section className="py-44">
       <div className="flex flex-col max-w-7xl gap-4 md:flex-row w-full container mx-auto px-3">
