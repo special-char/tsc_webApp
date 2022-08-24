@@ -1,0 +1,81 @@
+.split {
+    position: relative;
+    height: 100vh;
+    display: flex;
+  }
+  .screen {
+    display: flex;
+    align-items: center;
+    transition: ease 1.5s;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .screen:nth-child(1) {
+    background-color: #34abeb;
+  }
+  .screen:nth-child(2) {
+    background-color: #eba834;
+  }
+  .screen:hover {
+    flex-grow: 2;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    z-index: 2;
+    max-width: 400px;
+  }
+  .card h1 {
+    margin: 0;
+    transition: 1s;
+    font-size: 62px;
+    font-weight: 900;
+    font-style: italic;
+    color: #fff;
+  }
+  .card p {
+    transition: 1s;
+    margin: 0;
+    color: #fff;
+  }
+  .btn {
+    margin-top: 2rem;
+    max-width: 170px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    transition: 1s;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .img {
+    position: relative;
+    overflow: visible;
+    opacity: 0.8;
+    transition: 1s;
+  }
+  .firstDiv {
+    height: 100%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    transition: 1s;
+    max-width: 150px;
+  }
+  
+  .secondDiv {
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    transition: 1s;
+    max-width: 150px;
+  }
+  
