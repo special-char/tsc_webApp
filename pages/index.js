@@ -1,176 +1,166 @@
-import Head from "next/head";
-import CourseSection from "../components/PageSections/CourseSection";
-import Footer from "../components/Footer";
-import Features from "../components/PageSections/Features";
-import HomeSection from "../components/PageSections/HomeSection";
-import styles from "../styles/Home.module.css";
-import BrowseCourse from "@components/PageSections/coursesByCategory";
-import Chip from "@components/chip";
-import PlayIcon from "../public/icons/play.svg";
-import AboutEducationText from "@components/PageSections/AddEducation/AbouteducationText";
-import EducationCourses from "@components/PageSections/EducationCourses";
+import Layout from "@components/Layouts";
+import Image from "next/image";
+import React, { useState } from "react";
+import Training from "@public/icons/Artboard1.svg";
+// import Training from "@public/icons/Artboard1.svg";
+import Larrow from "@public/icons/lArrow.svg";
+import Rarrow from "@public/icons/rArrow.svg";
+import classNames from "classnames";
+import HomePage from "@components/pageSections/homePage";
+import Navbar from "@components/navbar";
 
-export default function Home() {
+const Home = () => {
+  const [exploreTraining, setExploreTraining] = useState(false);
+  const [exploreDevelopment, setExploreDevelopment] = useState(false);
+  const alignCenter = () => {
+    setExploreDevelopment(false);
+    setExploreTraining(false);
+  };
+  console.log("exploreTraining", exploreTraining);
+  console.log("exploreDevelopment", exploreDevelopment);
+
   return (
-    <div>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <h2>Lorem ipsum dolor sit amet.</h2>
-      <h3>Lorem ipsum dolor sit amet.</h3>
-      <h4>Lorem ipsum dolor sit amet.</h4>
-      <h5>Lorem ipsum dolor sit amet.</h5>
-      <h6>Lorem ipsum dolor sit amet.</h6>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, qui!
-      </p>
-      <p className="small">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, qui!
-      </p>
-      <p className="large">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, qui!
-      </p>
-      <a href="">Lorem, ipsum.</a>
-      <blockquote>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-        excepturi ducimus magni? Magni perspiciatis ad quaerat porro dicta,
-        incidunt aperiam amet laboriosam sunt quam tenetur ratione deserunt
-        officia odio qui!
-      </blockquote>
-
-      <div>
-        <button className="btn btn--primary btn--large">Explore Courses</button>
-        <button className="btn btn--primary">Explore Courses</button>
-        <button className="btn btn--primary btn--small">Explore Courses</button>
-        <button className="btn btn--secondary">Explore Courses</button>
-        <button className="btn btn--white">Explore Courses</button>
-
-        <button class="btn btn--round btn--secondary w-24">
-          <span class="text-3xl">K</span>
-        </button>
-
-        <div className="chip chip--primary">
-          <span>X</span>
-          <span>12 Courses</span>
+    <>
+      <section className="landing-page-wrapper h-screen flex flex-wrap">
+        <div className="brand-logo flex justify-center items-center w-full absolute z-50 ">
+          <Training onClick={() => alignCenter()} className="w-28" />
         </div>
-
-        <div className="avatar">
-          <div className="w-14">
-            <img src="https://placeimg.com/192/192/people" />
-          </div>
-        </div>
-
-        <div className="avatar placeholder bg-primary rounded-full">
-          <div className="w-14">
-            <span className="text-lg">YM</span>
-          </div>
-        </div>
-
-        <div className="rating">
-          <input
-            type="radio"
-            name="rating"
-            className="mask mask--heart bg-secondary2"
-          />
-          <input
-            type="radio"
-            name="rating"
-            className="mask mask--heart bg-secondary2"
-          />
-          <input
-            type="radio"
-            name="rating"
-            className="mask mask--heart bg-secondary2"
-          />
-          <input
-            type="radio"
-            name="rating"
-            className="mask mask--heart bg-secondary2"
-            checked
-          />
-          <input
-            type="radio"
-            name="rating"
-            className="mask mask--heart bg-secondary2"
-          />
-        </div>
-
-        <div className="card">
-          <figure>
-            <img
-              src="https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-1080.jpeg"
-              alt="Shoes"
+        {/* training section */}
+        <div
+          className={classNames("custom-transition flex-1", {
+            "flex-[10]": exploreTraining,
+            "hover:flex-[1.5]": !exploreTraining,
+          })}
+        >
+          <div className="relative rounded-3xl h-full">
+            <Image
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+              layout={"fill"}
+              objectFit={"cover"}
+              priority
             />
-          </figure>
-          <div className="card-body">
-            <div className="card-date">April 20, 2022</div>
-            <h3 className="card-title">Graphic Design 101</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, nobis libero labore temporibus mollitia neque est
-              adipisci enim delectus fugit voluptate unde quisquam perspiciatis
-              earum, minus cum dolore molestias error!
-            </p>
-            <div className="card-actions">
-              <div className="author">
-                <div className="avatar">
-                  <div className="w-12">
-                    <img src="https://placeimg.com/192/192/people" />
-                  </div>
-                </div>
-                <div className="author__name">Yagnesh Modh</div>
+            <div
+              className={`training-section-background custom-transition bg-neutral-400 w-full h-full z-20 absolute ${
+                exploreTraining ? "opacity-75 " : "opacity-100"
+              }`}
+            ></div>
+
+            <div
+              className={`${
+                exploreDevelopment
+                  ? "opacity-0"
+                  : "opacity-100 custom-transition duration-500"
+              } transition-all ease-linear duration-75 flex w-full h-full flex-1 absolute z-30`}
+            >
+              <Training className="w-1/2 mx-auto" />
+            </div>
+            <div
+              className={`${
+                exploreDevelopment
+                  ? "opacity-0"
+                  : "opacity-100 custom-transition duration-500"
+              } text-content-wrapper flex items-center justify-center w-full h-full absolute z-30`}
+            >
+              <div className="text-content w-2/3 flex flex-col basis-[500px]">
+                <h3 className="font-light">CRUISER SKATEBOARD</h3>
+                <h1>MMM AHH ..PUSH IT!</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  natus maxime hic. Nisi, in reprehenderit?
+                </p>
+                <button
+                  onClick={() => setExploreTraining(true)}
+                  className="btn btn--primary w-1/2"
+                >
+                  Explore Training
+                </button>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="card ">
-          <div class="rating">
-            <input
-              type="radio"
-              name="rating"
-              class="mask mask--heart bg-secondary2"
-            />
-            <input
-              type="radio"
-              name="rating"
-              class="mask mask--heart bg-secondary2"
-            />
-            <input
-              type="radio"
-              name="rating"
-              class="mask mask--heart bg-secondary2"
-            />
-            <input
-              type="radio"
-              name="rating"
-              class="mask mask--heart bg-secondary2"
-              checked
-            />
-            <input
-              type="radio"
-              name="rating"
-              class="mask mask--heart bg-secondary2"
-            />
-          </div>
-          <AboutEducationText />
-          <div className="card">
-            <figure>
-              <img
-                src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607f500fe9f6c983c68e88ef_image-1-courses-categories-education-x-template.svg"
-                alt="Shoes"
+            <div
+              onClick={() => setExploreDevelopment(false)}
+              className={`${
+                exploreTraining ? "opacity-0" : "opacity-100"
+              } custom-transition float-right px-2 flex justify-end absolute w-full h-full items-center`}
+            >
+              <Larrow
+                className={classNames("w-4 z-50 cursor-pointer", {
+                  "custom-transition transform -rotate-180": exploreDevelopment,
+                })}
               />
-            </figure>
-            <div className="card__body">
-              <h3 className="card__title">hello</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias, deleniti.
-              </p>
-              <div className="card__actions"></div>
             </div>
           </div>
         </div>
-      </div>
-      <EducationCourses />
-    </div>
+        {/* development section */}
+        <div
+          className={classNames("custom-transition flex-1 ", {
+            "flex-[10]": exploreDevelopment,
+            "hover:flex-[1.5]": !exploreDevelopment,
+          })}
+        >
+          <div className="relative rounded-3xl h-full">
+            <Image
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+              layout={"fill"}
+              objectFit={"cover"}
+              priority
+            />
+            <div
+              className={`training-section-background custom-transition bg-primary w-full h-full z-20 absolute ${
+                exploreDevelopment ? "opacity-75 " : "opacity-100"
+              }`}
+            ></div>
+
+            <div
+              className={`${
+                exploreTraining
+                  ? "opacity-0"
+                  : "opacity-100 custom-transition duration-500"
+              } transition-all ease-linear duration-75 flex w-full h-full flex-1 absolute z-30`}
+            >
+              <Training className="w-1/2 mx-auto" />
+            </div>
+            <div
+              className={`${
+                exploreTraining
+                  ? "opacity-0"
+                  : "opacity-100 custom-transition duration-500"
+              } transition-all ease-linear duration-75 text-content-wrapper flex items-center justify-center w-full h-full absolute z-30`}
+            >
+              <div className="text-content w-2/3 flex flex-col basis-[500px]">
+                <h3 className="font-light">CRUISER SKATEBOARD</h3>
+                <h1>MMM AHH ..PUSH IT!</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  natus maxime hic. Nisi, in reprehenderit?
+                </p>
+                <button
+                  onClick={() => setExploreDevelopment(true)}
+                  className="btn btn--primary w-1/2"
+                >
+                  Explore development
+                </button>
+              </div>
+            </div>
+            <div
+              onClick={() => setExploreTraining(false)}
+              className=" px-2 flex justify-start absolute w-full h-full items-center cursor-pointer"
+            >
+              <Rarrow
+                className={classNames("w-4 z-50 cursor-pointer", {
+                  "custom-transition transform rotate-180": exploreTraining,
+                  "opacity-0 custom-transition": exploreDevelopment,
+                })}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <HomePage /> */}
+    </>
   );
-}
+};
+Home.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
+Home.displayName = "Home";
+export default Home;
