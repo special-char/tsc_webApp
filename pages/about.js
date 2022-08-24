@@ -1,3 +1,4 @@
+import CustomImage from "@components/CustomImage";
 import Footer from "@components/footer";
 import BannerAbout from "@components/pageSections/aboutPage/bannerSection";
 import HistorySection from "@components/pageSections/aboutPage/historySection";
@@ -11,14 +12,21 @@ import React from "react";
 const AboutPage = () => {
   return (
     <>
-      <BannerAbout />
+      {/* <BannerAbout />
       <Achievements />
       <StorySection />
       <WorkValues />
       <TeachersSection />
       <HistorySection />
       <OfficesSection />
-      <Footer />
+      <Footer /> */}
+      <CustomImage
+        src={
+          "https://res.cloudinary.com/pruthvish/image/upload/v1659963040/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-800_zhw8fb.webp"
+        }
+        height={500}
+        width={500}
+      />
     </>
   );
 };
