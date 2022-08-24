@@ -49,10 +49,12 @@ module.exports = {
     },
     boxShadow: {
       base: "0 5px 15px 0 rgb(30 61 96 / 3%)",
+      dark: "0 15px 15px 0.01px rgba(30, 61, 96, 0.03)",
     },
     extend: {
       aspectRatio: {
         image: "4 / 3",
+        "h-image": "3 / 4",
       },
     },
   },
