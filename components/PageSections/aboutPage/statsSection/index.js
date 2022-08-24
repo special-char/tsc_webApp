@@ -19,16 +19,18 @@ const Achievements = () => {
     },
   ];
   return (
-    <div className="w-screen py-24 md:py-36 lg:py-44">
+    <div className="w-screen bg-neutral-200 py-24 md:py-36 lg:py-44">
       <div className="container mx-auto max-w-7xl flex flex-col items-center">
-        <h2 className="lg:min-w-1/2 text-center">
+        <h2 className="lg:min-w-1/2 text-center text-3xl">
           A few numbers that we <br /> are proud of
         </h2>
 
         <div className="flex flex-wrap justify-center items-center ">
           {AchievementsData.map((val) => (
-            <div className=" text-center px-7 min-w-[300px] flex-1">
-              <h2 className="text-secondary3">{val.Number}</h2>
+            <div className=" text-center lg:px-6 min-w-[300px] flex-1">
+              <h2 className="text-secondary3 text-4xl md:text-7xl lg:text-8xl">
+                {val.Number}
+              </h2>
               <h3>{val.heading}</h3>
               <p>{val.description}</p>
             </div>
