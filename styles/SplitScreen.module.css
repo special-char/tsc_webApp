@@ -2,11 +2,12 @@
     position: relative;
     height: 100vh;
     display: flex;
+    transition: all 1000ms ease-in-out;
   }
   .screen {
     display: flex;
     align-items: center;
-    transition: ease 1.5s;
+    transition: all 1000ms ease-in-out;
     flex-grow: 1;
     justify-content: center;
   }
@@ -17,25 +18,25 @@
     background-color: #eba834;
   }
   .screen:hover {
-    flex-grow: 2;
+    flex-grow: 4;
   }
   .card {
     display: flex;
     flex-direction: column;
-    transition: 1s;
+    transition: all 1000ms ease-in-out;
     z-index: 2;
     max-width: 400px;
   }
   .card h1 {
     margin: 0;
-    transition: 1s;
+    transition: all 1000ms ease-in-out;
     font-size: 62px;
     font-weight: 900;
     font-style: italic;
     color: #fff;
   }
   .card p {
-    transition: 1s;
+    transition: all 1000ms ease-in-out;
     margin: 0;
     color: #fff;
   }
@@ -45,7 +46,7 @@
     padding: 10px 20px;
     border: 2px solid #fff;
     border-radius: 30px;
-    transition: 1s;
+    transition: all 1000ms ease-in-out;
     text-align: center;
     color: #fff;
     text-decoration: none;
@@ -55,7 +56,7 @@
     position: relative;
     overflow: visible;
     opacity: 0.8;
-    transition: 1s;
+    transition: all 1000ms ease-in-out;
   }
   .firstDiv {
     height: 100%;
@@ -64,7 +65,7 @@
     align-items: center;
     padding: 2rem;
     position: relative;
-    transition: 1s;
+    transition: all 1000ms ease-in-out;
     max-width: 150px;
   }
   
@@ -75,7 +76,7 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    transition: 1s;
+    transition: all 1000ms ease-in-out;
     max-width: 150px;
   }
   
