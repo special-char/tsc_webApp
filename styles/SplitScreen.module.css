@@ -1,82 +1,122 @@
 .split {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    transition: all 1000ms ease-in-out;
-  }
-  .screen {
-    display: flex;
-    align-items: center;
-    transition: all 1000ms ease-in-out;
-    flex-grow: 1;
-    justify-content: center;
-  }
-  .screen:nth-child(1) {
-    background-color: #34abeb;
-  }
-  .screen:nth-child(2) {
-    background-color: #eba834;
-  }
+  position: relative;
+  height: 100vh;
+  display: flex;
+  transition: all 1500ms ease-in-out;
+  flex-wrap: wrap;
+}
+.screen {
+  display: flex;
+  align-items: center;
+  transition: all 1000ms ease-in-out;
+  flex-grow: 1;
+  justify-content: center;
+  height: 100vh;
+}
+.screen:nth-child(1) {
+  background-color: #34abeb;
+}
+.screen:nth-child(2) {
+  background-color: #eba834;
+}
+.screen:hover {
+  flex-grow: 1.5;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  transition: all 1000ms ease-in-out;
+  z-index: 2;
+  max-width: 350px;
+}
+.card h1 {
+  margin: 0;
+  transition: all 1000ms ease-in-out;
+  font-size: 62px;
+  font-weight: 900;
+  font-style: italic;
+  color: #fff;
+}
+.card p {
+  transition: all 1000ms ease-in-out;
+  margin: 0;
+  color: #fff;
+}
+.btn {
+  margin-top: 2rem;
+  max-width: 170px;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  transition: all 1000ms ease-in-out;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.img {
+  position: relative;
+  overflow: visible;
+  transition: all 1000ms ease-in-out;
+  height: 60%;
+  width: 60%;
+}
+.firstDiv {
+  height: 100%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  transition: all 1000ms ease-in-out;
+  max-width: 150px;
+}
+
+.secondDiv {
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transition: all 1000ms ease-in-out;
+  max-width: 150px;
+}
+
+@media screen and (max-width: 991px) {
   .screen:hover {
-    flex-grow: 4;
+    flex-grow: 1.2;
+  }
+}
+@media screen and (max-width: 800px) {
+  .screen:hover .img {
+    height: 70%;
+    width: 70%;
   }
   .card {
-    display: flex;
-    flex-direction: column;
-    transition: all 1000ms ease-in-out;
-    z-index: 2;
-    max-width: 400px;
+    position: absolute;
+    width: 85%;
   }
   .card h1 {
-    margin: 0;
-    transition: all 1000ms ease-in-out;
-    font-size: 62px;
-    font-weight: 900;
-    font-style: italic;
-    color: #fff;
-  }
-  .card p {
-    transition: all 1000ms ease-in-out;
-    margin: 0;
-    color: #fff;
-  }
-  .btn {
-    margin-top: 2rem;
-    max-width: 170px;
-    padding: 10px 20px;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    transition: all 1000ms ease-in-out;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  .img {
-    position: relative;
-    overflow: visible;
-    opacity: 0.8;
-    transition: all 1000ms ease-in-out;
+    font-size: 48px;
   }
   .firstDiv {
-    height: 100%;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    position: relative;
-    transition: all 1000ms ease-in-out;
-    max-width: 150px;
+    padding: 1rem;
   }
-  
   .secondDiv {
-    height: 100%;
-    cursor: pointer;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    transition: all 1000ms ease-in-out;
-    max-width: 150px;
+    padding: 1rem;
   }
-  
+}
+
+@media screen and (max-width: 575px) {
+  .card {
+    position: absolute;
+    width: 80%;
+  }
+  .firstDiv {
+    padding: 0.5rem;
+  }
+  .secondDiv {
+    padding: 0.5rem;
+  }
+}

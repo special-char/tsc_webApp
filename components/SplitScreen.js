@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "@styles/SplitScreen.module.css";
 import LeftIcon from '@public/icons/leftArrow.svg'
 import RightIcon from '@public/icons/rightArrow.svg'
+import Image from "next/image";
 
 const SplitScreen = () => {
   const [firstCard, setFirstCard] = useState(false);
@@ -17,12 +18,12 @@ const SplitScreen = () => {
   };
   return (
     <section className={styles.split}>
-      <div className={styles.screen} style={{ flexGrow: firstCard && 22 }}>
+      <div className={styles.screen} style={{ flexGrow: firstCard && 22,  minWidth: !secondCard && !firstCard && '350px'}}>
         {!secondCard && (
           <>
             <div
               className={styles.card}
-              style={{ position: !firstCard ? "absolute" : "relative" }}
+              style={{ position: !firstCard && "absolute" }}
             >
               <p style={{fontStyle: 'italic'}}>Autem excepturi</p>
               <h1>MMM AHHH ..PUSH IT!</h1>
@@ -48,7 +49,7 @@ const SplitScreen = () => {
               </a>
             </div>
             <div className={styles.img}>
-              <img src="Skateboard.png" alt="Skateboard" />
+              <Image layout="fill" src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607e21e8c0c9f4644adea00a_image-3-perks-education-x-template.svg" alt="Skateboard" />
             </div>
           </>
         )}
@@ -60,12 +61,12 @@ const SplitScreen = () => {
           <LeftIcon height={22} width={22} fill='#fff' />
         </div>
       </div>
-      <div className={styles.screen} style={{ flexGrow: secondCard && 22 }}>
+      <div className={styles.screen} style={{ flexGrow: secondCard && 22, minWidth: !secondCard && !firstCard && '350px'}}>
         {!firstCard && (
           <>
             <div
               className={styles.card}
-              style={{ position: !secondCard ? "absolute" : "relative" }}
+              style={{ position: !secondCard && "absolute" }}
             >
               <p style={{fontStyle: 'italic'}}>Magni perspiciatis ad quaerat</p>
               <h1>
@@ -93,7 +94,7 @@ const SplitScreen = () => {
               </a>
             </div>
             <div className={styles.img}>
-              <img src="shoes1.png" alt="Shoes" />
+              <Image layout="fill" src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607e21e810beff7a8011b340_image-1-perks-education-x-template.svg" alt="Shoes" />
             </div>
           </>
         )}
