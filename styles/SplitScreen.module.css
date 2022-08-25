@@ -14,10 +14,10 @@
   height: 100vh;
 }
 .screen:nth-child(1) {
-  background-color: #34abeb;
+  background-color: #064EA4;
 }
 .screen:nth-child(2) {
-  background-color: #eba834;
+  background-color: #F99D77;
 }
 .screen:hover {
   flex-grow: 1.5;
