@@ -9,7 +9,7 @@ const CourseCategoryData = [
     label: "Design",
     description:
       "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
-    icon: <Play className="w-3" />,
+    icon: <Play />,
     courses: "12 Courses",
   },
   {
@@ -17,7 +17,7 @@ const CourseCategoryData = [
     label: "Development",
     description:
       "lorem ipsum dolor sit amet,dolor sit consectetor adipiscing elit.",
-    icon: <Play className="w-3" />,
+    icon: <Play />,
     courses: "5 Courses",
   },
   {
@@ -25,7 +25,7 @@ const CourseCategoryData = [
     label: "Marketing",
     description:
       "lorem ipsum dolor sit amet,dolor sit consectetor adipiscing elit.",
-    icon: <Play className="w-3" />,
+    icon: <Play />,
     courses: "7 Courses",
   },
 ];

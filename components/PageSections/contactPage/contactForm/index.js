@@ -19,15 +19,15 @@ const ContactForm = () => {
     <>
       <section className="w-full h-auto relative overflow-hidden">
         <div className="wrapper max-w-7xl mx-auto px-4 py-24">
-          <div className="flex flex-col text-center max-w-lg md:mx-auto">
+          <div className="flex flex-col text-center max-w-lg mx-auto">
             <h1>Get in touch!</h1>
             <p>
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat
             </p>
           </div>
-          <div className="flex flex-col lg:flex-row  rounded-3xl">
-            <div className="contact-form bg-neutral-100 rounded-3xl lg:w-[900px] py-16 px-6 ">
+          <div className="flex flex-col lg:flex-row items-center rounded-3xl justify-between gap-3">
+            <div className="contact-form rounded-3xl bg-neutral-100 shadow-dark max-w-[750px] w-[100%] py-16 px-6">
               <Formik
                 validationSchema={ContactSchema}
                 initialValues={{
@@ -48,7 +48,8 @@ const ContactForm = () => {
                         <label className="">Name</label>
                         <Field
                           id="name"
-                          className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-3"
+                          placeholder="Full Name"
+                          className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-7"
                           name="name"
                           type="text"
                         />
@@ -60,7 +61,8 @@ const ContactForm = () => {
                         <label className="">Email Address</label>
                         <Field
                           id="email"
-                          className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-3"
+                          placeholder="example@youremail.com"
+                          className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-7"
                           name="email"
                           type="email"
                         />
@@ -74,7 +76,8 @@ const ContactForm = () => {
                         <label className="">Phone Number</label>
                         <Field
                           id="phone"
-                          className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-3"
+                          placeholder="123-456-789"
+                          className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-7"
                           name="phone"
                           type="tel"
                         />
@@ -86,7 +89,8 @@ const ContactForm = () => {
                         <label className="">Subject</label>
                         <Field
                           id="text"
-                          className="bg-neutral-200 w-full rounded-full focus:outline-neutral-500 py-4 px-3"
+                          placeholder="Ex. Courses"
+                          className="bg-neutral-200 w-full rounded-full focus:outline-neutral-500 py-4 px-7"
                           name="subject"
                           type="text"
                         />
@@ -98,7 +102,8 @@ const ContactForm = () => {
                     <label className="">Message</label>
                     <Field
                       id="textarea"
-                      className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-2xl py-4 px-3"
+                      placeholder="Write your message here"
+                      className="bg-neutral-200  focus:outline-neutral-500 rounded-2xl py-4 px-7"
                       name="message"
                       as="textarea"
                       rows="5"
@@ -116,16 +121,16 @@ const ContactForm = () => {
                 )}
               </Formik>
             </div>
-            <div className="contact-links flex flex-1 flex-col gap-3">
+            <div className="contact-links flex flex-col gap-5 w-full lg:w-[423px] ">
               {ContactLinkData.map((val) => (
-                <div className="rounded-3xl w-[80%] mx-auto drop-shadow-sm h-52 bg-neutral-100 px-10 py-8  flex flex-col gap-2 items-center justify-around">
-                  {val.icon}
-                  <div className="text-center">
-                    <span className="font-bold text-neutral-700">
+                <div className="rounded-3xl w-full mx-auto drop-shadow-sm h-auto bg-neutral-100 py-10 px-5 flex flex-col gap-2 items-center justify-around">
+                  <div className="w-14 rounded-full">{val.icon}</div>
+                  <div className="text-center text-xl">
+                    <span className="font-bold  text-neutral-700">
                       {val.title}
                     </span>
                     <a href="mailto:">
-                      <address>{val.data}</address>
+                      <address className="">{val.data}</address>
                     </a>
                   </div>
                 </div>

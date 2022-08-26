@@ -10,6 +10,7 @@ import ResourcesSection from "./resourcesSection";
 import TestimonialSection from "./TestimonialSection";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
+import PopularCourses from "./popularCourses";
 
 const BannerSection = dynamic(() => import("./bannerSection"), {
   suspense: true,
@@ -20,6 +21,7 @@ const HomePage = () => {
       <Suspense fallback={`Loading...`}>
         <BannerSection />
       </Suspense>
+      <PopularCourses />
       <PerksSection />
       <FeaturedTeacher />
       <EducationCourses />

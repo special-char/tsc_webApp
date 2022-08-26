@@ -11,7 +11,7 @@ const PerksSection = () => {
       id: 1,
       title: "Learn",
       description:
-        "“Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.”",
+        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.",
       svg: <LearnSvg />,
     },
     {

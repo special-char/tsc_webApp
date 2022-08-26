@@ -52,10 +52,10 @@ const PopularCourses = () => {
   ];
   return (
     <>
-      <section className="py-20">
+      <section className="py-20 overflow-hidden">
         <h2 className="text-center mb-10">Browse our popular courses</h2>
         <div className="card-container container ml-auto max-w-7xl px-6">
-          <div className="relative ">
+          <div className="relative pb-10">
             <div className="flex flex-col md:flex-row md:inline-flex gap-4 justify-center md:text-left">
               {courses.map((obj) => {
                 return (
@@ -65,7 +65,7 @@ const PopularCourses = () => {
                 );
               })}
             </div>
-            <div className="absolute flex w-full justify-between bg-secondary2">
+            {/* <div className="absolute flex w-full justify-between bg-secondary2">
               <button class="btn btn--round btn--white w-24">
                 <span class="text-3xl">
                   <LeftArrow className="w-4" />
@@ -76,8 +76,13 @@ const PopularCourses = () => {
                   <RightArrow className="w-4" />
                 </span>
               </button>
-            </div>
+            </div> */}
           </div>
+        </div>
+        <div className="container mx-auto  flex items-center justify-center">
+          <button className="btn btn--primary uppercase">
+            explore all courses
+          </button>
         </div>
       </section>
     </>
