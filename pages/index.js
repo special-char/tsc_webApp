@@ -8,6 +8,8 @@ import Rarrow from "@public/icons/rArrow.svg";
 import classNames from "classnames";
 import HomePage from "@components/pageSections/homePage";
 import Navbar from "@components/navbar";
+import IndividualBlog from "./blog";
+
 
 const Home = () => {
   const [exploreTraining, setExploreTraining] = useState(false);
@@ -156,6 +158,7 @@ const Home = () => {
         </div>
       </section> */}
       <HomePage />
+      <IndividualBlog />
     </>
   );
 };
