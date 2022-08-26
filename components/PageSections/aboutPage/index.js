@@ -9,7 +9,7 @@ const AboutPage = () => {
   return (
     <>
       <WorkValues />
-      {/* <AllCoursesSection /> */}
+      {/* <AllCoursesSection />  */}
       <BlogCoursesSection />
       <CardGrid />
       <TestiSection />

@@ -36,7 +36,7 @@ const AboutEducation = () => {
           </div>
         </div>
         <div className="flex justify-center py-20">
-          <Link href={"/Courses"}>
+          <Link href={"/courses"}>
             <a>
               <button className="btn btn--secondary lg:btn--small ">
                 About Education

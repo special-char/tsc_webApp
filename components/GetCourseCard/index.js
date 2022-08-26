@@ -30,7 +30,7 @@ const GetCourseCard = () => {
                   <option value="basic">Basic</option>
                   <option value="premium">Premium</option>
                 </Field>
-                <Link href={"/Courses"}>
+                <Link href={"/courses"}>
                   <a>
                     <button
                       type="submit"

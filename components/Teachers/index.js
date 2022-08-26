@@ -5,7 +5,7 @@ const Teachers = ({ svgData, title, description, img }) => {
   return (
     <>
       <div className="card">
-        <Link href={"/Courses"}>
+        <Link href={"/courses"}>
           <a>
             <figure className="relative h-80">
               <Image layout="fill" objectFit="cover" src={img} alt="" />

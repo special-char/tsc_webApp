@@ -15,7 +15,7 @@ const BannerSection = () => {
               the right skills to be prepared for tomorrow.
             </p>
             <div className="flex w-full gap-8">
-              <Link href={"/Courses"}>
+              <Link href={"/courses"}>
                 <a>
                   <button className="btn btn--primary">EXPLORE COURSES</button>
                   <button className="btn btn--secondary">LEARN MORE</button>

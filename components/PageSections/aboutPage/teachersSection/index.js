@@ -4,6 +4,7 @@ import RightSvg from "@public/icons/right.svg";
 import SearchSvg from "@public/icons/search.svg";
 import GlobleSvg from "@public/icons/globle.svg";
 import InovetionSvg from "@public/icons/inovetion.svg";
+import Link from "next/link";
 
 const TeachersSection = () => {
   const TeachersDetails = [
@@ -141,9 +142,13 @@ const TeachersSection = () => {
               Presenting Academy, the tech school of the future. We teach you
               the right skills to be prepared for tomorrow.
             </p>
-            <button className="btn btn--primary text-center px-10 py-6">
-              BECOME A TEACHER
-            </button>
+            <Link href={"/courses"}>
+              <a>
+                <button className="btn btn--primary text-center px-10 py-6">
+                  BECOME A TEACHER
+                </button>
+              </a>
+            </Link>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 text-left justify-center gap-9 md:p-8 w-full px-4">

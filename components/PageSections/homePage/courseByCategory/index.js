@@ -12,7 +12,7 @@ const CourseByCategory = () => {
         <div className="flex flex-col gap-6 md:w-[552px] md:mx-auto lg:w-[90%] lg:flex-row lg:gap-6">
           {CourseCategoryData.map((val) => (
             <div className="card flex-1">
-              <Link href={"/Courses"}>
+              <Link href={"/courses"}>
                 <a>
                   <figure className="relative">
                     {val.photo}

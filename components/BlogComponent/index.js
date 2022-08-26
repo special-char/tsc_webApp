@@ -6,7 +6,7 @@ const Blog = ({ src, description }) => {
   return (
     <div className="card-new w-full min-w-[270px] flex flex-col md:flex-row flex-1 ">
       <div className="image flex-1 w-full min-h-full xs:basis-[160px] md:basis-0 relative">
-        <Link href={"/Courses"}>
+        <Link href={"/courses"}>
           <a>
             <Image
               src={src}

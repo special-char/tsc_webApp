@@ -1,4 +1,5 @@
 import AllCourses from "@components/card";
+import Link from "next/link";
 import React from "react";
 
 const CardGrid = () => {
@@ -44,15 +45,19 @@ const CardGrid = () => {
         <h2 className="text-neutral-800 text-center lg:text-left ">
           Kathie Corl Courses
         </h2>
+        <Link href={"/courses"}>
+          <a>
+            <span className="btn btn--secondary text-base font-bold hover:bg-neutral-400 py-6 px-10">
+              BROWSE ALL COURSES
+            </span>
 
-        <span className="btn btn--secondary text-base font-bold hover:bg-neutral-400 py-6 px-10">
-          BROWSE ALL COURSES
-        </span>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 text-left justify-center gap-8 md:p-8 w-full mx-auto max-w-7xl">
-        {courses.map((obj) => {
-          return <AllCourses {...obj} />;
-        })}
+            <div className="grid grid-cols-1 lg:grid-cols-2 text-left justify-center gap-8 md:p-8 w-full mx-auto max-w-7xl">
+              {courses.map((obj) => {
+                return <AllCourses {...obj} />;
+              })}
+            </div>
+          </a>
+        </Link>
       </div>
     </section>
   );

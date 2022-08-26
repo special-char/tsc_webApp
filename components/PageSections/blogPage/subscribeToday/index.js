@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const SubscribeToday = () => {
@@ -17,9 +18,15 @@ const SubscribeToday = () => {
               type="text"
               placeholder="Enter Your email"
             />
-            <button className="btn md:py-3 md:absolute md:right-[0.75rem] md:top-2.5 flex items-center justify-center text-neutral-100 text-base font-bold bg-neutral-700 ">
-              SUBMIT
-            </button>
+            <div>
+              <Link href={"/courses"}>
+                <a>
+                  <button className="btn md:py-3 md:absolute md:right-[0.75rem] md:top-2.5 flex items-center justify-center text-neutral-100 text-base font-bold bg-neutral-700 ">
+                    SUBMIT
+                  </button>
+                </a>
+              </Link>
+            </div>
           </form>
 
           <div className="bg-secondary2 absolute  rounded-full md:w-[400px] md:h-[400px]  md:-top-80 md:-right-52 lg:-top-52 lg:-right-20  z-10"></div>

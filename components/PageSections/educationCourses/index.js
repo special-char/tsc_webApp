@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 const EducationCourses = () => {
   return (
@@ -9,7 +10,11 @@ const EducationCourses = () => {
           eiusmod tempor incididunt.
         </p>
         <div className="button-wrapper">
-          <button className="btn btn--secondary">Explore Courses</button>
+          <Link href={"/courses"}>
+            <a>
+              <button className="btn btn--secondary">Explore Courses</button>
+            </a>
+          </Link>
         </div>
       </div>
     </div>

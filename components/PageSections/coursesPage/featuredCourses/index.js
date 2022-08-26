@@ -9,7 +9,7 @@ const FeaturedCourse = () => {
         <h2 className="text-center ">Featured Course</h2>
         <div className="card-container">
           <div className="card rounded-none md:rounded-t-2xl lg:rounded-l-2xl flex md:flex-col lg:flex-row relative">
-            <Link href={"/Courses"}>
+            <Link href={"/courses"}>
               <a>
                 <figure className="flex-1 relative">
                   <div className="md:min-h-[320px]">
@@ -28,28 +28,29 @@ const FeaturedCourse = () => {
                     <span className="text-sm font-bold px-3">$ 199.00 USD</span>
                   </div>
                 </figure>
-              </a>
-            </Link>
-            <div className="card__body flex-1">
-              <div className="p-10">
-                <h3 className="card__title">Brand & Identity Design</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias, deleniti Lorem ipsum dolor sit amet consectetur
-                  adipisicing..
-                </p>
-                <div className="card-actions">
-                  <div className="author">
-                    <div className="avatar">
-                      <div className="w-12">
-                        <img src="https://placeimg.com/192/192/people" />
+
+                <div className="card__body flex-1">
+                  <div className="p-10">
+                    <h3 className="card__title">Brand & Identity Design</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestias, deleniti Lorem ipsum dolor sit amet consectetur
+                      adipisicing..
+                    </p>
+                    <div className="card-actions">
+                      <div className="author">
+                        <div className="avatar">
+                          <div className="w-12">
+                            <img src="https://placeimg.com/192/192/people" />
+                          </div>
+                        </div>
+                        <div className="author__name">Yagnesh Modh</div>
                       </div>
                     </div>
-                    <div className="author__name">Yagnesh Modh</div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </a>
+            </Link>
           </div>
         </div>
       </div>

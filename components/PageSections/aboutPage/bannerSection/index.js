@@ -1,5 +1,6 @@
 import React from "react";
 import BlueArrow from "@public/icons/blueArrow.svg";
+import Link from "next/link";
 
 const BannerAbout = () => {
   return (
@@ -17,9 +18,13 @@ const BannerAbout = () => {
                 tellus, elit tellus, erat faucibus aenean. Nunc, lacus,
                 dignissim nec sit.
               </p>
-              <button className="btn btn--primary w-full md:w-[30%] btn--small">
-                JOIN OUR TEAM
-              </button>
+              <Link href={"/courses"}>
+                <a>
+                  <button className="btn btn--primary w-full md:w-[30%] btn--small">
+                    JOIN OUR TEAM
+                  </button>
+                </a>
+              </Link>
             </div>
           </div>
           <div className="bg-secondary2 rounded-full w-[400px] h-[400px] absolute md:-top-80 md:-right-52 lg:-top-60 lg:-right-48  -z-10"></div>

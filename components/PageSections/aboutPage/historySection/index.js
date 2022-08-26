@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const HistorySection = () => {
@@ -37,7 +38,13 @@ const HistorySection = () => {
             Presenting Academy, the tech school of the future. We teach you the
             right skills to be prepared for tomorrow.
           </p>
-          <button className="btn btn--primary btn--small">JOIN OUR TEAM</button>
+          <Link href={"/courses"}>
+            <a>
+              <button className="btn btn--primary btn--small">
+                JOIN OUR TEAM
+              </button>
+            </a>
+          </Link>
         </div>
         <div className="right-content flex-1 border-l-2 border-neutral-300 sticky top-3">
           {CompanyHistoryData.map((val) => (
