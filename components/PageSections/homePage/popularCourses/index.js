@@ -2,6 +2,7 @@ import Card from "@components/card";
 import LeftArrow from "@public/icons/lessthan.svg";
 import RightArrow from "@public/icons/greaterthan.svg";
 import React from "react";
+import Link from "next/link";
 
 const PopularCourses = () => {
   const courses = [
@@ -60,7 +61,11 @@ const PopularCourses = () => {
               {courses.map((obj) => {
                 return (
                   <div className="md:min-w-[550px] relative">
-                    <Card {...obj} />
+                    <Link href={`course/${obj.id}`}>
+                      <a>
+                        <Card {...obj} />
+                      </a>
+                    </Link>
                   </div>
                 );
               })}

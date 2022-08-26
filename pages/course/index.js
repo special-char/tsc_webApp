@@ -26,9 +26,9 @@ const Course = () => {
       <h1>All Course Page</h1>
       
       {data.map((val) => (
-        <Link href={"/course/" + val.id} key={val.id}>
-          <button className="btn btn--primary">{val.title}</button>
-        </Link>
+          <Link href={"/course/" + val.id} key={val.id}>
+            <button className="btn btn--primary">{val.title}</button>
+          </Link>
       ))}
     </>
   );

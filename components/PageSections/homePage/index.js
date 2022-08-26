@@ -18,9 +18,7 @@ const BannerSection = dynamic(() => import("./bannerSection"), {
 const HomePage = () => {
   return (
     <>
-      <Suspense fallback={`Loading...`}>
         <BannerSection />
-      </Suspense>
       <PopularCourses />
       <PerksSection />
       <FeaturedTeacher />

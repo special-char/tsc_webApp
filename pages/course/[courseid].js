@@ -33,7 +33,6 @@ const CourseId = () => {
 
   return (
     <>
-      <h1>Course Details Page</h1>
       {CourseData.filter((course) => course.id == courseid).map((val) => (
         <div key={val.id}>
           <IndividualCourse title={val.title} />
