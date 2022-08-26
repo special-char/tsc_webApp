@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import aboutEducationImg from "@public/img/aboutEducation.jpg";
 import EducationData from "./aboutEducationData";
+import Link from "next/link";
 
 const AboutEducation = () => {
   return (
@@ -35,9 +36,13 @@ const AboutEducation = () => {
           </div>
         </div>
         <div className="flex justify-center py-20">
-          <button className="btn btn--secondary lg:btn--small ">
-            About Education
-          </button>
+          <Link href={"/Courses"}>
+            <a>
+              <button className="btn btn--secondary lg:btn--small ">
+                About Education
+              </button>
+            </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,14 +1,21 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const BlogCourses = ({ id, date, description, img, blogType, svg }) => {
   return (
     <>
-      <div className="card">
-        {" "}
-        <figure className="relative h-80">
-          <Image layout="fill" objectFit="cover" src={img} alt="" />{" "}
-        </figure>{" "}
+      <div className="">
+        <div className="card">
+          {" "}
+          <Link href={"/courses"}>
+            <a>
+              <figure className="relative h-80">
+                <Image layout="fill" objectFit="cover" src={img} alt="" />{" "}
+              </figure>{" "}
+            </a>
+          </Link>
+        </div>
         <div className="card__body p-8 relative border-spacing-2 shadow-2xl bg-neutral-100  ">
           <div className="card__title text-base font-bold text-neutral-600">
             {date}

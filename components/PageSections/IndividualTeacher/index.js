@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Testi = ({
   img,
@@ -37,15 +38,19 @@ const Testi = ({
             {description}
           </p>
           <div className="w-6 flex flex-row gap-4">
-            <div className="btn btn--primary btn--round btn--small">
-              <a href="">{svg1}</a>
-            </div>
-            <div className="btn btn--primary btn--round btn--small">
-              <a href="">{svg1}</a>
-            </div>
-            <div className="btn btn--primary btn--round btn--small">
-              <a href="">{svg1}</a>
-            </div>
+            <Link href={"/Courses"}>
+              <a>
+                <div className="btn btn--primary btn--round btn--small">
+                  <a href="">{svg1}</a>
+                </div>
+                <div className="btn btn--primary btn--round btn--small">
+                  <a href="">{svg1}</a>
+                </div>
+                <div className="btn btn--primary btn--round btn--small">
+                  <a href="">{svg1}</a>
+                </div>
+              </a>
+            </Link>
           </div>
         </div>
       </div>

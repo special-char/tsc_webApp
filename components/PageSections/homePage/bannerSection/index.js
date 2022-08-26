@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 const BannerSection = () => {
   return (
     <>
@@ -14,8 +15,12 @@ const BannerSection = () => {
               the right skills to be prepared for tomorrow.
             </p>
             <div className="flex w-full gap-8">
-              <button className="btn btn--primary">EXPLORE COURSES</button>
-              <button className="btn btn--secondary">LEARN MORE</button>
+              <Link href={"/Courses"}>
+                <a>
+                  <button className="btn btn--primary">EXPLORE COURSES</button>
+                  <button className="btn btn--secondary">LEARN MORE</button>
+                </a>
+              </Link>
             </div>
           </div>
           <div className="relative basis-[500px] aspect-h-image h-auto rounded-3xl overflow-hidden">

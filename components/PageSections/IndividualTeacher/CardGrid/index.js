@@ -44,6 +44,7 @@ const CardGrid = () => {
         <h2 className="text-neutral-800 text-center lg:text-left ">
           Kathie Corl Courses
         </h2>
+
         <span className="btn btn--secondary text-base font-bold hover:bg-neutral-400 py-6 px-10">
           BROWSE ALL COURSES
         </span>

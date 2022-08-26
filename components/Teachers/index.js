@@ -5,9 +5,13 @@ const Teachers = ({ svgData, title, description, img }) => {
   return (
     <>
       <div className="card">
-        <figure className="relative h-80">
-          <Image layout="fill" objectFit="cover" src={img} alt="" />
-        </figure>
+        <Link href={"/Courses"}>
+          <a>
+            <figure className="relative h-80">
+              <Image layout="fill" objectFit="cover" src={img} alt="" />
+            </figure>
+          </a>
+        </Link>
         <div className="card__body p-8 ">
           <h3 className="card__title">{title}</h3>
           <p>{description}</p>

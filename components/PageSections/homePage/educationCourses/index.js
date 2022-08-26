@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const EducationCourses = () => {
@@ -34,15 +35,21 @@ const EducationCourses = () => {
           <div className="content md:w-[90%] max-w-7xl lg:w-full mx-auto flex flex-col flex-wrap xs:flex-row md:flex-col lg:flex-row  gap-6">
             <div className="left-text-content flex flex-col flex-wrap flex-1 items-start justify-center max-w-2xl md:w-4/5 md:mb-14 mx-auto">
               <h2 className="text-neutral-100 text-center sm:text-left md:text-center lg:text-left">
-                Grow your career today with the Education courses
+                Grow your career today with <br />
+                the Education courses
               </h2>
               <p className="text-neutral-100 text-center sm:text-left md:text-center lg:text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                <br />
                 eiusmod tempor incididunt.
               </p>
-              <button className="btn btn--secondary w-full md:w-1/2 btn--small self-center sm:self-start md:self-center lg:self-start">
-                Explore Courses
-              </button>
+              <Link href={"/Courses"}>
+                <a>
+                  <button className="btn btn--secondary">
+                    Explore Courses
+                  </button>
+                </a>
+              </Link>
             </div>
             <div className="right-box-content flex items-center flex-wrap justify-center gap-5">
               <div className="flex flex-col md:max-w-[220px] items-center lg:items-end gap-3">

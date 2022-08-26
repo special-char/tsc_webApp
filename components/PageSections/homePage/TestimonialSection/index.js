@@ -1,5 +1,6 @@
 import StarSvg from "@public/icons/star.svg";
 import Testimonial from "@components/testimonial";
+import Link from "next/link";
 
 const TestimonialSection = () => {
   const testimonialDetails = [
@@ -96,9 +97,13 @@ const TestimonialSection = () => {
           ))}
         </div>
         <div className="flex items-center justify-center ">
-          <button className="btn btn--primary  md:w-2/5 lg:w-80 ">
-            EXPLORE COURSES
-          </button>
+          <Link href={"/Courses"}>
+            <a>
+              <button className="btn btn--primary  md:w-2/5 lg:w-80 ">
+                EXPLORE COURSES
+              </button>
+            </a>
+          </Link>
         </div>
       </div>
     </>

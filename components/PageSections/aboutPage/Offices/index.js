@@ -1,9 +1,10 @@
+import Link from "next/link";
 import React from "react";
 
 const Office = ({ svg, title, number, address, email }) => {
   return (
     <>
-      <div className="card  md:w-[40%]">
+      <div className="card  md:w-[40%] ">
         <div className="card__body p-6  relative overflow-hidden">
           <div className="w-48">{svg}</div>
           <h3 className="card__title text-neutral-800">{title}</h3>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import CourseCategoryData from "./courseCategoryData";
 
@@ -11,17 +12,21 @@ const CourseByCategory = () => {
         <div className="flex flex-col gap-6 md:w-[552px] md:mx-auto lg:w-[90%] lg:flex-row lg:gap-6">
           {CourseCategoryData.map((val) => (
             <div className="card flex-1">
-              <figure className="relative">
-                {val.photo}
-                <div className="chip chip--white px-6 py-4 flex items-center gap-1 absolute top-4 right-4">
-                  <span>{val.icon}</span>
-                  <span className="text-sm font-bold">{val.courses}</span>
-                </div>
-              </figure>
-              <div className="card-body">
-                <h3 className="card-title">{val.label}</h3>
-                <p>{val.description}</p>
-              </div>
+              <Link href={"/Courses"}>
+                <a>
+                  <figure className="relative">
+                    {val.photo}
+                    <div className="chip chip--white px-6 py-4 flex items-center gap-1 absolute top-4 right-4">
+                      <span>{val.icon}</span>
+                      <span className="text-sm font-bold">{val.courses}</span>
+                    </div>
+                  </figure>
+                  <div className="card-body">
+                    <h3 className="card-title">{val.label}</h3>
+                    <p>{val.description}</p>
+                  </div>
+                </a>
+              </Link>
             </div>
           ))}
         </div>

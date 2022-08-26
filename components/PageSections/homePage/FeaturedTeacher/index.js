@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const FeaturedTeacher = () => {
   return (
@@ -12,12 +13,16 @@ const FeaturedTeacher = () => {
             eiusmod tempor incididunt.
           </p>
           <div className="flex flex-col gap-8 mb-8 md:flex-row lg:flex-col lg:w-1/2 ">
-            <button className="btn btn--primary  min-w-fit ">
-              BROWSE TEACHERS
-            </button>
-            <button className="btn btn--secondary min-w-fit">
-              BROWSE TEACHERS
-            </button>
+            <Link href={"/courses"}>
+              <a>
+                <button className="btn btn--primary  min-w-fit ">
+                  BROWSE TEACHERS
+                </button>
+                <button className="btn btn--secondary min-w-fit">
+                  BROWSE TEACHERS
+                </button>
+              </a>
+            </Link>
           </div>
         </div>
 

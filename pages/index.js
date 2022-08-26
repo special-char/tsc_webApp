@@ -21,11 +21,11 @@ const Home = () => {
 
   return (
     <>
-      <section className="landing-page-wrapper h-screen flex flex-wrap">
+      {/* <section className="landing-page-wrapper h-screen flex flex-wrap">
         <div className="brand-logo flex justify-center items-center w-full absolute z-50 ">
           <Training onClick={() => alignCenter()} className="w-28" />
         </div>
-        {/* training section */}
+        
         <div
           className={classNames("custom-transition flex-1", {
             "flex-[10]": exploreTraining,
@@ -90,7 +90,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* development section */}
+        
         <div
           className={classNames("custom-transition flex-1 ", {
             "flex-[10]": exploreDevelopment,
@@ -154,8 +154,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-      {/* <HomePage /> */}
+      </section> */}
+      <HomePage />
     </>
   );
 };

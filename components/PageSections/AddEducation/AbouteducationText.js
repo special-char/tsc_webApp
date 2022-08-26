@@ -16,6 +16,7 @@ const AboutEducationText = () => {
         </div>
         <div className="flex">
           <div className="flex-1">
+            <div class="shape"></div>
             <img
               src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607ee9511b8768627aa63e05_image-home-about-education-x-template.jpg"
               alt="About - Education X Webflow Template"

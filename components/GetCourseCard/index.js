@@ -1,6 +1,7 @@
 import CourseFeatures from "@components/pageSections/individualCourse/courseData";
 import React from "react";
 import { Field, Form, Formik } from "formik";
+import Link from "next/link";
 
 const GetCourseCard = () => {
   return (
@@ -29,12 +30,16 @@ const GetCourseCard = () => {
                   <option value="basic">Basic</option>
                   <option value="premium">Premium</option>
                 </Field>
-                <button
-                  type="submit"
-                  className="btn btn--primary btn--small w-full"
-                >
-                  ADD TO CART
-                </button>
+                <Link href={"/Courses"}>
+                  <a>
+                    <button
+                      type="submit"
+                      className="btn btn--primary btn--small w-full"
+                    >
+                      ADD TO CART
+                    </button>
+                  </a>
+                </Link>
               </Form>
             </Formik>
           </div>
