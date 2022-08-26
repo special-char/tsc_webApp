@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="wrapper bg-neutral-700 p-4">
+    <footer className="wrapper bg-neutral-700 p-4 md:pt-20">
       <div className="flex flex-col border-b-2 md:justify-between md:w-4/5 md:mx-auto border-b-slate-400 md:flex-row">
         <h1 className="text-neutral-100">TSC</h1>
         <p className="text-neutral-100 md:max-w-[468px]">

@@ -53,7 +53,7 @@ const WorkValues = () => {
               eiusmod tempor incididunt.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 text-left justify-center gap-9 md:p-8 ">
+          <div className="grid md:grid-cols-2 text-left justify-center gap-9 ">
             {AboutDetails.map((obj) => {
               return (
                 <WorkValuesCard

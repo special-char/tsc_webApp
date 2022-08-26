@@ -34,7 +34,7 @@ const WhylearnSection = () => {
     <>
       <div className=" bg-neutral-700 text-center relative py-24 md:py-44 lg:h-auto">
         <div className="container flex flex-col gap-6 px-4 md:px-6 mx-auto max-w-[1210px] overflow-hidden">
-          <h2 className="flex-1 text-secondary1">
+          <h2 className="flex-1 text-neutral-100">
             Why learn with our courses?
           </h2>
           <div className="lg:flex-row flex flex-1 flex-col gap-16">

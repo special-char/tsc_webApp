@@ -10,7 +10,7 @@ const WorkValuesCard = ({ svg, title, description, chip }) => {
             <span className="font-bold text-neutral-700">{chip}</span>
           </div>
         </div>
-        <h2 className=" text-neutral-700">{title}</h2>
+        <h3 className=" text-neutral-700 mb-2 md:mb-3.5">{title}</h3>
         <p className=" text-neutral-600">{description}</p>
       </div>
     </>

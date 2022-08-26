@@ -92,7 +92,7 @@ const AllCoursesSection = () => {
   ];
   return (
     <>
-      <section className="courses-section-wrapper lg:w-full px-4 pt-28">
+      <section className="courses-section-wrapper lg:w-full px-4 pt-28 bg-neutral-200">
         <div className="container w-full mx-auto max-w-[1210px] p-4 flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
           <h2 className="text-neutral-800 text-center lg:text-left ">
             All Courses
