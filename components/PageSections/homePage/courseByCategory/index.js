@@ -10,7 +10,7 @@ const CourseByCategory = () => {
         </center>
         <div className="flex flex-col gap-6 md:w-[552px] md:mx-auto lg:w-[90%] lg:flex-row lg:gap-6">
           {CourseCategoryData.map((val) => (
-            <div className="card flex-1">
+            <div key={val.id} className="card flex-1">
               <figure className="relative">
                 {val.photo}
                 <div className="chip chip--white px-6 py-4 flex items-center gap-1 absolute top-4 right-4">

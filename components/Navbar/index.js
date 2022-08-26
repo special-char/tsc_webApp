@@ -4,6 +4,7 @@ const Navbar = () => {
   useEffect(() => {
     const windowWidth = window.innerWidth;
     setWidth(windowWidth);
+    console.log("Navbar called on:", width);
   });
   const [width, setWidth] = useState(0);
   const navLinks = [
@@ -34,13 +35,14 @@ const Navbar = () => {
     },
   ];
   const [hamOpen, setHamOpen] = useState(false);
+  console.log("hamOpen", hamOpen);
   return (
     <>
       <section
         className="navbar-wrapper shadow-dark overflow-hidden"
         id="navbar"
       >
-        <div className="navbar-container container mx-auto flex justify-between  py-7 px- max-w-7xl">
+        <div className="navbar-container container mx-auto flex justify-between  py-7 px- max-w-[1210px]">
           <h2 className="m-0">The Special Character</h2>
           <nav className={`nav lg:flex lg:justify-between lg:items-center`}>
             <ul
@@ -54,7 +56,10 @@ const Navbar = () => {
                 return (
                   <li key={link.id} className="nav-item m-0 capitalize">
                     <Link href={link.link}>
-                      <a className="nav-link text-neutral-700 font-bold">
+                      <a
+                        onClick={() => setHamOpen(false)}
+                        className="nav-link text-neutral-700 font-bold"
+                      >
                         {link.name}
                       </a>
                     </Link>
@@ -66,7 +71,6 @@ const Navbar = () => {
           <div
             onClick={() => {
               setHamOpen((val) => !val);
-              console.log("hamOpen", hamOpen);
             }}
             className={`menu-btn lg:hidden ${hamOpen && "open"}`}
           >

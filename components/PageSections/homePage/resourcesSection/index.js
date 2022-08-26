@@ -40,7 +40,11 @@ const ResourcesSection = () => {
           <div className="flex flex-col gap-5 mx-auto lg:flex-1">
             {/* map goes here */}
             {ResourcesSectionData.map((val) => (
-              <Blog src={val.photo} description={val.description} />
+              <Blog
+                key={val.id}
+                src={val.photo}
+                description={val.description}
+              />
             ))}
             {/* map ends here */}
           </div>

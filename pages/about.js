@@ -17,9 +17,8 @@ const AboutPage = () => {
       <StorySection />
       <WorkValues />
       <TeachersSection />
-      {/* <HistorySection /> */}
+      <HistorySection />
       <OfficesSection />
-      <Footer />
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const Card = ({ title, description, img, chip, chip2, name, img1 }) => {
+const Card = ({ title, description, img, chips, name, img1 }) => {
   return (
     <>
       <div className="card">
@@ -24,12 +24,26 @@ const Card = ({ title, description, img, chip, chip2, name, img1 }) => {
           </div>
         </div>
         <div className="absolute flex flex-col items-end top-8 gap-2 text-center w-full md:justify-end md:flex-row px-4">
-          <span className=" btn chip--white chip py-4 px-6 text-xs ">
+          {chips &&
+            chips.map((chip) => (
+              <span
+                key={chip.id}
+                className={`btn  chip py-4 px-6 text-xs ${
+                  chip.hours
+                    ? "lowercase chip--white"
+                    : "uppercase chip--primary"
+                }`}
+              >
+                {chip.hours && `${chip?.hours}hr ${chip?.minutes}m`}
+                {chip.price && `$ ${chip.price} USD`}
+              </span>
+            ))}
+          {/* <span className=" btn chip--white chip py-4 px-6 text-xs ">
             {chip}
           </span>
           <span className=" btn chip--primary chip py-4 px-6 text-xs">
             {chip2}
-          </span>
+          </span> */}
         </div>
       </div>
     </>

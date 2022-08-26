@@ -3,15 +3,9 @@ import MailSvg from "@public/icons/mail.svg";
 import Link from "next/link";
 
 const UtilityLink = [
-  {
-    link: "#",
-    title: "Start Here",
-  },
-  {
-    link: "#",
-    title: "Start Guide",
-  },
-  { link: "#", title: "Home" },
+  { id: 1, link: "#", title: "Start Here" },
+  { id: 2, link: "#", title: "Start Guide" },
+  { id: 3, link: "#", title: "Home" },
 ];
 
 const Footer = () => {
@@ -54,7 +48,7 @@ const Footer = () => {
             <ul className="text-neutral-400">
               {UtilityLink.map((val) => {
                 return (
-                  <li>
+                  <li key={val.id}>
                     <Link href={val.link}>
                       <a>{val.title}</a>
                     </Link>
@@ -66,7 +60,7 @@ const Footer = () => {
             <ul className="links text-neutral-400">
               {UtilityLink.map((val) => {
                 return (
-                  <li>
+                  <li key={val.id}>
                     <Link href={val.link}>
                       <a>{val.title}</a>
                     </Link>
@@ -81,7 +75,7 @@ const Footer = () => {
           <ul className="links text-neutral-400 ">
             {UtilityLink.map((val) => {
               return (
-                <li>
+                <li key={val.id}>
                   <Link href={val.link}>
                     <a>{val.title}</a>
                   </Link>

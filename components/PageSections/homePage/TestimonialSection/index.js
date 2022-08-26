@@ -73,6 +73,7 @@ const TestimonialSection = () => {
             const name = `${obj.firstName} ${obj.lastName}`;
             return (
               <Testimonial
+                key={obj.id}
                 description={obj.description}
                 img={obj.img}
                 designation={obj.designation}

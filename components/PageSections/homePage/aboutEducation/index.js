@@ -24,7 +24,10 @@ const AboutEducation = () => {
           </div>
           <div className="right-content flex flex-1 flex-col justify-center mx-auto md:gap-5">
             {EducationData.map((val) => (
-              <div className="flex flex-col items-center md:items-start md:flex-row">
+              <div
+                key={val.id}
+                className="flex flex-col items-center md:items-start md:flex-row"
+              >
                 {val.icon}
                 <div className="text-center px-2 md:text-left lg:flex-col">
                   <h3>{val.heading}</h3>

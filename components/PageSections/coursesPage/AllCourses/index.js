@@ -3,15 +3,24 @@ import Card from "@components/card";
 import Link from "next/link";
 
 const AllCoursesSection = () => {
-  const courses = [
+  const courseDetails = [
     {
       id: 1,
       title: "Graphic Design 101",
       description:
         "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
       name: "Kathie Corl",
-      chip: "7hr 25m",
-      chip2: "$99.00 USD",
+      chips: [
+        {
+          id: 1,
+          hours: 10,
+          minutes: 24,
+        },
+        {
+          id: 2,
+          price: 99.0,
+        },
+      ],
       img1: "https://res.cloudinary.com/pruthvish/image/upload/v1659967496/607f1ff9fd9e0e1686d26497_image-3-profile-picture-small-teacher-education-x-template_ic7rbl.webp",
       img: "https://res.cloudinary.com/pruthvish/image/upload/v1659963040/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-800_zhw8fb.webp",
     },
@@ -116,7 +125,7 @@ const AllCoursesSection = () => {
           </span>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 text-left justify-center gap-8 md:p-8 w-full mx-auto max-w-7xl">
-          {courses.map((obj) => {
+          {courseDetails.map((obj) => {
             return <Card {...obj} />;
           })}
         </div>

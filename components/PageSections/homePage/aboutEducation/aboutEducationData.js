@@ -4,6 +4,8 @@ import SVG3 from "@public/icons/home_about_icon3.svg";
 
 const EducationData = [
   {
+    id: 1,
+
     icon: (
       <SVG1 className="w-14 mb-4 md:w-24 md:mt-2 md:mr-8 lg:mt-2 lg:w-28 lg:mr-8 rounded-full" />
     ),
@@ -12,6 +14,8 @@ const EducationData = [
       " Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id dolor",
   },
   {
+    id: 2,
+
     icon: (
       <SVG2 className="w-14 mb-4 md:w-24 md:mt-2 md:mr-8 lg:mt-2 lg:w-28 lg:mr-8 rounded-full" />
     ),
@@ -20,6 +24,7 @@ const EducationData = [
       " Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id dolor",
   },
   {
+    id: 3,
     icon: (
       <SVG3 className="w-14 mb-4 md:w-24 md:mt-2 md:mr-8 lg:mt-2 lg:w-28 lg:mr-8 rounded-full" />
     ),

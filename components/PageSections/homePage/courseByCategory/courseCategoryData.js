@@ -5,6 +5,7 @@ import Play from "@public/icons/play.svg";
 
 const CourseCategoryData = [
   {
+    id: 1,
     photo: <DesignCourse />,
     label: "Design",
     description:
@@ -13,6 +14,7 @@ const CourseCategoryData = [
     courses: "12 Courses",
   },
   {
+    id: 2,
     photo: <Development />,
     label: "Development",
     description:
@@ -21,6 +23,7 @@ const CourseCategoryData = [
     courses: "5 Courses",
   },
   {
+    id: 3,
     photo: <Marketing />,
     label: "Marketing",
     description:

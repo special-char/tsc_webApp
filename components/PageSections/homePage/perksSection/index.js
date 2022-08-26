@@ -15,14 +15,14 @@ const PerksSection = () => {
       svg: <LearnSvg />,
     },
     {
-      id: 1,
+      id: 2,
       title: "Graduate",
       description:
         "“Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.”",
       svg: <WorkSvg />,
     },
     {
-      id: 1,
+      id: 3,
       title: "Work",
       description:
         "“Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.”",
