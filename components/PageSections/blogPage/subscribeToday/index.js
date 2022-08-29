@@ -20,10 +20,11 @@ const SubscribeToday = () => {
               className="flex flex-col flex-1 z-20 w-full md:relative md:w-11/12 md:p-0 md:mt-4 gap-4 py-4"
             >
               <Field
-                className="text-neutral-600 md:w-[90%] rounded-full py-5 flex pl-4 md:px-6 focus:outline-none "
+                id="email"
+                placeholder="Enter Your email"
                 type="text"
                 name="email"
-                placeholder="Enter Your email"
+                className="text-neutral-600 md:w-[90%] rounded-full py-5 flex pl-4 md:px-6 focus:outline-none "
               />
               <button className="btn md:py-3 uppercase md:absolute md:right-16 md:top-2.5 flex items-center justify-center text-neutral-100 text-base font-bold bg-neutral-800">
                 subscribe

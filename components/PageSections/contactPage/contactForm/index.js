@@ -27,7 +27,7 @@ const ContactForm = () => {
             </p>
           </div>
           <div className="flex flex-col lg:flex-row items-center rounded-3xl justify-between gap-3">
-            <div className="contact-form rounded-3xl bg-neutral-100 shadow-dark max-w-[750px] w-[100%] py-16 px-6">
+            <div className="contact-form rounded-3xl bg-neutral-100 shadow-base max-w-[750px] w-[100%] py-16 px-6">
               <Formik
                 validationSchema={ContactSchema}
                 initialValues={{
@@ -123,7 +123,7 @@ const ContactForm = () => {
             </div>
             <div className="contact-links flex flex-col gap-5 w-full lg:w-[423px] ">
               {ContactLinkData.map((val) => (
-                <div className="rounded-3xl w-full mx-auto drop-shadow-sm h-auto bg-neutral-100 py-10 px-5 flex flex-col gap-2 items-center justify-around">
+                <div className="rounded-3xl w-full mx-auto shadow-base hover:shadow-dark h-auto bg-neutral-100 py-10 px-5 flex flex-col gap-2 items-center justify-around  hover:-translate-y-3 duration-200">
                   <div className="w-14 rounded-full">{val.icon}</div>
                   <div className="text-center text-xl">
                     <span className="font-bold  text-neutral-700">

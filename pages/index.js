@@ -8,16 +8,19 @@ import Rarrow from "@public/icons/rArrow.svg";
 import classNames from "classnames";
 import HomePage from "@components/pageSections/homePage";
 import Navbar from "@components/navbar";
+import axiosInstance from "lib/axiosInstance";
+import HomeQuery from "@queries/homeQuery";
 
-const Home = () => {
+const Home = ({ data }) => {
+  // console.log("log data:", data);
   const [exploreTraining, setExploreTraining] = useState(false);
   const [exploreDevelopment, setExploreDevelopment] = useState(false);
   const alignCenter = () => {
     setExploreDevelopment(false);
     setExploreTraining(false);
   };
-  console.log("exploreTraining", exploreTraining);
-  console.log("exploreDevelopment", exploreDevelopment);
+  // console.log("exploreTraining", exploreTraining);
+  // console.log("exploreDevelopment", exploreDevelopment);
 
   return (
     <>
@@ -155,12 +158,32 @@ const Home = () => {
           </div>
         </div>
       </section> */}
-      <HomePage />
+      <HomePage data={data} />
     </>
   );
 };
 Home.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
+
+export async function getServerSideProps() {
+  try {
+    const res = await axiosInstance.post("graphql", {
+      query: HomeQuery,
+      variables: {},
+    });
+    return {
+      props: {
+        data: res.data.data,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        data: error,
+      },
+    };
+  }
+}
 Home.displayName = "Home";
 export default Home;

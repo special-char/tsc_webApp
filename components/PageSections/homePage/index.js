@@ -8,17 +8,13 @@ import FeaturedTeacher from "./FeaturedTeacher";
 import PerksSection from "./perksSection";
 import ResourcesSection from "./resourcesSection";
 import TestimonialSection from "./TestimonialSection";
-import { Suspense } from "react";
-import dynamic from "next/dynamic";
 import PopularCourses from "./popularCourses";
-
-const BannerSection = dynamic(() => import("./bannerSection"), {
-  suspense: true,
-});
-const HomePage = () => {
+import BannerSection from "./bannerSection";
+const HomePage = ({ data }) => {
+  console.log("HomePage data", data);
   return (
     <>
-        <BannerSection />
+      <BannerSection data={data.homeBanner} />
       <PopularCourses />
       <PerksSection />
       <FeaturedTeacher />
