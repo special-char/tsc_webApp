@@ -92,8 +92,8 @@ const AllCoursesSection = () => {
   ];
   return (
     <>
-      <section className="courses-section-wrapper lg:w-full px-4 pt-28 bg-neutral-200">
-        <div className="container mx-auto  max-w-[1210px] p-4 flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
+      <section className="courses-section-wrapper lg:w-full px-4 pt-28">
+        <div className="container w-full mx-auto max-w-7xl p-4 flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
           <h2 className="text-neutral-800 text-center lg:text-left ">
             All Courses
           </h2>
@@ -115,7 +115,7 @@ const AllCoursesSection = () => {
             })}
           </span>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2  text-left justify-center gap-8 md:p-4 w-full mx-auto max-w-[1210px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 text-left justify-center gap-8 md:p-8 w-full mx-auto max-w-7xl">
           {courses.map((obj) => {
             return <Card {...obj} />;
           })}

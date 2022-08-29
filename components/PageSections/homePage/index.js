@@ -1,19 +1,23 @@
+import Layout from "@components/Layouts";
 import React from "react";
 import WorkValues from "../aboutPage/workValues";
 import AboutEducation from "./aboutEducation";
+// import BannerSection from "./bannerSection";
 import CourseByCategory from "./courseByCategory";
 import EducationCourses from "./educationCourses";
-import FeaturedTeacher from "./featuredTeacher";
+import FeaturedTeacher from "./FeaturedTeacher";
+import PerksSection from "./perksSection";
 import ResourcesSection from "./resourcesSection";
-import TestimonialSection from "./testimonialSection";
-import WhylearnSection from "./Perks/perksData";
-import data from "../../../data.json";
-
-const HomePage = ({data}) => {
-  console.log("data from home page:", data);
+import TestimonialSection from "./TestimonialSection";
+import PopularCourses from "./popularCourses";
+import BannerSection from "./bannerSection";
+const HomePage = ({ data }) => {
+  console.log("HomePage data", data);
   return (
     <>
-      <WhylearnSection />
+      <BannerSection data={data.homeBanner} />
+      <PopularCourses />
+      <PerksSection />
       <FeaturedTeacher />
       <EducationCourses />
       <AboutEducation />
@@ -25,4 +29,7 @@ const HomePage = ({data}) => {
   );
 };
 
+HomePage.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 export default HomePage;

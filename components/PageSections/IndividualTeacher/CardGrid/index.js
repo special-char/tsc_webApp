@@ -39,8 +39,8 @@ const CardGrid = () => {
   ];
 
   return (
-    <section className="w-full h-full py-40 px-4 bg-neutral-200">
-      <div className="container w-full mx-auto max-w-[1210px] p-4 flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
+    <section className="w-full h-full py-40 px-4">
+      <div className="container w-full mx-auto max-w-7xl p-4 flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
         <h2 className="text-neutral-800 text-center lg:text-left ">
           Kathie Corl Courses
         </h2>
@@ -48,7 +48,7 @@ const CardGrid = () => {
           BROWSE ALL COURSES
         </span>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 text-left justify-center gap-8  w-full mx-auto max-w-[1210px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 text-left justify-center gap-8 md:p-8 w-full mx-auto max-w-7xl">
         {courses.map((obj) => {
           return <AllCourses {...obj} />;
         })}
