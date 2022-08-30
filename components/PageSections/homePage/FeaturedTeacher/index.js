@@ -11,10 +11,10 @@ const FeaturedTeacher = ({ data }) => {
           <p>{data.heading?.description}</p>
           <div className="flex flex-col gap-8 mb-8 md:flex-row lg:flex-col lg:w-1/2 ">
             <button className="btn btn--primary  min-w-fit ">
-              BROWSE TEACHERS
+              {data.becomeTeacher?.buttonText}
             </button>
             <button className="btn btn--secondary min-w-fit">
-              BROWSE TEACHERS
+              {data.browse?.buttonText}
             </button>
           </div>
         </div>
