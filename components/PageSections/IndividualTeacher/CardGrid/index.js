@@ -1,5 +1,7 @@
 import AllCourses from "@components/card";
 import React from "react";
+import React from "react";
+import CardGrid from "./CardGrid";
 
 const CardGrid = () => {
   const courses = [
@@ -39,7 +41,7 @@ const CardGrid = () => {
   ];
 
   return (
-    <section className="w-full h-full py-40 px-4">
+    <section className="w-full h-full py-40 px-4 bg-neutral-200">
       <div className="container w-full mx-auto max-w-7xl p-4 flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
         <h2 className="text-neutral-800 text-center lg:text-left ">
           Kathie Corl Courses

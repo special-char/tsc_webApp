@@ -173,9 +173,12 @@ export async function getServerSideProps() {
       query: HomeQuery,
       variables: {},
     });
+    console.log("====================================");
+    console.log(res.data?.data);
+    console.log("====================================");
     return {
       props: {
-        data: res.data.data,
+        data: res.data?.data,
       },
     };
   } catch (error) {

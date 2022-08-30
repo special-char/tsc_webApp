@@ -53,7 +53,7 @@ const PopularCourses = () => {
   ];
   return (
     <>
-      <section className="py-20 overflow-hidden">
+      <section className="py-52 overflow-hidden">
         <h2 className="text-center mb-10">Browse our popular courses</h2>
         <div className="card-container container ml-auto max-w-7xl px-6">
           <div className="relative pb-10">

@@ -66,7 +66,7 @@ const TestimonialSection = () => {
   ];
   return (
     <>
-      <div className="relative overflow-hidden px-4  pt-28 py-36 lg:py-44">
+      <section className="relative px-4 pt-28 py-36 lg:py-44 bg-neutral-200">
         <h2 className="md:py-8 md:p-12 text-center justify-center">
           What our students say about us
         </h2>

@@ -24,7 +24,6 @@ const HomePage = ({ data }) => {
       <CourseByCategory />
       <TestimonialSection />
       <ResourcesSection />
-      <WorkValues />
     </>
   );
 };
