@@ -2,13 +2,14 @@ import AboutPage from "@components/aboutPage";
 import Footer from "@components/Footer";
 import Layout from "@components/layouts";
 import HomePage from "@components/pageSections/homePage";
+import HomeQuery from "@queries/homeQuery";
+import axiosInstance from "lib/axiosInstance";
 import React from "react";
-import data from "../data.json";
 
-const Home = () => {
+const Home = ({ data }) => {
   return (
     <>
-      <HomePage />
+      <HomePage data={data} />
     </>
   );
 };
@@ -18,13 +19,14 @@ Home.getLayout = function getLayout(page) {
 
 export async function getServerSideProps() {
   try {
+    console.log("hello");
     const res = await axiosInstance.post("graphql", {
       query: HomeQuery,
       variables: {},
     });
     return {
       props: {
-        data: res.data.data ,
+        data: res.data.data,
       },
     };
   } catch (error) {

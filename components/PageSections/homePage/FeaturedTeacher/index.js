@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const FeaturedTeacher = ({ data }) => {
   console.log("featuredTeacher", data);
@@ -10,12 +11,20 @@ const FeaturedTeacher = ({ data }) => {
           <h2>{data.heading?.title}</h2>
           <p>{data.heading?.description}</p>
           <div className="flex flex-col gap-8 mb-8 md:flex-row lg:flex-col lg:w-1/2 ">
-            <button className="btn btn--primary  min-w-fit ">
-              {data.becomeTeacher?.buttonText}
-            </button>
-            <button className="btn btn--secondary min-w-fit">
-              {data.browse?.buttonText}
-            </button>
+            <Link href={data.becomeTeacher?.link}>
+              <a>
+                <button className="btn btn--primary  min-w-fit ">
+                  {data.becomeTeacher?.buttonText}
+                </button>
+              </a>
+            </Link>
+            <Link href={data.browse?.link}>
+              <a>
+                <button className="btn btn--secondary min-w-fit">
+                  {data.browse?.buttonText}
+                </button>
+              </a>
+            </Link>
           </div>
         </div>
 
@@ -34,11 +43,11 @@ const FeaturedTeacher = ({ data }) => {
             <h6 className="bg-secondary1 text-primary font-bold w-44 text-center rounded-full py-2 mb-2">
               Featured Teacher
             </h6>
-            <h3 className="text-neutral-700 py-4">
-              “Teaching on Education platform has been an amazing experience”
-            </h3>
+            <h3 className="text-neutral-700 py-4">{data.heading?.title}</h3>
             <div className="">
-              <h4 className="text-neutral-700">Sophie Moore</h4>
+              <h4 className="text-neutral-700">
+                {data.teacher?.firstName} {data.teacher?.lastName}
+              </h4>
               <p className="text-neutral-600 mb-0">
                 Marketing Lead at Facebook
               </p>
