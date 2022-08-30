@@ -4,6 +4,7 @@ import RightSvg from "@public/icons/right.svg";
 import SearchSvg from "@public/icons/search.svg";
 import GlobleSvg from "@public/icons/globle.svg";
 import InovetionSvg from "@public/icons/inovetion.svg";
+import Link from "next/link";
 
 const TeachersSection = () => {
   const TeachersDetails = [
@@ -148,7 +149,13 @@ const TeachersSection = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 text-left justify-center gap-9 md:p-8 w-full px-4">
             {TeachersDetails.map((obj) => {
-              return <Teachers {...obj} key={obj.id} />;
+              return (
+                <Link href={`teacher/${obj.id}`}>
+                  <a>
+                    <Teachers {...obj} key={obj.id} />
+                  </a>
+                </Link>
+              );
             })}
           </div>
         </div>
