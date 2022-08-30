@@ -19,8 +19,8 @@ const FeaturedTeacher = ({ data }) => {
           </div>
         </div>
 
-        <div className="flex flex-1 relative h-auto">
-          <div className="aspect-h-image w-full relative">
+        <div className="flex flex-1 relative h-auto ">
+          <div className="aspect-h-image w-full relative ">
             <Image
               className="avatar rounded-xl"
               layout="fill"
@@ -30,7 +30,7 @@ const FeaturedTeacher = ({ data }) => {
               }
             />
           </div>
-          <div className="border-spacing-2 rounded-3xl absolute px-4 md:px-16 -bottom-52 md:-bottom-36 lg:-bottom-[87px] bg-neutral-100 py-8 max-w-[95%] mx-auto left-0 right-0 drop-shadow-md">
+          <div className="border-spacing-2 rounded-3xl absolute px-4 md:px-10 -bottom-52 md:-bottom-36 lg:-bottom-[87px] bg-neutral-100 py-11 max-w-[95%] mx-auto left-0 right-0 drop-shadow-md">
             <h6 className="bg-secondary1 text-primary font-bold w-44 text-center rounded-full py-2 mb-2">
               Featured Teacher
             </h6>

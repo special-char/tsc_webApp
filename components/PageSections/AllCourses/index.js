@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "@components/card";
+import Card from "@components/Card";
 import Link from "next/link";
 
 const AllCoursesSection = () => {
@@ -92,9 +92,9 @@ const AllCoursesSection = () => {
   ];
   return (
     <>
-      <section className="courses-section-wrapper lg:w-full px-4 pt-28">
+      <section className="courses-section-wrapper container lg:w-full px-4 pt-28">
         <div className="container w-full mx-auto max-w-[1210px] p-4 flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
-          <h2 className="text-neutral-800 text-center lg:text-left ">
+          <h2 className="text-neutral-800 text-center lg:text-left">
             All Courses
           </h2>
           <span className="flex bg-neutral-200 p-4 rounded-full flex-wrap gap-4 text-base font-bold">
@@ -102,7 +102,7 @@ const AllCoursesSection = () => {
               return (
                 <Link href="#">
                   <a
-                    className={`capitalize px-6 py-3 pt-3 rounded-full ${
+                    className={`capitalize px-6 py-4 pt-4 rounded-full ${
                       button.title === "all"
                         ? "text-secondary1 bg-primary"
                         : "bg-neutral-100 text-neutral-700 hover:bg-primary hover:text-secondary1"
