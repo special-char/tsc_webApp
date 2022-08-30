@@ -40,7 +40,7 @@ const CardGrid = () => {
 
   return (
     <section className="w-full h-full py-40">
-      <div className="container w-full mx-auto max-w-[1210px] flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
+      <div className="container w-full mx-auto max-w-[1210px] p-4 flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
         <h2 className="text-neutral-800 text-center lg:text-left ">
           Kathie Corl Courses
         </h2>
