@@ -23,18 +23,6 @@ const Card = ({ title, description, img, chip, chip2, name, img1 }) => {
             <h5>{name}</h5>
           </div>
         </div>
-        {/* <div className="absolute flex flex-col items-end top-8 gap-2 text-center w-full md:justify-end md:flex-row px-4">
-          <span className=" btn chip--white chip py-4 px-6 text-xs ">
-=========
-        <div className="absolute flex flex-col items-end top-8 gap-2 text-center w-full md:justify-end md:flex-row px-4">
-          <span className=" btn chip--white chip py-2 px-6 text-xs ">
->>>>>>>>> Temporary merge branch 2
-            {chip}
-          </span>
-          <span className=" btn chip--primary chip py-2 px-6 text-xs">
-            {chip2}
-          </span>
-        </div> */}
       </div>
     </>
   );
