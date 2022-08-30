@@ -1,11 +1,5 @@
 import Layout from "@components/Layouts";
-import Image from "next/image";
-import React, { useState } from "react";
-import Training from "@public/icons/Artboard1.svg";
-// import Training from "@public/icons/Artboard1.svg";
-import Larrow from "@public/icons/lArrow.svg";
-import Rarrow from "@public/icons/rArrow.svg";
-import classNames from "classnames";
+import React from "react";
 import HomePage from "@components/pageSections/homePage";
 import Navbar from "@components/navbar";
 import axiosInstance from "lib/axiosInstance";
