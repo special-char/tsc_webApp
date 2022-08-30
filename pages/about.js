@@ -7,9 +7,9 @@ import Achievements from "@components/pageSections/aboutPage/statsSection";
 import StorySection from "@components/pageSections/aboutPage/storySection";
 import TeachersSection from "@components/pageSections/aboutPage/teachersSection";
 import WorkValues from "@components/pageSections/aboutPage/workValues";
-import React from "react";
+import React, { Suspense } from "react";
 
-const AboutPage = () => {
+const About = () => {
   return (
     <>
       <BannerAbout />
@@ -17,14 +17,13 @@ const AboutPage = () => {
       <StorySection />
       <WorkValues />
       <TeachersSection />
-      {/* <HistorySection /> */}
+      <HistorySection />
       <OfficesSection />
-      <Footer />
     </>
   );
 };
-AboutPage.getLayout = function getLayout(page) {
+About.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
 
-export default AboutPage;
+export default About;

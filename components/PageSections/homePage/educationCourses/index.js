@@ -1,29 +1,29 @@
 import React from "react";
 
 const EducationCourses = () => {
-  const arr = [
-    {
-      id: 1,
-      firstName: "User1",
-      lastName: "Surname",
-      description: "description1",
-      designation: "Developer",
-    },
-    {
-      id: 2,
-      firstName: "User2",
-      lastName: "Surname",
-      description: "description2",
-      designation: "Developer",
-    },
-    {
-      id: 3,
-      firstName: "User3",
-      lastName: "Surname",
-      description: "description3",
-      designation: "Developer",
-    },
-  ];
+  // const arr = [
+  //   {
+  //     id: 1,
+  //     firstName: "User1",
+  //     lastName: "Surname",
+  //     description: "description1",
+  //     designation: "Developer",
+  //   },
+  //   {
+  //     id: 2,
+  //     firstName: "User2",
+  //     lastName: "Surname",
+  //     description: "description2",
+  //     designation: "Developer",
+  //   },
+  //   {
+  //     id: 3,
+  //     firstName: "User3",
+  //     lastName: "Surname",
+  //     description: "description3",
+  //     designation: "Developer",
+  //   },
+  // ];
   return (
     <>
       <section className="wrapper bg-primary w-full h-auto overflow-hidden relative px-4 py-20 -z-20">

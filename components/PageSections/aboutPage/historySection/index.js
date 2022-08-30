@@ -1,5 +1,4 @@
 import React from "react";
-
 const HistorySection = () => {
   const CompanyHistoryData = [
     {
@@ -29,7 +28,7 @@ const HistorySection = () => {
   ];
 
   return (
-    <section className="py-44">
+    <section className="py-44 bg-neutral-200">
       <div className="flex flex-col max-w-7xl gap-4 md:flex-row w-full container mx-auto px-3">
         <div className="left-content md:text-left lg:w-full mb-10 mx-auto flex-1">
           <h2>Our company history</h2>

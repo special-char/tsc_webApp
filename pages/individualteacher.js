@@ -1,13 +1,10 @@
-import CardGrid from "@components/pageSections/individualTeacher/CardGrid";
-import TeacherIntro from "@components/pageSections/individualTeacher/teacherIntro";
-
+import IndividualTeacherPage from "@components/pageSections/IndividualTeacher";
 import React from "react";
 
 const Individualteacher = () => {
   return (
     <>
-      <TeacherIntro />
-      <CardGrid />
+      <IndividualTeacherPage />
     </>
   );
 };

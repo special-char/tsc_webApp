@@ -1,5 +1,5 @@
 import React from "react";
-import Testi from "@components/pageSections/individualTeacher";
+import Testi from "@components/pageSections/IndividualTeacher/testi";
 
 const TeacherIntro = () => {
   const testiDetails = [

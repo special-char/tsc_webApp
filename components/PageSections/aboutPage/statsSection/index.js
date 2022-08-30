@@ -27,8 +27,8 @@ const Achievements = () => {
 
         <div className="flex flex-wrap justify-center items-center ">
           {AchievementsData.map((val) => (
-            <div className=" text-center px-7 min-w-[300px] flex-1">
-              <h2 className="text-secondary3">{val.Number}</h2>
+            <div className=" text-center px-7  min-w-[300px] flex-1">
+              <h1 className="text-secondary3">{val.Number}</h1>
               <h3>{val.heading}</h3>
               <p>{val.description}</p>
             </div>

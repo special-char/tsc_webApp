@@ -22,10 +22,12 @@ const AboutEducation = () => {
               alt="img"
             />
           </div>
-          <div className="right-content flex flex-1 flex-col justify-center mx-auto md:gap-5">
+          <div className="right-content flex flex-1 flex-col justify-center mx-auto md:gap-7">
             {EducationData.map((val) => (
               <div className="flex flex-col items-center md:items-start md:flex-row">
-                {val.icon}
+                <div className="w-14 mb-4 md:w-24 md:mt-2 md:mr-8 lg:mt-2 lg:w-24 lg:mr-8 rounded-ful">
+                  {val.icon}
+                </div>
                 <div className="text-center px-2 md:text-left lg:flex-col">
                   <h3>{val.heading}</h3>
                   <p>{val.description}</p>

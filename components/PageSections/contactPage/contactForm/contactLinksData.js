@@ -4,17 +4,17 @@ import Address from "@public/icons/location.svg";
 
 const ContactLinkData = [
   {
-    icon: <Email className="w-14 rounded-full" />,
+    icon: <Email className="rounded-full" />,
     title: "Email",
     data: "sanfrancisco@education.com",
   },
   {
-    icon: <Phone className="w-14 rounded-full" />,
+    icon: <Phone className="rounded-full" />,
     title: "Phone",
     data: "475-5856-1237",
   },
   {
-    icon: <Address className="w-14 rounded-full" />,
+    icon: <Address className="rounded-full" />,
     title: "Address",
     data: "51 Osceola Ln, San Francisco, California(CA), 94124",
   },
