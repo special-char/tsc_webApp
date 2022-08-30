@@ -1,5 +1,21 @@
 import React from "react";
 import Image from "next/image";
+import RightSvg from "@public/icons/right.svg";
+
+const icons = [
+  {
+    svg: <RightSvg />,
+    id: 1,
+  },
+  {
+    svg: <RightSvg />,
+    id: 2,
+  },
+  {
+    svg: <RightSvg />,
+    id: 3,
+  },
+];
 
 const Testi = ({
   img,
@@ -36,16 +52,12 @@ const Testi = ({
           <p className="text-lg font-normal text-neutral-600 md:w-[450px] w-[242px]">
             {description}
           </p>
-          <div className="w-6 flex flex-row gap-4">
-            <div className="btn btn--primary btn--round btn--small">
-              <a href="">{svg1}</a>
-            </div>
-            <div className="btn btn--primary btn--round btn--small">
-              <a href="">{svg1}</a>
-            </div>
-            <div className="btn btn--primary btn--round btn--small">
-              <a href="">{svg1}</a>
-            </div>
+          <div className="flex flex-row gap-4">
+            {icons.map((val) => (
+              <div key={val.id} class="avatar placeholder rounded-full">
+                <div class="w-9">{val.svg}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

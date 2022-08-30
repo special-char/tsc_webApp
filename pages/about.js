@@ -1,3 +1,4 @@
+import CustomImage from "@components/CustomImage";
 import Footer from "@components/footer";
 import Layout from "@components/Layouts";
 import BannerAbout from "@components/pageSections/aboutPage/bannerSection";

@@ -19,7 +19,7 @@ const BannerSection = ({ data }) => {
               <button className="btn btn--secondary">LEARN MORE</button>
             </div>
           </div>
-          <div className="relative basis-[500px] aspect-h-image h-auto rounded-3xl overflow-hidden">
+          <div className="relative basis-[500px] aspect-h-image h-auto rounded-3xl overflow-hidden skew-x-0 skew-y-0 scale-100 rotate-0 translate-x-1 translate-y-1 duration-1000 delay-1000 transition-all">
             <Image
               src={data.bannerImage.name}
               layout={"fill"}

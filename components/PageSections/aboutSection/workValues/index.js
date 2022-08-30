@@ -1,5 +1,5 @@
 import React from "react";
-import WorkValuesCard from "@components/workValuesCard";
+import AboutPage from "@components/aboutPage";
 import InovetionSvg from "@public/icons/inovetion.svg";
 import RightSvg from "@public/icons/right.svg";
 import SearchSvg from "@public/icons/search.svg";
@@ -44,7 +44,7 @@ const WorkValues = () => {
 
   return (
     <>
-      <section className="w-full lg:w-full bg-neutral-700 relative py-24">
+      <section className="w-full lg:w-screen bg-neutral-700 relative py-24">
         <div className="container w-full mx-auto p-4 gap-6 ">
           <div className="pb-8 flex flex-col text-center justify-center">
             <h2 className="text-secondary1">Our work values</h2>
@@ -53,10 +53,10 @@ const WorkValues = () => {
               eiusmod tempor incididunt.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 text-left justify-center gap-9 ">
+          <div className="grid md:grid-cols-2 text-left justify-center gap-9 md:p-8 ">
             {AboutDetails.map((obj) => {
               return (
-                <WorkValuesCard
+                <AboutPage
                   description={obj.description}
                   title={obj.title}
                   svg={obj.svg}
