@@ -17,7 +17,7 @@ const OfficesSection = () => {
   return (
     <>
       <section className="lg:w-full bg-neutral-100 px-4 py-24 md:py-44 w-full">
-        <div className="container max-w-[1210px] mx-auto text-center">
+        <div className="container max-w-7xl mx-auto text-center">
           <h2 className="text-neutral-800">Our offices</h2>
           <p className="text-neutral-600 w-full md:w-3/5 mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

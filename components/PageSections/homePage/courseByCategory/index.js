@@ -1,5 +1,6 @@
 import React from "react";
 import CourseCategoryData from "./courseCategoryData";
+import Yarrow from "@public/icons/yellowArrow.svg";
 
 const CourseByCategory = () => {
   return (
@@ -13,8 +14,8 @@ const CourseByCategory = () => {
             <div className="card flex-1">
               <figure className="relative">
                 {val.photo}
-                <div className="chip chip--white px-6 py-4 flex items-center gap-1 absolute top-4 right-4">
-                  <span>{val.icon}</span>
+                <div className="chip chip--white px-6 py-3 flex items-center gap-1 absolute top-4 right-4">
+                  <span className="w-3">{val.icon}</span>
                   <span className="text-sm font-bold">{val.courses}</span>
                 </div>
               </figure>
@@ -25,6 +26,9 @@ const CourseByCategory = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="relative flex justify-center">
+        <Yarrow className="absolute w-12 md:w-16 -top-14" />
       </div>
     </section>
   );

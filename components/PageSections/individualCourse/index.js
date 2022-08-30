@@ -9,23 +9,23 @@ import ChipNavigation from "@components/chipNavigation";
 
 import GetCourseCard from "@components/getCourseCard";
 
-const IndividualCourse = () => {
+const IndividualCourse = ({ title }) => {
   return (
     <section className="h-auto w-full overflow-clip">
       <div className="relative h-full w-full ">
         <div className="w-full h-[500px] lg:h-[600px] absolute -z-10 bg-neutral-700"></div>
         <div className="h-[500px] w-[500px] rounded-full absolute -right-96 -top-96 md:-right-48 md:-top-80 lg:-right-36 lg:-top-60 -z-10 bg-secondary3"></div>
       </div>
-      <div className="wrapper max-w-7xl  mx-auto">
+      <div className="wrapper max-w-7xl mx-auto py-20">
         <div className="wrapper-content h-auto flex flex-col lg:flex-row gap-4 px-4 md:px-6s w-full pt-20">
           <div className="left-section lg:max-w-[63%] h-auto">
-            <div className="chip-container chip px-0">
-              <div className="chip chip--white w-32 py-2 flex gap-1 items-center">
+            <div className="chip-container chip relative">
+              <div className="chip chip--white px-6 py-2 absolute -top-8 left-0 flex gap-1 items-center">
                 <Design className="w-4" />
                 <span className="font-bold">Design</span>
               </div>
             </div>
-            <h1 className="text-neutral-100 mb-0">Brand & Identity Design</h1>
+            <h1 className="text-neutral-100 mb-0">{title}</h1>
             <p className="text-secondary1">
               Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida.
               Diam phasellus vestibulum lorem sed risus ultricies.
@@ -50,12 +50,12 @@ const IndividualCourse = () => {
               <div className="lg:hidden">
                 <GetCourseCard />
               </div>
-              <div className="course-navigation flex flex-wrap gap-3 px-3 py-3 bg-secondary1 rounded-3xl md:rounded-full">
+              <div className="course-navigation flex flex-wrap gap-3 px-3 py-3 rounded-3xl md:rounded-full">
                 {ChipNavData.map((val) => (
                   <ChipNavigation link={val.link} label={val.label} />
                 ))}
               </div>
-              <div className="course-text-wrapper py-20">
+              <div className="course-text-wrapper py-20 border-b-[1px] border-neutral-400">
                 <h2>About the course</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur dolorili adipiscing
@@ -69,8 +69,8 @@ const IndividualCourse = () => {
                   gravida.
                 </p>
               </div>
-              <hr />
-              <div className="course-text-wrapper py-20">
+
+              <div className="course-text-wrapper py-20 border-b-[1px] border-neutral-400">
                 <h2>What will you learn</h2>
                 <p>
                   Euismod sem purus rutrum in. Tortor varius a bibendum nisl et
@@ -89,8 +89,8 @@ const IndividualCourse = () => {
                   </li>
                 </ol>
               </div>
-              <hr />
-              <div className="course-text-wrapper py-20">
+
+              <div className="course-text-wrapper py-20 border-b-[1px] border-neutral-400">
                 <h2>Results after course completion</h2>
                 <p>
                   Eget aliquet nibh praesent tristique magna sit amet purus.
@@ -99,7 +99,7 @@ const IndividualCourse = () => {
                   tristique senectus et netus et malesuada fames ac. Et tortor
                   consequat id porta nibh venenatis cras sed felis.
                 </p>
-                <p>
+                <p className="mb-12">
                   Mi sit amet mauris commodo quis. Eget arcu dictum varius duis
                   at consectetur lorem.Venenatis cras sed felis eget velit
                   aliquet.
@@ -113,7 +113,6 @@ const IndividualCourse = () => {
                   />
                 </div>
               </div>
-              <hr />
             </div>
             <div className="course-review py-20">
               <h2 className="text-center">What our students say</h2>
@@ -134,7 +133,7 @@ const IndividualCourse = () => {
             </div>
           </div>
           <div className="right-section max-w-sm mx-auto hidden lg:block">
-            <div className="rate-card sticky top-3 bg-neutral-100 rounded-2xl flex flex-col px-6 py-9 gap-0 mb-10">
+            <div className="rate-card sticky top-3">
               <GetCourseCard />
             </div>
           </div>

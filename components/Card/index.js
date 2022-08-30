@@ -6,7 +6,7 @@ const Card = ({ title, description, img, chip, chip2, name, img1 }) => {
     <>
       <div className="card">
         {" "}
-        <figure className="relative h-80">
+        <figure className="relative md:h-80">
           <Image layout="fill" objectFit="cover" src={img} alt="" />{" "}
         </figure>{" "}
         <div className="card__body p-8 relative border-spacing-2 shadow-2xl bg-neutral-100  ">
@@ -27,7 +27,7 @@ const Card = ({ title, description, img, chip, chip2, name, img1 }) => {
           <span className=" btn chip--white chip py-4 px-6 text-xs ">
             {chip}
           </span>
-          <span className=" btn chip--primary chip py-4 px-6 text-xs">
+          <span className=" btn chip--primary chip py-2 px-6 text-xs">
             {chip2}
           </span>
         </div> */}
