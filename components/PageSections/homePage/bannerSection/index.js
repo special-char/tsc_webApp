@@ -11,15 +11,17 @@ const BannerSection = ({ data }) => {
             <h1 className="font-semibold">{data.bannerDetails?.title}</h1>
             <p className="mb-14">{data.bannerDetails?.description}</p>
             <div className="flex flex-col md:flex-row justify-center lg:justify-start w-full gap-8">
-              <button className="btn btn--primary">
-                {data.explore?.buttonText}
-              </button>
+              <Link href={`${data.explore?.link}`}>
+                <button className="btn btn--primary">
+                  {data.explore?.buttonText}
+                </button>
+              </Link>
               <button className="btn btn--secondary">LEARN MORE</button>
             </div>
           </div>
           <div className="relative basis-[500px] aspect-h-image h-auto rounded-3xl overflow-hidden">
             <Image
-              src="https://assets.website-files.com/607de2d8e8911e32707a3efe/607e15d7c0c9f4037bde6f44_image-home-hero-education-x-template.jpg"
+              src={data.bannerImage.name}
               layout={"fill"}
               objectFit={"cover"}
               objectPosition={"center"}

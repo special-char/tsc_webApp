@@ -174,7 +174,7 @@ export async function getServerSideProps() {
     });
     return {
       props: {
-        data: res.data.data,
+        data: res.data.data ,
       },
     };
   } catch (error) {

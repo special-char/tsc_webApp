@@ -15,9 +15,9 @@ const HomePage = ({ data }) => {
   return (
     <>
       <BannerSection data={data.homeBanner} />
-      <PopularCourses />
-      <PerksSection />
-      <FeaturedTeacher />
+      <PopularCourses data={data.popularCourse} />
+      <PerksSection data={data.whyOurCourse} />
+      <FeaturedTeacher data={data.featuredTeacher} />
       <EducationCourses />
       <AboutEducation />
       <CourseByCategory />
