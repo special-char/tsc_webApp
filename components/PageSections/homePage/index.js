@@ -8,7 +8,6 @@ import EducationCourses from "./educationCourses";
 import FeaturedTeacher from "./featuredTeacher";
 import PerksSection from "./perksSection";
 import PopularCourses from "./popularCourses";
-import ResourcesSection from "./resourcesSection";
 import TestimonialSection from "./testimonialSection";
 
 const HomePage = ({ data }) => {
@@ -19,12 +18,14 @@ const HomePage = ({ data }) => {
       <PopularCourses data={data.popularCourse} />
       <PerksSection data={data.whyOurCourse} />
       <FeaturedTeacher data={data.featuredTeacher} />
-      <EducationCourses />
-      {/* <AboutEducation />
-      <CourseByCategory />
-      <TestimonialSection />
-      <ResourcesSection />
-      <WorkValues /> */}
+      <EducationCourses data={data.success} />
+      <AboutEducation data={data.aboutEducation} />
+      <CourseByCategory data={data.coursesCategory} />
+      <TestimonialSection
+        data={data.testimonialSection}
+        data2={data.testimonials}
+      />
+      {/* <ResourcesSection /> */}
     </>
   );
 };

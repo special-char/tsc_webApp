@@ -1,14 +1,15 @@
-import React from 'react'
-import CardGrid from './CardGrid'
-import TeacherIntro from './teacherIntro'
+import React from "react";
+import CardGrid from "./CardGrid";
+import TeacherIntro from "./teacherIntro";
 
-const  IndividualTeacherPage= () => {
+const IndividualTeacherPage = ({ data }) => {
+  console.log("IndividualTeacherPage data:", data);
   return (
     <>
-    <TeacherIntro />
+      <TeacherIntro data={data} />
       <CardGrid />
     </>
-  )
-}
+  );
+};
 
-export default IndividualTeacherPage
+export default IndividualTeacherPage;

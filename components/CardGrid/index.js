@@ -50,7 +50,7 @@ const CardGrid = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 text-left justify-center gap-8 md:p-8 w-full mx-auto max-w-[1210px]">
         {courses.map((obj) => {
-          return <AllCourses {...obj} />;
+          return <AllCourses {...obj} key={obj.id} />;
         })}
       </div>
     </section>
