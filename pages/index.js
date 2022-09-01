@@ -2,13 +2,14 @@ import AboutPage from "@components/aboutPage";
 import Footer from "@components/Footer";
 import Layout from "@components/layouts";
 import HomePage from "@components/pageSections/homePage";
+import HomeQuery from "@queries/homeQuery";
+import axiosInstance from "lib/axiosInstance";
 import React from "react";
-import data from "../data.json";
 
-const Home = () => {
+const Home = ({ data }) => {
   return (
     <>
-      <HomePage />
+      <HomePage data={data} />
     </>
   );
 };
@@ -23,11 +24,11 @@ export async function getServerSideProps() {
       variables: {},
     });
     console.log("====================================");
-    console.log(res.data?.data);
+    console.log(res.data.data);
     console.log("====================================");
     return {
       props: {
-        data: res.data.data ,
+        data: res.data.data,
       },
     };
   } catch (error) {

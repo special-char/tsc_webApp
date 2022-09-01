@@ -2,18 +2,15 @@ import React from "react";
 
 import YellowArrow from "@public/icons/yellowArrow.svg";
 
-const BlogBanner = () => {
+const BlogBanner = ({ data }) => {
   return (
     <>
       <section className="h-auto w-full ">
         <div className="relative overflow-hidden bg-neutral-200">
           <div className="py-20 px-3 max-w-7xl mx-auto ">
             <div className="text-center md:w-1/2 lg:pb-20 mx-auto">
-              <h1 className="text-neutral-700">Blog</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna.
-              </p>
+              <h1 className="text-neutral-700">{data.heading?.title}</h1>
+              <p>{data.heading?.description}</p>
             </div>
           </div>
           <div className="bg-primary rounded-full w-[400px] h-[400px] absolute md:-top-80 md:-right-52 lg:-top-60 lg:-right-48  z-10"></div>

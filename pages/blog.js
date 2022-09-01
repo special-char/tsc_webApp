@@ -1,18 +1,14 @@
 import Footer from "@components/footer";
 import Layout from "@components/Layouts";
-import BlogBanner from "@components/pageSections/blogPage/blogBanner";
-import BlogCoursesSection from "@components/pageSections/blogPage/blogCourses";
-import BlogSection from "@components/pageSections/blogPage/blogSection";
-import SubscribeToday from "@components/pageSections/blogPage/subscribeToday";
+import BlogPage from "@components/PageSections/blogPage";
+import BlogQuery from "@queries/blogQuery";
+import axiosInstance from "lib/axiosInstance";
 import React from "react";
 
-const Blog = () => {
+const Blog = ({ data }) => {
   return (
     <>
-      <BlogBanner />
-      <BlogSection />
-      <SubscribeToday />
-      <BlogCoursesSection />
+      <BlogPage data={data} />
     </>
   );
 };
@@ -20,4 +16,28 @@ const Blog = () => {
 Blog.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
+
+export async function getServerSideProps() {
+  try {
+    const res = await axiosInstance.post("graphql", {
+      query: BlogQuery,
+      variables: {},
+    });
+    console.log("====================================");
+    console.log(res.data.data);
+    console.log("====================================");
+    return {
+      props: {
+        data: res.data.data,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        data: error,
+      },
+    };
+  }
+}
+
 export default Blog;

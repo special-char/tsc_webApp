@@ -2,14 +2,16 @@ import Layout from "@components/Layouts";
 import React from "react";
 import WorkValues from "../aboutPage/workValues";
 import AboutEducation from "./aboutEducation";
-// import BannerSection from "./bannerSection";
+import BannerSection from "./bannerSection";
 import CourseByCategory from "./courseByCategory";
 import EducationCourses from "./educationCourses";
 import FeaturedTeacher from "./featuredTeacher";
+import PerksSection from "./perksSection";
+import PopularCourses from "./popularCourses";
 import ResourcesSection from "./resourcesSection";
 import TestimonialSection from "./testimonialSection";
 
-const HomePage = ({data}) => {
+const HomePage = ({ data }) => {
   console.log("data from home page:", data);
   return (
     <>
@@ -17,8 +19,8 @@ const HomePage = ({data}) => {
       <PopularCourses data={data.popularCourse} />
       <PerksSection data={data.whyOurCourse} />
       <FeaturedTeacher data={data.featuredTeacher} />
-      <EducationCourses />
-      <AboutEducation />
+      <EducationCourses data={data.EducationCourses} />
+      <AboutEducation data={data.aboutEducation} />
       <CourseByCategory />
       <TestimonialSection />
       <ResourcesSection />
