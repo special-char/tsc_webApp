@@ -449,9 +449,6 @@ body {
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {
-  .nav-link {
-    display: none;
-  }
   .nav-link-mobile {
     display: flex;
     position: absolute;
