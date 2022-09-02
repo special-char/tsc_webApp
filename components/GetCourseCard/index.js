@@ -1,4 +1,10 @@
 import CourseFeatures from "@components/pageSections/individualCourse/courseData";
+import Chart from "@public/icons/courseLevel.svg";
+import DurationSvg from "@public/icons/courseDuration.svg";
+import Lesson from "@public/icons/courseLesson.svg";
+import Access from "@public/icons/courseAccess.svg";
+import Device from "@public/icons/courseDevice.svg";
+
 import React from "react";
 import { Field, Form, Formik } from "formik";
 
