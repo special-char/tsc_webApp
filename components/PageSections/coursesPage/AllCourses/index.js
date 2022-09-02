@@ -103,7 +103,7 @@ const AllCoursesSection = ({ data }) => {
               return (
                 <Link href="#">
                   <a
-                    className={`capitalize px-6 py-3 pt-3 rounded-full ${
+                    className={`capitalize px-6 py-4 pt-4 rounded-full ${
                       button.title === "all"
                         ? "text-secondary1 bg-primary"
                         : "bg-neutral-100 text-neutral-700 hover:bg-primary hover:text-secondary1"
