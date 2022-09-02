@@ -45,7 +45,7 @@ const HomeQuery = `{
     }
     cards{
       id
-        image
+    	image
       {
         id
         name
@@ -124,7 +124,7 @@ featuredTeacher{
       description
     }
   }
-    aboutEducation{
+	aboutEducation{
     heading{
       id
       title
@@ -231,7 +231,8 @@ featuredTeacher{
       description
     }
   }
+
 }
-  `;
+`;
 
 export default HomeQuery;
