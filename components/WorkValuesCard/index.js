@@ -1,17 +1,26 @@
+import Image from "next/image";
 import React from "react";
 
-const WorkValuesCard = ({ svg, title, description, chip }) => {
+const WorkValuesCard = ({ data }) => {
   return (
     <>
       <div className="rounded-3xl shadow-2xl border-spacing-2 p-8 drop-shadow-md bg-neutral-100">
         <div className="flex items-center justify-between pb-8">
-          <div className="w-16 ">{svg}</div>
-          <div className="chip border-[1px] border-neutral-300 shadow-dark">
-            <span className="font-bold text-neutral-700">{chip}</span>
+          <div className=" relative min-h-[100px]">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              src={data.icon?.url}
+              alt=""
+              objectPosition={"center"}
+            />
           </div>
+          {/*<div className="chip border-[1px] border-neutral-300 shadow-dark">
+            <span className="font-bold text-neutral-700">{chip}</span>
+          </div> */}
         </div>
-        <h3 className=" text-neutral-700 mb-2 md:mb-3.5">{title}</h3>
-        <p className=" text-neutral-600">{description}</p>
+        <h3 className=" text-neutral-700 mb-2 md:mb-3.5">{data.title}</h3>
+        <p className=" text-neutral-600">{data.description}</p>
       </div>
     </>
   );

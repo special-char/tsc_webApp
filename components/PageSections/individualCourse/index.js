@@ -6,10 +6,11 @@ import Testimonial from "@components/testimonial";
 import PlayVideo from "@public/icons/playVideo.svg";
 import ChipNavData from "@components/chipNavigation/chipNavData";
 import ChipNavigation from "@components/chipNavigation";
-
 import GetCourseCard from "@components/getCourseCard";
 
-const IndividualCourse = ({ title }) => {
+const IndividualCourse = ({ data }) => {
+  console.log("data of IndividualCourse page:", data);
+  console.log("GetCourseCard data: ", data.courseMinimalDetails);
   return (
     <section className="h-auto w-full overflow-clip">
       <div className="relative h-full w-full ">
@@ -25,11 +26,8 @@ const IndividualCourse = ({ title }) => {
                 <span className="font-bold">Design</span>
               </div>
             </div>
-            <h1 className="text-neutral-100 mb-0">{title}</h1>
-            <p className="text-secondary1">
-              Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida.
-              Diam phasellus vestibulum lorem sed risus ultricies.
-            </p>
+            <h1 className="text-neutral-100 mb-0">{data.title}</h1>
+            <p className="text-secondary1">{data.titleDescription}</p>
             <div className="course-preview mb-10 relative w-full min-h-[162px] sm:min-h-[333px] md:min-h-[400px]">
               <Image
                 className="rounded-3xl brightness-50"
@@ -48,62 +46,42 @@ const IndividualCourse = ({ title }) => {
             </div>
             <div className="get-course">
               <div className="lg:hidden">
-                <GetCourseCard />
+                <GetCourseCard data={data.courseMinimalDetails} />
               </div>
               <div className="course-navigation flex flex-wrap gap-3 px-3 py-3 rounded-3xl md:rounded-full">
                 {ChipNavData.map((val) => (
-                  <ChipNavigation link={val.link} label={val.label} />
+                  <ChipNavigation
+                    link={val.link}
+                    label={val.label}
+                    key={val.id}
+                  />
                 ))}
               </div>
               <div className="course-text-wrapper py-20 border-b-[1px] border-neutral-400">
-                <h2>About the course</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur dolorili adipiscing
-                  elit. Felis donec massa aliquam id.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Purus viverra praesent felis
-                  consequat pellentesque turpis et quisque platea. Eu, elit ut
-                  nunc ac mauris bibendum nulla placerat. Sagittis sit eu sit
-                  massa sapien, risus diam. In lorem eu sed euismod laoreet
-                  urna, feugiat et. Euismod sem purus rutrum in. Tortor varius a
-                  bibendum nisl et tellus. Aliquet elit senectus iaculis netus
-                  gravida.
-                </p>
+                <h2>{data.aboutCourse?.title}</h2>
+                <p>{data.aboutCourse?.description}</p>
               </div>
 
               <div className="course-text-wrapper py-20 border-b-[1px] border-neutral-400">
                 <h2>What will you learn</h2>
-                <p>
-                  Euismod sem purus rutrum in. Tortor varius a bibendum nisl et
-                  tellus. Aliquet elit senectus iaculis netus gravida.
-                </p>
-                <ol start={1} className="pl-0">
-                  <li>
-                    Sed viverra ipsum nunc aliquet bibendum enim facilisis
-                    gravida.
-                  </li>
-                  <li>At urna condimentum mattis pellentesque id nibh.</li>
-                  <li>Magna etiam tempor orci eu lobortis elementum.</li>
-                  <li>
-                    Bibendum est ultricies integer quis. Semper eget duis at
-                    tellus.
-                  </li>
-                </ol>
+                <p>{data.result?.description}</p>
+                {data.curriculum.map((val) => {
+                  // console.log("carriculum:", val);
+                  return (
+                    <ol className="pl-0" key={val.id}>
+                      <li>
+                        <h4>{val.title}</h4>
+                        <p>{val.description}</p>
+                      </li>
+                    </ol>
+                  );
+                })}
               </div>
 
               <div className="course-text-wrapper py-20 border-b-[1px] border-neutral-400">
-                <h2>Results after course completion</h2>
-                <p>
-                  Eget aliquet nibh praesent tristique magna sit amet purus.
-                  Consequat id porta nibh venenatis cras sed felis. Nisl rhoncus
-                  mattis rhoncus urna neque viverra justo nec. Habitant morbi
-                  tristique senectus et netus et malesuada fames ac. Et tortor
-                  consequat id porta nibh venenatis cras sed felis.
-                </p>
-                <p className="mb-12">
-                  Mi sit amet mauris commodo quis. Eget arcu dictum varius duis
-                  at consectetur lorem.Venenatis cras sed felis eget velit
-                  aliquet.
-                </p>
+                <h2>{data.result?.title}</h2>
+                <p>{data.result?.description}</p>
+
                 <div className="course-preview relative w-full min-h-[162px] md:min-h-[400px]">
                   <Image
                     className="rounded-3xl"
@@ -114,7 +92,7 @@ const IndividualCourse = ({ title }) => {
                 </div>
               </div>
             </div>
-            <div className="course-review py-20">
+            {/* <div className="course-review py-20">
               <h2 className="text-center">What our students say</h2>
               <div className="px-3 flex flex-col gap-2">
                 {CourseReview.map((obj) => {
@@ -130,7 +108,7 @@ const IndividualCourse = ({ title }) => {
                   );
                 })}
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="right-section max-w-sm mx-auto hidden lg:block">
             <div className="rate-card sticky top-3">

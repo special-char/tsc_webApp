@@ -3,7 +3,7 @@ import Testimonial from "@components/testimonial";
 import LeftSvg from "/public/icons/left.svg";
 import RightsSvg from "/public/icons/rights.svg";
 
-const TestimonialSection = () => {
+const TestimonialSection = ({ data, data2 }) => {
   const testimonialDetails = [
     {
       id: 1,
@@ -64,16 +64,17 @@ const TestimonialSection = () => {
       title: "Students community",
     },
   ];
+  //console.log("TestimonialSection data2:", data2);
   return (
     <>
       <section className="relative  px-4 md:p-6 pt-28 py-36 lg:py-44 bg-neutral-200 ">
         <h2 className="md:py-8 md:p-12 text-center justify-center">
-          What our students say about us
+          {data.heading?.title}
         </h2>
         <div className="container ml-auto max-w-7xl overflow-hidden relative">
           <div className="navigation flex flex-row justify-between w-full lg:w-[90%] overflow-hidden  absolute z-10  top-44">
-            <div class="avatar placeholder bg-neutral-100 hover:bg-primary hover:fill-neutral-100 rounded-full">
-              <div class="w-16 md:w-20">
+            <div className="avatar placeholder bg-neutral-100 hover:bg-primary hover:fill-neutral-100 rounded-full">
+              <div className="w-16 md:w-20">
                 <span className=" w-4">
                   <LeftSvg />
                 </span>
@@ -88,15 +89,17 @@ const TestimonialSection = () => {
             </div>
           </div>
           <div className="inline-flex gap-4 text-center justify-center md:text-left relative">
-            {testimonialDetails.map((obj) => {
+            {data2.map((obj) => {
               const name = `${obj.firstName} ${obj.lastName}`;
+              //console.log("TestimonialSection obj:", obj);
               return (
                 <Testimonial
-                  description={obj.description}
-                  img={obj.img}
-                  designation={obj.designation}
-                  name={name}
-                  svg={obj.svg}
+                  data={obj}
+                  // description={obj.description}
+                  // img={obj.img}
+                  // designation={obj.designation}
+                  // name={name}
+                  // svg={obj.svg}
                 />
               );
             })}

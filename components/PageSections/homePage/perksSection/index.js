@@ -1,11 +1,10 @@
 import React from "react";
 import LearnSvg from "@public/icons/learn.svg";
-import WorkSvg from "@public/icons/work.svg";
-import GraduateSvg from "@public/icons/graduate.svg";
 import Perks from "@components/Perks";
 import OrangearrowSvg from "@public/icons/orangearrow.svg";
 
 const PerksSection = ({ data }) => {
+  //console.log("why Learn data:", data);
   return (
     <>
       <section className=" bg-neutral-700 text-center relative py-24 md:py-44 lg:h-auto">
@@ -13,7 +12,8 @@ const PerksSection = ({ data }) => {
           <h2 className="flex-1 text-secondary1">{data.heading.title}</h2>
           <div className="lg:flex-row flex flex-1 flex-col gap-16">
             {data.cards.map((obj) => {
-              return <Perks {...obj} image={obj.image.name} key={obj.id} />;
+              //console.log("perk section obj:", obj);
+              return <Perks data={obj} key={obj.id} />;
             })}
           </div>
         </div>

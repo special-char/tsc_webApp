@@ -1,7 +1,7 @@
 import React from "react";
 import Testi from "@components/pageSections/IndividualTeacher/testi";
 
-const TeacherIntro = () => {
+const TeacherIntro = ({ data }) => {
   const testiDetails = [
     {
       id: 1,
@@ -12,6 +12,8 @@ const TeacherIntro = () => {
       img: "https://placeimg.com/192/192/people",
     },
   ];
+  console.log("data:", data);
+  console.log("data firstName:", data.firstName);
 
   return (
     <>
@@ -22,19 +24,21 @@ const TeacherIntro = () => {
         </div>
         <div className="md:max-w-[767px] mx-auto px-4">
           <div className="flex flex-col items-center justify-center relative lg:mb-48 md:mb-32 mb-72">
-            {testiDetails.map((obj) => {
+            {data.map((obj) => {
+              console.log("obj:", obj);
               return (
                 <Testi
-                  description={obj.description}
-                  img={obj.img}
-                  chip={obj.chip}
-                  name={obj.name}
+                  {...obj}
+                  // description={obj.description}
+                  // // img={obj.img}
+                  // chip={obj.chip}
+                  // name={obj.name}
                 />
               );
             })}
           </div>
           <div className=" md:grid flex flex-col justify-center text-left md:items-center  ">
-            <h2>About Kathie Corl</h2>
+            <h2>About {data.firstName}</h2>
             <p className="md:w-[720px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
               viverra praesent felis consequat pellentesque turpis et quisque

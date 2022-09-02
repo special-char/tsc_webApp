@@ -8,6 +8,7 @@ const nextConfig = {
       "res.cloudinary.com",
       "placeimg.com",
       "assets.website-files.com",
+      "ik.imagekit.io",
     ],
     formats: ["image/avif", "image/webp"],
   },

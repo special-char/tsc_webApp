@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 const BannerSection = ({ data }) => {
-  console.log("data from banner section", data);
+  //console.log("data from banner section", data);
   return (
     <>
       <section className="main flex items-center h-auto relative overflow-hidden py-16 lg:py-32">
@@ -16,7 +16,9 @@ const BannerSection = ({ data }) => {
                   {data.explore?.buttonText}
                 </button>
               </Link>
-              <button className="btn btn--secondary">LEARN MORE</button>
+              <Link href={`${data.learn?.link}`}>
+                <button className="btn btn--secondary">LEARN MORE</button>
+              </Link>
             </div>
           </div>
           <div className="relative basis-[500px] aspect-h-image h-auto rounded-3xl overflow-hidden skew-x-0 skew-y-0 scale-100 rotate-0 translate-x-1 translate-y-1 duration-1000 delay-1000 transition-all">

@@ -1,68 +1,30 @@
 import React from "react";
 import WorkValuesCard from "@components/workValuesCard";
-import InovetionSvg from "@public/icons/inovetion.svg";
-import RightSvg from "@public/icons/right.svg";
-import SearchSvg from "@public/icons/search.svg";
-import GlobleSvg from "@public/icons/globle.svg";
 import OrangearrowSvg from "@public/icons/orangearrow.svg";
 
-const WorkValues = () => {
-  const AboutDetails = [
-    {
-      id: 1,
-      title: "Commitment",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus egestas non consequat pellentesque iaculis nunc, est, mollis. Nulla.",
-      svg: <RightSvg />,
-      chip: "01",
-    },
-    {
-      id: 1,
-      title: "Accessibility",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus egestas non consequat pellentesque iaculis nunc, est, mollis. Nulla.",
-      svg: <GlobleSvg />,
-      chip: "02",
-    },
-    {
-      id: 1,
-      title: "Openness",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus egestas non consequat pellentesque iaculis nunc, est, mollis. Nulla.",
-      svg: <SearchSvg />,
-      chip: "03",
-    },
-    {
-      id: 1,
-      title: "Innovation",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus egestas non consequat pellentesque iaculis nunc, est, mollis. Nulla.",
-      svg: <InovetionSvg />,
-      chip: "04",
-    },
-  ];
-
+const WorkValues = ({ data }) => {
+  //console.log("Work Value Data:", data);
   return (
     <>
       <section className="w-full lg:w-full bg-neutral-700 relative py-24">
         <div className="container w-full mx-auto p-4 gap-6 ">
           <div className="pb-8 flex flex-col text-center justify-center">
-            <h2 className="text-secondary1">Our work values</h2>
+            <h2 className="text-secondary1">{data.heading?.title}</h2>
             <p className="text-neutral-100 md:w-[520px] w-auto m-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
+              {data.heading?.description}
             </p>
           </div>
           <div className="grid md:grid-cols-2 text-left justify-center gap-9 ">
-            {AboutDetails.map((obj) => {
+            {data.valueCard.map((obj) => {
+              // console.log("card values map:", obj);
               return (
                 <WorkValuesCard
-                  description={obj.description}
-                  title={obj.title}
-                  svg={obj.svg}
-                  chip={obj.chip}
-                  id={obj.id}
-                  key={obj.id}
+                  data={obj}
+                  // description={obj.description}
+                  // title={obj.title}
+                  // svg={obj.svg}
+                  // id={obj.id}
+                  // key={obj.id}
                 />
               );
             })}
