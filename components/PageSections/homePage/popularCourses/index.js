@@ -1,66 +1,42 @@
 import Card from "@components/card";
-import LeftArrow from "@public/icons/lessthan.svg";
-import RightArrow from "@public/icons/greaterthan.svg";
 import React from "react";
 import Link from "next/link";
+import LeftSvg from "/public/icons/left.svg";
+import RightsSvg from "/public/icons/rights.svg";
 
-const PopularCourses = () => {
-  const courses = [
-    {
-      id: 1,
-      title: "Graphic Design 101",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
-      name: "Kathie Corl",
-      chip: "7hr 25m",
-      chip2: "$99.00 USD",
-      img1: "https://res.cloudinary.com/pruthvish/image/upload/v1659967496/607f1ff9fd9e0e1686d26497_image-3-profile-picture-small-teacher-education-x-template_ic7rbl.webp",
-      img: "https://res.cloudinary.com/pruthvish/image/upload/v1659963040/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-800_zhw8fb.webp",
-    },
-    {
-      id: 2,
-      title: "Web Design & Development",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
-      name: "Kathie Corl",
-      chip: "7hr 25m",
-      chip2: "$99.00 USD",
-      img1: "https://res.cloudinary.com/pruthvish/image/upload/v1659967496/607f1ff9fd9e0e1686d26497_image-3-profile-picture-small-teacher-education-x-template_ic7rbl.webp",
-      img: "https://res.cloudinary.com/pruthvish/image/upload/v1659963040/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-800_zhw8fb.webp",
-    },
-    {
-      id: 3,
-      title: "Brand & Identity Design",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
-      name: "Kathie Corl",
-      chip: "7hr 25m",
-      chip2: "$99.00 USD",
-      img1: "https://res.cloudinary.com/pruthvish/image/upload/v1659967496/607f1ff9fd9e0e1686d26497_image-3-profile-picture-small-teacher-education-x-template_ic7rbl.webp",
-      img: "https://res.cloudinary.com/pruthvish/image/upload/v1659963040/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-800_zhw8fb.webp",
-    },
-    {
-      id: 3,
-      title: "Brand & Identity Design",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
-      name: "Kathie Corl",
-      chip: "7hr 25m",
-      chip2: "$99.00 USD",
-      img1: "https://res.cloudinary.com/pruthvish/image/upload/v1659967496/607f1ff9fd9e0e1686d26497_image-3-profile-picture-small-teacher-education-x-template_ic7rbl.webp",
-      img: "https://res.cloudinary.com/pruthvish/image/upload/v1659963040/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-800_zhw8fb.webp",
-    },
-  ];
+const PopularCourses = ({ data }) => {
+  //console.log("popular Courses Data:", data);
   return (
     <>
       <section className="py-52 overflow-hidden">
         <h2 className="text-center mb-10">Browse our popular courses</h2>
-        <div className="card-container container ml-auto max-w-7xl px-6">
+        <div className="card-container container   ml-auto max-w-7xl px-6">
           <div className="relative pb-10">
-            <div className="flex flex-col md:flex-row md:inline-flex gap-4 justify-center md:text-left">
-              {courses.map((obj) => {
+            <div className="navigation flex flex-row justify-between w-full lg:w-[93%] overflow-hidden  absolute z-10  top-40">
+              <div className="avatar placeholder bg-neutral-100 hover:bg-primary hover:fill-neutral-100 rounded-full">
+                <div className="w-16 md:w-20">
+                  <span className=" w-4">
+                    <LeftSvg />
+                  </span>
+                </div>
+              </div>
+              <div class="avatar placeholder bg-neutral-100  hover:bg-primary hover:fill-neutral-100 rounded-full">
+                <div class="w-16 md:w-20 ">
+                  <span className=" w-4">
+                    <RightsSvg />
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-nowrap overflow-hidden  md:flex-row md:inline-flex gap-4 justify-center md:text-left">
+              {data.courses.map((obj) => {
+                //console.log("popular Courses obj data:", obj);
                 return (
-                  <div className="md:min-w-[550px] relative">
+                  <div
+                    className="w-[300px] md:min-w-[550px] relative"
+                    key={obj.id}
+                  >
                     <Link href={`course/${obj.id}`}>
                       <a>
                         <Card {...obj} />
@@ -85,9 +61,11 @@ const PopularCourses = () => {
           </div>
         </div>
         <div className="container mx-auto  flex items-center justify-center">
-          <button className="btn btn--primary uppercase">
-            explore all courses
-          </button>
+          <Link href={data.explore?.link}>
+            <button className="btn btn--primary uppercase">
+              {data.explore?.buttonText}
+            </button>
+          </Link>
         </div>
       </section>
     </>

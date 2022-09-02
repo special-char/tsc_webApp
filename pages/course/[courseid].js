@@ -1,7 +1,9 @@
 import { useRouter } from "next/router";
 import IndividualCourse from "@components/pageSections/individualCourse";
+import axiosInstance from "lib/axiosInstance";
+import CoursesQuery from "@queries/coursesQuery";
 
-const CourseId = () => {
+const CourseId = ({ data }) => {
   const CourseData = [
     {
       id: 1,
@@ -30,21 +32,40 @@ const CourseId = () => {
   ];
   const router = useRouter();
   const { courseid } = router.query;
-
+  // we have to put courses data here
+  console.log("indiividual courses data:", data);
   return (
     <>
-      {CourseData.filter((course) => course.id == courseid).map((val) => (
-        <div key={val.id}>
-          <IndividualCourse title={val.title} />
-        </div>
-      ))}
+      {data.courses
+        .filter((course) => course.id == courseid)
+        .map((val) => (
+          <div key={val.id}>
+            <IndividualCourse data={val} />
+          </div>
+        ))}
     </>
   );
 };
 
-export default CourseId;
-
-{
-  /* <h1>{val.title}</h1>
-          <p>{val.rate}</p> */
+export async function getServerSideProps() {
+  try {
+    console.log("hello");
+    const res = await axiosInstance.post("graphql", {
+      query: CoursesQuery,
+      variables: {},
+    });
+    return {
+      props: {
+        data: res.data.data,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        data: error,
+      },
+    };
+  }
 }
+
+export default CourseId;

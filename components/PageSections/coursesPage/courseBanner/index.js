@@ -1,17 +1,14 @@
 import React from "react";
 import BlueArrow from "@public/icons/blueArrow.svg";
 
-const CourseBanner = () => {
+const CourseBanner = ({ data }) => {
   return (
     <>
       <section className="w-full h-auto relative overflow-hidden py-32">
         <div className="container mx-auto">
           <div className="text-center px-7 md:px-28 lg:px-28">
-            <h1>Courses</h1>
-            <p className="lg:mx-16">
-              Lorem ipsum, dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
+            <h1>{data.heading?.title}</h1>
+            <p className="lg:mx-16">{data.heading?.description}</p>
           </div>
         </div>
         <div className="bg-wrapper flex relative">

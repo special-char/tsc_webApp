@@ -7,7 +7,7 @@ import Blog from "@components/blogComponent";
 import ResourcesSectionData from "@components/pageSections/homePage/resourcesSection/resourcesSectionData";
 
 const BlogSection = ({ data }) => {
-  console.log("data blog section data", data);
+  //console.log("BlogSection data:", data);
   return (
     <section className="h-auto w-full">
       <div className=" mx-auto lg:w-full px-6 py-20 max-w-7xl">
@@ -34,8 +34,8 @@ const BlogSection = ({ data }) => {
 
           <div className="flex flex-col gap-5 mx-auto lg:flex-1">
             {/* map goes here */}
-            {data.map((val) => (
-              <Blog src={val.photo} description={val.description} />
+            {data.blogs.map((val) => (
+              <Blog data={val} />
             ))}
             {/* map ends here */}
           </div>

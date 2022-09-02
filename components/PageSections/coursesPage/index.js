@@ -3,12 +3,12 @@ import AllCoursesSection from "./allCourses";
 import CourseBanner from "./courseBanner";
 import FeaturedCourse from "./featuredCourses";
 
-const CoursesPage = () => {
+const CoursesPage = ({ data }) => {
   return (
     <>
-      <CourseBanner />
-      <FeaturedCourse />
-      <AllCoursesSection />
+      <CourseBanner data={data.courseBanner} />
+      <FeaturedCourse data={data.courseBanner} />
+      <AllCoursesSection data={data.courses} />
     </>
   );
 };

@@ -20,7 +20,9 @@ const options = [
   },
 ];
 
-const GetCourseCard = () => {
+const GetCourseCard = ({ data }) => {
+  console.log("GetCourseCard data:", data);
+  //console.log("GetCourseCard title data:", data.title);
   return (
     <section className="rate-card flex flex-col bg-neutral-100 rounded-3xl px-6  pt-16 md:px-8 md:flex-row lg:flex-col gap-6 shadow-dark">
       <div className="get-course-content">
@@ -57,7 +59,7 @@ const GetCourseCard = () => {
       </div>
       <div className="flex flex-col gap-6 lg:gap-4 items-start">
         {CourseFeatures.map((val) => (
-          <div className="flex items-start gap-2">
+          <div className="flex items-start gap-2" key={val.id}>
             <div className="w-8">{val.svg}</div>
             <span>
               {val.label && `${val.label}: `}

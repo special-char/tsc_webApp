@@ -1,30 +1,40 @@
-import CustomImage from "@components/CustomImage";
-import Footer from "@components/footer";
 import Layout from "@components/Layouts";
-import BannerAbout from "@components/pageSections/aboutPage/bannerSection";
-import HistorySection from "@components/pageSections/aboutPage/historySection";
-import OfficesSection from "@components/pageSections/aboutPage/officesSection";
-import Achievements from "@components/pageSections/aboutPage/statsSection";
-import StorySection from "@components/pageSections/aboutPage/storySection";
-import TeachersSection from "@components/pageSections/aboutPage/teachersSection";
-import WorkValues from "@components/pageSections/aboutPage/workValues";
+import AboutPage from "@components/pageSections/aboutPage";
+import AboutQuery from "@queries/aboutQuery";
+import axiosInstance from "lib/axiosInstance";
 import React, { Suspense } from "react";
 
-const About = () => {
+const About = ({ data }) => {
+  console.log("About Page Data:", data);
   return (
     <>
-      <BannerAbout />
-      <Achievements />
-      <StorySection />
-      <WorkValues />
-      <TeachersSection />
-      <HistorySection />
-      <OfficesSection />
+      <AboutPage data={data} />
     </>
   );
 };
 About.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
+
+export async function getServerSideProps() {
+  try {
+    console.log("hello");
+    const res = await axiosInstance.post("graphql", {
+      query: AboutQuery,
+      variables: {},
+    });
+    return {
+      props: {
+        data: res.data.data,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        data: error,
+      },
+    };
+  }
+}
 
 export default About;
