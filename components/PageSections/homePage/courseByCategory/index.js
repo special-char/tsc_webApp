@@ -36,7 +36,7 @@ const CourseByCategory = ({ data }) => {
         </div>
       </div>
       <div className="relative flex justify-center">
-        <Yarrow className="absolute w-12 md:w-14 lg::w-16  -top-14 lg::-top-20 z-10" />
+        <Yarrow className="absolute w-12 md:w-16 -top-14 z-10" />
       </div>
     </section>
   );

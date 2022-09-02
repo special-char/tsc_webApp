@@ -43,10 +43,10 @@ const AskedQues = ({
           >
             {title}
           </h3>
-          <div className="transition duration-300 cursor-pointer flex-1 flex flex-col gap-2 md:gap-4   ">
+          <div className="ease-in transition-all duration-300 cursor-pointer flex-1 flex flex-col gap-2 md:gap-4   ">
             <p
               className={`${
-                !open ? "hidden scale-0" : "block scale-100"
+                !open ? "hidden scale-0" : "flex scale-100"
               } transition duration-300`}
             >
               {description}
