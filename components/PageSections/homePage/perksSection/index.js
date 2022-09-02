@@ -10,7 +10,7 @@ const PerksSection = ({ data }) => {
           <h2 className="flex-1 text-secondary1">{data.heading.title}</h2>
           <div className="lg:flex-row flex flex-1 flex-col gap-16">
             {data.cards.map((obj) => {
-              return <Perks {...obj} image={obj.image.name} key={obj.id} />;
+              return <Perks data={obj} image={obj.image.name} key={obj.id} />;
             })}
           </div>
         </div>
