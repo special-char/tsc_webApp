@@ -24,7 +24,7 @@ const BlogSection = ({ data }) => {
             </figure>
             <div className="card-body">
               <div className="card-date">April 20, 2022</div>
-              <h3>{data.featuredBlog.title}</h3>
+              <h3>{data.featuredBlog?.title}</h3>
             </div>
             <div className="chip chip--white px-6 py-2 flex gap-1 items-center top-6 right-6 absolute">
               <Design className="w-4" />
