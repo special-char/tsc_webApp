@@ -1,5 +1,6 @@
 import Layout from "@components/layouts";
 import HomePage from "@components/pageSections/homePage";
+import SplitScreen from "@components/SplitScreen";
 import HomeQuery from "@queries/homeQuery";
 import axiosInstance from "lib/axiosInstance";
 import React from "react";
@@ -7,6 +8,7 @@ import React from "react";
 const Home = ({ data }) => {
   return (
     <>
+      <SplitScreen />
       <HomePage data={data} />
     </>
   );
