@@ -4,9 +4,9 @@ import React from "react";
 const Office = ({ ...obj }) => {
   return (
     <>
-      <div className="card  md:w-[40%]">
+      <div className="card md:w-[25%]">
         <div className="card__body p-6  relative overflow-hidden">
-          <div className="min-h-[100px] relative">
+          <div className="aspect-image  relative">
             <Image
               layout="fill"
               objectFit="cover"

@@ -7,7 +7,7 @@ const IndividualTeacherPage = ({ data }) => {
   return (
     <>
       <TeacherIntro data={data} />
-      <CardGrid />
+      {/* <CardGrid /> */}
     </>
   );
 };
