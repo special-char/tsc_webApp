@@ -5,7 +5,7 @@ import OurProjectsSection from "@components/PageSections/devlopmentPage/ourProje
 import TestimonialSection from "@components/PageSections/devlopmentPage/testimonialSection";
 import React from "react";
 
-const devlopment = () => {
+const Development = () => {
   return (
     <>
       <HeaderSection />
@@ -16,5 +16,8 @@ const devlopment = () => {
     </>
   );
 };
+Development.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 
-export default devlopment;
+export default Development;
