@@ -6,7 +6,8 @@ import Image from "next/image";
 import Blog from "@components/blogComponent";
 import ResourcesSectionData from "@components/pageSections/homePage/resourcesSection/resourcesSectionData";
 
-const BlogSection = () => {
+const BlogSection = ({ data }) => {
+  //console.log("BlogSection data:", data);
   return (
     <section className="h-auto w-full">
       <div className=" mx-auto lg:w-full px-6 py-20 max-w-7xl">
@@ -23,9 +24,7 @@ const BlogSection = () => {
             </figure>
             <div className="card-body">
               <div className="card-date">April 20, 2022</div>
-              <h3>
-                How to design a simple, yet unique and memorable brand identity
-              </h3>
+              <h3>{data.featuredBlog?.title}</h3>
             </div>
             <div className="chip chip--white px-6 py-2 flex gap-1 items-center top-6 right-6 absolute">
               <Design className="w-4" />
@@ -35,8 +34,8 @@ const BlogSection = () => {
 
           <div className="flex flex-col gap-5 mx-auto lg:flex-1">
             {/* map goes here */}
-            {ResourcesSectionData.map((val) => (
-              <Blog src={val.photo} description={val.description} />
+            {data.blogs.map((val) => (
+              <Blog data={val} />
             ))}
             {/* map ends here */}
           </div>

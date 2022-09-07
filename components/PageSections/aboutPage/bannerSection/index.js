@@ -2,28 +2,20 @@ import React from "react";
 import BlueArrow from "@public/icons/blueArrow.svg";
 import Link from "next/link";
 
-const BannerAbout = () => {
+const BannerAbout = ({ data }) => {
+  //console.log("Banner About:", data);
   return (
     <>
       <section className="h-auto w-full ">
         <div className="relative overflow-hidden">
           <div className="py-28 px-3 max-w-7xl mx-auto ">
             <div className="text-center  lg:pb-20 ">
-              <h1 className="md:w-[70%] mx-auto">
-                The big mission behind Education
-              </h1>
-              <p className="md:w-[90%] mx-auto">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
-                pulvinar ac molestie cursus malesuada enim. Massa nec lit
-                tellus, elit tellus, erat faucibus aenean. Nunc, lacus,
-                dignissim nec sit.
-              </p>
-              <Link href={"/courses"}>
-                <a>
-                  <button className="btn btn--primary w-full md:w-[30%] btn--small">
-                    JOIN OUR TEAM
-                  </button>
-                </a>
+              <h1 className="md:w-[70%] mx-auto">{data.header?.title}</h1>
+              <p className="md:w-[90%] mx-auto ">{data.header?.description}</p>
+              <Link href={data.buttonText?.link}>
+                <button className="btn btn--primary w-full md:w-[30%] btn--small uppercase">
+                  JOIN OUR TEAM
+                </button>
               </Link>
             </div>
           </div>

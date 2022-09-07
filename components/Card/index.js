@@ -2,34 +2,38 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Card = ({ title, description, img, chip, chip2, name, img1 }) => {
+const Card = ({
+  //
+  ...obj
+}) => {
   return (
     <>
       <div className="card">
-        {""}
-        <Link href={"/Courses"}>
-          <a>
-            <figure className="relative h-80">
-              <Image layout="fill" objectFit="cover" src={img} alt="" />{" "}
-            </figure>{" "}
-          </a>
-        </Link>
-      </div>
-      <div className="card__body p-8 relative border-spacing-2 shadow-2xl bg-neutral-100  ">
-        <h3 className="card__title">{title}</h3>
-        <p>{description}</p>
-        <div className="flex flex-row gap-4 items-center">
-          <div className="flex relative rounded-full w-12 h-12 ">
-            <Image className=" avatar rounded-full " layout="fill" src={img1} />
+        <figure className="relative md:h-80">
+          <Image
+            layout="fill"
+            objectFit="cover"
+            src={obj.courseImage?.url}
+            alt=""
+            objectPosition={"center"}
+          />
+        </figure>
+        <div className="card__body p-8 relative border-spacing-2 shadow-2xl bg-neutral-100  ">
+          <h3 className="card__title md:mb-3">{obj.title}</h3>
+          <p>{obj.titleDescription}</p>
+          <h4>Data not available</h4>
+          <div className="flex flex-row gap-4 items-center">
+            <div className="flex relative rounded-full w-12 h-12 ">
+              <Image
+                className=" avatar rounded-full "
+                layout="fill"
+                objectPosition={"center"}
+                src="https://images.unsplash.com/photo-1661732017217-71b8e7a750a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+              />
+            </div>
+            <h5>{obj.name}Data not available</h5>
           </div>
-          <h5>{name}</h5>
         </div>
-      </div>
-      <div className="absolute flex flex-col items-end top-8 gap-2 text-center w-full md:justify-end md:flex-row px-4">
-        <span className=" btn chip--white chip py-4 px-6 text-xs ">{chip}</span>
-        <span className=" btn chip--primary chip py-4 px-6 text-xs">
-          {chip2}
-        </span>
       </div>
     </>
   );

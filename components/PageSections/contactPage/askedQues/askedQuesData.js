@@ -1,7 +1,7 @@
 import React from "react";
 import AskedQues from ".";
 
-const AskQuesList = () => {
+const AskQuesList = ({ data }) => {
   const AskDetails = [
     {
       id: 1,
@@ -44,21 +44,12 @@ const AskQuesList = () => {
     <>
       <section className="bg-neutral-200 md:py-44 py-24 px-4 md:px-6">
         <div className="text-center justify-center flex flex-col w-80 mb-10 md:w-[587px] mx-auto lg:px-6 md:mb-14 ">
-          <h2 className="text-3xl md:text-6xl">Frequently Asked Questions.</h2>
-          <p className="">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
+          <h2 className="text-3xl md:text-6xl">{data.faqsHeading?.title}</h2>
+          <p className="">{data.faqsHeading?.description}</p>
         </div>
         <div className="flex flex-col  ">
-          {AskDetails.map((obj) => {
-            return (
-              <AskedQues
-                icon={obj.icon}
-                title={obj.title}
-                description={obj.description}
-              />
-            );
+          {data.faqsAccordian.map((obj) => {
+            return <AskedQues data={obj} key={obj.id} />;
           })}
         </div>
       </section>

@@ -1,18 +1,22 @@
-import CardGrid from "@components/pageSections/individualTeacher/CardGrid";
 import React from "react";
-// import AllCoursesSection from "../coursesPage/AllCourses";
-import BlogCoursesSection from "../blogPage/blogCourses";
-import TestiSection from "../individualTeacher/teacherIntro";
+import BannerAbout from "./bannerSection";
+import HistorySection from "./historySection";
+import OfficesSection from "./OfficesSection";
+import Achievements from "./statsSection";
+import StorySection from "./storySection";
+import TeachersSection from "./teachersSection";
 import WorkValues from "./workValues";
 
-const AboutPage = () => {
+const AboutPage = ({ data }) => {
   return (
     <>
-      <WorkValues />
-      {/* <AllCoursesSection />  */}
-      <BlogCoursesSection />
-      <CardGrid />
-      <TestiSection />
+      <BannerAbout data={data.aboutBanner} />
+      <Achievements data={data.aboutSuccess} />
+      <StorySection data={data.aboutMission} />
+      <WorkValues data={data.aboutValue} />
+      <TeachersSection data={data.aboutTeacher} />
+      <HistorySection data={data.aboutHistory} />
+      <OfficesSection data={data.aboutOffice} />
     </>
   );
 };

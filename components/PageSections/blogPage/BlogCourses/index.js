@@ -5,7 +5,7 @@ import Blog1Svg from "@public/icons/blog1.svg";
 import Blog2Svg from "@public/icons/blog2.svg";
 import Blog5Svg from "@public/icons/blog2.svg";
 
-const BlogCoursesSection = () => {
+const BlogCoursesSection = ({ data }) => {
   const BlogCoursesDetails = [
     {
       id: 1,
@@ -84,7 +84,7 @@ const BlogCoursesSection = () => {
       title: "marketing",
     },
   ];
-
+  console.log("BlogCoursesSection data:", data);
   return (
     <>
       <section className="blog-section-wrapper lg:w-full px-4 pt-28">
@@ -111,7 +111,7 @@ const BlogCoursesSection = () => {
           </span>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 text-left justify-center gap-8 md:p-8 w-full mx-auto max-w-7xl">
-          {BlogCoursesDetails.map((obj) => {
+          {data.map((obj) => {
             return <BlogCourses {...obj} />;
           })}
         </div>

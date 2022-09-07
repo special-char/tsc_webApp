@@ -1,8 +1,9 @@
 import StarSvg from "@public/icons/star.svg";
 import Testimonial from "@components/testimonial";
-import Link from "next/link";
+import LeftSvg from "/public/icons/left.svg";
+import RightsSvg from "/public/icons/rights.svg";
 
-const TestimonialSection = () => {
+const TestimonialSection = ({ data, data2 }) => {
   const testimonialDetails = [
     {
       id: 1,
@@ -63,38 +64,61 @@ const TestimonialSection = () => {
       title: "Students community",
     },
   ];
+  //console.log("TestimonialSection data2:", data2);
   return (
     <>
-      <div className="relative overflow-hidden px-4 md:p-6 pt-28 py-36 lg:py-44">
+      <section className="relative  px-4 md:p-6 pt-28 py-36 lg:py-44 bg-neutral-200 ">
         <h2 className="md:py-8 md:p-12 text-center justify-center">
-          What our students say about us
+          {data.heading?.title}
         </h2>
-        <div className="flex flex-col md:flex-row md:inline-flex gap-4 text-center justify-center md:text-left relative lg:ml-24">
-          {testimonialDetails.map((obj) => {
-            const name = `${obj.firstName} ${obj.lastName}`;
-            return (
-              <Testimonial
-                description={obj.description}
-                img={obj.img}
-                designation={obj.designation}
-                name={name}
-                svg={obj.svg}
-              />
-            );
-          })}
-        </div>
-        <div className="grid grid-cols-2 grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 gap-6 lg:w-full md:gap-8 md:w-2/3 text-center lg:flex-row mx-auto py-14 ">
-          {numberDetails?.map((e, i) => (
-            <div
-              key={i}
-              className="flex-[50%] lg:flex-1 text-primary text-center justify-center"
-            >
-              <h2 className="text-neutral-700 md:text-4xl text-2xl mb-2 ">
-                {e.numbers}
-              </h2>
-              <p className="text-neutral-500 mb-0">{e.title}</p>
+        <div className="container ml-auto max-w-7xl overflow-hidden relative">
+          <div className="navigation flex flex-row justify-between w-full lg:w-[90%] overflow-hidden  absolute z-10  top-44">
+            <div className="avatar placeholder bg-neutral-100 hover:bg-primary hover:fill-neutral-100 rounded-full">
+              <div className="w-16 md:w-20">
+                <span className=" w-4">
+                  <LeftSvg />
+                </span>
+              </div>
             </div>
-          ))}
+            <div class="avatar placeholder bg-neutral-100  hover:bg-primary hover:fill-neutral-100 rounded-full">
+              <div class="w-16 md:w-20 ">
+                <span className=" w-4">
+                  <RightsSvg />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="inline-flex gap-4 text-center justify-center md:text-left relative">
+            {data2.map((obj) => {
+              const name = `${obj.firstName} ${obj.lastName}`;
+              //console.log("TestimonialSection obj:", obj);
+              return (
+                <Testimonial
+                  key={obj.id}
+                  data={obj}
+                  // description={obj.description}
+                  // img={obj.img}
+                  // designation={obj.designation}
+                  // name={name}
+                  // svg={obj.svg}
+                />
+              );
+            })}
+          </div>
+
+          <div className="grid grid-cols-2 grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 gap-6 lg:w-full md:gap-8 md:w-2/3 text-center lg:flex-row mx-auto py-14 ">
+            {numberDetails?.map((e, i) => (
+              <div
+                key={i}
+                className="flex-[50%] lg:flex-1 text-primary text-center justify-center"
+              >
+                <h2 className="text-neutral-700 md:text-4xl text-2xl mb-2 ">
+                  {e.numbers}
+                </h2>
+                <p className="text-neutral-500 mb-0">{e.title}</p>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="flex items-center justify-center ">
           <Link href={"/Courses"}>
@@ -105,7 +129,7 @@ const TestimonialSection = () => {
             </a>
           </Link>
         </div>
-      </div>
+      </section>
     </>
   );
 };
