@@ -46,18 +46,6 @@ const PopularCourses = ({ data }) => {
                 );
               })}
             </div>
-            {/* <div className="absolute flex w-full justify-between bg-secondary2">
-              <button class="btn btn--round btn--white w-24">
-                <span class="text-3xl">
-                  <LeftArrow className="w-4" />
-                </span>
-              </button>
-              <button class="btn btn--round btn--white w-24">
-                <span class="text-3xl">
-                  <RightArrow className="w-4" />
-                </span>
-              </button>
-            </div> */}
           </div>
         </div>
         <div className="container mx-auto  flex items-center justify-center">

@@ -1,6 +1,5 @@
 import AllCourses from "@components/card";
 import React from "react";
-import React from "react";
 import CardGrid from "./CardGrid";
 
 const CardGrid = () => {

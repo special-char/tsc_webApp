@@ -67,12 +67,12 @@ const TestimonialSection = ({ data, data2 }) => {
   //console.log("TestimonialSection data2:", data2);
   return (
     <>
-      <section className="relative  px-4 md:p-6 pt-28 py-36 lg:py-44 bg-neutral-200 ">
+      <section className="relative overflow-hidden px-4 md:p-6 pt-28 py-36 lg:py-44 bg-neutral-200 ">
         <h2 className="md:py-8 md:p-12 text-center justify-center">
           {data.heading?.title}
         </h2>
         <div className="container ml-auto max-w-7xl overflow-hidden relative">
-          <div className="navigation flex flex-row justify-between w-full lg:w-[90%] overflow-hidden  absolute z-10  top-44">
+          <div className="navigation flex flex-row justify-between w-full lg:w-[90%] overflow-hidden absolute z-10 top-44">
             <div className="avatar placeholder bg-neutral-100 hover:bg-primary hover:fill-neutral-100 rounded-full">
               <div className="w-16 md:w-20">
                 <span className=" w-4">
@@ -92,16 +92,7 @@ const TestimonialSection = ({ data, data2 }) => {
             {data2.map((obj) => {
               const name = `${obj.firstName} ${obj.lastName}`;
               //console.log("TestimonialSection obj:", obj);
-              return (
-                <Testimonial
-                  data={obj}
-                  // description={obj.description}
-                  // img={obj.img}
-                  // designation={obj.designation}
-                  // name={name}
-                  // svg={obj.svg}
-                />
-              );
+              return <Testimonial data={obj} />;
             })}
           </div>
 
