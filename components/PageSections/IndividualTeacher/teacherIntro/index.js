@@ -26,16 +26,7 @@ const TeacherIntro = ({ data }) => {
           <div className="flex flex-col items-center justify-center relative lg:mb-48 md:mb-32 mb-72">
             {data.teachers?.map((obj) => {
               console.log("obj:", obj);
-              return (
-                <Testi
-                  data={obj}
-                  // {...obj}
-                  // description={obj.description}
-                  // // img={obj.img}
-                  // chip={obj.chip}
-                  // name={obj.name}
-                />
-              );
+              return <Testi data={obj} />;
             })}
           </div>
           <div className=" md:grid flex flex-col justify-center text-left md:items-center  ">

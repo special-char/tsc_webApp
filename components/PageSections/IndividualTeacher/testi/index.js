@@ -17,19 +17,7 @@ const icons = [
   },
 ];
 
-const Testi = ({
-  // img,
-
-  // designation,
-  // name,
-  // description,
-  // chip,
-  // svg1,
-  // svg2,
-  // svg3,
-
-  data,
-}) => {
+const Testi = ({ data }) => {
   return (
     <>
       <div className=" absolute flex flex-col md:flex-row items-center w-full md:w-[700px] lg:w-[800px] py-10 px-6 pt-10  md:py-14 md:px-4 md:pb-16 md:pt-14 gap-12 mb-28 md:mb-44 lg:pt-20 lg:pb-11 lg:px-8 lg:mb-20 rounded-3xl shadow-2xl border-spacing-2 drop-shadow-sm bg-neutral-100 ">

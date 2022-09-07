@@ -5,39 +5,56 @@ import React from "react";
 import * as Yup from "yup";
 import ContactLinkData from "./contactLinksData";
 
+const options = [
+  {
+    id: 1,
+    value: "front-end developer",
+    option: "front-end developer",
+  },
+  {
+    id: 2,
+    value: "back-end developer",
+    option: "back-end developer",
+  },
+  {
+    id: 3,
+    value: "full-stack developer",
+    option: "full-stack developer",
+  },
+];
+
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 const ContactSchema = Yup.object({
   name: Yup.string().required("Required"),
   email: Yup.string().email("Invalid email format").required("Required"),
   phone: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
-  subject: Yup.string().required("Required"),
+  selectdesignation: Yup.string().required("Required"),
   message: Yup.string().required("Required"),
 });
 
-const ContactForm = ({ data }) => {
-  console.log("ContactForm data inside:", data);
+const CareerForm = () => {
   return (
     <>
       <section className="w-full h-auto relative overflow-hidden">
         <div className="wrapper max-w-7xl mx-auto px-4 py-24">
           <div className="flex flex-col text-center max-w-lg mx-auto">
-            <h1>{data.bannerHeading?.title}</h1>
-            <p>{data.bannerHeading?.description}</p>
+            <h1 className="capitalize">career</h1>
+            <p>something</p>
           </div>
           <div className="flex flex-col lg:flex-row items-center rounded-3xl justify-between gap-3">
-            <div className="contact-form rounded-3xl bg-neutral-100 shadow-base max-w-[750px] w-[100%] py-16 px-6">
+            <div className="contact-form rounded-3xl bg-neutral-100 shadow-base  w-[100%] py-16 px-6">
               <Formik
                 validationSchema={ContactSchema}
                 initialValues={{
                   name: "",
                   email: "",
                   phone: "",
-                  subject: "",
+                  selectdesignation: "",
                   message: "",
                 }}
                 onSubmit={(values) => {
-                  console.log(values);
+                  console.log("values:", values);
                 }}
               >
                 {({ errors, touched }) => (
@@ -85,18 +102,32 @@ const ContactForm = ({ data }) => {
                         ) : null}
                       </div>
                       <div className="w-full">
-                        <label className="">Subject</label>
+                        <label className="">Designation</label>
                         <Field
-                          id="text"
-                          placeholder="Ex. Courses"
-                          className="bg-neutral-200 w-full rounded-full focus:outline-neutral-500 py-4 px-7"
-                          name="subject"
-                          type="text"
-                        />
-                        {errors.subject && touched.subject ? (
-                          <div>{errors.subject}</div>
+                          name="selectdesignation"
+                          as="select"
+                          className="w-full py-5 px-8 rounded-full bg-neutral-200"
+                        >
+                          {options.map((val) => (
+                            <option key={val.id} value={val.value}>
+                              {val.option}
+                            </option>
+                          ))}
+                        </Field>
+                        {errors.selectdesignation &&
+                        touched.selectdesignation ? (
+                          <div>{errors.selectdesignation}</div>
                         ) : null}
                       </div>
+                    </div>
+                    <div>
+                      <label for="myfile">upload cv</label>
+                      <Field
+                        className="bg-neutral-200 w-full md:w-[49%] focus:outline-neutral-500 rounded-full py-4 px-7"
+                        type="file"
+                        id="myfile"
+                        name="myfile"
+                      />
                     </div>
                     <label className="">Message</label>
                     <Field
@@ -110,46 +141,15 @@ const ContactForm = ({ data }) => {
                     {errors.message && touched.message ? (
                       <div>{errors.message}</div>
                     ) : null}
-                    <Link href={"/courses"}>
-                      <a>
-                        <button
-                          type="submit"
-                          className="btn btn--primary btn--small md:w-1/3 lg:w-1/3"
-                        >
-                          SUBMIT
-                        </button>
-                      </a>
-                    </Link>
+                    <button
+                      type="submit"
+                      className="btn btn--primary btn--small md:w-1/3 lg:w-1/3 uppercase"
+                    >
+                      submit
+                    </button>
                   </Form>
                 )}
               </Formik>
-            </div>
-            <div className="contact-links flex flex-col gap-5 w-full lg:w-[423px] ">
-              {data.contactDetails?.map((val) => (
-                <div
-                  key={val.id}
-                  className="rounded-3xl w-full mx-auto shadow-base hover:shadow-dark h-auto bg-neutral-100 py-10 px-5 flex flex-col gap-2 items-center justify-around  hover:-translate-y-3 duration-200"
-                >
-                  <div className="rounded-full relative w-10 h-10">
-                    <Image
-                      className="rounded-full"
-                      layout="fill"
-                      objectFit="cover"
-                      src={val.icon?.url}
-                      alt=""
-                      objectPosition={"center"}
-                    />
-                  </div>
-                  <div className="text-center text-xl">
-                    <span className="font-bold  text-neutral-700">
-                      {val.contactType}
-                    </span>
-                    <a href={val.link}>
-                      <address className="">{val.displayText}</address>
-                    </a>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </div>
@@ -162,4 +162,4 @@ const ContactForm = ({ data }) => {
   );
 };
 
-export default ContactForm;
+export default CareerForm;

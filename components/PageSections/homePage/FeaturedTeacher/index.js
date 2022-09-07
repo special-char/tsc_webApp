@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const FeaturedTeacher = ({ data }) => {
-  //console.log("featuredTeacher data:", data);
+  console.log("featuredTeacher data:", data);
   return (
     <section className="wrapper flex py-24  md:py-44 h-auto mb-24 lg:mb-0">
       <div className="flex w-full lg:max-w-7xl mx-auto md:w-4/5 items-center justify-center flex-wrap px-4 gap-4 md:gap-12">

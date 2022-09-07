@@ -1,7 +1,7 @@
 import AllCourses from "@components/card";
+import Link from "next/link";
 import React from "react";
-import React from "react";
-import CardGrid from "./CardGrid";
+//import CardGrid from "./CardGrid";
 
 const CardGrid = () => {
   const courses = [
