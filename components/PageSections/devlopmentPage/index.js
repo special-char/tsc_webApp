@@ -2,6 +2,7 @@ import Footer from "@components/Footer";
 import HeaderSection from "@components/PageSections/devlopmentPage/headerSection";
 import OurDevlopers from "@components/PageSections/devlopmentPage/ourDevlopers";
 import OurProjectsSection from "@components/PageSections/devlopmentPage/ourProjects";
+import OurServices from "@components/PageSections/devlopmentPage/ourServices";
 import React from "react";
 
 const Development = () => {
@@ -10,6 +11,7 @@ const Development = () => {
       <HeaderSection />
       <OurDevlopers />
       <OurProjectsSection />
+      <OurServices />
       <Footer />
     </>
   );

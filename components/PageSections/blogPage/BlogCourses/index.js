@@ -95,7 +95,7 @@ const BlogCoursesSection = ({ data }) => {
           <span className="flex bg-neutral-200 p-4 rounded-full flex-wrap gap-4 text-base font-bold">
             {blogCategories.map((button) => {
               return (
-                <Link href="#">
+                <Link href={"/courses"}>
                   <a
                     className={`capitalize px-6 py-4 pt-4 rounded-full ${
                       button.title === "all"
