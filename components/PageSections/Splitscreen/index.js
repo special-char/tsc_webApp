@@ -48,7 +48,7 @@ const SplitScreen = ({
                 "translate-0 lg:translate-x-[5%] custom-transition delay-0"
               } ${!firstCard && "justify-center custom-transition delay-0"}`}
             >
-              <p className="italic text-neutral-300">Why Learn At TSC</p>
+              <p className="italic text-neutral-300">Web/App Development</p>
               <h1 className="transition-all text-neutral-100">
                 SERVICES WE OFFER
               </h1>
@@ -144,7 +144,7 @@ const SplitScreen = ({
                 "translate-0 lg:translate-x-[5%] custom-transition delay-0"
               } ${!secondCard && "justify-center custom-transition delay-0"}`}
             >
-              <p className="italic text-neutral-300">Web/App Development</p>
+              <p className="italic text-neutral-300">Why Learn At TSC</p>
               <h1 className="transition-all text-neutral-100">
                 COURSES WE TEACH
               </h1>
