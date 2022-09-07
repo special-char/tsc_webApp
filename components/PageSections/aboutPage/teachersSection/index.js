@@ -10,7 +10,7 @@ const TeachersSection = ({ data }) => {
   console.log("Teacher Section Data:", data);
   return (
     <>
-      <section className="lg:w-full bg-neutral-100 py-44">
+      <section id="Teachers" className="lg:w-full bg-neutral-100 py-44">
         <div className="container w-full mx-auto max-w-7xl">
           <h2 className="text-neutral-800 lg:text-left px-4 text-center ">
             {data.heading?.title}
