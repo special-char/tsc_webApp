@@ -1,38 +1,22 @@
 import React from "react";
 
-const Achievements = () => {
-  const AchievementsData = [
-    {
-      Number: "100,000+",
-      heading: "Students",
-      description: "Lorem ipsum dolor sit amet,consectetur adipiscing.",
-    },
-    {
-      Number: "5,000+",
-      heading: "Five star reviews",
-      description: "Lorem ipsum dolor sit amet,consectetur adipiscing.",
-    },
-    {
-      Number: "75,000+",
-      heading: "Students community",
-      description: "Lorem ipsum dolor sit amet,consectetur adipiscing.",
-    },
-  ];
+const Achievements = ({ data }) => {
+  //console.log("About Success Data:", data);
   return (
-    <div className="w-screen bg-neutral-200 py-24 md:py-36 lg:py-44">
+    <div className="w-full py-24 md:py-36 lg:py-44">
       <div className="container mx-auto max-w-7xl flex flex-col items-center">
-        <h2 className="lg:min-w-1/2 text-center text-3xl">
-          A few numbers that we <br /> are proud of
+        <h2 className="md:w-[480px] mx-auto text-center text-3xl mb-10 md:mb-10">
+          {data.heading?.title}
         </h2>
 
-        <div className="flex flex-wrap justify-center items-center ">
-          {AchievementsData.map((val) => (
-            <div className=" text-center lg:px-6 min-w-[300px] flex-1">
-              <h2 className="text-secondary3 text-4xl md:text-7xl lg:text-8xl">
-                {val.Number}
-              </h2>
-              <h3>{val.heading}</h3>
-              <p>{val.description}</p>
+        <div className="flex flex-wrap justify-center items-center gap-14">
+          {data.success.map((val) => (
+            <div className=" text-center px-7  max-w-xs flex-1" key={val.id}>
+              <div>
+                <h1 className="text-secondary3 mb-2">{val.number}+</h1>
+              </div>
+              <h3>{val.title}</h3>
+              <p className="line-clamp-3">{val.description}</p>
             </div>
           ))}
         </div>

@@ -1,0 +1,30 @@
+{
+  "works": [
+    {
+      "id": 1,
+      "name": "Hemang"
+    },
+    {
+      "id": 2,
+      "name": "Hemang"
+    },
+    {
+      "id": 3,
+      "name": "Hemang"
+    }
+  ],
+  "Students": [
+    {
+      "id": 1,
+      "name": "Hemang"
+    },
+    {
+      "id": 2,
+      "name": "Hemang"
+    },
+    {
+      "id": 3,
+      "name": "Hemang"
+    }
+  ]
+}

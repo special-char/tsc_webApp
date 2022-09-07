@@ -1,15 +1,8 @@
-import Layout from "@components/Layouts";
-import Image from "next/image";
-import React, { useState } from "react";
-import Training from "@public/icons/Artboard1.svg";
-// import Training from "@public/icons/Artboard1.svg";
-import Larrow from "@public/icons/lArrow.svg";
-import Rarrow from "@public/icons/rArrow.svg";
-import classNames from "classnames";
+import Layout from "@components/layouts";
 import HomePage from "@components/pageSections/homePage";
-import Navbar from "@components/navbar";
-import IndividualBlog from "./blog";
-
+import HomeQuery from "@queries/homeQuery";
+import axiosInstance from "lib/axiosInstance";
+import React from "react";
 
 const Home = () => {
   const [exploreTraining, setExploreTraining] = useState(false);
@@ -23,11 +16,11 @@ const Home = () => {
 
   return (
     <>
-      {/* <section className="landing-page-wrapper h-screen flex flex-wrap">
+      <section className="landing-page-wrapper h-screen flex flex-wrap">
         <div className="brand-logo flex justify-center items-center w-full absolute z-50 ">
           <Training onClick={() => alignCenter()} className="w-28" />
         </div>
-        
+        {/* training section */}
         <div
           className={classNames("custom-transition flex-1", {
             "flex-[10]": exploreTraining,
@@ -92,7 +85,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        
+        {/* development section */}
         <div
           className={classNames("custom-transition flex-1 ", {
             "flex-[10]": exploreDevelopment,
@@ -156,14 +149,37 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
-      <HomePage />
-      <IndividualBlog />
+      </section>
+      {/* <HomePage /> */}
     </>
   );
 };
 Home.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
+
+export async function getServerSideProps() {
+  try {
+    const res = await axiosInstance.post("graphql", {
+      query: HomeQuery,
+      variables: {},
+    });
+    console.log("====================================");
+    console.log(res.data.data);
+    console.log("====================================");
+    return {
+      props: {
+        data: res.data.data,
+      },
+    };
+  } catch (error) {
+    console.log(error);
+    return {
+      props: {
+        data: error,
+      },
+    };
+  }
+}
 Home.displayName = "Home";
 export default Home;
