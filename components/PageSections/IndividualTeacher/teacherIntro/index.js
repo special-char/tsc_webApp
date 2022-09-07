@@ -12,8 +12,8 @@ const TeacherIntro = ({ data }) => {
       img: "https://placeimg.com/192/192/people",
     },
   ];
-  console.log("data:", data);
-  console.log("data firstName:", data.firstName);
+  console.log("TeacherIntro data:", data);
+  console.log("data firstName:", data.teachers?.firstName);
 
   return (
     <>
@@ -24,11 +24,12 @@ const TeacherIntro = ({ data }) => {
         </div>
         <div className="md:max-w-[767px] mx-auto px-4">
           <div className="flex flex-col items-center justify-center relative lg:mb-48 md:mb-32 mb-72">
-            {data.map((obj) => {
+            {data.teachers?.map((obj) => {
               console.log("obj:", obj);
               return (
                 <Testi
-                  {...obj}
+                  data={obj}
+                  // {...obj}
                   // description={obj.description}
                   // // img={obj.img}
                   // chip={obj.chip}

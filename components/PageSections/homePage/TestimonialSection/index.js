@@ -94,6 +94,7 @@ const TestimonialSection = ({ data, data2 }) => {
               //console.log("TestimonialSection obj:", obj);
               return (
                 <Testimonial
+                  key={obj.id}
                   data={obj}
                   // description={obj.description}
                   // img={obj.img}
