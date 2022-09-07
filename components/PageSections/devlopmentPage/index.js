@@ -19,7 +19,7 @@ const DevelopmentPage = () => {
     </>
   );
 };
-Development.getLayout = function getLayout(page) {
+DevelopmentPage.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
 export default DevelopmentPage;
