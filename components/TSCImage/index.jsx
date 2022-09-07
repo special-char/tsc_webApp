@@ -1,5 +1,5 @@
-import React from "react";
 import Image from "next/image";
+import React from "react";
 
 const shimmer = (w, h) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -20,24 +20,26 @@ const toBase64 = (str) =>
     ? Buffer.from(str).toString("base64")
     : window.btoa(str);
 
-const CustomImage = ({ Sheight, Swidth, imageClassName, src, ...props }) => {
+const myLoader = ({ src, width, quality, maxWidth }) => {
+    console.log("src", src);
+    console.log("width", width);
+    console.log("quality", quality);
+    const imgWidth = maxWidth || width;
+
+  return `${src}?w=${imgWidth}&q=${quality || 75}`;
+};
+
+const TSCImage = ({ maxWidth,...props }) => {
   return (
-    <section className="h-screen w-full">
-      <div style={{ textAlign: "center" }} className="pt-14">
-        <Image
-          src={src}
-          layout="fixed"
-          objectPosition={"center"}
-          objectFit={"cover"}
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(Swidth, Sheight)
-          )}`}
-          className={imageClassName}
-          {...props}
-        />
-      </div>
-    </section>
+    <Image
+      loader={(props) => myLoader({...props, maxWidth})}
+      placeholder="blur"
+      blurDataURL={`data:image/svg+xml;base64,${toBase64(
+        shimmer(props?.height || "100%", props?.width || "100%")
+      )}`}
+      {...props}
+    />
   );
 };
-export default CustomImage;
+
+export default TSCImage;

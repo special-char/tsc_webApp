@@ -2,6 +2,7 @@ import StarSvg from "@public/icons/star.svg";
 import Testimonial from "@components/testimonial";
 import LeftSvg from "/public/icons/left.svg";
 import RightsSvg from "/public/icons/rights.svg";
+import Link from "next/link";
 
 const TestimonialSection = ({ data, data2 }) => {
   const testimonialDetails = [
