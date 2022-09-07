@@ -42,9 +42,13 @@ const Footer = () => {
                 type="text"
                 placeholder="Enter Your email"
               />
-              <button className=" btn md:py-3 md:absolute md:right-[0.75rem] md:top-2.5 flex items-center justify-center text-neutral-100 text-base font-bold bg-primary ">
-                SUBMIT
-              </button>
+              <Link href={"/Courses"}>
+                <a>
+                  <button className=" btn md:py-3 md:absolute md:right-[0.75rem] md:top-2.5 flex items-center justify-center text-neutral-100 text-base font-bold bg-primary ">
+                    SUBMIT
+                  </button>
+                </a>
+              </Link>
             </div>
           </div>
         </div>

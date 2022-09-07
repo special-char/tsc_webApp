@@ -2,6 +2,7 @@ import StarSvg from "@public/icons/star.svg";
 import Testimonial from "@components/testimonial";
 import LeftSvg from "/public/icons/left.svg";
 import RightsSvg from "/public/icons/rights.svg";
+import Link from "next/link";
 
 const TestimonialSection = ({ data, data2 }) => {
   const testimonialDetails = [
@@ -64,7 +65,7 @@ const TestimonialSection = ({ data, data2 }) => {
       title: "Students community",
     },
   ];
-  //console.log("TestimonialSection data2:", data2);
+  console.log("TestimonialSection data2:", data2);
   return (
     <>
       <section className="relative overflow-hidden px-4 md:p-6 pt-28 py-36 lg:py-44 bg-neutral-200 ">
@@ -121,9 +122,13 @@ const TestimonialSection = ({ data, data2 }) => {
           </div>
         </div>
         <div className="flex items-center justify-center ">
-          <button className="btn btn--primary  md:w-2/5 lg:w-80 ">
-            EXPLORE COURSES
-          </button>
+          <Link href={"/Courses"}>
+            <a>
+              <button className="btn btn--primary  md:w-2/5 lg:w-80 ">
+                EXPLORE COURSES
+              </button>
+            </a>
+          </Link>
         </div>
       </section>
     </>
