@@ -1,5 +1,6 @@
 import IndividualTeacherPage from "@components/pageSections/IndividualTeacher";
 import React from "react";
+import Layout from "@components/Layouts";
 
 const Individualteacher = () => {
   return (
