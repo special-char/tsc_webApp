@@ -31,7 +31,7 @@ const TeachersSection = ({ data }) => {
               return (
                 <Link href={`teacher/${obj.id}`} key={obj.id}>
                   <a>
-                    <Teachers {...obj} />
+                    <Teachers data={obj} />
                   </a>
                 </Link>
               );

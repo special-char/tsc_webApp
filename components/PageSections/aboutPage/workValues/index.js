@@ -16,7 +16,7 @@ const WorkValues = ({ data }) => {
           </div>
           <div className="grid md:grid-cols-2 text-left justify-center gap-9 ">
             {data.valueCard.map((obj) => {
-              // console.log("card values map:", obj);
+              console.log("card values map:", obj);
               return (
                 <WorkValuesCard
                   data={obj}

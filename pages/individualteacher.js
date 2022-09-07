@@ -8,5 +8,8 @@ const Individualteacher = () => {
     </>
   );
 };
+Individualteacher.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 
 export default Individualteacher;

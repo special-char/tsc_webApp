@@ -28,14 +28,14 @@ const TeacherId = ({ data }) => {
   // ];
   const router = useRouter();
   const { teacherid } = router.query;
-  console.log("teacher data:", data.aboutTeacher);
+  console.log("all teachers data:", data);
   return (
     <>
       {data.aboutTeacher.teachers
         .filter((teacher) => teacher.id == teacherid)
         .map((val) => (
           <div key={val.id}>
-            <IndividualTeacherPage data={data.aboutTeacher.teachers} />
+            <IndividualTeacherPage data={data.aboutTeacher} />
           </div>
         ))}
     </>
