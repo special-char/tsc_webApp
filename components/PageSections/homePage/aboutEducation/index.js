@@ -5,14 +5,14 @@ import Link from "next/link";
 const AboutEducation = ({ data }) => {
   //console.log("AboutEducation Data: ", data);
   return (
-    <section className="about-education-wrapper h-auto w-full py-44 ">
-      <div className="max-w-7xl mx-auto px-3 border-b border-neutral-400">
-        <div className="text-center">
+    <section className="about-education-wrapper h-auto w-full  ">
+      <div className="max-w-7xl mx-auto px-3 py-20 border-b border-neutral-400">
+        <div className="text-center md:mb-14">
           <h2>{data.heading?.title}</h2>
           <p>{data.heading?.description}</p>
         </div>
-        <div className="flex flex-col-reverse lg:flex-row md:w-4/5 lg:w-full mx-auto lg:gap-16 lg:justify-center">
-          <div className="flex flex-1 relative min-h-[600px]">
+        <div className="flex flex-col-reverse lg:flex-row md:w-4/5 lg:w-full mx-auto md:gap-16 lg:justify-center">
+          <div className="flex flex-1 relative min-h-[300px] md:min-h-[600px]">
             <Image
               className="aspect-image rounded-3xl "
               src={data.aboutImage?.url}
@@ -20,7 +20,7 @@ const AboutEducation = ({ data }) => {
               alt="img"
             />
           </div>
-          <div className="right-content flex flex-1 flex-col justify-center mx-auto md:gap-7 ">
+          <div className="right-content flex flex-1  flex-col justify-center mx-auto md:gap-7 ">
             {data.educationList.map((val) => (
               <div
                 className="flex flex-col items-center  md:items-start md:flex-row"
@@ -46,9 +46,9 @@ const AboutEducation = ({ data }) => {
             ))}
           </div>
         </div>
-        <div className="flex justify-center py-20">
+        <div className="flex justify-center pt-12">
           <Link href={data.aboutEducation?.link}>
-            <button className="btn btn--secondary lg:btn--small ">
+            <button className="btn btn--secondary w-full md:w-[40%] lg:w-[25%] ">
               {data.aboutEducation?.buttonText}
             </button>
           </Link>
