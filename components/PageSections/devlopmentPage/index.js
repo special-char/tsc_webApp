@@ -1,11 +1,10 @@
-import HeaderSection from "@components/PageSections/devlopmentPage/headerSection";
-import OurProjectsSection from "@components/PageSections/devlopmentPage/ourProjects";
-import OurServices from "@components/PageSections/devlopmentPage/ourServices";
-import TestimonialSection from "@components/PageSections/devlopmentPage/testimonialSection";
 import CareerForm from "./careerForm";
-import ContactUS from "./contactUs";
+import ContactUs from "./contactUs";
+import HeaderSection from "./headerSection";
 import OurProjectsSection from "./ourProjects";
+import OurServices from "./ourServices";
 import OurTeam from "./ourTeam";
+import TestimonialSection from "./TestimonialSection";
 
 const DevelopmentPage = () => {
   return (
@@ -16,7 +15,7 @@ const DevelopmentPage = () => {
       <OurTeam />
       <TestimonialSection />
       <CareerForm />
-      <ContactUS />
+      <ContactUs />
     </>
   );
 };
