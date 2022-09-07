@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 
-const AskedQues = ({
-  title,
-  description,
-  icon,
-
-  ...props
-}) => {
+const AskedQues = ({ data }) => {
   const [open, setOpen] = useState(false);
   return (
     <div
@@ -41,7 +35,7 @@ const AskedQues = ({
               !open ? "text-neutral-600" : "text-neutral-800"
             } `}
           >
-            {title}
+            {data.title}
           </h3>
           <div className="ease-in transition-all duration-300 cursor-pointer flex-1 flex flex-col gap-2 md:gap-4   ">
             <p
@@ -49,7 +43,7 @@ const AskedQues = ({
                 !open ? "hidden scale-0" : "flex scale-100"
               } transition duration-300`}
             >
-              {description}
+              {data.description}
             </p>
           </div>
         </div>

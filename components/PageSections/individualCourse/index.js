@@ -8,9 +8,28 @@ import ChipNavData from "@components/chipNavigation/chipNavData";
 import ChipNavigation from "@components/chipNavigation";
 import GetCourseCard from "@components/getCourseCard";
 
+const ChipData = [
+  {
+    link: "#about",
+    label: "About",
+  },
+  {
+    link: "#result",
+    label: "Results",
+  },
+  {
+    link: "#topics",
+    label: "Topics",
+  },
+  {
+    link: "#reviews",
+    label: "Reviews",
+  },
+];
+
 const IndividualCourse = ({ data }) => {
-  console.log("data of IndividualCourse page:", data);
-  console.log("GetCourseCard data: ", data.courseMinimalDetails);
+  console.log("IndividualCourse data:", data);
+  // console.log("courseMinimalDetails data : ", data.courseMinimalDetails);
   return (
     <section className="h-auto w-full overflow-clip">
       <div className="relative h-full w-full ">
@@ -26,14 +45,14 @@ const IndividualCourse = ({ data }) => {
                 <span className="font-bold">Design</span>
               </div>
             </div>
-            <h1 className="text-neutral-100 mb-0">{data.title}</h1>
-            <p className="text-secondary1">{data.titleDescription}</p>
+            <h1 className="text-neutral-100 mb-0">{data?.title}</h1>
+            <p className="text-secondary1">{data?.titleDescription}</p>
             <div className="course-preview mb-10 relative w-full min-h-[162px] sm:min-h-[333px] md:min-h-[400px]">
               <Image
                 className="rounded-3xl brightness-50"
                 objectFit="cover"
                 layout="fill"
-                src="https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2cfe66189f214c09a0c3_image-4-courses-education-x-template.jpg"
+                src={data?.courseImage?.url}
               />
 
               <div className="w-full h-full absolute flex items-center justify-center">
@@ -46,10 +65,14 @@ const IndividualCourse = ({ data }) => {
             </div>
             <div className="get-course">
               <div className="lg:hidden">
-                <GetCourseCard data={data.courseMinimalDetails} />
+                <GetCourseCard
+                  enroll={data.enroll}
+                  data={data.courseMinimalDetails}
+                  price={data.price}
+                />
               </div>
               <div className="course-navigation flex flex-wrap gap-3 px-3 py-3 rounded-3xl md:rounded-full">
-                {ChipNavData.map((val) => (
+                {ChipData.map((val) => (
                   <ChipNavigation
                     link={val.link}
                     label={val.label}
@@ -57,12 +80,18 @@ const IndividualCourse = ({ data }) => {
                   />
                 ))}
               </div>
-              <div className="course-text-wrapper py-20 border-b-[1px] border-neutral-400">
+              <div
+                className="about-text-wrapper py-20 border-b-[1px] border-neutral-400"
+                id="about"
+              >
                 <h2>{data.aboutCourse?.title}</h2>
                 <p>{data.aboutCourse?.description}</p>
               </div>
 
-              <div className="course-text-wrapper py-20 border-b-[1px] border-neutral-400">
+              <div
+                id="topics"
+                className="topics-text-wrapper py-20 border-b-[1px] border-neutral-400"
+              >
                 <h2>What will you learn</h2>
                 <p>{data.result?.description}</p>
                 {data.curriculum.map((val) => {
@@ -78,7 +107,10 @@ const IndividualCourse = ({ data }) => {
                 })}
               </div>
 
-              <div className="course-text-wrapper py-20 border-b-[1px] border-neutral-400">
+              <div
+                id="result"
+                className="result-text-wrapper py-20 border-b-[1px] border-neutral-400"
+              >
                 <h2>{data.result?.title}</h2>
                 <p>{data.result?.description}</p>
 
@@ -112,7 +144,11 @@ const IndividualCourse = ({ data }) => {
           </div>
           <div className="right-section max-w-sm mx-auto hidden lg:block">
             <div className="rate-card sticky top-3">
-              <GetCourseCard />
+              <GetCourseCard
+                enroll={data.enroll}
+                data={data.courseMinimalDetails}
+                price={data.price}
+              />
             </div>
           </div>
         </div>

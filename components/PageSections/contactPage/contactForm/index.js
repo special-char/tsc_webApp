@@ -1,4 +1,5 @@
 import { Field, Form, Formik, ErrorMessage } from "formik";
+import Image from "next/image";
 import React from "react";
 
 import * as Yup from "yup";
@@ -14,17 +15,15 @@ const ContactSchema = Yup.object({
   message: Yup.string().required("Required"),
 });
 
-const ContactForm = () => {
+const ContactForm = ({ data }) => {
+  console.log("ContactForm data inside:", data);
   return (
     <>
       <section className="w-full h-auto relative overflow-hidden">
         <div className="wrapper max-w-7xl mx-auto px-4 py-24">
           <div className="flex flex-col text-center max-w-lg mx-auto">
-            <h1>Get in touch!</h1>
-            <p>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat
-            </p>
+            <h1>{data.bannerHeading?.title}</h1>
+            <p>{data.bannerHeading?.description}</p>
           </div>
           <div className="flex flex-col lg:flex-row items-center rounded-3xl justify-between gap-3">
             <div className="contact-form rounded-3xl bg-neutral-100 shadow-base max-w-[750px] w-[100%] py-16 px-6">
@@ -122,15 +121,27 @@ const ContactForm = () => {
               </Formik>
             </div>
             <div className="contact-links flex flex-col gap-5 w-full lg:w-[423px] ">
-              {ContactLinkData.map((val) => (
-                <div className="rounded-3xl w-full mx-auto shadow-base hover:shadow-dark h-auto bg-neutral-100 py-10 px-5 flex flex-col gap-2 items-center justify-around  hover:-translate-y-3 duration-200">
-                  <div className="w-14 rounded-full">{val.icon}</div>
+              {data.contactDetails?.map((val) => (
+                <div
+                  key={val.id}
+                  className="rounded-3xl w-full mx-auto shadow-base hover:shadow-dark h-auto bg-neutral-100 py-10 px-5 flex flex-col gap-2 items-center justify-around  hover:-translate-y-3 duration-200"
+                >
+                  <div className="rounded-full relative w-10 h-10">
+                    <Image
+                      className="rounded-full"
+                      layout="fill"
+                      objectFit="cover"
+                      src={val.icon?.url}
+                      alt=""
+                      objectPosition={"center"}
+                    />
+                  </div>
                   <div className="text-center text-xl">
                     <span className="font-bold  text-neutral-700">
-                      {val.title}
+                      {val.contactType}
                     </span>
-                    <a href="mailto:">
-                      <address className="">{val.data}</address>
+                    <a href={val.link}>
+                      <address className="">{val.displayText}</address>
                     </a>
                   </div>
                 </div>

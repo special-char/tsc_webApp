@@ -35,7 +35,7 @@ const WhylearnSection = () => {
       <div className=" bg-neutral-700 text-center relative py-28 lg:py-16 lg:h-screen">
         <div className="container flex flex-col gap-6 px-6 mx-auto max-w-[1210px] overflow-hidden">
           <h2 className="flex-1 text-secondary1">
-            Why learn with our courses?
+            {/* Why learn with our courses? */}
           </h2>
           <div className="lg:flex-row flex flex-1 flex-col gap-4 md:gap-8">
             {WhylearnDetails.map((obj) => {

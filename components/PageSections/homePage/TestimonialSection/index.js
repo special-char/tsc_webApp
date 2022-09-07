@@ -92,7 +92,17 @@ const TestimonialSection = ({ data, data2 }) => {
             {data2.map((obj) => {
               const name = `${obj.firstName} ${obj.lastName}`;
               //console.log("TestimonialSection obj:", obj);
-              return <Testimonial data={obj} />;
+              return (
+                <Testimonial
+                  key={obj.id}
+                  data={obj}
+                  // description={obj.description}
+                  // img={obj.img}
+                  // designation={obj.designation}
+                  // name={name}
+                  // svg={obj.svg}
+                />
+              );
             })}
           </div>
 
