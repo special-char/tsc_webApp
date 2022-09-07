@@ -4,7 +4,7 @@ import OurDevlopers from "@components/PageSections/devlopmentPage/ourDevlopers";
 import OurProjectsSection from "@components/PageSections/devlopmentPage/ourProjects";
 import React from "react";
 
-const devlopment = () => {
+const Development = () => {
   return (
     <>
       <HeaderSection />
@@ -14,5 +14,8 @@ const devlopment = () => {
     </>
   );
 };
+Development.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 
-export default devlopment;
+export default Development;
