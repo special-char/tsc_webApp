@@ -98,10 +98,10 @@ const AllCoursesSection = ({ data }) => {
           <h2 className="text-neutral-800 text-center lg:text-left ">
             All Courses
           </h2>
-          <span className="flex bg-neutral-200 p-4 rounded-full flex-wrap gap-4 text-base font-bold">
-            {courseCategories.map((button) => {
-              return (
-                <Link href="#">
+          <Link href={"/courses"}>
+            <span className="flex bg-neutral-200 p-4 rounded-full flex-wrap gap-4 text-base font-bold">
+              {courseCategories.map((button) => {
+                return (
                   <a
                     className={`capitalize px-6 py-4 pt-4 rounded-full ${
                       button.title === "all"
@@ -111,10 +111,10 @@ const AllCoursesSection = ({ data }) => {
                   >
                     {button.title}
                   </a>
-                </Link>
-              );
-            })}
-          </span>
+                );
+              })}
+            </span>
+          </Link>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 text-left justify-center gap-8 md:p-8 w-full mx-auto max-w-[1210px]">
           {data.map((obj) => {

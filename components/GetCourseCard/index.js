@@ -50,6 +50,40 @@ const GetCourseCard = ({ data, price, enroll }) => {
               as="select"
               className="w-full py-5 px-8 rounded-full bg-neutral-200"
             >
+<<<<<<< HEAD
+              <Form className="flex flex-col gap-3">
+                <Field
+                  name="selectcourse"
+                  as="select"
+                  className="w-full py-4 px-2 rounded-full bg-secondary1"
+                >
+                  <option value="0">Select Course Plan</option>
+                  <option value="basic">Basic</option>
+                  <option value="premium">Premium</option>
+                </Field>
+                <Link href={"/courses"}>
+                  <a>
+                    <button
+                      type="submit"
+                      className="btn btn--primary btn--small w-full"
+                    >
+                      ADD TO CART
+                    </button>
+                  </a>
+                </Link>
+              </Form>
+            </Formik>
+          </div>
+        </div>
+        <div className="course-fetures">
+          {CourseFeatures.map((val) => (
+            <div className="flex  py-3 gap-2">
+              <div>{val.svg}</div>
+              <span>{val.description}</span>
+            </div>
+          ))}
+        </div>
+=======
               {options.map((val) => (
                 <option key={val.id} value={val.value}>
                   {val.option}
@@ -67,6 +101,7 @@ const GetCourseCard = ({ data, price, enroll }) => {
             </Link>
           </Form>
         </Formik>
+>>>>>>> 2e88336351aa187a419e5e0f83710b802bfccb2c
       </div>
       <div className="flex flex-col gap-6 lg:gap-4 items-start">
         {data.map((val) => (

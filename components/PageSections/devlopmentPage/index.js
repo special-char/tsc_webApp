@@ -1,4 +1,8 @@
-import Footer from "@components/footer";
+import Footer from "@components/Footer";
+import HeaderSection from "@components/PageSections/devlopmentPage/headerSection";
+import OurDevlopers from "@components/PageSections/devlopmentPage/ourDevlopers";
+import OurProjectsSection from "@components/PageSections/devlopmentPage/ourProjects";
+import OurServices from "@components/PageSections/devlopmentPage/ourServices";
 import React from "react";
 import CareerForm from "./careerForm";
 import ContactUS from "./contactUs";
@@ -16,6 +20,7 @@ const DevelopmentPage = () => {
 
       <CareerForm />
       <ContactUS />
+      <OurServices />
       <Footer />
     </>
   );
