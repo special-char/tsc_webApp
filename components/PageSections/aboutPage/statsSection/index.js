@@ -5,7 +5,7 @@ const Achievements = ({ data }) => {
   return (
     <div className="w-full py-24 md:py-36 lg:py-44">
       <div className="container mx-auto max-w-7xl flex flex-col items-center">
-        <h2 className="md:w-[480px] mx-auto text-center mb-10 md:mb-10">
+        <h2 className="md:w-[480px] mx-auto text-center text-3xl mb-10 md:mb-10">
           {data.heading?.title}
         </h2>
 

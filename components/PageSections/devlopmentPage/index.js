@@ -3,6 +3,7 @@ import HeaderSection from "@components/PageSections/devlopmentPage/headerSection
 import OurDevlopers from "@components/PageSections/devlopmentPage/ourDevlopers";
 import OurProjectsSection from "@components/PageSections/devlopmentPage/ourProjects";
 import OurServices from "@components/PageSections/devlopmentPage/ourServices";
+import TestimonialSection from "@components/PageSections/devlopmentPage/testimonialSection";
 import React from "react";
 import CareerForm from "./careerForm";
 import ContactUS from "./contactUs";
@@ -21,6 +22,7 @@ const DevelopmentPage = () => {
       <CareerForm />
       <ContactUS />
       <OurServices />
+      <TestimonialSection />
       <Footer />
     </>
   );
