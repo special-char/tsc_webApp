@@ -9,6 +9,7 @@ const nextConfig = {
       "placeimg.com",
       "assets.website-files.com",
       "ik.imagekit.io",
+      "cdn-dhggl.nitrocdn.com",
     ],
     formats: ["image/avif", "image/webp"],
   },
