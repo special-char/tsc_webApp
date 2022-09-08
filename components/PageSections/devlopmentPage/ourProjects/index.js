@@ -90,7 +90,7 @@ const OurProjectsSection = () => {
                     className="w-[300px] md:min-w-[550px] relative"
                     key={obj.id}
                   >
-                    <Link href={`course/${obj.id}`}>
+                    <Link href={`/allProjects`}>
                       <a>
                         <Card {...obj} />
                       </a>
