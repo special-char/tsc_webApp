@@ -25,7 +25,7 @@ const SplitScreen = () => {
     >
       <div
         className={classNames(
-          "z-10 flex items-center justify-center custom-transition transition-all flex-1 bg-secondary4",
+          "z-10 flex items-center justify-center custom-transition transition-all flex-1 bg-neutral-800",
           {
             "flex-[6] lg:flex-[10]": firstCard,
             "hover:flex-[1.2]": !firstCard,
@@ -73,7 +73,7 @@ const SplitScreen = () => {
                 {firstCard ? "Add to bag" : "Discover more"}
               </a>
             </div>
-            <div
+            {/* <div
               className={`absolute w-full h-1/2 flex justify-start flex-1 transition-all ease-linear duration-75 -z-10`}
             >
               <div
@@ -88,7 +88,7 @@ const SplitScreen = () => {
                   alt="development"
                 />
               </div>
-            </div>
+            </div> */}
           </>
         )}
         <div
@@ -166,7 +166,7 @@ const SplitScreen = () => {
                 {secondCard ? "Add to bag" : "Discover more"}
               </a>
             </div>
-            <div
+            {/* <div
               className={`absolute w-full h-1/2 flex justify-start flex-1 transition-all ease-linear duration-75 -z-10`}
             >
               <div
@@ -181,7 +181,7 @@ const SplitScreen = () => {
                   alt="training"
                 />
               </div>
-            </div>
+            </div> */}
           </>
         )}
         <div

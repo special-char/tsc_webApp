@@ -19,7 +19,7 @@ const PopularCourses = ({ data }) => {
     <>
       <section className="py-20 ">
         <h2 className="text-center mb-10">Browse our popular courses</h2>
-        <div className="card-container relative container ml-auto max-w-7xl px-6">
+        <div className="card-container relative container ml-auto mx-auto max-w-7xl px-6">
           <div className="navigation flex flex-row justify-between w-[85%] overflow-hidden  absolute z-10  top-40 px-10">
             <div
               onClick={slideLeft}
