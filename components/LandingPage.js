@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import classNames from "classnames";
-import Development from "@public/icons/development.svg";
-import Certification from "@public/icons/certification.svg";
+import DevelopmentSvg from "@public/icons/web_development.svg";
+import TrainingSvg from "@public/icons/training_icon.svg";
 
 const LandingPage = () => {
   const [exploreTraining, setExploreTraining] = useState(false);
@@ -65,10 +65,10 @@ const LandingPage = () => {
                   : "sm:opacity-100 opacity-0 custom-transition duration-500"
               } `}
             >
-              <Certification
+              <DevelopmentSvg
                 className={`w-1/3 lg:w-1/3 max-w-md ${
                   exploreDevelopment
-                    ? "opacity-100  translate-y-[20%] lg:translate-y-[10%] translate-x-[70%] md:translate-x-[80%] custom-transition delay-0"
+                    ? "opacity-100  translate-y-[20%] lg:translate-y-[10%] translate-x-[70%] md:translate-x-[60%] custom-transition delay-0"
                     : "opacity-0"
                 }`}
               />
@@ -167,7 +167,7 @@ const LandingPage = () => {
                   : "opacity-0"
               }`}
             >
-              <Development
+              <TrainingSvg
                 className={`w-1/3 ${
                   exploreTraining &&
                   " translate-y-[20%] lg:translate-y-[10%] translate-x-[70%] md:translate-x-[80%] custom-transition delay-0"

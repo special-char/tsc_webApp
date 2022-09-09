@@ -39,8 +39,11 @@ const CareerForm = () => {
       <section className="w-full h-auto relative overflow-hidden">
         <div className="wrapper max-w-7xl mx-auto px-4 py-24">
           <div className="flex flex-col text-center max-w-lg mx-auto">
-            <h1 className="capitalize">career</h1>
-            <p>something</p>
+            <h1 className="capitalize">Career</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              nesciunt.
+            </p>
           </div>
           <div className="flex flex-col lg:flex-row items-center rounded-3xl justify-between gap-3">
             <div className="contact-form rounded-3xl bg-neutral-100 shadow-base  w-[100%] py-16 px-6">
@@ -121,7 +124,7 @@ const CareerForm = () => {
                       </div>
                     </div>
                     <div>
-                      <label for="myfile">upload cv</label>
+                      <label for="myfile">Upload CV</label>
                       <Field
                         className="bg-neutral-200 w-full md:w-[49%] focus:outline-neutral-500 rounded-full py-4 px-7"
                         type="file"

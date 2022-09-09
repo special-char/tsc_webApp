@@ -1,3 +1,4 @@
+import Layout from "@components/Layouts";
 import HomePage from "@components/PageSections/homePage";
 import HomeQuery from "@queries/homeQuery";
 import axiosInstance from "lib/axiosInstance";
@@ -30,6 +31,10 @@ export async function getServerSideProps() {
     };
   }
 }
+
+Training.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
 
 Training.displayName = "Training";
 export default Training;
