@@ -6,11 +6,11 @@ const FeaturedTeacher = ({ data }) => {
   console.log("featuredTeacher data:", data);
   return (
     <section className="wrapper flex py-24  md:py-44 h-auto mb-24 lg:mb-0">
-      <div className="flex w-full lg:max-w-7xl mx-auto md:w-4/5 items-center justify-center flex-wrap px-4 gap-4 md:gap-12">
+      <div className="flex w-full lg:max-w-7xl mx-auto  items-center justify-center flex-wrap px-4 gap-4 md:gap-12">
         <div className=" flex flex-col md:text-center md:mx-auto lg:text-left lg:flex-1 text-center justify-center">
           <h2>{data.heading?.title}</h2>
           <p>{data.heading?.description}</p>
-          <div className="flex flex-col gap-8 mb-8 md:flex-row lg:flex-col lg:w-1/2 ">
+          <div className="flex flex-col gap-8 mb-8 md:flex-row lg:flex-col justify-center lg:w-1/2 ">
             <Link href={data.becomeTeacher?.link}>
               <a>
                 <button className="btn btn--primary  min-w-fit ">

@@ -14,7 +14,7 @@ const PopularCourses = ({ data }) => {
     var slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft + 500;
   };
-  //console.log("popular courses data:", data);
+  console.log("popular courses data:", data);
   return (
     <>
       <section className="py-20 ">
