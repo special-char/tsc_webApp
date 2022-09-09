@@ -64,6 +64,13 @@ const OurTeam = () => {
       name: "Virat Kohli",
       designation: "front-end developer",
     },
+    ,
+    {
+      photo:
+        "https://www.cricbuzz.com/a/img/v1/152x152/i1/c170661/virat-kohli.jpg",
+      name: "Virat Kohli",
+      designation: "front-end developer",
+    },
   ];
   return (
     <>
