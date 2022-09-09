@@ -2,10 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Card = ({
-  //
-  ...obj
-}) => {
+const Card = ({ ...obj }) => {
   return (
     <>
       <div className="card">
