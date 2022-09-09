@@ -4,38 +4,16 @@ import axiosInstance from "lib/axiosInstance";
 import { useRouter } from "next/router";
 
 const TeacherId = ({ data }) => {
-  // const TeacherData = [
-  //   {
-  //     id: 1,
-  //     name: "Teacher 1",
-  //     about: "about teacher",
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Teacher 2",
-  //     about: "about teacher",
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Teacher 3",
-  //     about: "about teacher",
-  //   },
-  //   {
-  //     id: 4,
-  //     name: "Teacher 4",
-  //     about: "about teacher",
-  //   },
-  // ];
   const router = useRouter();
   const { teacherid } = router.query;
   console.log("all teachers data:", data);
   return (
     <>
-      {data.aboutTeacher.teachers
+      {data.aboutTeacher?.teachers
         .filter((teacher) => teacher.id == teacherid)
         .map((val) => (
           <div key={val.id}>
-            <IndividualTeacherPage data={data.aboutTeacher} />
+            <IndividualTeacherPage data={val} />
           </div>
         ))}
     </>

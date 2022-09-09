@@ -1,10 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-const Card = ({
-  //
-  ...obj
-}) => {
+const Card = ({ ...obj }) => {
   return (
     <>
       <div className="card">
@@ -19,7 +17,8 @@ const Card = ({
         </figure>
         <div className="card__body p-8 relative border-spacing-2 shadow-2xl bg-neutral-100  ">
           <h3 className="card__title md:mb-3">{obj.title}</h3>
-          <p>{obj.titleDescription}</p>
+          <p className="line-clamp-4">{obj.titleDescription}</p>
+          <h4>Data not available</h4>
           <div className="flex flex-row gap-4 items-center">
             <div className="flex relative rounded-full w-12 h-12 ">
               <Image
@@ -29,7 +28,7 @@ const Card = ({
                 src="https://images.unsplash.com/photo-1661732017217-71b8e7a750a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
               />
             </div>
-            {/* <h5>{obj.name}</h5> */}
+            <h5>{obj.name}Data not available</h5>
           </div>
         </div>
       </div>

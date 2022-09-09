@@ -13,9 +13,7 @@ const Teachers = ({ data }) => {
           <h3 className="card__title">
             {data.firstName} {data.lastName}
           </h3>
-          <p className="line-clamp-3 hover:line-clamp-none">
-            {data.description}
-          </p>
+          <p className="line-clamp-3 ">{data.description}</p>
           <div className="card-svg  flex gap-6">
             {data.socialMedia?.map((obj) => {
               return (

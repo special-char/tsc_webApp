@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import Yarrow from "@public/icons/yellowArrow.svg";
 import Image from "next/image";
@@ -13,19 +14,20 @@ const CourseByCategory = ({ data }) => {
         <div className="flex flex-col gap-6 md:w-[552px] md:mx-auto lg:w-[90%] lg:flex-row lg:gap-6">
           {data.cardComponent.map((val) => (
             <div className="card flex-1" key={val.id}>
-              <figure className="relative ">
+              <figure className="aspect-image relative min-h-[300px]">
                 <Image
                   layout="fill"
+                  className=""
                   objectFit="cover"
                   src={val.image?.url}
                   alt=""
-                  objectPosition={"center"}
                 />
-
-                <div className="chip chip--white px-6 py-3 flex items-center gap-1 absolute top-4 right-4">
-                  <span className="w-3">{val.icon}</span>
-                  <span className="text-sm font-bold">{val.courses}</span>
-                </div>
+                {val.courses && (
+                  <div className="chip chip--white px-6 py-3 flex items-center gap-1 absolute top-4 right-4">
+                    <span className="w-3">{val.icon}</span>
+                    <span className="text-sm font-bold">{val.courses}</span>
+                  </div>
+                )}
               </figure>
               <div className="card-body">
                 <h3 className="card-title">{val.title}</h3>

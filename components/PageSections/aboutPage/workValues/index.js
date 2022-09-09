@@ -6,8 +6,8 @@ const WorkValues = ({ data }) => {
   //console.log("Work Value Data:", data);
   return (
     <>
-      <section className="w-full lg:w-full bg-neutral-700 relative py-24">
-        <div className="container w-full mx-auto p-4 gap-6 ">
+      <section className="bg-neutral-700 relative py-24">
+        <div className="container max-w-7xl mx-auto p-4 gap-6 ">
           <div className="pb-8 flex flex-col text-center justify-center">
             <h2 className="text-secondary1">{data.heading?.title}</h2>
             <p className="text-neutral-100 md:w-[520px] w-auto m-auto">
@@ -16,17 +16,8 @@ const WorkValues = ({ data }) => {
           </div>
           <div className="grid md:grid-cols-2 text-left justify-center gap-9 ">
             {data.valueCard.map((obj) => {
-              // console.log("card values map:", obj);
-              return (
-                <WorkValuesCard
-                  data={obj}
-                  // description={obj.description}
-                  // title={obj.title}
-                  // svg={obj.svg}
-                  // id={obj.id}
-                  // key={obj.id}
-                />
-              );
+              console.log("card values map:", obj);
+              return <WorkValuesCard data={obj} />;
             })}
           </div>
         </div>

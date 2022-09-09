@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const BlogCourses = ({ ...obj }) => {
   console.log("BlogCourses data:", obj);
@@ -24,12 +25,12 @@ const BlogCourses = ({ ...obj }) => {
             <div className="flex relative rounded-full w-12 h-12 "></div>
           </div>
         </div>
-        <div className="chip chip--white absolute flex top-8 gap-2 text-center py-3 px-6 items-center right-4 flex-row ">
-          {/* <span>{svg}</span> */}
+        {/* <div className="chip chip--white absolute flex top-8 gap-2 text-center py-3 px-6 items-center right-4 flex-row ">
+
           <span className="text-base text-neutral-700 font-bold ">
-            {/* {blogType} */}
+            
           </span>
-        </div>
+        </div> */}
       </div>
     </>
   );

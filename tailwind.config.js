@@ -10,6 +10,7 @@ module.exports = {
       secondary1: "#E1EDFB",
       secondary2: "#FCDF69",
       secondary3: "#F99D77",
+      secondary4: "#7EB7FB",
       neutral: {
         100: "#FFFFFF",
         200: "#F9FAFB",

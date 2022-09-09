@@ -4,32 +4,6 @@ import axiosInstance from "lib/axiosInstance";
 import CoursesQuery from "@queries/coursesQuery";
 
 const CourseId = ({ data }) => {
-  const CourseData = [
-    {
-      id: 1,
-      slug: "react-course",
-      title: "React",
-      rate: 1000,
-    },
-    {
-      id: 2,
-      slug: "react-course",
-      title: "Flutter",
-      rate: 1000,
-    },
-    {
-      id: 3,
-      slug: "react-course",
-      title: "Node js ",
-      rate: 1000,
-    },
-    {
-      id: 4,
-      slug: "react-course",
-      title: "Next js",
-      rate: 1000,
-    },
-  ];
   const router = useRouter();
   const { courseid } = router.query;
   // we have to put courses data here

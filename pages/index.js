@@ -1,39 +1,9 @@
-import Layout from "@components/layouts";
-import HomePage from "@components/pageSections/homePage";
-import HomeQuery from "@queries/homeQuery";
-import axiosInstance from "lib/axiosInstance";
+import LandingPage from "@components/LandingPage";
 import React from "react";
 
-const Home = ({ data }) => {
-  return (
-    <>
-      <HomePage data={data} />
-    </>
-  );
-};
-Home.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+const Home = () => {
+  return <LandingPage />;
 };
 
-export async function getServerSideProps() {
-  try {
-    const res = await axiosInstance.post("graphql", {
-      query: HomeQuery,
-      variables: {},
-    });
-    return {
-      props: {
-        data: res.data.data,
-      },
-    };
-  } catch (error) {
-    console.log(error);
-    return {
-      props: {
-        data: error,
-      },
-    };
-  }
-}
 Home.displayName = "Home";
 export default Home;

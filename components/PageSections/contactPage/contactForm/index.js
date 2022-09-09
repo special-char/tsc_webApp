@@ -1,5 +1,6 @@
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import * as Yup from "yup";
@@ -110,12 +111,16 @@ const ContactForm = ({ data }) => {
                     {errors.message && touched.message ? (
                       <div>{errors.message}</div>
                     ) : null}
-                    <button
-                      type="submit"
-                      className="btn btn--primary btn--small md:w-1/3 lg:w-1/3"
-                    >
-                      SUBMIT
-                    </button>
+                    <Link href={"/courses"}>
+                      <a>
+                        <button
+                          type="submit"
+                          className="btn btn--primary btn--small md:w-1/3 lg:w-1/3"
+                        >
+                          SUBMIT
+                        </button>
+                      </a>
+                    </Link>
                   </Form>
                 )}
               </Formik>

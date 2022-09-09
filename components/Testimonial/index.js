@@ -15,7 +15,7 @@ const Testimonial = ({ data }) => {
         </div>
         <div className="flex-col text-content-wrapper flex-1 flex gap-2 md:items-start items-center">
           {/* {svg} */}
-          <p className="text-lg font-normal text-neutral-600 line-clamp-3 hover:line-clamp-none">
+          <p className="text-lg font-normal text-neutral-600 line-clamp-3">
             {data.description}
           </p>
           {/* <h4 className="font-bold text-lg text-neutral-700">{data.name}</h4> */}

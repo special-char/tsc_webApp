@@ -1,7 +1,5 @@
 import React from "react";
 import IndividualCourse from "@components/pageSections/individualCourse";
-import CoursesQuery from "@queries/coursesQuery";
-import axiosInstance from "lib/axiosInstance";
 import Layout from "@components/layouts";
 
 const Individual = () => {
@@ -11,7 +9,7 @@ const Individual = () => {
     </>
   );
 };
-Course.getLayout = function getLayout(page) {
+Individual.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
 

@@ -10,7 +10,7 @@ const TeachersSection = ({ data }) => {
   console.log("Teacher Section Data:", data);
   return (
     <>
-      <section className="lg:w-full bg-neutral-100 py-44">
+      <section id="Teachers" className="lg:w-full bg-neutral-100 py-44">
         <div className="container w-full mx-auto max-w-7xl">
           <h2 className="text-neutral-800 lg:text-left px-4 text-center ">
             {data.heading?.title}
@@ -28,6 +28,7 @@ const TeachersSection = ({ data }) => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 text-left justify-center gap-9 md:p-8 w-full px-4">
             {data.teachers.map((obj) => {
+              console.log("teacher obj data:", obj);
               return (
                 <Link href={`teacher/${obj.id}`} key={obj.id}>
                   <a>
