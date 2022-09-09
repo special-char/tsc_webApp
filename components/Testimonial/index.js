@@ -5,7 +5,7 @@ const Testimonial = ({ data }) => {
   console.log("Testimonial data:", data);
   return (
     <>
-      <div className=" flex flex-col md:flex-row items-center w-full lg:w-[765px] md:w-[720px] py-11 px-6 md:py-24 md:px-14 md:p-12 gap-8 rounded-3xl drop-shadow-sm border-spacing-2  bg-neutral-100">
+      <div className=" flex flex-col overflow-hidden md:flex-row items-center w-full lg:w-[765px] md:w-[720px] py-11 px-6 md:py-24 md:px-14 md:p-12 gap-8 rounded-3xl drop-shadow-sm border-spacing-2  bg-neutral-100">
         <div className="flex flex-col relative rounded-full w-36 h-36 md:w-48 md:h-48">
           <Image
             className=" avatar rounded-full "
