@@ -17,7 +17,7 @@ const Card = ({ ...obj }) => {
         </figure>
         <div className="card__body p-8 relative border-spacing-2 shadow-2xl bg-neutral-100  ">
           <h3 className="card__title md:mb-3">{obj.title}</h3>
-          <p>{obj.titleDescription}</p>
+          <p className="line-clamp-4">{obj.titleDescription}</p>
           <h4>Data not available</h4>
           <div className="flex flex-row gap-4 items-center">
             <div className="flex relative rounded-full w-12 h-12 ">

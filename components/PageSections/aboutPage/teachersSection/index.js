@@ -28,6 +28,7 @@ const TeachersSection = ({ data }) => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 text-left justify-center gap-9 md:p-8 w-full px-4">
             {data.teachers.map((obj) => {
+              console.log("teacher obj data:", obj);
               return (
                 <Link href={`teacher/${obj.id}`} key={obj.id}>
                   <a>
