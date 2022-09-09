@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const Testimonial = ({ data }) => {
+  console.log("Testimonial data:", data);
   return (
     <>
       <div className=" flex flex-col md:flex-row items-center w-full lg:w-[765px] md:w-[720px] py-11 px-6 md:py-24 md:px-14 md:p-12 gap-8 rounded-3xl drop-shadow-sm border-spacing-2  bg-neutral-100">
@@ -14,7 +15,7 @@ const Testimonial = ({ data }) => {
         </div>
         <div className="flex-col text-content-wrapper flex-1 flex gap-2 md:items-start items-center">
           {/* {svg} */}
-          <p className="text-lg font-normal text-neutral-600">
+          <p className="text-lg font-normal text-neutral-600 line-clamp-3 hover:line-clamp-none">
             {data.description}
           </p>
           {/* <h4 className="font-bold text-lg text-neutral-700">{data.name}</h4> */}

@@ -1,21 +1,23 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-const Teachers = ({ ...obj }) => {
-  console.log("Teachers", obj);
+const Teachers = ({ data }) => {
+  console.log("Teachers data", data);
   return (
     <>
       <div className="card">
         <figure className="relative h-80">
-          <Image layout="fill" objectFit="cover" src={obj.image?.url} alt="" />
+          <Image layout="fill" objectFit="cover" src={data.image?.url} alt="" />
         </figure>
         <div className="card__body p-8 ">
           <h3 className="card__title">
-            {obj.firstName} {obj.lastName}
+            {data.firstName} {data.lastName}
           </h3>
-          <p>{obj.description}</p>
+          <p className="line-clamp-3 hover:line-clamp-none">
+            {data.description}
+          </p>
           <div className="card-svg  flex gap-6">
-            {obj.socialMedia.map((obj) => {
+            {data.socialMedia?.map((obj) => {
               return (
                 <Link href={`${obj.svgLink}`}>
                   <a>{obj.svg}</a>
@@ -23,6 +25,7 @@ const Teachers = ({ ...obj }) => {
               );
             })}
           </div>
+          <h5 className="">{data.jobTitle}</h5>
         </div>
       </div>
     </>

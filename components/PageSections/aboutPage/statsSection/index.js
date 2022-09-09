@@ -10,7 +10,7 @@ const Achievements = ({ data }) => {
         <div className="flex flex-wrap justify-center items-center ">
           {data.success.map((val) => (
             <div
-              className=" text-center px-7  min-w-[300px] flex-1"
+              className=" text-center px-7  max-w-[297px] flex-1 "
               key={val.id}
             >
               <h1 className="text-secondary3">{val.number}</h1>

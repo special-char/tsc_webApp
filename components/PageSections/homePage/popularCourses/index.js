@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 const PopularCourses = ({ data }) => {
-  //console.log("popular Courses Data:", data);
+  console.log("popular Courses Data:", data);
   return (
     <>
       <section className="py-20 overflow-hidden">
