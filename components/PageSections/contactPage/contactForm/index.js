@@ -1,5 +1,6 @@
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import * as Yup from "yup";

@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import LeftSvg from "/public/icons/left.svg";
 import RightsSvg from "/public/icons/rights.svg";
+import Carousal from "@components/Carousal";
 
 const PopularCourses = ({ data }) => {
   console.log("popular Courses Data:", data);
@@ -14,12 +15,14 @@ const PopularCourses = ({ data }) => {
     var slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft + 500;
   };
-  //console.log("popular courses data:", data);
+  console.log("popular courses data:", data);
   return (
     <>
-      <section className="py-20 ">
+      <section className="py-20 overflow-hidden">
         <h2 className="text-center mb-10">Browse our popular courses</h2>
-        <div className="card-container relative container ml-auto max-w-7xl px-6">
+        <Carousal data={data.courses} />
+
+        {/* <div className="card-container relative container ml-auto max-w-7xl px-6">
           <div className="navigation flex flex-row justify-between w-[85%] overflow-hidden  absolute z-10  top-40 px-10">
             <div
               onClick={slideLeft}
@@ -70,7 +73,7 @@ const PopularCourses = ({ data }) => {
               {data.explore?.buttonText}
             </button>
           </Link>
-        </div>
+        </div> */}
       </section>
     </>
   );

@@ -5,11 +5,8 @@ const EducationCourses = ({ data }) => {
   // console.log("success data", data);
   return (
     <>
-      <section className="wrapper bg-primary w-full h-auto overflow-hidden relative px-4 py-20 -z-20">
-        <div className="bg-secondary2 rounded-full w-[350px] h-[350px] absolute top-64 -left-80 md:-top-60 md:-left-52 lg:-left-72 lg:-top-48 -z-10"></div>
-        <div className="bg-secondary1 rounded-full w-[200px] h-[200px] md:w-[300px] md:h-[300px] md:-bottom-60 md:left-[60%] absolute -bottom-40 left-32 -z-10 lg:top-[86%] lg:left-[36%]"></div>
-        <div className="bg-secondary3 rounded-full w-[200px] h-[200px] md:w-[300px] md:h-[300px] absolute right-14 bottom-72 md:top-[55%] md:right-52 lg:right-48 lg:top-40 -z-10"></div>
-        <div className="container mx-auto max-w-7xl">
+      <section className="wrapper relative w-full h-full bg-primary overflow-hidden">
+        <div className="container mx-auto max-w-7xl px-4 py-20 ">
           <div className="content md:w-[90%] max-w-7xl lg:w-full mx-auto flex flex-col flex-wrap xs:flex-row md:flex-col lg:flex-row  gap-6">
             <div className="left-text-content flex flex-col flex-wrap flex-1 items-start justify-center max-w-2xl md:w-4/5 md:mb-14 mx-auto">
               <h2 className="text-neutral-100 text-center sm:text-left md:text-center lg:text-left">
@@ -24,7 +21,7 @@ const EducationCourses = ({ data }) => {
                 </button>
               </Link>
             </div>
-            <div className="right-box-content flex items-center flex-wrap justify-center gap-5">
+            <div className="right-box-content flex items-center flex-wrap justify-center gap-5 z-10">
               <div className="flex flex-col md:max-w-[220px] items-center lg:items-end gap-3">
                 {data.leftCards.map((val) => {
                   return (
@@ -52,6 +49,10 @@ const EducationCourses = ({ data }) => {
             </div>
           </div>
         </div>
+
+        <div className="bg-secondary2 rounded-full w-[350px] h-[350px] absolute top-64 -left-80 md:-top-60 md:-left-52 lg:-left-72 lg:-top-48 "></div>
+        <div className="bg-secondary1 rounded-full w-[200px] h-[200px] md:w-[300px] md:h-[300px] md:-bottom-60 md:left-[60%] absolute -bottom-40 left-32 lg:top-[86%] lg:left-[36%]"></div>
+        <div className="bg-secondary3 rounded-full w-[200px] h-[200px] md:w-[300px] md:h-[300px] absolute right-14 bottom-72 md:top-[55%] md:right-52 lg:right-48 lg:top-40 "></div>
       </section>
     </>
   );

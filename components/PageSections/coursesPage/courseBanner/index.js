@@ -5,7 +5,7 @@ const CourseBanner = ({ data }) => {
   return (
     <>
       <section className="w-full h-auto bg-neutral-200 relative overflow-hidden py-32">
-        <div className="container mx-auto">
+        <div className="container max-w-7xl mx-auto">
           <div className="text-center px-7 md:px-28 lg:px-28">
             <h1>{data.heading?.title}</h1>
             <p className="lg:mx-16">{data.heading?.description}</p>

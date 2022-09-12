@@ -13,7 +13,7 @@ const TeacherId = ({ data }) => {
         .filter((teacher) => teacher.id == teacherid)
         .map((val) => (
           <div key={val.id}>
-            <IndividualTeacherPage data={data.aboutTeacher} />
+            <IndividualTeacherPage data={val} />
           </div>
         ))}
     </>

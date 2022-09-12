@@ -24,10 +24,11 @@ const TeacherIntro = ({ data }) => {
         </div>
         <div className="md:max-w-[767px] mx-auto px-4">
           <div className="flex flex-col items-center justify-center relative lg:mb-48 md:mb-32 mb-72">
-            {data.teachers?.map((obj) => {
+            {/* {data.teachers?.map((obj) => {
               console.log("obj:", obj);
               return <Testi data={obj} />;
-            })}
+            })} */}
+            <Testi data={data} />
           </div>
           <div className=" md:grid flex flex-col justify-center text-left md:items-center  ">
             <h2>About {data.firstName}</h2>
