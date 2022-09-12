@@ -21,10 +21,10 @@ const HomePage = ({ data }) => {
       <EducationCourses data={data.success} />
       <AboutEducation data={data.aboutEducation} />
       <CourseByCategory data={data.coursesCategory} />
-      <TestimonialSection
+      {/* <TestimonialSection
         data={data.testimonialSection}
         data2={data.testimonials}
-      />
+      /> */}
       {/* <ResourcesSection /> */}
     </>
   );

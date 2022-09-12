@@ -42,7 +42,7 @@ const Carousal = ({ data, testimonial }) => {
       </div>
       <div
         id="slider"
-        className="no-scrollbar mx-8 snap-x overflow-x-scroll overflow-clip flex scroll whitespace-nowrap scroll-smooth w-[100vw]  md:flex-row md:inline-flex gap-4 justify-center md:text-left pr-[200px] pl-[400px] md:pl-[900px] md:pr-[430px]"
+        className="no-scrollbar mx-8 snap-x overflow-x-scroll overflow-clip flex scroll whitespace-nowrap scroll-smooth w-[100vw]  md:flex-row md:inline-flex gap-4 justify-start md:text-left md:pl-4 md:pr-80"
       >
         {data.map((obj) => {
           return testimonial ? (

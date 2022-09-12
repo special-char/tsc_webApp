@@ -12,7 +12,7 @@ const DevelopmentPage = () => {
       <OurServices />
       <OurProjectsSection />
       <OurTeam />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <CareerForm />
     </>
   );
