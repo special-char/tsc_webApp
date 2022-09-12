@@ -5,7 +5,7 @@ import React from "react";
 import Card from "@components/Card";
 import Testimonial from "@components/testimonial";
 
-const Carousal = ({ data, testimonial }) => {
+const Carousal = ({ data, testimonial, href }) => {
   const slideLeft = () => {
     var slider = document.getElementById("slider");
     var width = slider.clientWidth;
@@ -42,19 +42,23 @@ const Carousal = ({ data, testimonial }) => {
       </div>
       <div
         id="slider"
-        className="no-scrollbar mx-8 snap-x overflow-x-scroll overflow-clip flex scroll whitespace-nowrap scroll-smooth w-[100vw]  md:flex-row md:inline-flex gap-4 justify-start md:text-left md:pl-4 md:pr-80"
+        className="no-scrollbar mx-8 snap-x overflow-x-scroll overflow-clip flex scroll scroll-smooth w-[100vw]  md:flex-row md:inline-flex gap-4 justify-start md:text-left md:pl-4 md:pr-80"
       >
         {data.map((obj) => {
           return testimonial ? (
-            <div className="snap-start relative py-10" key={obj.id}>
-              <Testimonial key={obj.id} data={obj} />
+            <div
+              className="snap-start lg:min-w-[750px] relative py-10"
+              key={obj.id}
+            >
+              <Testimonial data={obj} />
             </div>
           ) : (
             <div
               className="snap-start md:min-w-[550px] relative py-10"
               key={obj.id}
             >
-              <Link href={`course/${obj.id}`}>
+              {/* <Link href={`course/${obj.id}`}> */}
+              <Link href={href ?? `course/${obj.id}`}>
                 <a>
                   <Card {...obj} />
                 </a>

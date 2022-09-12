@@ -74,6 +74,19 @@ const TestimonialSection = ({ data, data2 }) => {
           {data.heading?.title}
         </h2>
         <Carousal data={data2} testimonial />
+        <div className="grid grid-cols-2 grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 gap-6 lg:w-full md:gap-8 md:w-2/3 text-center lg:flex-row mx-auto py-14 ">
+          {numberDetails?.map((e, i) => (
+            <div
+              key={i}
+              className="flex-[50%] lg:flex-1 text-primary text-center justify-center"
+            >
+              <h2 className="text-neutral-700 md:text-4xl text-2xl mb-2 ">
+                {e.numbers}
+              </h2>
+              <p className="text-neutral-500 mb-0">{e.title}</p>
+            </div>
+          ))}
+        </div>
         <div className="flex items-center justify-center ">
           <Link href={"/Courses"}>
             <a>
