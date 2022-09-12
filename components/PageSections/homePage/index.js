@@ -24,8 +24,8 @@ const HomePage = ({ data }) => {
       <TestimonialSection
         data={data.testimonialSection}
         data2={data.testimonials}
-      /> */}
-      {/* <ResourcesSection />
+      />
+      <ResourcesSection />
     </>
   );
 };
