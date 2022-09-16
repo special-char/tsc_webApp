@@ -13,7 +13,6 @@ const DevelopmentPage = () => {
       <OurProjectsSection />
       <OurTeam />
       {/* <TestimonialSection /> */}
-      <CareerForm />
     </>
   );
 };
