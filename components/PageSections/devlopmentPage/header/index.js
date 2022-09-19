@@ -15,6 +15,9 @@ const Header = ({ data }) => {
           <div className="bg-secondary3 rounded-full w-[160px] h-[160px] bottom-72 -right-20 lg:w-[420px] lg:h-[420px] absolute md:w-[300px] md:h-[300px] md:bottom-36 md:-right-44 lg:bottom-12 lg:-right-48"></div>
           <div className="bg-secondary2 rounded-full w-[160px] h-[160px] -left-20 top-24 lg:w-[420px] lg:h-[420px] absolute  md:w-[300px] md:h-[300px] md:-left-36 md:top-3 lg:-top-24 lg:-left-48"></div>
         </div>
+        <div className="relative w-8 mx-auto z-20  ">
+          <BlueArrow className="w-14 absolute top-16 z-20" />
+        </div>
       </section>
       <div className="relative w-8 mx-auto z-30">
         <BlueArrow className="w-11 md:w-16 absolute -top-14" />

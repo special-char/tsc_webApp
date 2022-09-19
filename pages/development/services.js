@@ -3,6 +3,7 @@ import AllServicesPage from "@components/PageSections/devlopmentPage/allServices
 import Header from "@components/PageSections/devlopmentPage/header";
 
 import React from "react";
+import BagSvg from "/public/icons/bag.svg";
 
 const Services = () => {
   const bannerData = {
