@@ -1,10 +1,8 @@
 import React from "react";
 import Offices from "@components/pageSections/aboutPage/Offices";
-import BrigeSvg from "@public/icons/brige.svg";
 import Image from "next/image";
 
 const OfficesSection = ({ data }) => {
-  console.log("Office Data:", data);
   return (
     <>
       <section className="bg-neutral-200 lg:w-full px-4 py-24 md:py-44 w-full">

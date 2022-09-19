@@ -28,8 +28,6 @@ const options = [
 ];
 
 const GetCourseCard = ({ data, price, enroll }) => {
-  // console.log("GetCourseCard All data:", data);
-  // console.log("price of course:", price);
   return (
     <section className="rate-card flex flex-col bg-neutral-100 rounded-3xl px-6  pt-16 md:px-8 md:flex-row lg:flex-col gap-6 shadow-dark">
       <div className="get-course-content">

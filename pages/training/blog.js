@@ -5,12 +5,7 @@ import axiosInstance from "lib/axiosInstance";
 import React from "react";
 
 const Blog = ({ data }) => {
-  console.log("blog page data:", data);
-  return (
-    <>
-      <BlogPage data={data} />
-    </>
-  );
+  return <BlogPage data={data} />;
 };
 
 Blog.getLayout = function getLayout(page) {
@@ -19,7 +14,6 @@ Blog.getLayout = function getLayout(page) {
 
 export async function getServerSideProps() {
   try {
-    console.log("hello");
     const res = await axiosInstance.post("graphql", {
       query: BlogQuery,
       variables: {},

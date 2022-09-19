@@ -5,7 +5,7 @@ import axiosInstance from "lib/axiosInstance";
 import React from "react";
 
 const Contact = ({ data }) => {
-  return <ContactPage data={data} />;
+  return <ContactPage data={data} path="development" />;
 };
 Contact.getLayout = function getLayout(page) {
   return <Layout path="development">{page}</Layout>;
@@ -13,7 +13,6 @@ Contact.getLayout = function getLayout(page) {
 
 export async function getServerSideProps() {
   try {
-    console.log("hello");
     const res = await axiosInstance.post("graphql", {
       query: ContactQuery,
       variables: {},
