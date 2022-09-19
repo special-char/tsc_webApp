@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 
 const AboutEducation = ({ data }) => {
-  //console.log("AboutEducation Data: ", data);
+  console.log("AboutEducation Data: ", data);
   return (
     <section className="about-education-wrapper h-auto w-full  ">
       <div className="max-w-7xl mx-auto px-3 py-20 border-b border-neutral-400">

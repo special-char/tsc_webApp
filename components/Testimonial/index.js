@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 
 const Testimonial = ({ data }) => {
-  console.log("Testimonial data:", data);
+  //console.log("Testimonial data:", data);
   return (
     <>
-      <div className="relative flex flex-col md:flex-row items-center w-full py-11 px-6 md:py-80 md:px-14 md:p-12 gap-4 rounded-3xl drop-shadow-sm border-spacing-2  bg-neutral-100">
+      <div className="relative flex flex-col md:flex-row items-center w-full py-11 px-6 md:py-80 md:px-14 md:p-12 gap-4 rounded-3xl drop-shadow-sm border-spacing-2 bg-neutral-100">
         <div className="flex flex-col relative rounded-full w-36 h-36 md:w-48 md:h-48">
           <Image
             className="avatar rounded-full "
