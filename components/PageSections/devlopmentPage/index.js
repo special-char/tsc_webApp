@@ -1,5 +1,4 @@
 import CareerForm from "./careerForm";
-import ContactUs from "./contactUs";
 import HeaderSection from "./headerSection";
 import OurProjectsSection from "./ourProjects";
 import OurServices from "./ourServices";
@@ -15,7 +14,6 @@ const DevelopmentPage = () => {
       <OurTeam />
       <TestimonialSection />
       <CareerForm />
-      <ContactUs />
     </>
   );
 };

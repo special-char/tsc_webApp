@@ -37,7 +37,7 @@ const WhylearnSection = () => {
           <h2 className="flex-1 text-secondary1">
             {/* Why learn with our courses? */}
           </h2>
-          <div className="lg:flex-row flex flex-1 flex-col gap-8">
+          <div className="lg:flex-row flex flex-1 flex-col gap-4 md:gap-8">
             {WhylearnDetails.map((obj) => {
               return (
                 <Whylearn

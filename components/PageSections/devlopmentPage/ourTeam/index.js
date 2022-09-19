@@ -67,18 +67,20 @@ const OurTeam = () => {
   ];
   return (
     <>
-      <section className="pt-10">
+      <section className="pt-10 bg-neutral-700">
         <div className="max-w-7xl mx-auto py-20">
-          <h1 className="capitalize text-center">we have amazing team</h1>
-          <div className="avatar-container flex flex-wrap  gap-3">
+          <h1 className="capitalize text-center text-neutral-100">
+            we have amazing team
+          </h1>
+          <div className="avatar-container flex flex-wrap justify-center gap-3">
             {employeeDetails.map((val) => {
               return (
-                <div className="employee-data min-w-[300px] text-center rounded-lg mx-auto">
+                <div className="employee-data min-w-[300px] max-w-[400px] text-center rounded-lg">
                   <div className="p-3 ">
                     <img src={val.photo} alt="" className="rounded-full" />
                   </div>
-                  <h4 className="">{val.name}</h4>
-                  <p className="">{val.designation}</p>
+                  <h4 className="text-neutral-100">{val.name}</h4>
+                  <p className="text-neutral-400">{val.designation}</p>
                 </div>
               );
             })}
