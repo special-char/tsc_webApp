@@ -1,5 +1,4 @@
 import React from "react";
-import ProjectSvg from "/public/icons/project.svg";
 import Image from "next/image";
 
 const allproject = [

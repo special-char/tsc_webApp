@@ -9,6 +9,7 @@ const Training = ({ data }) => {
 };
 
 export async function getServerSideProps() {
+  console.log("called getserver");
   try {
     const res = await axiosInstance.post("graphql", {
       query: HomeQuery,
@@ -19,7 +20,7 @@ export async function getServerSideProps() {
     console.log("====================================");
     return {
       props: {
-        data: res.data.data,
+        data: res?.data?.data,
       },
     };
   } catch (error) {
@@ -33,7 +34,7 @@ export async function getServerSideProps() {
 }
 
 Training.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+  return <Layout path="training">{page}</Layout>;
 };
 
 Training.displayName = "Training";

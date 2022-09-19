@@ -15,7 +15,7 @@ const Contact = ({ data }) => {
   );
 };
 Contact.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+  return <Layout path="training">{page}</Layout>;
 };
 
 export async function getServerSideProps() {

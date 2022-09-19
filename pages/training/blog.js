@@ -1,27 +1,27 @@
 import Layout from "@components/Layouts";
-import CoursesPage from "@components/pageSections/coursesPage";
-import CoursesQuery from "@queries/coursesQuery";
+import BlogPage from "@components/pageSections/blogPage";
+import BlogQuery from "@queries/blogQuery";
 import axiosInstance from "lib/axiosInstance";
 import React from "react";
 
-const Course = ({ data }) => {
-  console.log("All course page data:", data);
+const Blog = ({ data }) => {
+  console.log("blog page data:", data);
   return (
     <>
-      <CoursesPage data={data} />
+      <BlogPage data={data} />
     </>
   );
 };
 
-Course.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+Blog.getLayout = function getLayout(page) {
+  return <Layout path="training">{page}</Layout>;
 };
 
 export async function getServerSideProps() {
   try {
     console.log("hello");
     const res = await axiosInstance.post("graphql", {
-      query: CoursesQuery,
+      query: BlogQuery,
       variables: {},
     });
     return {
@@ -38,4 +38,4 @@ export async function getServerSideProps() {
   }
 }
 
-export default Course;
+export default Blog;

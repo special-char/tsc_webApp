@@ -1,4 +1,3 @@
-import Footer from "@components/Footer";
 import Layout from "@components/Layouts";
 import AllServicesPage from "@components/PageSections/devlopmentPage/allServicesPage";
 import ServicesBanner from "@components/PageSections/devlopmentPage/servicesBanner";
