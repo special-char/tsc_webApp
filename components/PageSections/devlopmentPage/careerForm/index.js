@@ -125,12 +125,26 @@ const CareerForm = () => {
                     </div>
                     <div>
                       <label for="myfile">Upload CV</label>
-                      <Field
+                      <label class="block">
+                        <span class="sr-only">Choose profile photo</span>
+                        <input
+                          type="file"
+                          class="block w-full text-sm text-slate-500
+      file:mr-4 file:py-2 file:px-4
+      file:rounded-full file:border-0
+      file:text-sm file:font-semibold
+      file:bg-neutral-200 file:text-violet-700
+      hover:file:bg-neutral-300
+    "
+                        />
+                      </label>
+                      {/* <label for="myfile">Upload CV</label> */}
+                      {/* <Field
                         className="bg-neutral-200 w-[35%] focus:outline-neutral-500 rounded-full py-4 px-7"
                         type="file"
                         id="myfile"
                         name="myfile"
-                      />
+                      /> */}
                     </div>
                     <label className="">Message</label>
                     <Field
