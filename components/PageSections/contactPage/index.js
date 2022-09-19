@@ -2,11 +2,10 @@ import React from "react";
 import AskQuesList from "./askedQues/askedQuesData";
 import ContactForm from "./contactForm";
 
-const ContactPage = ({ data }) => {
-  console.log("Contact Page data:", data);
+const ContactPage = ({ data, path }) => {
   return (
     <>
-      <ContactForm data={data.contactPage} />
+      <ContactForm data={data.contactPage} path={path} />
       <AskQuesList data={data.contactPage} />
     </>
   );

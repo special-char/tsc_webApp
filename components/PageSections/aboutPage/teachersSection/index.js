@@ -1,13 +1,8 @@
 import React from "react";
 import Teachers from "@components/teachers";
-import RightSvg from "@public/icons/right.svg";
-import SearchSvg from "@public/icons/search.svg";
-import GlobleSvg from "@public/icons/globle.svg";
-import InovetionSvg from "@public/icons/inovetion.svg";
 import Link from "next/link";
 
 const TeachersSection = ({ data }) => {
-  console.log("Teacher Section Data:", data);
   return (
     <>
       <section id="Teachers" className="lg:w-full bg-neutral-100 py-44">
@@ -28,7 +23,6 @@ const TeachersSection = ({ data }) => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 text-left justify-center gap-9 md:p-8 w-full px-4">
             {data.teachers.map((obj) => {
-              console.log("teacher obj data:", obj);
               return (
                 <Link href={`teacher/${obj.id}`} key={obj.id}>
                   <a>

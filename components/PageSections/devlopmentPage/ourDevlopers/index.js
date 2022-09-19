@@ -1,7 +1,6 @@
 import React from "react";
 
 const OurDevlopers = () => {
-  //console.log("About Success Data:", data);
   const Data = [
     {
       number: "14",

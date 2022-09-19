@@ -1,7 +1,6 @@
 import React from "react";
 
 const Achievements = ({ data }) => {
-  //console.log("About Success Data:", data);
   return (
     <div className="w-full py-24 md:py-36 lg:py-44">
       <div className="container mx-auto max-w-7xl flex flex-col items-center">

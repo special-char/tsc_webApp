@@ -22,7 +22,6 @@ const TeacherId = ({ data }) => {
 
 export async function getServerSideProps() {
   try {
-    console.log("hello");
     const res = await axiosInstance.post("graphql", {
       query: AboutQuery,
       variables: {},

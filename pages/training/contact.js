@@ -20,7 +20,6 @@ Contact.getLayout = function getLayout(page) {
 
 export async function getServerSideProps() {
   try {
-    console.log("hello");
     const res = await axiosInstance.post("graphql", {
       query: ContactQuery,
       variables: {},

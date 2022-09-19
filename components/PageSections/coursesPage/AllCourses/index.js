@@ -90,7 +90,6 @@ const AllCoursesSection = ({ data }) => {
       title: "marketing",
     },
   ];
-  console.log("courses data:", data);
   return (
     <>
       <section className="courses-section-wrapper lg:w-full px-4 pt-28">

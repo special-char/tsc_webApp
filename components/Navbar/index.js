@@ -94,10 +94,7 @@ const Navbar = ({ path }) => {
             </ul>
           </nav>
           <div
-            onClick={() => {
-              setHamOpen((val) => !val);
-              console.log("hamOpen", hamOpen);
-            }}
+            onClick={() => setHamOpen((val) => !val)}
             className={`menu-btn lg:hidden ${hamOpen && "open"}`}
           >
             <div className="menu-btn__burger"></div>

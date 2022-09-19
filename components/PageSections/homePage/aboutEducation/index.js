@@ -6,7 +6,7 @@ const AboutEducation = ({ data }) => {
   //console.log("AboutEducation Data: ", data);
   return (
     <section className="about-education-wrapper h-auto w-full  ">
-      <div className="max-w-7xl mx-auto px-3 py-20 border-b border-neutral-400">
+      <div className="max-w-7xl mx-auto px-3 py-20 border-b border-neutral-400 ">
         <div className="text-center md:mb-14">
           <h2>{data.heading?.title}</h2>
           <p>{data.heading?.description}</p>

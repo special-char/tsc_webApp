@@ -57,9 +57,9 @@ const Footer = () => {
             <h4 className="w-full text-secondary1 py-8 pl-10">Pages</h4>
             <div className=" w-full flex md:flex md:gap-4 justify-between">
               <ul className="text-neutral-400">
-                {UtilityLink.map((val) => {
+                {UtilityLink.map((val, index) => {
                   return (
-                    <li>
+                    <li key={index}>
                       <Link href={val.link}>
                         <a>{val.title}</a>
                       </Link>
@@ -69,9 +69,9 @@ const Footer = () => {
               </ul>
 
               <ul className="links text-neutral-400">
-                {UtilityLink.map((val) => {
+                {UtilityLink.map((val, index) => {
                   return (
-                    <li>
+                    <li key={index}>
                       <Link href={val.link}>
                         <a>{val.title}</a>
                       </Link>
@@ -84,9 +84,9 @@ const Footer = () => {
           <div className="md:flex-col pl-4">
             <h4 className="text-secondary1 py-8 pl-6">Utility Pages</h4>
             <ul className="links text-neutral-400 ">
-              {UtilityLink.map((val) => {
+              {UtilityLink.map((val, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <Link href={val.link}>
                       <a>{val.title}</a>
                     </Link>
