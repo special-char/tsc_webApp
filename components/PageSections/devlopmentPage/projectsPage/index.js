@@ -4,11 +4,11 @@ import Image from "next/image";
 const ProjectsPage = ({ children, data, index }) => {
   return (
     <>
-      <section className="max-w-7xl mx-auto flex flex-col px-8 my-12 w-screen relative overflow-hidden">
+      <section className="max-w-7xl mx-auto  flex flex-col px-8 my-12 w-screen relative overflow-hidden">
         <div
-          className={`w-full min-h-screen flex mb-8 ${
-            index % 2 === 0 ? "flex-row-reverse" : "flex-row"
-          } flex-wrap gap-4 items-start justify-start`}
+          className={`w-full flex mb-8 bg-neutral-100 rounded-3xl py-8 shadow-dark px-8 ${
+            index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
+          } flex-col gap-4 items-center justify-start`}
         >
           <div className="w-full flex-1 z-10">
             <figure className="relative h-80">

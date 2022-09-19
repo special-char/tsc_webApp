@@ -1,7 +1,5 @@
 import React from "react";
-import ProjectSvg from "/public/icons/project.svg";
 import Image from "next/image";
-import BlueArrow from "@public/icons/blueArrow.svg";
 
 const AllServicesPage = ({ children, service, index }) => {
   return (
@@ -21,9 +19,9 @@ const AllServicesPage = ({ children, service, index }) => {
                   src={service.img}
                   alt=""
                 />
-              </figure>{" "}
+              </figure>
             </div>
-            <div className=" w-full md:w-[41.6%]  flex-col text-left ">
+            <div className="w-full md:w-[41.6%]  flex-col text-left ">
               {children}
             </div>
           </div>
