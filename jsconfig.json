@@ -1,12 +1,11 @@
 {
-    "compilerOptions": {
-      "baseUrl": ".",
-      "paths": {
-        "@components/*": ["components/*"],
-        "@styles/*": ["styles/*"],
-        "@public/*": ["public/*"],
-        "@queries/*": ["queries/*"],
-      }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@styles/*": ["styles/*"],
+      "@public/*": ["public/*"],
+      "@queries/*": ["queries/*"]
     }
   }
-   
+}
