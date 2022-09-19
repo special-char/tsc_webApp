@@ -63,12 +63,12 @@ const CareerForm = () => {
                 {({ errors, touched }) => (
                   <Form className="flex flex-col gap-3">
                     <div className="md:flex gap-6">
-                      <div className="w-full">
+                      <div className="w-full mb-4">
                         <label className="">Name</label>
                         <Field
                           id="name"
                           placeholder="Full Name"
-                          className="bg-neutral-200 w-[70%] focus:outline-neutral-500 rounded-full py-4 px-7"
+                          className="bg-neutral-200 w-[90%] focus:outline-neutral-500 rounded-full py-4 px-12"
                           name="name"
                           type="text"
                         />
@@ -76,12 +76,12 @@ const CareerForm = () => {
                           <div>{errors.name}</div>
                         ) : null}
                       </div>
-                      <div className="w-full">
+                      <div className="w-full mb-4">
                         <label className="">Email Address</label>
                         <Field
                           id="email"
                           placeholder="example@youremail.com"
-                          className="bg-neutral-200 w-[70%] focus:outline-neutral-500 rounded-full py-4 px-7"
+                          className="bg-neutral-200 w-[90%] focus:outline-neutral-500 rounded-full py-4 px-7"
                           name="email"
                           type="email"
                         />
@@ -91,12 +91,12 @@ const CareerForm = () => {
                       </div>
                     </div>
                     <div className="md:flex gap-6">
-                      <div className="w-full">
+                      <div className="w-full mb-4">
                         <label className="">Phone Number</label>
                         <Field
                           id="phone"
                           placeholder="123-456-789"
-                          className="bg-neutral-200 w-[70%] focus:outline-neutral-500 rounded-full py-4 px-7"
+                          className="bg-neutral-200 w-[90%] focus:outline-neutral-500 rounded-full py-4 px-7"
                           name="phone"
                           type="tel"
                         />
@@ -104,12 +104,12 @@ const CareerForm = () => {
                           <div>{errors.phone}</div>
                         ) : null}
                       </div>
-                      <div className="w-full">
+                      <div className="w-full mb-4">
                         <label className="">Designation</label>
                         <Field
                           name="selectdesignation"
                           as="select"
-                          className="py-5 px-8 w-[70%] rounded-full bg-neutral-200"
+                          className="py-5 px-8 w-[90%] rounded-full bg-neutral-200"
                         >
                           {options.map((val) => (
                             <option key={val.id} value={val.value}>
@@ -124,9 +124,9 @@ const CareerForm = () => {
                       </div>
                     </div>
                     <div>
-                      <label for="myfile">Upload CV</label>
+                      <label for="myfile gap-6">Upload CV</label>
                       <label class="block">
-                        <span class="sr-only">Choose profile photo</span>
+                        <span class="sr-only ">Choose profile photo</span>
                         <input
                           type="file"
                           class="block w-full text-sm text-slate-500
@@ -150,7 +150,7 @@ const CareerForm = () => {
                     <Field
                       id="textarea"
                       placeholder="Write your message here"
-                      className="bg-neutral-200  focus:outline-neutral-500 rounded-2xl py-4 px-7"
+                      className="bg-neutral-200  focus:outline-neutral-500 rounded-2xl py-4 px-7 mb-8"
                       name="message"
                       as="textarea"
                       rows="5"
@@ -158,12 +158,14 @@ const CareerForm = () => {
                     {errors.message && touched.message ? (
                       <div>{errors.message}</div>
                     ) : null}
-                    <button
-                      type="submit"
-                      className="btn btn--primary btn--small md:w-1/3 lg:w-1/3 uppercase"
-                    >
-                      submit
-                    </button>
+                    <div className="flex items-center justify-center">
+                      <button
+                        type="submit"
+                        className="btn btn--primary btn--small md:w-1/5 lg:w-1/5 uppercase"
+                      >
+                        submit
+                      </button>
+                    </div>
                   </Form>
                 )}
               </Formik>
