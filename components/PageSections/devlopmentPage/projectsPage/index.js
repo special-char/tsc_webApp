@@ -6,7 +6,6 @@ const ProjectsPage = ({ children, data, index }) => {
     <>
       <section className="max-w-7xl mx-auto flex flex-col px-8 my-12 w-screen relative overflow-hidden">
         <div
-          key={index}
           className={`w-full min-h-screen flex mb-8 ${
             index % 2 === 0 ? "flex-row-reverse" : "flex-row"
           } flex-wrap gap-4 items-start justify-start`}

@@ -418,7 +418,7 @@ const AllProjects = () => {
       <Header data={bannerData} />
       {allprojects.map((project, index) => {
         return (
-          <ProjectsPage data={project} index={index}>
+          <ProjectsPage data={project} index={index} key={index}>
             <ol className="list-decimal">
               {project?.list?.map((item, i) => {
                 return (
