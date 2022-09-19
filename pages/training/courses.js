@@ -5,7 +5,6 @@ import axiosInstance from "lib/axiosInstance";
 import React from "react";
 
 const Course = ({ data }) => {
-  console.log("All course page data:", data);
   return (
     <>
       <CoursesPage data={data} />
@@ -19,7 +18,6 @@ Course.getLayout = function getLayout(page) {
 
 export async function getServerSideProps() {
   try {
-    console.log("hello");
     const res = await axiosInstance.post("graphql", {
       query: CoursesQuery,
       variables: {},

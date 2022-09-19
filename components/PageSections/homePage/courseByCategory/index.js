@@ -4,7 +4,6 @@ import Yarrow from "@public/icons/yellowArrow.svg";
 import Image from "next/image";
 
 const CourseByCategory = ({ data }) => {
-  //console.log("CourseByCategory", data);
   return (
     <section className="main h-auto w-full">
       <div className="main-container container max-w-7xl mx-auto px-3 md:px-6 pt-16 pb-28 md:pt-28 md:pb-36 lg:pt-32 lg:pb-44">

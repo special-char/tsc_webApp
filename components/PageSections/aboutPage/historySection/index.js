@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 const HistorySection = ({ data }) => {
-  console.log("History Section Data:", data);
   return (
     <section className="py-44 bg-neutral-200">
       <div className="flex flex-col max-w-7xl gap-4 md:flex-row w-full container mx-auto px-3">

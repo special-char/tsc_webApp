@@ -3,7 +3,6 @@ import WorkValuesCard from "@components/workValuesCard";
 import OrangearrowSvg from "@public/icons/orangearrow.svg";
 
 const WorkValues = ({ data }) => {
-  //console.log("Work Value Data:", data);
   return (
     <>
       <section className="bg-neutral-700 relative py-24">
@@ -16,7 +15,6 @@ const WorkValues = ({ data }) => {
           </div>
           <div className="grid md:grid-cols-2 text-left justify-center gap-9 ">
             {data.valueCard.map((obj) => {
-              console.log("card values map:", obj);
               return <WorkValuesCard data={obj} />;
             })}
           </div>

@@ -84,7 +84,6 @@ const BlogCoursesSection = ({ data }) => {
       title: "marketing",
     },
   ];
-  console.log("BlogCoursesSection data:", data);
   return (
     <>
       <section className="blog-section-wrapper lg:w-full px-4 pt-28">

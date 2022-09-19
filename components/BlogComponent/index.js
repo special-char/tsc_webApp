@@ -1,9 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const Blog = ({ data }) => {
-  console.log("blog data obj:", data);
   return (
     <div className="card-new w-full min-w-[270px] flex flex-col md:flex-row flex-1 ">
       <div className="image flex-1 w-full min-h-full xs:basis-[160px] md:basis-0 relative">

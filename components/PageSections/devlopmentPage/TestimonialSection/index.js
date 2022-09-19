@@ -60,7 +60,6 @@ const TestimonialSection = () => {
       title: "Students community",
     },
   ];
-  //console.log("TestimonialSection data2:", data2);
   return (
     <>
       <section className="relative  px-4 md:p-6 pt-28 py-36 lg:py-44 bg-neutral-200">
@@ -87,7 +86,6 @@ const TestimonialSection = () => {
           <div className="inline-flex gap-4 text-center justify-center md:text-left relative">
             {testimonialDetails.map((obj) => {
               const name = `${obj.firstName} ${obj.lastName}`;
-              //console.log("TestimonialSection obj:", obj);
               return <Testimonial key={obj.id} data={obj} />;
             })}
           </div>
