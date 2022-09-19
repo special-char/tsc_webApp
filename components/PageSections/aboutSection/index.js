@@ -3,6 +3,7 @@ import React from "react";
 
 import AllCoursesSection from "../AllCourses";
 import BlogCoursesSection from "../BlogCourses";
+
 import OfficesSection from "../OfficesSection";
 import TeachersSection from "./teachersSection";
 import WorkValues from "./workValues";
@@ -15,6 +16,7 @@ const AboutPage = () => {
       <OfficesSection /> */}
       <AllCoursesSection />
       <BlogCoursesSection />
+
       <CardGrid />
     </>
   );

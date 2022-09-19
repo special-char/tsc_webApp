@@ -3,6 +3,7 @@ import HeaderSection from "./headerSection";
 import OurProjectsSection from "./ourProjects";
 import OurServices from "./ourServices";
 import OurTeam from "./ourTeam";
+
 import TestimonialSection from "./TestimonialSection";
 
 const DevelopmentPage = () => {
@@ -12,8 +13,8 @@ const DevelopmentPage = () => {
       <OurServices />
       <OurProjectsSection />
       <OurTeam />
+
       {/* <TestimonialSection /> */}
-      <CareerForm />
     </>
   );
 };
