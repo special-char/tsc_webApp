@@ -1,7 +1,5 @@
 import React from "react";
-import ProjectSvg from "/public/icons/project.svg";
 import Image from "next/image";
-import { list } from "postcss";
 
 const allproject = [
   {
@@ -25,6 +23,94 @@ const allproject = [
   },
   {
     id: 2,
+    title: "Better That - Online shopping made better (Website)",
+    description: `Better That is Australian and New Zealand’s leading online marketplace where
+      shoppers, good causes and retailers can do better shopping to get the latest trends,
+      shoes, dresses , accessories and more.
+      This app contains many features like category wise products, easy searching, wishlist,
+      brands, drop auction, currency converter, add to cart, buy with many payment options.`,
+    details: "Used Tools & Technologies:",
+    list: [
+      'Frontend" Flutter',
+      "Backend: Node.Js",
+      "Database:MongoDb",
+      "Payment system: Stripe",
+      "Authentication & Notification - Firebase",
+      "Web sockets",
+    ],
+    img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
+  },
+  {
+    id: 3,
+    title: "9thSight - Amazon Consultancy Website",
+    description: `9thSight is the go to eCommerce (online marketplace consultancy) company to
+    empower inventors and creators, and assist them to display and sell their products or
+    services to the world using methods that have been tried and tested. 9thSight offers
+    digital services like A+ content, A9 SEO, PPC advertising, brand registry, ASIN creation,
+    seller account management and many more for marketplaces like Amazon, eBay &
+    Walmart. Sellers avail all the features like customize package of services booking with
+    the best user interface and experience.`,
+    details: "Used Tools & Technologies:",
+    list: [
+      'Frontend" Flutter',
+      "Backend: Django",
+      "Database: MySQL",
+      "Payment system: Stripe",
+      "Authentication & Notification - Firebase",
+    ],
+    img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
+  },
+  {
+    id: 4,
+    title: "Dotcom Reps - Amazon Sales & Marketing Agency",
+    description: `Dotcom reps is an Amazon consulting agency & independent manufacturer’s rep. firm
+    specializing in selling on Amazon. Functioned to manage seller’s sales and marketing
+    on Amazon.
+    This website enlightens users about the company's services and owners by giving a
+    sleek user interface and by getting the best user experience.`,
+    details: "Used Tools & Technologies:",
+    list: [
+      "Frontend - React.Js, Next.Js",
+      " Backend - Strapi.Js (CMS of Node.Js)",
+      "Email service - Twilio",
+    ],
+    img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
+  },
+  {
+    id: 5,
+    title: "Scott Point - Ecommece app",
+    description: `Scott point is a cross platform mobile application which empowers customers with live
+      bidding and bargaining of thousands of products with sellers and get the best price and
+      can buy the products of their choice.
+      Users just need to signup, choose categories of product they like, select the product
+      with the list, with searching or with attractive feature of scanning the barcode to fetch
+      products which is powered by machine learning technology. Then, they need to place
+      the bid, sellers with those products will reply to their bid in 24 hours, then users can
+      purchase the product.
+      `,
+    details: "Used Tools & Technologies:",
+    list: [
+      'Frontend" Flutter',
+      "Backend: Node.Js",
+      "Database - MongoDB",
+      "Google ML kit",
+      "Elastic search",
+    ],
+    img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
+  },
+  {
+    id: 6,
+    title: "Scott Point - Web admin panel",
+    description: `A Scott Point admin panel is a web portal that allows sellers to manage their customers,
+    retailers, bids, reply to bids, confirm orders, and manage customers.
+    Scott Point admins can add retailers, manage offers and export all the list of details of
+    product.`,
+    details: "Used Tools & Technologies:",
+    list: ["Frontend - React.Js, Next.Js", "Backend: Node.Js", "Web sockets"],
+    img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
+  },
+  {
+    id: 7,
     title: "E-Dost - Mental health counseling and community platform",
     description: `E-Dost is an online community and emotional support platform designed to foster
       mental health. The platform connects you with the right experts consisting of
@@ -46,8 +132,9 @@ const allproject = [
     ],
     img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
   },
+
   {
-    id: 3,
+    id: 8,
     title: "foodBoss - Online grocery app (Customer App)",
     description: `Foodboss is the cross platform Flutter application to empower local shop vendors to sell
       their products online. Users can buy any grocery or household item directly from their
@@ -66,7 +153,7 @@ const allproject = [
     img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
   },
   {
-    id: 4,
+    id: 9,
     title: "foodBoss - Online grocery app (Seller App)",
     description: `Foodboss is the cross platform Flutter application to empower local shop vendors to sell
       their products to online market by adding products from app’s global store. By helping
@@ -88,7 +175,7 @@ const allproject = [
     img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
   },
   {
-    id: 5,
+    id: 10,
     title: "foodBoss - Online grocery app (Rider App)",
     description: `Foodboss rider app helps local drivers earn some extra money by helping sellers deliver
       their orders to friendly neighborhood customers. One can easily set up their Fooboss
@@ -106,7 +193,23 @@ const allproject = [
     img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
   },
   {
-    id: 6,
+    id: 11,
+    title: "FoodBoss - Website",
+    description: `Foodboss website is the app landing marketing website for their mobile applications for
+    customers, sellers and riders for grocery shopping. Website contains all the information
+    about the services of the company, current operating cities, features, support, contact,
+    sliders about app and much more.
+    `,
+    details: "Used Tools & Technologies:",
+    list: [
+      "Frontend - React.Js, Next.Js",
+      "Backend - Strapi.Js (CMS of Node.Js)",
+      "Database - PostgresQL",
+    ],
+    img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
+  },
+  {
+    id: 12,
     title: "Stable Pay - App",
     description: `Stable Pay is a cross platform Flutter mobile application who simplifies sending and
      receiving money globally with 0 (zero) transaction fee. Stable Pay is in a global
@@ -130,7 +233,7 @@ const allproject = [
     img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
   },
   {
-    id: 7,
+    id: 13,
     title: "InsureTech (Mobile app)",
     description: `InsureTech is the cross platform flutter application for the insurance management with
       modern UI. Users can store their insurance details and app will notify users with their
@@ -146,7 +249,7 @@ const allproject = [
     img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
   },
   {
-    id: 8,
+    id: 14,
     title: `Madhav - Insurance & Investment
     Task, staff & document management mobile app`,
     description: `Madhav is an insurance and investment agency which helps people by providing them
@@ -174,29 +277,23 @@ const allproject = [
     img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
   },
   {
-    id: 9,
-    title: "Scott Point - Ecommece app",
-    description: `Scott point is a cross platform mobile application which empowers customers with live
-      bidding and bargaining of thousands of products with sellers and get the best price and
-      can buy the products of their choice.
-      Users just need to signup, choose categories of product they like, select the product
-      with the list, with searching or with attractive feature of scanning the barcode to fetch
-      products which is powered by machine learning technology. Then, they need to place
-      the bid, sellers with those products will reply to their bid in 24 hours, then users can
-      purchase the product.
-      `,
+    id: 15,
+    title: "Madhav - Insurance & Investment (Website)",
+    description: `Madhav is an insurance and investment agency which helps people by providing them
+    all types of insurances, specially LIC and all types of investment plans. This website is
+    for their company’s profile by which users can see the key persons, services, about
+    them, contact them, all policies and investment plan.
+    `,
     details: "Used Tools & Technologies:",
     list: [
-      'Frontend" Flutter',
-      "Backend: Node.Js",
-      "Database - MongoDB",
-      "Google ML kit",
-      "Elastic search",
+      "Frontend - React.Js, Next.Js",
+      "Backend - Strapi.js (CMS of Node.Js)",
     ],
     img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
   },
+
   {
-    id: 10,
+    id: 16,
     title: "Ludo Rockland - Real money Ludo app",
     description: `Ludo Rockland is a real money ludo playing mobile app where one can show ludo skills
      and win real money on the game.
@@ -218,6 +315,78 @@ const allproject = [
     ],
     img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
   },
+
+  {
+    id: 17,
+    title: "Aastha Projects - Real Estate Company",
+    description: `Aastha Projects was founded in response to the rising need for the high quality homes
+    and business space. Since then, the group has evolved to become one of the region’s
+    top real estate developers, catering to the demands of a discriminating clientele.
+    This website guides you to decide why you should buy properties from Aastha with
+    dynamic sliders, photos, ongoing, upcoming and delivered projects with in-depth details
+    with feature of downloading brochures categories like residential and commercial
+    properties.
+    `,
+    details: "Used Tools & Technologies:",
+    list: [
+      "Frontend: React.Js, Next.Js",
+      "Backend: Strapi.Js (CMS)",
+      "Database: PostgresQL",
+    ],
+    img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
+  },
+
+  {
+    id: 18,
+    title: "Stable Pay - Website",
+    description: `Stable Pay is a website who simplifies sending and receiving money globally with 0
+    (zero) transaction fee. Stable Pay is in a global remittance business who provides fair,
+    efficient and secure way of transfering money from one region of the world to another
+    completely free.
+    Today, the average individual has to pay up to $35 per $500 money transfer in forex
+    margins and transaction fees. Stable Pay is here to help you to transfer money with 0
+    transaction fee. You just need to signup, add receiver’s details, add money to your
+    Stable Pay’s digital wallet and transfer money at a time.
+    Webapp’s powerfully engineered technology and carefully designed mobile experience
+    will alllow sending and receiving money globally with no charge.`,
+    details: "Used Tools & Technologies:",
+    list: [
+      " Frontend - Next.Js, React.Js",
+      "Backend: Node.Js",
+      "APIs - Binance",
+      "Email service - Twilio",
+      "KYC - Cashfree APIs",
+      "Blockchain - Binance",
+    ],
+    img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
+  },
+
+  {
+    id: 19,
+    title: "Obe2Slim - Admin panel for a clinic",
+    description: `Obe2Slim is the one stop solution for problems developed with obesity & lifestyle
+    disorders. They bring a team of qualified dieticians, certified trainers, homeopathic
+    doctors, MBBS doctors and counselling experts for a lifestyle & appetite management.
+    At Obe2Slim, they comprise facilities like telemedicine & DTMS (Dynamic Telephone
+    Management System) for the patients who are not able to reach clinic regularly from
+    India and other countries by leveraging the feature of in app video calling feature.
+    This admin panel is a web portal which helps admins, doctors, medicine staff and all the
+    team members in online appointment & registration, followups and medicine stock
+    management. Panel is featured with role wise steps like appointment, registration,
+    dietician, MBBS, medicines and payment. Staff can easily manage stock across all
+    branches of clinics. Doctos can serve online with video calling feature to their patients
+    directly from this web portal.
+    `,
+    details: "Used Tools & Technologies:",
+    list: [
+      "Frontend - Next.Js, React.Js",
+      "Backend: Node.Js",
+      "Database:MongoDb",
+      "Web sockets for notification and video calling",
+      "Search - Elastic search",
+    ],
+    img: "https://cdn-dhggl.nitrocdn.com/hcIflvGLvXEfDezERbdqqcSGhAZqwOPO/assets/static/optimized/rev-efba4df/wp-content/uploads/2022/02/Web-Development-Why-us-.png",
+  },
 ];
 
 const AllProjectsPage = () => {
@@ -231,7 +400,7 @@ const AllProjectsPage = () => {
                 index % 2 === 0 ? "flex-row-reverse" : "flex-row"
               } flex-wrap gap-4 items-center justify-center`}
             >
-              <div className="w-full md:w-[40%]">
+              <div className="w-full md:w-[45%]">
                 <figure className="relative h-80 ">
                   <Image
                     layout="fill"

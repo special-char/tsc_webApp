@@ -1,8 +1,8 @@
-import CareerForm from "./careerForm";
 import HeaderSection from "./headerSection";
 import OurProjectsSection from "./ourProjects";
 import OurServices from "./ourServices";
 import OurTeam from "./ourTeam";
+
 import TestimonialSection from "./TestimonialSection";
 
 const DevelopmentPage = () => {
@@ -12,12 +12,12 @@ const DevelopmentPage = () => {
       <OurServices />
       <OurProjectsSection />
       <OurTeam />
-      <TestimonialSection />
-      <CareerForm />
+
+      {/* <TestimonialSection /> */}
     </>
   );
 };
 DevelopmentPage.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+  return <Layout path="development">{page}</Layout>;
 };
 export default DevelopmentPage;

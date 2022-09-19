@@ -68,7 +68,7 @@ const CareerForm = () => {
                         <Field
                           id="name"
                           placeholder="Full Name"
-                          className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-7"
+                          className="bg-neutral-200 w-[70%] focus:outline-neutral-500 rounded-full py-4 px-7"
                           name="name"
                           type="text"
                         />
@@ -81,7 +81,7 @@ const CareerForm = () => {
                         <Field
                           id="email"
                           placeholder="example@youremail.com"
-                          className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-7"
+                          className="bg-neutral-200 w-[70%] focus:outline-neutral-500 rounded-full py-4 px-7"
                           name="email"
                           type="email"
                         />
@@ -96,7 +96,7 @@ const CareerForm = () => {
                         <Field
                           id="phone"
                           placeholder="123-456-789"
-                          className="bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-7"
+                          className="bg-neutral-200 w-[70%] focus:outline-neutral-500 rounded-full py-4 px-7"
                           name="phone"
                           type="tel"
                         />
@@ -109,7 +109,7 @@ const CareerForm = () => {
                         <Field
                           name="selectdesignation"
                           as="select"
-                          className="w-full py-5 px-8 rounded-full bg-neutral-200"
+                          className="py-5 px-8 w-[70%] rounded-full bg-neutral-200"
                         >
                           {options.map((val) => (
                             <option key={val.id} value={val.value}>
@@ -125,12 +125,26 @@ const CareerForm = () => {
                     </div>
                     <div>
                       <label for="myfile">Upload CV</label>
-                      <Field
-                        className="bg-neutral-200 w-full md:w-[49%] focus:outline-neutral-500 rounded-full py-4 px-7"
+                      <label class="block">
+                        <span class="sr-only">Choose profile photo</span>
+                        <input
+                          type="file"
+                          class="block w-full text-sm text-slate-500
+      file:mr-4 file:py-2 file:px-4
+      file:rounded-full file:border-0
+      file:text-sm file:font-semibold
+      file:bg-neutral-200 file:text-violet-700
+      hover:file:bg-neutral-300
+    "
+                        />
+                      </label>
+                      {/* <label for="myfile">Upload CV</label> */}
+                      {/* <Field
+                        className="bg-neutral-200 w-[35%] focus:outline-neutral-500 rounded-full py-4 px-7"
                         type="file"
                         id="myfile"
                         name="myfile"
-                      />
+                      /> */}
                     </div>
                     <label className="">Message</label>
                     <Field
