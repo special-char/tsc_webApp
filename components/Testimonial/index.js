@@ -10,7 +10,7 @@ const Testimonial = ({ data }) => {
           <Image
             className="avatar rounded-full "
             layout="fill"
-            src={data.avatar?.url}
+            src={data?.avatar?.url}
           />
         </div>
         <div className="flex-col max-w-[65%] overflow-hidden text-content-wrapper flex-1 flex gap-2 md:items-start items-center">

@@ -10,6 +10,7 @@ import PopularCourses from "./popularCourses";
 import TestimonialSection from "./testimonialSection";
 
 const HomePage = ({ data }) => {
+  console.log("Training HomePage Data:", data);
   return (
     <>
       <BannerSection data={data.homeBanner} />
@@ -19,10 +20,10 @@ const HomePage = ({ data }) => {
       <EducationCourses data={data.success} />
       <AboutEducation data={data.aboutEducation} />
       <CourseByCategory data={data.coursesCategory} />
-      <TestimonialSection
+      {/* <TestimonialSection
         data={data.testimonialSection}
         data2={data.testimonials}
-      />
+      /> */}
     </>
   );
 };

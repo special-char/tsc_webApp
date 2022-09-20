@@ -2,7 +2,7 @@ import Layout from "@components/Layouts";
 import AboutPage from "@components/pageSections/aboutPage";
 import AboutQuery from "@queries/aboutQuery";
 import axiosInstance from "lib/axiosInstance";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const About = ({ data }) => {
   return <AboutPage data={data} />;

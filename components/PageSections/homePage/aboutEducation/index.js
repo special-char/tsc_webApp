@@ -48,7 +48,7 @@ const AboutEducation = ({ data }) => {
         </div>
         <div className="flex justify-center pt-12">
           <Link href={data.aboutEducation?.link}>
-            <button className="btn btn--secondary w-full md:w-[40%] lg:w-[25%] ">
+            <button className="btn btn--secondary w-full md:w-[40%] lg:w-[30%] ">
               {data.aboutEducation?.buttonText}
             </button>
           </Link>

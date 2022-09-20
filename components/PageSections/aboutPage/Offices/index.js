@@ -6,7 +6,7 @@ const Office = ({ ...obj }) => {
     <>
       <div className="card md:w-[25%]">
         <div className="card__body p-6  relative overflow-hidden">
-          <div className="aspect-image  relative">
+          <div className="aspect-image relative">
             <Image
               layout="fill"
               objectFit="cover"

@@ -6,7 +6,7 @@ const BlogCourses = ({ ...obj }) => {
     <>
       <div className="card">
         {" "}
-        <figure className="relative h-80 ">
+        <figure className="relative h-72 ">
           <Image
             layout="fill"
             objectFit="cover"
