@@ -1,4 +1,4 @@
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import React from "react";
 import cn from "classnames";
 
@@ -15,7 +15,7 @@ const StorySection = ({ data }) => {
               })}
             >
               <div className="md:flex-[1.1] relative aspect-square">
-                <Image
+                <TSCImage
                   objectFit="fill"
                   className="rounded-2xl"
                   layout="fill"

@@ -1,5 +1,6 @@
+import TSCImage from "@components/TSCImage";
 import classNames from "classnames";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import React, {
   useCallback,
   useEffect,
@@ -76,7 +77,7 @@ const Carousal = ({ data }) => {
             )}
           >
             <div className="relative h-full w-full">
-              <Image
+              <TSCImage
                 src={x.attributes.bannerImage.data.attributes.url}
                 alt="banner"
                 layout="fill"

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import Link from "next/link";
 
 const FeaturedTeacher = ({ data }) => {
@@ -30,7 +30,7 @@ const FeaturedTeacher = ({ data }) => {
 
         <div className="flex flex-1 relative h-auto ">
           <div className="aspect-h-image w-full relative ">
-            <Image
+            <TSCImage
               className="avatar rounded-xl"
               layout="fill"
               objectFit="cover"

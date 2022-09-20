@@ -1,5 +1,5 @@
 import { Field, Form, Formik, ErrorMessage } from "formik";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import React from "react";
 
 import * as Yup from "yup";

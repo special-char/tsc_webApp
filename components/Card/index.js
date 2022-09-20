@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import Link from "next/link";
 
 const Card = ({ ...obj }) => {
@@ -7,7 +7,7 @@ const Card = ({ ...obj }) => {
     <>
       <div className="card">
         <figure className="relative md:h-80">
-          <Image
+          <TSCImage
             layout="fill"
             objectFit="cover"
             src={obj.courseImage?.url}

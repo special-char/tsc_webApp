@@ -1,6 +1,6 @@
 import React from "react";
 import Offices from "@components/pageSections/aboutPage/Offices";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 
 const OfficesSection = ({ data }) => {
   return (
@@ -17,7 +17,7 @@ const OfficesSection = ({ data }) => {
             })}
           </div>
           <div className="bg-image-container relative aspect-auto min-h-[300px] md:min-h-[600px] -mt-32 ">
-            <Image
+            <TSCImage
               className=""
               layout="fill"
               src={

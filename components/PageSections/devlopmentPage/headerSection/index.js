@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import { useRef } from "react";
 
 const DevelopmentHeader = ({ data }) => {

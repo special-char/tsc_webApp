@@ -1,4 +1,4 @@
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import React from "react";
 
 const Office = ({ ...obj }) => {
@@ -7,7 +7,7 @@ const Office = ({ ...obj }) => {
       <div className="card md:w-[25%]">
         <div className="card__body p-6  relative overflow-hidden">
           <div className="aspect-image  relative">
-            <Image
+            <TSCImage
               layout="fill"
               objectFit="cover"
               src={obj.icon?.url}

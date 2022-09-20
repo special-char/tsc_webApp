@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Yarrow from "@public/icons/yellowArrow.svg";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 
 const OurServices = ({}) => {
   const data = [
@@ -41,7 +41,7 @@ const OurServices = ({}) => {
           {data.map((val) => (
             <div className="card flex-1" key={val.id}>
               <figure className="aspect-image relative min-h-[300px]">
-                <Image
+                <TSCImage
                   layout="fill"
                   className=""
                   objectFit="cover"
