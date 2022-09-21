@@ -22,16 +22,16 @@ const UtilityLink = [
 
 const Footer = () => {
   return (
-    <footer className="wrapper bg-neutral-700 p-4 overflow-hidden relative md:pt-20">
-      <div className="max-w-7xl mx-auto lg:px-8">
-        <div className="flex flex-col border-b-2 md:justify-between md:w-4/5 lg:w-full md:mx-auto border-b-slate-400 md:flex-row">
+    <footer className="wrapper bg-neutral-700 overflow-hidden relative md:pt-20">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="flex flex-col border-b-2 md:justify-between md:w-4/5 lg:w-full border-b-slate-400 md:flex-row">
           <h1 className="text-neutral-100">TSC</h1>
           <p className="text-neutral-100 md:max-w-[468px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt aliqua.
           </p>
         </div>
-        <div className="pb-4 py-16 md:p-12 md:flex md:justify-around border-b-2 md:w-4/5 lg:w-full mx-auto border-b-slate-400">
+        <div className="pb-4 py-16 lg:p-0 md:flex md:justify-around border-b-2 lg:w-full mx-auto border-b-slate-400">
           <div>
             <MailSvg className="rounded-full" />
             <h2 className="font-bold text-secondary1 py-4">
@@ -87,7 +87,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="md:flex-col pl-4">
+          <div className="md:flex-col">
             <h4 className="text-secondary1 py-8 pl-6">Utility Pages</h4>
             <ul className="links text-neutral-400 pl-6">
               {UtilityLink.map((val) => {

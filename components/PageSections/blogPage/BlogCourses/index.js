@@ -86,12 +86,12 @@ const BlogCoursesSection = ({ data }) => {
   ];
   return (
     <>
-      <section className="blog-section-wrapper lg:w-full px-4 pt-28">
-        <div className="container w-full mx-auto max-w-7xl p-4 flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
+      <section className="blog-section-wrapper lg:w-full px-8 pt-28">
+        <div className="container w-full mx-auto max-w-7xl flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
           <h2 className="text-neutral-800 text-center lg:text-left ">
             Resources & News
           </h2>
-          <span className="flex bg-neutral-200 p-4 rounded-full flex-wrap gap-4 text-base font-bold">
+          <span className="flex bg-neutral-200 py-4 rounded-full flex-wrap gap-4 text-base font-bold">
             {blogCategories.map((button) => {
               return (
                 <Link href={"/courses"}>
@@ -109,7 +109,7 @@ const BlogCoursesSection = ({ data }) => {
             })}
           </span>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 text-left justify-center gap-8 md:p-8 w-full mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 text-left justify-center gap-8 md:p-8 lg:p-0 w-full max-w-7xl">
           {data.map((obj) => {
             return <BlogCourses {...obj} />;
           })}

@@ -5,7 +5,7 @@ import React from "react";
 const SubscribeToday = ({ data }) => {
   return (
     <section className="wrapper h-full w-full">
-      <div className="wrapper-content container flex items-center justify-center max-w-7xl mx-auto px-3 py-24">
+      <div className="wrapper-content container flex items-center justify-center max-w-7xl mx-auto px-8 py-24">
         <div className="bg-primary h-full w-full relative flex flex-col justify-center items-center rounded-3xl gap-3 lg:flex-row  overflow-hidden px-10 py-12 md:px-16 md:py-28">
           <h2 className="text-center z-20 flex-1 text-neutral-100 lg:text-left">
             {data.heading?.title}

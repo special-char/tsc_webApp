@@ -42,7 +42,7 @@ const CareerForm = () => {
   return (
     <>
       <section className="w-full h-auto relative overflow-hidden">
-        <div className="wrapper max-w-7xl mx-auto px-4 py-24">
+        <div className="wrapper max-w-7xl mx-auto px-8 py-24">
           <div className="flex flex-col text-center max-w-lg mx-auto">
             <h1 className="capitalize">Career</h1>
             <p>
