@@ -1,5 +1,6 @@
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import Image from "next/image";
+import TrashIcon from "@public/images/filled-trash.png";
 import React from "react";
 
 import * as Yup from "yup";
@@ -133,27 +134,25 @@ const CareerForm = () => {
                     </div>
                     <div className="flex flex-col">
                       <label for="myfile gap-6">Upload CV</label>
-                      <label class="block">
-                        <span class="sr-only ">Choose profile photo</span>
-                        <input
-                          type="file"
-                          class="block w-full text-sm text-slate-500
+                      <div className="flex items-center md:w-[280px]">
+                        <label class="block">
+                          <span class="sr-only ">Choose profile photo</span>
+
+                          <input
+                            type="file"
+                            class="block w-full text-sm text-slate-500
       file:mr-4 file:py-2 file:px-4
       file:rounded-full file:border-0
       file:text-sm file:font-semibold
       file:bg-neutral-200 file:text-violet-700
       hover:file:bg-neutral-300 
     "
-                        />
-                      </label>
-
-                      <img
-                        src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/delete-icon.svg"
-                        alt="Delete icon"
-                        height="20"
-                        width="20"
-                        className=" flex flex-col"
-                      />
+                          />
+                        </label>
+                        <div className="items-center">
+                          <Image src={TrashIcon} height="28" width="28" />
+                        </div>
+                      </div>
                     </div>
 
                     <label className="">Message</label>
