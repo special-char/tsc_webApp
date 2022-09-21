@@ -416,27 +416,29 @@ const AllProjects = () => {
   return (
     <>
       <Header data={bannerData} />
-      {allprojects.map((project, index) => {
-        return (
-          <ProjectsPage data={project} index={index} key={index}>
-            <ol className="list-decimal">
-              {project?.list?.map((item, i) => {
-                return (
-                  <li key={i} className="m-0">
-                    {item}
-                  </li>
-                );
-              })}
-            </ol>
-          </ProjectsPage>
-        );
-      })}
+      <div className="mt-32">
+        {allprojects.map((project, index) => {
+          return (
+            <ProjectsPage data={project} index={index} key={index}>
+              <ol className="list-decimal">
+                {project?.list?.map((item, i) => {
+                  return (
+                    <li key={i} className="m-0">
+                      {item}
+                    </li>
+                  );
+                })}
+              </ol>
+            </ProjectsPage>
+          );
+        })}
+      </div>
       <div
         className={`bg-wrapper flex ${
           scroll ? "opacity-100" : "opacity-0"
         } transition-all ease-in-out duration-500 relative`}
       >
-        <div className="bg-secondary4 rounded-full w-[160px] h-[160px] bottom-72 -right-20 lg:w-[420px] lg:h-[420px] fixed md:w-[300px] md:h-[300px] md:bottom-36 md:-right-44 lg:-top-12 lg:-right-48 -z-10"></div>
+        <div className="bg-secondary2 rounded-full w-[160px] h-[160px] bottom-72 -right-20 lg:w-[420px] lg:h-[420px] fixed md:w-[300px] md:h-[300px] md:bottom-36 md:-right-44 lg:-top-12 lg:-right-48 -z-10"></div>
         <div className="bg-secondary3 rounded-full w-[160px] h-[160px] -left-20 lg:w-[420px] lg:h-[420px] fixed  md:w-[300px] md:h-[300px] md:-left-36 lg:-bottom-12 lg:-left-48 -z-10"></div>
       </div>
     </>

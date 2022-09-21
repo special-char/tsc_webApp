@@ -1,30 +1,136 @@
 {
-  "works": [
-    {
+  "aboutBanner": {
+    "header": {
       "id": 1,
-      "name": "Hemang"
-    },
-    {
-      "id": 2,
-      "name": "Hemang"
-    },
-    {
-      "id": 3,
-      "name": "Hemang"
+      "title": "We have a bigger mission which is good",
+      "description": "To Impart Tech-Ed to create exemplary workforce\n"
     }
-  ],
-  "Students": [
-    {
+  },
+  "aboutSuccess": {
+    "heading": {
       "id": 1,
-      "name": "Hemang"
+      "title": "A few numbers that we are proud of",
+      "description": "lorem ipsum dolor sit amet,dolor sit consectetor adipiscing elit."
     },
-    {
-      "id": 2,
-      "name": "Hemang"
+    "success": [
+      {
+        "id": 3,
+        "number": 10000,
+        "title": "Projects reviews",
+        "description": "Tell me and I forget, teach me and I may remember,…ster focussed, indulgent and persistent learning."
+      },
+      {
+        "id": 4,
+        "number": 1000,
+        "title": "Projects reviews",
+        "description": "Tell me and I forget, teach me and I may remember,…ster focussed, indulgent and persistent learning."
+      },
+      {
+        "id": 5,
+        "number": 75000,
+        "title": "Projects reviews",
+        "description": "Tell me and I forget, teach me and I may remember,…ster focussed, indulgent and persistent learning."
+      }
+    ]
+  },
+  "aboutMission": {
+    "id": 1,
+    "mission": [
+      {
+        "id": 5,
+        "description": "TSC is specializes in Applications, Websites and Software. Also, our team has expertise in UI UX Design, Blockchain and NFT development, etc.",
+        "title": "What we do",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1663615280811-2bfd622552ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+        }
+      },
+      {
+        "id": 6,
+        "description": "TSC is a young, energetic, and enthusiastic team of members bringing to the table a whole new set of innovative and fresh ideas to solve industry challenges and difficulties.",
+        "title": "About",
+        "image": {
+          "url": "https://images.unsplash.com/photo-1663615280811-2bfd622552ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+        }
+      }
+    ]
+  },
+  "aboutTeam": {
+    "heading": {
+      "id": 15,
+      "title": "our team",
+      "description": "pending"
     },
-    {
-      "id": 3,
-      "name": "Hemang"
-    }
-  ]
+    "teachers": [
+      {
+        "id": 1,
+        "firstName": "Yagnesh",
+        "lastName": "Modh",
+        "description": "Yagnesh Modh, a powerhouse of learning and driving energy has been a corporate trainer since 2018. He hails his B.Tech degree with computers from Nirma University. His experience varies with HP and varied startups like Turing.com, Jupiter and Thoughtworks.",
+        "image": {
+          "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+        },
+        "jobTitle": "Business"
+      },
+      {
+        "id": 2,
+        "firstName": "Yagnesh",
+        "lastName": "Modh",
+        "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+        "image": {
+          "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+        },
+        "jobTitle": "Manager"
+      },
+      {
+        "id": 3,
+        "firstName": "Yagnesh",
+        "lastName": "Modh",
+        "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+        "image": {
+          "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+        },
+        "jobTitle": "Administrative"
+      },
+      {
+        "id": 4,
+        "firstName": "Yagnesh",
+        "lastName": "Modh",
+        "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+        "image": {
+          "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+        },
+        "jobTitle": "Project Manager"
+      },
+      {
+        "id": 5,
+        "firstName": "Yagnesh",
+        "lastName": "Modh",
+        "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+        "image": {
+          "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+        },
+        "jobTitle": "Business"
+      },
+      {
+        "id": 6,
+        "firstName": "Yagnesh",
+        "lastName": "Modh",
+        "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+        "image": {
+          "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+        },
+        "jobTitle": "Full-stack Developer"
+      },
+      {
+        "id": 6,
+        "firstName": "Yagnesh",
+        "lastName": "Modh",
+        "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+        "image": {
+          "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+        },
+        "jobTitle": "Front-end Developer"
+      }
+    ]
+  }
 }

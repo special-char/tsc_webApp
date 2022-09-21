@@ -39,21 +39,23 @@ const OurServices = ({}) => {
         </center>
         <div className="flex flex-col gap-6 md:w-[552px] md:mx-auto lg:w-full lg:flex-row lg:gap-6">
           {data.map((val) => (
-            <div className="card flex-1" key={val.id}>
-              <figure className="aspect-image relative min-h-[300px]">
-                <Image
-                  layout="fill"
-                  className=""
-                  objectFit="cover"
-                  src={val.image}
-                  alt=""
-                />
-              </figure>
-              <div className="card-body">
-                <h3 className="card-title">{val.heading}</h3>
-                <p>{val.title}</p>
+            <Link href="/development/services">
+              <div className="card flex-1 cursor-pointer" key={val.id}>
+                <figure className="aspect-image relative min-h-[300px]">
+                  <Image
+                    layout="fill"
+                    className=""
+                    objectFit="cover"
+                    src={val.image}
+                    alt=""
+                  />
+                </figure>
+                <div className="card-body">
+                  <h3 className="card-title">{val.heading}</h3>
+                  <p>{val.title}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

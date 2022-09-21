@@ -18,6 +18,7 @@ const OfficesSection = ({ data }) => {
           </div>
           <div className="bg-image-container relative aspect-auto min-h-[300px] md:min-h-[600px] -mt-32 ">
             <Image
+              objectFit="contain"
               className=""
               layout="fill"
               src={
