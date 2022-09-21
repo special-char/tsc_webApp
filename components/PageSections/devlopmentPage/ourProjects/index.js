@@ -64,7 +64,7 @@ const OurProjectsSection = () => {
 
   return (
     <>
-      <section className="py-52 overflow-hidden bg-neutral-200">
+      <section className="py-32 overflow-hidden bg-neutral-200">
         <h2 className="text-center mb-10">Our Projects</h2>
         <Carousal data={Projects} href={`/allProjects`} />
       </section>

@@ -17,14 +17,14 @@ const Carousal = ({ data, testimonial, href }) => {
     slider.scrollLeft = slider.scrollLeft + width;
   };
   return (
-    <div className="card-container relative container max-w-7xl mx-auto">
+    <div className="card-container relative container max-w-7xl mx-auto px-8">
       <div className="navigation flex flex-row justify-between w-full overflow-hidden absolute z-10 top-[50%]">
         <div
           onClick={slideLeft}
           className="avatar placeholder bg-neutral-100 hover:bg-primary hover:fill-neutral-100 rounded-full"
         >
           <div className="w-16 md:w-20">
-            <span className=" w-4">
+            <span className="w-4">
               <LeftSvg />
             </span>
           </div>

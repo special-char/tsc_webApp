@@ -33,11 +33,11 @@ const OurServices = ({}) => {
 
   return (
     <section className="main h-auto w-full">
-      <div className="main-container container max-w-7xl mx-auto px-3 md:px-6 pt-16 pb-28 md:pt-28 md:pb-36 lg:pt-32 lg:pb-44">
+      <div className="main-container container max-w-7xl mx-auto px-8 md:px-6 pt-16 pb-28 md:pt-28 md:pb-36 lg:pt-32 lg:pb-44">
         <center>
           <h2 className="md:mb-12"> Our Expepertise</h2>
         </center>
-        <div className="flex flex-col gap-6 md:w-[552px] md:mx-auto lg:w-[90%] lg:flex-row lg:gap-6">
+        <div className="flex flex-col gap-6 md:w-[552px] md:mx-auto lg:w-full lg:flex-row lg:gap-6">
           {data.map((val) => (
             <div className="card flex-1" key={val.id}>
               <figure className="aspect-image relative min-h-[300px]">
@@ -58,7 +58,7 @@ const OurServices = ({}) => {
         </div>
       </div>
       <div className="relative flex justify-center">
-        <Yarrow className="absolute w-12 md:w-16 -top-14 z-10" />
+        <Yarrow className="absolute w-12 md:w-16 -top-20 z-10" />
       </div>
     </section>
   );
