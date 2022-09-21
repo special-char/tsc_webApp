@@ -1,4 +1,4 @@
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import React from "react";
 import ResourcesImg1 from "@public/img/resourcesImg1.jpeg";
 
@@ -26,7 +26,7 @@ const ResourcesSection = () => {
             <Link href={"/courses"}>
               <a>
                 <figure className="!min-h-0">
-                  <Image
+                  <TSCImage
                     className="rounded-t-2xl object-cover"
                     objectFit="cover"
                     objectPosition={"center"}

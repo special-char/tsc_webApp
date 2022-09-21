@@ -6,15 +6,6 @@ import RightsSvg from "/public/icons/rights.svg";
 import Carousal from "@components/Carousal";
 
 const PopularCourses = ({ data }) => {
-  console.log("popular Courses Data:", data);
-  const slideLeft = () => {
-    var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft - 500;
-  };
-  const slideRight = () => {
-    var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 500;
-  };
   console.log("popular courses data:", data);
   return (
     <>

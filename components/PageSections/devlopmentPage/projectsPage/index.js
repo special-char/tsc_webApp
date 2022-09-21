@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 
 const ProjectsPage = ({ children, data, index }) => {
   return (
@@ -12,7 +12,7 @@ const ProjectsPage = ({ children, data, index }) => {
         >
           <div className="w-full flex-1 z-10">
             <figure className="relative h-80">
-              <Image layout="fill" objectFit="cover" src={data.img} alt="" />
+              <TSCImage layout="fill" objectFit="cover" src={data.img} alt="" />
             </figure>
           </div>
           <div className="w-full flex-1 flex flex-col text-left z-10">

@@ -76,13 +76,17 @@ const Navbar = ({ path }) => {
           </a>
           <nav className={`nav lg:flex lg:justify-between lg:items-center`}>
             <ul
-              className={`nav-link-mobile nav-link gap-10 m-0 p-0 lg:inline-flex ${
+              className={`nav-link-mobile nav-link gap-10 pt-24 lg:pt-0 md:pt-0 m-0 p-0 lg:inline-flex ${
                 hamOpen ? "left-0" : "-left-full"
               }`}
             >
               {navLinks.map((link) => {
                 return (
-                  <li key={link.id} className="nav-item m-0 capitalize">
+                  <li
+                    onClick={() => setHamOpen(false)}
+                    key={link.id}
+                    className="nav-item m-0 capitalize"
+                  >
                     <Link href={link.link}>
                       <a className="nav-link text-neutral-700 font-bold">
                         {link.name}

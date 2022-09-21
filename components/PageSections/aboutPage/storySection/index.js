@@ -1,4 +1,4 @@
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import React from "react";
 import cn from "classnames";
 
@@ -17,8 +17,13 @@ const StorySection = ({ data }) => {
                 }
               )}
             >
+<<<<<<< HEAD
               <div className=" relative aspect-square hover:scale-90 duration-1000">
                 <Image
+=======
+              <div className="md:flex-[1.1] relative aspect-square">
+                <TSCImage
+>>>>>>> 6cedd896bcc30029fe14eae90607b30bef85098e
                   objectFit="fill"
                   className="rounded-2xl"
                   layout="fill"

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import classNames from "classnames";
 import DevelopmentSvg from "@public/icons/web_development.svg";
 import TrainingSvg from "@public/icons/training_icon.svg";
 import LogoCodeImage from "@public/images/TSC_Logo_Code_S.png";
 import LogoCImage from "@public/images/TSC_Logo_C.png";
 import LogoSImage from "@public/images/TSC_Logo_S.png";
+import TSCImage from "./TSCImage";
 
 const LandingPage = () => {
   const [exploreTraining, setExploreTraining] = useState(false);
@@ -29,7 +29,7 @@ const LandingPage = () => {
         }
         `}
         >
-          <Image
+          <TSCImage
             onClick={() => alignCenter()}
             src="/LOGO_ICON_PNG.png"
             width={58}
@@ -48,7 +48,7 @@ const LandingPage = () => {
           })}
         >
           <div className="bg-image relative rounded-3xl h-full ">
-            <Image
+            <TSCImage
               src="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3538&q=80"
               layout={"fill"}
               objectFit={"cover"}
@@ -134,7 +134,7 @@ const LandingPage = () => {
                 exploreTraining ? "top-0" : "-top-8"
               } flex w-full h-full md:items-center cursor-pointer custom-transition transition-all`}
             >
-              {/* <Image
+              {/* <TSCImage
                 src={LogoCodeImage}
                 height={300}
                 width={200}
@@ -143,7 +143,7 @@ const LandingPage = () => {
                   "z-50 cursor-pointer rotate-90 md:rotate-0"
                 )}
               /> */}
-              <Image
+              <TSCImage
                 src={LogoSImage}
                 height={300}
                 width={200}
@@ -166,7 +166,7 @@ const LandingPage = () => {
           })}
         >
           <div className="relative rounded-3xl h-full">
-            <Image
+            <TSCImage
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJhaW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
               layout={"fill"}
               objectFit={"cover"}
@@ -252,7 +252,7 @@ const LandingPage = () => {
                 exploreTraining ? "opacity-0" : "md:opacity-100"
               }`}
             >
-              <Image
+              <TSCImage
                 src={LogoCImage}
                 height={300}
                 width={200}

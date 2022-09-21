@@ -2,7 +2,7 @@ import React from "react";
 
 import ResourcesImg1 from "@public/img/resourcesImg1.jpeg";
 import Design from "@public/icons/design.svg";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import Blog from "@components/blogComponent";
 
 const BlogSection = ({ data }) => {
@@ -12,7 +12,7 @@ const BlogSection = ({ data }) => {
         <div className="flex flex-col pt-10 lg:flex-row gap-6">
           <div className="card flex-1 relative">
             <figure className="!min-h-0">
-              <Image
+              <TSCImage
                 className="rounded-t-2xl object-cover"
                 objectFit="cover"
                 objectPosition={"center"}
@@ -50,7 +50,7 @@ export default BlogSection;
 
 // import ResourcesImg1 from "@public/img/resourcesImg1.jpeg";
 // import Design from "@public/icons/design.svg";
-// import Image from "next/image";
+// import TSCImage from "@components/TSCImage";
 // import Blog from "@components/blogComponent";
 // import ResourcesSectionData from "@components/pageSections/homePage/resourcesSection/resourcesSectionData";
 // import Link from "next/link";
@@ -64,7 +64,7 @@ export default BlogSection;
 //             <Link href={"/Home"}>
 //               <a>
 //                 <figure className="!min-h-0">
-//                   <Image
+//                   <TSCImage
 //                     className="rounded-t-2xl object-cover"
 //                     objectFit="cover"
 //                     objectPosition={"center"}
