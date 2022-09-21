@@ -8,10 +8,10 @@ const Achievements = ({ data }) => {
           {data.heading?.title}
         </h2>
 
-        <div className="flex flex-wrap justify-center items-center gap-14">
+        <div className="flex flex-wrap justify-center  items-center gap-14">
           {data.success.map((val) => (
             <div
-              className=" text-center max-w-xs px-7  max-w- flex-1"
+              className=" text-center min-w-[300px] px-7 flex-1"
               key={val.id}
             >
               <div>

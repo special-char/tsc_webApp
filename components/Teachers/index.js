@@ -7,7 +7,12 @@ const Teachers = ({ data }) => {
     <>
       <div className="card">
         <figure className="relative h-80">
-          <Image layout="fill" objectFit="cover" src={data.image?.url} alt="" />
+          <Image
+            layout="fill"
+            objectFit="cover"
+            src={data?.image?.url}
+            alt=""
+          />
         </figure>
         <div className="card__body p-8 ">
           <h3 className="card__title">
