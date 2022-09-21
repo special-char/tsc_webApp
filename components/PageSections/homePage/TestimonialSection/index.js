@@ -1,53 +1,8 @@
 import StarSvg from "@public/icons/star.svg";
-import Testimonial from "@components/testimonial";
-import LeftSvg from "/public/icons/left.svg";
-import RightsSvg from "/public/icons/rights.svg";
 import Link from "next/link";
 import Carousal from "@components/Carousal";
 
 const TestimonialSection = ({ data, data2 }) => {
-  const testimonialDetails = [
-    {
-      id: 1,
-      firstName: "Pruthvish",
-      lastName: "Modi",
-      designation: "Junior Designer at Facebook",
-      description:
-        "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
-      img: "https://placeimg.com/192/192/people",
-      svg: <StarSvg />,
-    },
-    {
-      id: 2,
-      firstName: "Pruthvish",
-      lastName: "Modi",
-      designation: "Junior Designer at Facebook",
-      description:
-        "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
-      img: "https://placeimg.com/192/192/people",
-      svg: <StarSvg />,
-    },
-    {
-      id: 3,
-      firstName: "Pruthvish",
-      lastName: "Modi",
-      designation: "Junior Designer at Facebook",
-      description:
-        "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
-      img: "https://placeimg.com/192/192/people",
-      svg: <StarSvg />,
-    },
-    {
-      id: 3,
-      firstName: "Pruthvish",
-      lastName: "Modi",
-      designation: "Junior Designer at Facebook",
-      description:
-        "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
-      img: "https://placeimg.com/192/192/people",
-      svg: <StarSvg />,
-    },
-  ];
   const numberDetails = [
     {
       numbers: "100,000+",

@@ -17,8 +17,8 @@ const Carousal = ({ data, testimonial, href }) => {
     slider.scrollLeft = slider.scrollLeft + width;
   };
   return (
-    <div className="card-container relative container max-w-7xl mx-auto px-8">
-      <div className="navigation flex flex-row justify-between w-full overflow-hidden absolute z-10 top-[50%]">
+    <div className="card-container relative container max-w-7xl mx-auto">
+      <div className="navigation flex flex-row justify-between w-full overflow-hidden absolute z-10 h-full items-center">
         <div
           onClick={slideLeft}
           className="avatar placeholder bg-neutral-100 hover:bg-primary hover:fill-neutral-100 rounded-full"
@@ -42,19 +42,19 @@ const Carousal = ({ data, testimonial, href }) => {
       </div>
       <div
         id="slider"
-        className="no-scrollbar mx-8 snap-x overflow-x-scroll overflow-clip flex scroll scroll-smooth w-[100vw]  md:flex-row md:inline-flex gap-4 justify-start md:text-left md:pl-4 md:pr-80"
+        className="no-scrollbar mx-4 snap-x overflow-x-scroll flex scroll-smooth w-[100vw]  md:flex-row md:inline-flex gap-4 justify-start md:text-left md:pl-4 md:pr-80"
       >
         {data.map((obj) => {
           return testimonial ? (
             <div
-              className="snap-start lg:min-w-[750px] relative py-10"
+              className="snap-start min-w-[260px] lg:min-w-[750px] relative py-10"
               key={obj.id}
             >
               <Testimonial data={obj} />
             </div>
           ) : (
             <div
-              className="snap-start min-w-[270px] md:min-w-[550px] relative py-10"
+              className="snap-start min-w-[260px] md:min-w-[550px] relative py-10 mx-4"
               key={obj.id}
             >
               <Link href={href ?? `course/${obj.id}`}>
