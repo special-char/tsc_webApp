@@ -12,7 +12,9 @@ const Achievements = ({ data }) => {
           {data.success.map((val) => (
             <div className=" text-center px-7  max-w-xs flex-1" key={val.id}>
               <div>
-                <h1 className="text-secondary3 mb-2">{val.number}+</h1>
+                <h1 className="text-secondary3 mb-2">
+                  {val.number}+
+                </h1>
               </div>
               <h3>{val.title}</h3>
               <p className="line-clamp-3">{val.description}</p>
