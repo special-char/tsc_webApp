@@ -102,22 +102,6 @@ const TestimonialSection = () => {
           What Our Clients Say
         </h2>
         <div className="container ml-auto max-w-7xl overflow-hidden relative">
-          <div className="navigation flex flex-row justify-between w-full lg:w-[90%] overflow-hidden  absolute z-10  top-44">
-            <div className="avatar placeholder bg-neutral-100 hover:bg-primary hover:fill-neutral-100 rounded-full">
-              <div className="w-16 md:w-20">
-                <span className=" w-4">
-                  <LeftSvg />
-                </span>
-              </div>
-            </div>
-            <div class="avatar placeholder bg-neutral-100  hover:bg-primary hover:fill-neutral-100 rounded-full">
-              <div class="w-16 md:w-20 ">
-                <span className=" w-4">
-                  <RightsSvg />
-                </span>
-              </div>
-            </div>
-          </div>
           <div className="inline-flex gap-4 text-center justify-center md:text-left relative">
             {testimonialDetails.map((obj) => {
               const name = `${obj.firstName} ${obj.lastName}`;

@@ -10,6 +10,7 @@ import PopularCourses from "./popularCourses";
 import TestimonialSection from "./testimonialSection";
 
 const HomePage = ({ data }) => {
+  console.log("Training HomePage Data:", data);
   return (
     <>
       <BannerSection data={data.homeBanner} />

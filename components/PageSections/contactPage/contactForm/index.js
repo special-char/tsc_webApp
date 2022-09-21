@@ -119,7 +119,7 @@ const ContactForm = ({ data, path }) => {
                       <a>
                         <button
                           type="submit"
-                          className="btn btn--primary btn--small md:w-1/3 lg:w-1/3"
+                          className="btn btn--primary btn--small w-full mt-6 md:w-1/3 lg:w-1/3"
                         >
                           SUBMIT
                         </button>
