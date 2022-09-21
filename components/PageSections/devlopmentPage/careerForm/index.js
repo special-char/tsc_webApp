@@ -8,16 +8,21 @@ import ContactLinkData from "./contactLinksData";
 const options = [
   {
     id: 1,
+    value: "Select your role",
+    option: "Select your role",
+  },
+  {
+    id: 2,
     value: "front-end developer",
     option: "front-end developer",
   },
   {
-    id: 2,
+    id: 3,
     value: "back-end developer",
     option: "back-end developer",
   },
   {
-    id: 3,
+    id: 4,
     value: "full-stack developer",
     option: "full-stack developer",
   },
@@ -105,11 +110,13 @@ const CareerForm = () => {
                         ) : null}
                       </div>
                       <div className="w-full mb-4">
-                        <label className="">Designation</label>
+                        <label>Designation</label>
+
                         <Field
                           name="selectdesignation"
                           as="select"
-                          className="py-5 px-8 w-[90%] rounded-full bg-neutral-200"
+                          className="select py-5 px-8 w-[90%] rounded-full bg-neutral-200"
+                          placeholder="select your designation"
                         >
                           {options.map((val) => (
                             <option key={val.id} value={val.value}>
@@ -117,13 +124,14 @@ const CareerForm = () => {
                             </option>
                           ))}
                         </Field>
+
                         {errors.selectdesignation &&
                         touched.selectdesignation ? (
                           <div>{errors.selectdesignation}</div>
                         ) : null}
                       </div>
                     </div>
-                    <div>
+                    <div className="flex flex-col">
                       <label for="myfile gap-6">Upload CV</label>
                       <label class="block">
                         <span class="sr-only ">Choose profile photo</span>
@@ -134,18 +142,20 @@ const CareerForm = () => {
       file:rounded-full file:border-0
       file:text-sm file:font-semibold
       file:bg-neutral-200 file:text-violet-700
-      hover:file:bg-neutral-300
+      hover:file:bg-neutral-300 
     "
                         />
                       </label>
-                      {/* <label for="myfile">Upload CV</label> */}
-                      {/* <Field
-                        className="bg-neutral-200 w-[35%] focus:outline-neutral-500 rounded-full py-4 px-7"
-                        type="file"
-                        id="myfile"
-                        name="myfile"
-                      /> */}
+
+                      <img
+                        src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/delete-icon.svg"
+                        alt="Delete icon"
+                        height="20"
+                        width="20"
+                        className=" flex flex-col"
+                      />
                     </div>
+
                     <label className="">Message</label>
                     <Field
                       id="textarea"
