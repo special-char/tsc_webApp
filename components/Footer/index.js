@@ -21,7 +21,7 @@ const UtilityLink = [
 
 const Footer = () => {
   return (
-    <footer className="wrapper bg-neutral-700 p-4  md:pt-20">
+    <footer className="wrapper bg-neutral-700 p-4 overflow-hidden relative md:pt-20">
       <div className="max-w-7xl mx-auto lg:px-8">
         <div className="flex flex-col border-b-2 md:justify-between md:w-4/5 lg:w-full md:mx-auto border-b-slate-400 md:flex-row">
           <h1 className="text-neutral-100">TSC</h1>
@@ -102,16 +102,16 @@ const Footer = () => {
           </div>
         </div>
         <div className=" flex lg:flex-row-reverse justify-between ">
-        <div className=" pl-20 pt-3 pb-4 flex gap-3 lg:pb-0">
-          <FacebookSvg className=" w-9 rounded-full" />
-          <TwitterSvg className="w-9 rounded-full" />
-          <LinkedInSvg className="w-9 rounded-full" />
-          <YoutubeSvg className="w-9 rounded-full" />
-          <WhatsAppSvg className="w-9 rounded-full" />
-        </div>
-        <div className="pl-20 flex items-center justify-start">
-          <div className="text-lg text-secondary1">Copyright © TSC</div>
-        </div>
+          <div className=" pl-20 pt-3 pb-4 flex gap-3 lg:pb-0">
+            <FacebookSvg className=" w-9 rounded-full" />
+            <TwitterSvg className="w-9 rounded-full" />
+            <LinkedInSvg className="w-9 rounded-full" />
+            <YoutubeSvg className="w-9 rounded-full" />
+            <WhatsAppSvg className="w-9 rounded-full" />
+          </div>
+          <div className="pl-20 flex items-center justify-start">
+            <div className="text-lg text-secondary1">Copyright © TSC</div>
+          </div>
         </div>
       </div>
     </footer>
