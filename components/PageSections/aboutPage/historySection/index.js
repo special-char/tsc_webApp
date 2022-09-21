@@ -23,7 +23,7 @@ const HistorySection = ({ data }) => {
               </div>
               <h3 className="lg:mb-3">{val.title}</h3>
               <p>{val.description}</p>
-              <div className="z-50 absolute bg-secondary3 rounded-full w-5 h-5 top-0 -left-3"></div>
+              <div className="z-50 absolute bg-secondary3 rounded-full w-5 h-5 top-5 -left-3"></div>
             </div>
           ))}
         </div>

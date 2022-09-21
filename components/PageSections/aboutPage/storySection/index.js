@@ -17,7 +17,7 @@ const StorySection = ({ data }) => {
                 }
               )}
             >
-              <div className="md:flex-[1.1] relative aspect-square hover:scale-90 duration-1000">
+              <div className=" relative aspect-square hover:scale-90 duration-1000">
                 <Image
                   objectFit="fill"
                   className="rounded-2xl"
@@ -25,7 +25,7 @@ const StorySection = ({ data }) => {
                   src={val.image?.url}
                 />
               </div>
-              <div className="md:flex-1 mt-8">
+              <div className="lg:pb-40 mt-8">
                 <h2>{val.title}</h2>
                 <p>{val.description}</p>
               </div>

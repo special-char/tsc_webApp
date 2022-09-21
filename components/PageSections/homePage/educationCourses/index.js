@@ -36,10 +36,10 @@ const EducationCourses = ({ data }) => {
                   <p className="mb-0">Completition rate on all courses</p>
                 </div> */}
               </div>
-              <div className="flex-start w-full md:max-w-[220px] flex items-center justify-start ">
+              <div className="flex flex-start w-full md:w-[220px] items-center justify-start">
                 {data.rightCards.map((val) => {
                   return (
-                    <div className="course-card" key={val.id}>
+                    <div className="course-card " key={val.id}>
                       <h1 className="mb-0">{val.title}</h1>
                       <p className="mb-0">{val.description}</p>
                     </div>

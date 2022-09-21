@@ -9,14 +9,14 @@ const BannerSection = ({ data }) => {
           <div className="text-content md:max-w-[535px] flex-1 flex flex-col justify-center text-center lg:text-left">
             <h1 className="font-semibold">{data?.bannerDetails?.title}</h1>
             <p className="mb-10">{data?.bannerDetails?.description}</p>
-            <div className="flex flex-col md:flex-row justify-center lg:justify-start w-full gap-8">
+            <div className="flex flex-col md:flex-row justify-center lg:justify-start w-full gap-5">
               <Link href={data?.explore.link}>
-                <button className="btn btn--primary btn--small">
+                <button className="btn btn--primary py-[20px] px-[18px]">
                   {data.explore?.buttonText}
                 </button>
               </Link>
               <Link href={`${data.learn?.link}`}>
-                <button className="btn btn--secondary btn--small">
+                <button className="btn btn--secondary py-[20px] px-[18px]">
                   LEARN MORE
                 </button>
               </Link>
