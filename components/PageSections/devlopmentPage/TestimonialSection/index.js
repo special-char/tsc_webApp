@@ -2,6 +2,7 @@ import StarSvg from "@public/icons/star.svg";
 import Testimonial from "@components/testimonial";
 import LeftSvg from "/public/icons/left.svg";
 import RightsSvg from "/public/icons/rights.svg";
+import { root } from "postcss";
 
 const TestimonialSection = () => {
   const testimonialDetails = [
@@ -60,6 +61,40 @@ const TestimonialSection = () => {
       title: "Students community",
     },
   ];
+
+  // const TestimonialSection = document.querySelector(".number");
+  // const number = new IntersectionObserver(
+  //   (entries, observer) => {
+  //     const [number] = entries;
+  //     if(!entry.isIntersecting)
+
+  //     return (
+
+  //     const coutnum = document.querySelectorAll("TestimonialSection");
+  //     const speed =200;
+
+  //     counternum.forEach(curElem => {
+  //       const updateNumber = () => {
+  //         const targetNumber = parseInt (curElem.dataset.number);
+  //         const initialNum = parseInt (curElem.InnerText);
+  //         const incrementNumber = Math. trunc (targetNumber / speed);
+  //         if (initialNum < targetNumber) {
+  //           curElem. innertext = `${initialNum + incrementNumber}+`;
+  //           setTimeout (updateNumber, 10)
+  //         }
+
+  //         };
+  //         updateNumber();
+  //     });
+
+  //   },
+  //   {
+  //     root: null,
+  //     threshold: 0,
+  //   }
+  //   );
+  // number.observer(TestimonialSection);
+
   return (
     <>
       <section className="relative  px-4 md:p-6 pt-28 py-36 lg:py-44 bg-neutral-200">
