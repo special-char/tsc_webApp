@@ -10,6 +10,7 @@ const nextConfig = {
       "assets.website-files.com",
       "ik.imagekit.io",
       "cdn-dhggl.nitrocdn.com",
+      "uxwing.com",
     ],
     formats: ["image/avif", "image/webp"],
   },
