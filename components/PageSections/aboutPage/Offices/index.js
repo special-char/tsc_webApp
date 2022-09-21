@@ -1,5 +1,6 @@
 import TSCImage from "@components/TSCImage";
 import React from "react";
+import BrigeSvg from "@public/icons/brige.svg";
 
 const Office = ({ ...obj }) => {
   return (
@@ -13,11 +14,14 @@ const Office = ({ ...obj }) => {
               src={obj.icon?.url}
               alt=""
               objectPosition={"center"}
-            />
+            /> */}
           </div>
           <h3 className="card__title text-neutral-800">{obj.country}</h3>
           <address className="text-neutral-600">
-            <a className="w-auto" href={`mailto:${obj.mailLink}`}>
+            <a
+              className="text-[14px] md:text-xl"
+              href={`mailto:${obj.mailLink}`}
+            >
               {obj.mail}
             </a>
             <br />

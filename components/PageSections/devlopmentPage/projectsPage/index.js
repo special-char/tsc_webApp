@@ -4,7 +4,7 @@ import TSCImage from "@components/TSCImage";
 const ProjectsPage = ({ children, data, index }) => {
   return (
     <>
-      <section className="max-w-7xl mx-auto  flex flex-col px-8 my-12 w-screen relative overflow-hidden">
+      <section className="max-w-7xl mx-auto  flex flex-col my-12 w-screen relative overflow-hidden">
         <div
           className={`w-full flex mb-8 bg-neutral-100 rounded-3xl py-8 shadow-dark px-8 ${
             index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"

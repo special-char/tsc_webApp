@@ -13,14 +13,14 @@ const FeaturedTeacher = ({ data }) => {
           <div className="flex flex-col gap-8 mb-8 md:flex-row lg:flex-col justify-center lg:w-1/2 ">
             <Link href={data.becomeTeacher?.link}>
               <a>
-                <button className="btn btn--primary  min-w-fit ">
+                <button className="btn btn--primary btn--small w-full ">
                   {data.becomeTeacher?.buttonText}
                 </button>
               </a>
             </Link>
             <Link href={data.browse?.link}>
               <a>
-                <button className="btn btn--secondary min-w-fit">
+                <button className="btn btn--secondary btn--small w-full">
                   {data.browse?.buttonText}
                 </button>
               </a>
@@ -34,8 +34,8 @@ const FeaturedTeacher = ({ data }) => {
               className="avatar rounded-xl"
               layout="fill"
               objectFit="cover"
-              src={data.teacher?.image?.url}
-            />
+              src={data?.teacher?.image?.url}
+            /> */}
           </div>
           <div className="border-spacing-2 rounded-3xl absolute px-4 mb-4 md:px-10 -bottom-52 md:-bottom-36 lg:-bottom-[87px] bg-neutral-100 py-11 max-w-[95%] mx-auto left-0 right-0 drop-shadow-md">
             <h6 className="bg-secondary1 text-primary font-bold w-44 text-center rounded-full py-2 mb-2">
