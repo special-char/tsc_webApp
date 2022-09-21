@@ -8,14 +8,6 @@ const DevelopmentPage = () => {
       <HeaderSection />
       <OurServices />
       <OurProjectsSection />
-<<<<<<< HEAD
-      {/* <Carousal data={data} testimonial /> */}
-      {/* <OurTeam /> */}
-=======
-      {/* <OurTeam /> */}
-
-      {/* <TestimonialSection /> */}
->>>>>>> ef30148e65c6cffaedbd9f373fd1982f9392bce7
     </>
   );
 };
