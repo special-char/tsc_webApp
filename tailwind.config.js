@@ -57,6 +57,9 @@ module.exports = {
         image: "4 / 3",
         "h-image": "3 / 4",
       },
+      animation: {
+        "bounce-slow": "bounce 10s linear infinite",
+      },
     },
   },
   plugins: [

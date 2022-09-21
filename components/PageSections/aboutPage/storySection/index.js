@@ -10,9 +10,12 @@ const StorySection = ({ data }) => {
           return (
             <div
               key={val.id}
-              className={cn("flex flex-col flex-grow flex-shrink basis-96", {
-                "md:flex-col-reverse": index % 2 !== 0,
-              })}
+              className={cn(
+                "cap flex flex-col flex-grow flex-shrink basis-96",
+                {
+                  "md:flex-col-reverse": index % 2 !== 0,
+                }
+              )}
             >
               <div className="md:flex-[1.1] relative aspect-square">
                 <TSCImage

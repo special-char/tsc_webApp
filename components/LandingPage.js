@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import TSCImage from "@components/TSCImage";
 import classNames from "classnames";
 import DevelopmentSvg from "@public/icons/web_development.svg";
 import TrainingSvg from "@public/icons/training_icon.svg";

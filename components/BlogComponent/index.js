@@ -1,5 +1,4 @@
 import TSCImage from "@components/TSCImage";
-import TSCImage from "@components/TSCImage";
 import React from "react";
 
 const Blog = ({ data }) => {

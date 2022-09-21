@@ -11,7 +11,7 @@ const DevelopmentPage = () => {
       <HeaderSection />
       <OurServices />
       <OurProjectsSection />
-      <OurTeam />
+      {/* <OurTeam /> */}
 
       {/* <TestimonialSection /> */}
     </>

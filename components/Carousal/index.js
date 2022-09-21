@@ -54,10 +54,9 @@ const Carousal = ({ data, testimonial, href }) => {
             </div>
           ) : (
             <div
-              className="snap-start md:min-w-[550px] relative py-10"
+              className="snap-start min-w-[270px] md:min-w-[550px] relative py-10"
               key={obj.id}
             >
-              {/* <Link href={`course/${obj.id}`}> */}
               <Link href={href ?? `course/${obj.id}`}>
                 <a>
                   <Card {...obj} />

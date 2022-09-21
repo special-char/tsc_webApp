@@ -18,8 +18,8 @@ const BannerAbout = ({ data }) => {
               </Link>
             </div>
           </div>
-          <div className="bg-secondary2 rounded-full w-[400px] h-[400px] absolute md:-top-80 md:-right-52 lg:-top-52 lg:-right-48 -z-10"></div>
-          <div className="bg-secondary3 rounded-full w-[380px] h-[380px] absolute -left-64 -bottom-64 md:-left-32 md:-bottom-60 lg:-bottom-60 lg:-left-20 -z-10"></div>
+          <div className="bg-secondary2 rounded-full w-[400px] h-[400px] absolute md:-top-80 md:-right-52 lg:-top-52 lg:-right-48 -z-10 animate-bounce-slow"></div>
+          <div className="bg-secondary3 rounded-full w-[380px] h-[380px] absolute -left-64 -bottom-64 md:-left-32 md:-bottom-60 lg:-bottom-72 lg:-left-20 -z-10 animate-bounce-slow"></div>
         </div>
       </section>
       <div className="relative w-8 mx-auto">
