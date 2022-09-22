@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <footer className="wrapper bg-neutral-700 overflow-hidden relative md:pt-20">
       <div className="max-w-7xl mx-auto px-8">
-        <div className="flex flex-col border-b-2 md:justify-between md:w-4/5 lg:w-full border-b-slate-400 md:flex-row">
+        <div className="flex flex-col border-b-2 pt-10 md:justify-between md:w-full lg:w-full border-b-slate-400 md:flex-row">
           <h1 className="text-neutral-100">TSC</h1>
           <p className="text-neutral-100 md:max-w-[468px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -60,9 +60,9 @@ const Footer = () => {
             </div>
           </div>
           <div className=" mx-auto md:flex-col justify-evenly">
-            <h4 className="w-full text-secondary1 py-9 pl-10">Pages</h4>
+            <h4 className="w-full text-secondary1 py-9">Pages</h4>
             <div className=" w-full  md:flex md:gap-4 justify-between">
-              <ul className="text-neutral-400">
+              <ul className="text-neutral-400 pl-0">
                 {UtilityLink.map((val) => {
                   return (
                     <li>
@@ -74,7 +74,7 @@ const Footer = () => {
                 })}
               </ul>
 
-              <ul className="links text-neutral-400">
+              <ul className="links text-neutral-400 pl-0">
                 {UtilityLink.map((val) => {
                   return (
                     <li>
@@ -88,8 +88,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="md:flex-col">
-            <h4 className="text-secondary1 py-8 pl-6">Utility Pages</h4>
-            <ul className="links text-neutral-400 pl-6">
+            <h4 className="text-secondary1 py-8">Utility Pages</h4>
+            <ul className="links text-neutral-400 pl-0">
               {UtilityLink.map((val) => {
                 return (
                   <li>
@@ -102,8 +102,11 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className=" flex lg:flex-row-reverse justify-between ">
-          <div className=" pl-20 pt-3 pb-4 flex gap-3 lg:pb-0">
+        <div className=" flex lg:flex-row-reverse flex-col-reverse justify-between ">
+            <div className="pl-20 flex items-center justify-start">
+            <div className="text-lg text-secondary1">Copyright © TSC</div>
+          </div>
+          <div className=" pl-0 pt-3 pb-4 flex gap-2 lg:pb-0">
             <FacebookSvg className=" w-9 rounded-full" />
             <TwitterSvg className="w-9 rounded-full" />
             <InstagramSvg className="w-9 rounded-full" />
@@ -111,9 +114,7 @@ const Footer = () => {
             <YoutubeSvg className="w-9 rounded-full" />
             <WhatsAppSvg className="w-9 rounded-full" />
           </div>
-          <div className="pl-20 flex items-center justify-start">
-            <div className="text-lg text-secondary1">Copyright © TSC</div>
-          </div>
+          
         </div>
       </div>
     </footer>

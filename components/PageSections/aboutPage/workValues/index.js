@@ -13,7 +13,7 @@ const WorkValues = ({ data }) => {
               {data.heading?.description}
             </p>
           </div>
-          <div className="grid md:grid-cols-2 text-left justify-center gap-9 ">
+          <div className="grid md:grid-cols-2 text-left justify-center md:pb-7 lg:pb-12 gap-9 ">
             {data.valueCard.map((obj) => {
               return <WorkValuesCard data={obj} />;
             })}

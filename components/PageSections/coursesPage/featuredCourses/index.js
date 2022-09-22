@@ -5,7 +5,7 @@ import React from "react";
 const FeaturedCourse = ({ data }) => {
   return (
     <section className="wrapper py-20">
-      <div className="main-content py-20 max-w-7xl mx-auto px-3 md:px-6">
+      <div className="main-content py-20 max-w-7xl mx-auto px-8 md:px-6">
         <h2 className="text-center ">{data.featuredCourse?.title}</h2>
         <div className="card-container">
           <Link href={`course/${data.course.id}`}>
@@ -28,7 +28,7 @@ const FeaturedCourse = ({ data }) => {
                 </div>
               </figure>
               <div className="card__body flex-1">
-                <div className="p-10">
+                <div className="p-8">
                   <h3 className="card__title">{data.course?.title}</h3>
                   <p>{data.course?.titleDescription}</p>
                   <div className="card-actions">

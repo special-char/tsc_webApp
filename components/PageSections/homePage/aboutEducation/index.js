@@ -38,7 +38,7 @@ const AboutEducation = ({ data }) => {
                     />
                   </div>
                 </div>
-                <div className="text-center px-2 md:text-left lg:flex-col ">
+                <div className="text-center px-2 md:px-0 md:text-left lg:flex-col ">
                   <h3>{val.title}</h3>
                   <p>{val.description}</p>
                 </div>

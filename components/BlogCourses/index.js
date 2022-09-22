@@ -1,6 +1,5 @@
 import React from "react";
 import TSCImage from "@components/TSCImage";
-import TSCImage from "@components/TSCImage";
 
 const BlogCourses = ({ ...obj }) => {
   return (
