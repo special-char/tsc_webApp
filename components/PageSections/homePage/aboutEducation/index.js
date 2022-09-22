@@ -1,4 +1,4 @@
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import React from "react";
 import Link from "next/link";
 
@@ -6,14 +6,14 @@ const AboutEducation = ({ data }) => {
   console.log("AboutEducation Data: ", data);
   return (
     <section className="about-education-wrapper h-auto w-full  ">
-      <div className="max-w-7xl mx-auto px-3 py-20 border-b border-neutral-400 ">
+      <div className="max-w-7xl mx-auto px-8 py-20 border-b border-neutral-400 ">
         <div className="text-center md:mb-14">
           <h2>{data.heading?.title}</h2>
           <p>{data.heading?.description}</p>
         </div>
         <div className="flex flex-col-reverse lg:flex-row md:w-4/5 lg:w-full mx-auto md:gap-16 lg:justify-center">
           <div className="flex flex-1 relative min-h-[300px] md:min-h-[600px]">
-            <Image
+            <TSCImage
               className="aspect-image rounded-3xl "
               src={data.aboutImage?.url}
               layout="fill"
@@ -28,7 +28,7 @@ const AboutEducation = ({ data }) => {
               >
                 <div className="w-14 mb-4 md:w-24 md:mt-2 md:mr-8 lg:mt-2 lg:w-24 lg:mr-8 rounded-full relative min-h-[60px]">
                   <div>
-                    <Image
+                    <TSCImage
                       className="rounded-full"
                       layout="fill"
                       objectFit="contain"

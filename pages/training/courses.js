@@ -5,6 +5,8 @@ import axiosInstance from "lib/axiosInstance";
 import React from "react";
 
 const Course = ({ data }) => {
+  console.log(data);
+
   return (
     <>
       <CoursesPage data={data} />

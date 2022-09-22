@@ -1,6 +1,6 @@
 import React from "react";
 import Design from "@public/icons/design.svg";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import CourseReview from "./courseReview";
 import Testimonial from "@components/testimonial";
 import PlayVideo from "@public/icons/playVideo.svg";
@@ -48,7 +48,7 @@ const IndividualCourse = ({ data }) => {
             <h1 className="text-neutral-100 mb-0">{data?.title}</h1>
             <p className="text-secondary1">{data?.titleDescription}</p>
             <div className="course-preview mb-10 relative w-full min-h-[162px] sm:min-h-[333px] md:min-h-[400px]">
-              <Image
+              <TSCImage
                 className="rounded-3xl brightness-50"
                 objectFit="cover"
                 layout="fill"
@@ -115,7 +115,7 @@ const IndividualCourse = ({ data }) => {
                 <p>{data.result?.description}</p>
 
                 <div className="course-preview relative w-full min-h-[162px] md:min-h-[400px]">
-                  <Image
+                  <TSCImage
                     className="rounded-3xl"
                     objectFit="cover"
                     layout="fill"
