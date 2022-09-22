@@ -16,6 +16,23 @@ const developmentAboutQuery = `{
         title
         description
       }
+      ourTeam{
+        id
+        heading{
+          title
+          description
+        }
+        joinOurTeam{
+          buttonText
+          link
+        }
+        teamMembers{
+          id
+          image
+          title
+          designation
+        }
+      }
       workValues{
         title
         description
