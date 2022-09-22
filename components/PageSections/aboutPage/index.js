@@ -15,7 +15,7 @@ const AboutPage = ({ data }) => {
       <Achievements data={data.aboutSuccess} />
       <StorySection data={data.aboutMission} />
       <WorkValues data={data.aboutValue} />
-      {/* <TeachersSection data={data.aboutTeacher} /> */}
+      <TeachersSection data={data.aboutTeacher} />
       <HistorySection data={data.aboutHistory} />
       <OfficesSection data={data.aboutOffice} />
     </>
