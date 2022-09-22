@@ -4,7 +4,7 @@ import TSCImage from "@components/TSCImage";
 const AllServicesPage = ({ children, service, index }) => {
   return (
     <>
-      <section className="w-full px-4 my-12 bg-neutral-200 overflow-hidden ">
+      <section className="w-full px-8 my-12 bg-neutral-200 overflow-hidden ">
         <div className="max-w-7xl mx-auto">
           <div
             className={`w-full flex mb-8  ${

@@ -7,7 +7,7 @@ const BlogBanner = ({ data }) => {
     <>
       <section className="h-auto w-full ">
         <div className="relative overflow-hidden bg-neutral-200">
-          <div className="py-20 px-3 max-w-7xl mx-auto ">
+          <div className="py-20 px-8 max-w-7xl mx-auto ">
             <div className="text-center md:w-1/2 lg:pb-20 mx-auto">
               <h1 className="text-neutral-700">{data.heading?.title}</h1>
               <p>{data.heading?.description}</p>
