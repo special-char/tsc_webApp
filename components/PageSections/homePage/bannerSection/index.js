@@ -11,12 +11,12 @@ const BannerSection = ({ data }) => {
             <p className="mb-10">{data?.bannerDetails?.description}</p>
             <div className="flex flex-col md:flex-row justify-center lg:justify-start w-full gap-5">
               <Link href={data?.explore.link}>
-                <button className="btn btn--primary py-[20px] px-[18px]">
+                <button className="btn btn--primary btn-small">
                   {data.explore?.buttonText}
                 </button>
               </Link>
               <Link href={`${data.learn?.link}`}>
-                <button className="btn btn--secondary py-[20px] px-[18px]">
+                <button className="btn btn--secondary btn-small">
                   LEARN MORE
                 </button>
               </Link>

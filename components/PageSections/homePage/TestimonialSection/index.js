@@ -45,9 +45,7 @@ const TestimonialSection = ({ data, data2 }) => {
         <div className="flex items-center justify-center ">
           <Link href={"/Courses"}>
             <a>
-              <button className="btn btn--primary  md:w-2/5 lg:w-80 ">
-                EXPLORE COURSES
-              </button>
+              <button className="btn btn--primary">EXPLORE COURSES</button>
             </a>
           </Link>
         </div>

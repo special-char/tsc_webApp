@@ -8,7 +8,7 @@ const HistorySection = ({ data }) => {
           <h2>{data.heading?.title}</h2>
           <p>{data.heading?.description}</p>
           <Link href={data.buttonText?.link}>
-            <button className="btn btn--primary btn--small">
+            <button className="btn btn--primary w-full md:w-[60%] lg:w-[50%] btn--small">
               JOIN OUR TEAM
             </button>
           </Link>

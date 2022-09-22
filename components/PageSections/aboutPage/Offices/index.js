@@ -14,7 +14,7 @@ const Office = ({ ...obj }) => {
               src={obj.icon?.url}
               alt=""
               objectPosition={"center"}
-            /> */}
+            />
           </div>
           <h3 className="card__title text-neutral-800">{obj.country}</h3>
           <address className="text-neutral-600">

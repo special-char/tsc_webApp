@@ -36,6 +36,8 @@ const HomeQuery = `{
         id
         url
       }
+      title
+      titleDescription
     }
   }
    whyOurCourse{
