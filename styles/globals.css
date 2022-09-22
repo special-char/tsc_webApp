@@ -459,3 +459,6 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+.active-link {
+  color: #f99d77 !important;
+}

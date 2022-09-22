@@ -18,7 +18,6 @@ const OfficesSection = ({ data }) => {
           </div>
           <div className="bg-image-container relative aspect-auto min-h-[300px] md:min-h-[600px] -mt-32 ">
             <Image
-              className=""
               layout="fill"
               src={
                 "https://assets.website-files.com/607de2d8e8911e32707a3efe/608077c86a561e7091490a3c_image-offices-map-education-x-template.png"

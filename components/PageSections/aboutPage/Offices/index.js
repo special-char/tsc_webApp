@@ -8,6 +8,7 @@ const Office = ({ ...obj }) => {
         <div className="card__body p-6  relative overflow-hidden">
           <div className="aspect-image  relative">
             <Image
+              className="hover:scale-110 duration-500"
               layout="fill"
               objectFit="cover"
               src={obj.icon?.url}

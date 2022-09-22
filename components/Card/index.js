@@ -8,6 +8,7 @@ const Card = ({ ...obj }) => {
       <div className="card">
         <figure className="relative md:h-80">
           <Image
+            className=" hover:scale-110 duration-500"
             layout="fill"
             objectFit="cover"
             src={obj.courseImage?.url}
