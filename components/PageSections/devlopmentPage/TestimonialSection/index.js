@@ -63,7 +63,7 @@ const TestimonialSection = () => {
     },
   ];
 
-  // const TestimonialSection = document.querySelector(".number");
+  // const TestimonialSection = document.querySelector(".numberDetails");
   // const number = new IntersectionObserver(
   //   (entries, observer) => {
   //     const [number] = entries;

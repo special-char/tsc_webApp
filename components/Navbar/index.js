@@ -1,6 +1,12 @@
 import React, { memo, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const Navbar = ({ path }) => {
+  const router = useRouter();
+  const current_route = router.pathname;
+  console.log("====================================");
+  console.log(current_route);
+  console.log("====================================");
   const navLinks =
     path === "development"
       ? [
@@ -88,7 +94,13 @@ const Navbar = ({ path }) => {
                     className="nav-item m-0 capitalize"
                   >
                     <Link href={link.link}>
-                      <a className="nav-link text-neutral-700 font-bold">
+                      <a
+                        className={`nav-link font-bold ${
+                          current_route === link.link
+                            ? "active-link"
+                            : "text-neutral-700"
+                        }`}
+                      >
                         {link.name}
                       </a>
                     </Link>
