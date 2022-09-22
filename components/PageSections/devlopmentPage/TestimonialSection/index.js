@@ -1,9 +1,5 @@
-import StarSvg from "@public/icons/star.svg";
-import Testimonial from "@components/testimonial";
-import LeftSvg from "/public/icons/left.svg";
-import RightsSvg from "/public/icons/rights.svg";
-import { root } from "postcss";
 import Carousal from "@components/Carousal";
+import StarSvg from "@public/icons/star.svg";
 
 const TestimonialSection = () => {
   const testimonialDetails = [
@@ -98,12 +94,16 @@ const TestimonialSection = () => {
 
   return (
     <>
-      <section className="relative overflow-hidden px-8 md:p-6 pt-28 py-36 lg:py-44 bg-neutral-200">
+      <section className="overflow-hidden px-8 md:p-6 pt-28 py-36 lg:py-44 bg-neutral-200">
         <h2 className="md:py-8 md:p-12 text-center justify-center">
           What Our Clients Say
         </h2>
-        <Carousal data={testimonialDetails} testimonial />
-        <div className="grid grid-cols-2 grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 gap-6 lg:w-full md:gap-8 md:w-2/3 text-center lg:flex-row mx-auto py-14 ">
+        <Carousal
+          data={testimonialDetails}
+          testimonial
+          carousalID="testimonial"
+        />
+        {/* <div className="grid grid-cols-2 grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 gap-6 lg:w-full md:gap-8 md:w-2/3 text-center lg:flex-row mx-auto py-14 ">
           {numberDetails?.map((e, i) => (
             <div
               key={i}
@@ -115,7 +115,7 @@ const TestimonialSection = () => {
               <p className="text-neutral-500 mb-0">{e.title}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </section>
     </>
   );

@@ -5,9 +5,14 @@ const Teachers = ({ data }) => {
   console.log("Teachers data", data);
   return (
     <>
-      <div className="card">
+      <div className="card drop-shadow-md">
         <figure className="relative h-80">
-          <TSCImage layout="fill" objectFit="cover" src={data.image?.url} alt="" />
+          <TSCImage
+            layout="fill"
+            objectFit="cover"
+            src={data.image?.url}
+            alt=""
+          />
         </figure>
         <div className="card__body p-8 ">
           <h3 className="card__title">

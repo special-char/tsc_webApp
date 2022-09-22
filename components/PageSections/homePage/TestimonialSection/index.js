@@ -1,4 +1,3 @@
-import StarSvg from "@public/icons/star.svg";
 import Link from "next/link";
 import Carousal from "@components/Carousal";
 
@@ -28,7 +27,7 @@ const TestimonialSection = ({ data, data2 }) => {
         <h2 className="md:py-8 md:p-12 text-center justify-center">
           {data.heading?.title}
         </h2>
-        <Carousal data={data2} testimonial />
+        <Carousal data={data2} testimonial carousalID="testimonial" />
         <div className="grid grid-cols-2 grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 gap-6 lg:w-full md:gap-8 md:w-2/3 text-center lg:flex-row mx-auto py-14 ">
           {numberDetails?.map((e, i) => (
             <div
