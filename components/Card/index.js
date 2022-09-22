@@ -1,6 +1,5 @@
 import React from "react";
 import TSCImage from "@components/TSCImage";
-import Link from "next/link";
 
 const Card = ({ ...obj }) => {
   return (

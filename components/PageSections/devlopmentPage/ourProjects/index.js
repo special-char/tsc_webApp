@@ -1,8 +1,4 @@
-import Card from "@components/Card";
 import Carousal from "@components/Carousal";
-import Link from "next/link";
-import LeftSvg from "/public/icons/left.svg";
-import RightsSvg from "/public/icons/rights.svg";
 
 const OurProjectsSection = () => {
   const Projects = [
@@ -66,7 +62,11 @@ const OurProjectsSection = () => {
     <>
       <section className="py-32 overflow-hidden bg-neutral-200">
         <h2 className="text-center mb-10">Our Projects</h2>
-        <Carousal data={Projects} href={`/development/projects`} />
+        <Carousal
+          data={Projects}
+          href={`/development/projects`}
+          carousalID="card"
+        />
       </section>
     </>
   );

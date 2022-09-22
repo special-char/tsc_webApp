@@ -5,16 +5,20 @@ import React from "react";
 import Card from "@components/Card";
 import Testimonial from "@components/testimonial";
 
-const Carousal = ({ data, testimonial, href }) => {
+const Carousal = ({ data, testimonial, href, carousalID }) => {
   const slideLeft = () => {
-    var slider = document.getElementById("slider");
-    var width = slider.clientWidth;
+    var slider = document.getElementById(carousalID);
+    var child = document.getElementById("child");
+    var width = child.offsetWidth;
     slider.scrollLeft = slider.scrollLeft - width;
+    console.log("clientWidth", data);
   };
   const slideRight = () => {
-    var slider = document.getElementById("slider");
-    var width = slider.clientWidth;
+    var slider = document.getElementById(carousalID);
+    var child = document.getElementById("child");
+    var width = child.offsetWidth;
     slider.scrollLeft = slider.scrollLeft + width;
+    console.log("clientWidth", data);
   };
   return (
     <div className="card-container relative container max-w-7xl mx-auto">
@@ -41,20 +45,22 @@ const Carousal = ({ data, testimonial, href }) => {
         </div>
       </div>
       <div
-        id="slider"
+        id={carousalID}
         className="no-scrollbar mx-4 snap-x overflow-x-scroll flex scroll-smooth w-[100vw]  md:flex-row md:inline-flex gap-4 justify-start md:text-left md:pl-4 md:pr-80"
       >
         {data.map((obj) => {
           return testimonial ? (
             <div
-              className="snap-start min-w-[260px] lg:min-w-[750px] relative py-10"
+              id="child"
+              className="snap-start min-w-[260px] sm:min-w-[700px] relative py-10"
               key={obj.id}
             >
               <Testimonial data={obj} />
             </div>
           ) : (
             <div
-              className="snap-start min-w-[260px] md:min-w-[550px] relative py-10 mx-4"
+              id="child"
+              className="snap-start min-w-[260px] sm:min-w-[550px] relative py-10"
               key={obj.id}
             >
               <Link href={href ?? `course/${obj.id}`}>
