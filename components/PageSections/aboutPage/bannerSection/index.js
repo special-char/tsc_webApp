@@ -8,7 +8,7 @@ const BannerAbout = ({ data }) => {
     <>
       <section className="h-auto w-full ">
         <div className="relative overflow-hidden">
-          <div className="py-28 px-3 max-w-7xl mx-auto ">
+          <div className="py-28 px-8 max-w-7xl mx-auto ">
             <div className="text-center  lg:pb-20 ">
               <h1 className="md:w-[70%] mx-auto">{data?.header?.title}</h1>
               <p className="md:w-[90%] mx-auto ">{data?.header?.description}</p>

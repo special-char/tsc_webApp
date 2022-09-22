@@ -7,7 +7,7 @@ import Blog from "@components/blogComponent";
 const BlogSection = ({ data }) => {
   return (
     <section className="h-auto w-full">
-      <div className=" mx-auto lg:w-full px-6 py-20 max-w-7xl">
+      <div className=" mx-auto lg:w-full px-8 py-20 max-w-7xl">
         <div className="flex flex-col pt-10 lg:flex-row gap-6">
           <div className="card flex-1 relative">
             <figure className="!min-h-0">

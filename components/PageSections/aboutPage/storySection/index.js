@@ -5,7 +5,7 @@ import cn from "classnames";
 const StorySection = ({ data }) => {
   return (
     <section className="wrapper relative py-32">
-      <div className="container max-w-7xl relative w-full mx-auto px-3 flex flex-wrap gap-8">
+      <div className="container max-w-7xl relative w-full mx-auto px-8 flex flex-wrap gap-8">
         {data.mission.map((val, index) => {
           return (
             <div
