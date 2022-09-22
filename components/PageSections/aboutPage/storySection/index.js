@@ -25,7 +25,7 @@ const StorySection = ({ data }) => {
                   src={val.image?.url}
                 />
               </div>
-              <div className="lg:pb-40 mt-8">
+              <div className="slide-in from-right md:flex-1 mt-8">
                 <h2>{val.title}</h2>
                 <p>{val.description}</p>
               </div>

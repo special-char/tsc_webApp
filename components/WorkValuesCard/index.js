@@ -4,7 +4,7 @@ import React from "react";
 const WorkValuesCard = ({ data }) => {
   return (
     <>
-      <div className="rounded-3xl shadow-2xl border-spacing-2 p-8 drop-shadow-md bg-neutral-100">
+      <div className="rounded-3xl shadow-2xl border-spacing-2 p-8 drop-shadow-md bg-neutral-100 hover:scale-95 duration-300">
         <div className="flex items-center justify-between pb-8">
           <div className="relative aspect-image min-h-[50px]">
             <TSCImage
