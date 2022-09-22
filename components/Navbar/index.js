@@ -1,39 +1,69 @@
-import React, { memo, useEffect, useState } from "react";
+import React, { memo, useState } from "react";
 import Link from "next/link";
-const Navbar = () => {
-  useEffect(() => {
-    const windowWidth = window.innerWidth;
-    setWidth(windowWidth);
-  });
-  const [width, setWidth] = useState(0);
-  const navLinks = [
-    {
-      id: 1,
-      name: "home",
-      link: "/",
-    },
-    {
-      id: 2,
-      name: "about",
-      link: "/about",
-    },
-    {
-      id: 3,
-      name: "courses",
-      link: "/courses",
-    },
-    {
-      id: 4,
-      name: "blog",
-      link: "/blog",
-    },
-    {
-      id: 5,
-      name: "contact",
-      link: "/contact",
-    },
-  ];
+const Navbar = ({ path }) => {
+  const navLinks =
+    path === "development"
+      ? [
+          {
+            id: 1,
+            name: "home",
+            link: `/${path}`,
+          },
+          {
+            id: 2,
+            name: "about",
+            link: `/${path}/about`,
+          },
+          {
+            id: 3,
+            name: "services",
+            link: `/${path}/services`,
+          },
+          {
+            id: 4,
+            name: "projects",
+            link: `/${path}/projects`,
+          },
+          {
+            id: 5,
+            name: "career",
+            link: `/${path}/career`,
+          },
+          {
+            id: 6,
+            name: "contact",
+            link: `/${path}/contact`,
+          },
+        ]
+      : [
+          {
+            id: 1,
+            name: "home",
+            link: `/${path}`,
+          },
+          {
+            id: 2,
+            name: "about",
+            link: `/${path}/about`,
+          },
+          {
+            id: 3,
+            name: "courses",
+            link: `/${path}/courses`,
+          },
+          {
+            id: 4,
+            name: "blog",
+            link: `/${path}/blog`,
+          },
+          {
+            id: 5,
+            name: "contact",
+            link: `/${path}/contact`,
+          },
+        ];
   const [hamOpen, setHamOpen] = useState(false);
+
   return (
     <>
       <section
@@ -64,10 +94,7 @@ const Navbar = () => {
             </ul>
           </nav>
           <div
-            onClick={() => {
-              setHamOpen((val) => !val);
-              console.log("hamOpen", hamOpen);
-            }}
+            onClick={() => setHamOpen((val) => !val)}
             className={`menu-btn lg:hidden ${hamOpen && "open"}`}
           >
             <div className="menu-btn__burger"></div>

@@ -2,6 +2,7 @@ import StarSvg from "@public/icons/star.svg";
 import Testimonial from "@components/testimonial";
 import LeftSvg from "/public/icons/left.svg";
 import RightsSvg from "/public/icons/rights.svg";
+import { root } from "postcss";
 
 const TestimonialSection = () => {
   const testimonialDetails = [
@@ -60,7 +61,40 @@ const TestimonialSection = () => {
       title: "Students community",
     },
   ];
-  //console.log("TestimonialSection data2:", data2);
+
+  // const TestimonialSection = document.querySelector(".number");
+  // const number = new IntersectionObserver(
+  //   (entries, observer) => {
+  //     const [number] = entries;
+  //     if(!entry.isIntersecting)
+
+  //     return (
+
+  //     const coutnum = document.querySelectorAll("TestimonialSection");
+  //     const speed =200;
+
+  //     counternum.forEach(curElem => {
+  //       const updateNumber = () => {
+  //         const targetNumber = parseInt (curElem.dataset.number);
+  //         const initialNum = parseInt (curElem.InnerText);
+  //         const incrementNumber = Math. trunc (targetNumber / speed);
+  //         if (initialNum < targetNumber) {
+  //           curElem. innertext = `${initialNum + incrementNumber}+`;
+  //           setTimeout (updateNumber, 10)
+  //         }
+
+  //         };
+  //         updateNumber();
+  //     });
+
+  //   },
+  //   {
+  //     root: null,
+  //     threshold: 0,
+  //   }
+  //   );
+  // number.observer(TestimonialSection);
+
   return (
     <>
       <section className="relative  px-4 md:p-6 pt-28 py-36 lg:py-44 bg-neutral-200">
@@ -68,26 +102,9 @@ const TestimonialSection = () => {
           What Our Clients Say
         </h2>
         <div className="container ml-auto max-w-7xl overflow-hidden relative">
-          <div className="navigation flex flex-row justify-between w-full lg:w-[90%] overflow-hidden  absolute z-10  top-44">
-            <div className="avatar placeholder bg-neutral-100 hover:bg-primary hover:fill-neutral-100 rounded-full">
-              <div className="w-16 md:w-20">
-                <span className=" w-4">
-                  <LeftSvg />
-                </span>
-              </div>
-            </div>
-            <div class="avatar placeholder bg-neutral-100  hover:bg-primary hover:fill-neutral-100 rounded-full">
-              <div class="w-16 md:w-20 ">
-                <span className=" w-4">
-                  <RightsSvg />
-                </span>
-              </div>
-            </div>
-          </div>
           <div className="inline-flex gap-4 text-center justify-center md:text-left relative">
             {testimonialDetails.map((obj) => {
               const name = `${obj.firstName} ${obj.lastName}`;
-              //console.log("TestimonialSection obj:", obj);
               return <Testimonial key={obj.id} data={obj} />;
             })}
           </div>

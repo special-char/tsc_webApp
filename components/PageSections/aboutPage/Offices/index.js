@@ -1,23 +1,28 @@
 import Image from "next/image";
 import React from "react";
+import BrigeSvg from "@public/icons/brige.svg";
 
 const Office = ({ ...obj }) => {
   return (
     <>
-      <div className="card md:w-[25%]">
-        <div className="card__body p-6  relative overflow-hidden">
-          <div className="aspect-image  relative">
-            <Image
+      <div className="card md:max-w-3xl">
+        <div className="card__body p-10">
+          <div className="pb-4">
+            <BrigeSvg />
+            {/* <Image
               layout="fill"
               objectFit="cover"
               src={obj.icon?.url}
               alt=""
               objectPosition={"center"}
-            />
+            /> */}
           </div>
           <h3 className="card__title text-neutral-800">{obj.country}</h3>
           <address className="text-neutral-600">
-            <a className="w-auto" href={`mailto:${obj.mailLink}`}>
+            <a
+              className="text-[14px] md:text-xl"
+              href={`mailto:${obj.mailLink}`}
+            >
               {obj.mail}
             </a>
             <br />

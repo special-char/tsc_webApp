@@ -1,10 +1,9 @@
-import { Field, Form, Formik, ErrorMessage } from "formik";
+import { Field, Form, Formik } from "formik";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 import * as Yup from "yup";
-import ContactLinkData from "./contactLinksData";
 
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -16,8 +15,7 @@ const ContactSchema = Yup.object({
   message: Yup.string().required("Required"),
 });
 
-const ContactForm = ({ data }) => {
-  console.log("ContactForm data inside:", data);
+const ContactForm = ({ data, path }) => {
   return (
     <>
       <section className="w-full h-auto relative overflow-hidden">
@@ -86,10 +84,16 @@ const ContactForm = ({ data }) => {
                         ) : null}
                       </div>
                       <div className="w-full">
-                        <label className="">Subject</label>
+                        <label className="">
+                          {path === "development" ? "Role" : "Subject"}
+                        </label>
                         <Field
                           id="text"
-                          placeholder="Ex. Courses"
+                          placeholder={
+                            path === "development"
+                              ? "Ex. Front-end developer"
+                              : "Ex. Courses"
+                          }
                           className="bg-neutral-200 w-full rounded-full focus:outline-neutral-500 py-4 px-7"
                           name="subject"
                           type="text"
@@ -115,7 +119,7 @@ const ContactForm = ({ data }) => {
                       <a>
                         <button
                           type="submit"
-                          className="btn btn--primary btn--small md:w-1/3 lg:w-1/3"
+                          className="btn btn--primary btn--small w-full mt-6 md:w-1/3 lg:w-1/3"
                         >
                           SUBMIT
                         </button>

@@ -4,10 +4,8 @@ import ResourcesImg1 from "@public/img/resourcesImg1.jpeg";
 import Design from "@public/icons/design.svg";
 import Image from "next/image";
 import Blog from "@components/blogComponent";
-import ResourcesSectionData from "@components/pageSections/homePage/resourcesSection/resourcesSectionData";
 
 const BlogSection = ({ data }) => {
-  //console.log("BlogSection data:", data);
   return (
     <section className="h-auto w-full">
       <div className=" mx-auto lg:w-full px-6 py-20 max-w-7xl">

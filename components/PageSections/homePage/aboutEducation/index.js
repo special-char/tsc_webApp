@@ -3,10 +3,10 @@ import React from "react";
 import Link from "next/link";
 
 const AboutEducation = ({ data }) => {
-  //console.log("AboutEducation Data: ", data);
+  console.log("AboutEducation Data: ", data);
   return (
     <section className="about-education-wrapper h-auto w-full  ">
-      <div className="max-w-7xl mx-auto px-3 py-20 border-b border-neutral-400">
+      <div className="max-w-7xl mx-auto px-3 py-20 border-b border-neutral-400 ">
         <div className="text-center md:mb-14">
           <h2>{data.heading?.title}</h2>
           <p>{data.heading?.description}</p>
@@ -48,7 +48,7 @@ const AboutEducation = ({ data }) => {
         </div>
         <div className="flex justify-center pt-12">
           <Link href={data.aboutEducation?.link}>
-            <button className="btn btn--secondary w-full md:w-[40%] lg:w-[25%] ">
+            <button className="btn btn--secondary w-full md:w-[40%] lg:w-[30%] ">
               {data.aboutEducation?.buttonText}
             </button>
           </Link>
