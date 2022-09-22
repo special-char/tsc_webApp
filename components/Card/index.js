@@ -4,7 +4,7 @@ import TSCImage from "@components/TSCImage";
 const Card = ({ ...obj }) => {
   return (
     <>
-      <div className="card">
+      <div className="card max-w-screen-xs sm:max-w-xl">
         <figure className="relative md:h-80">
           <TSCImage
             layout="fill"
