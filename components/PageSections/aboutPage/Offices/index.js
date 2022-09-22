@@ -8,18 +8,13 @@ const Office = ({ ...obj }) => {
       <div className="card md:w-[25%]">
         <div className="card__body p-6  relative overflow-hidden">
           <div className="aspect-image  relative">
-<<<<<<< HEAD
-            <Image
-              className="hover:scale-110 duration-500"
-=======
             <TSCImage
->>>>>>> e16c058b52863d0755faa81e5c6d05886873d733
               layout="fill"
               objectFit="cover"
               src={obj.icon?.url}
               alt=""
               objectPosition={"center"}
-            /> */}
+            />
           </div>
           <h3 className="card__title text-neutral-800">{obj.country}</h3>
           <address className="text-neutral-600">
