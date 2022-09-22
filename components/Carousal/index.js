@@ -9,12 +9,12 @@ const Carousal = ({ data, testimonial, href }) => {
   const slideLeft = () => {
     var slider = document.getElementById("slider");
     var width = slider.clientWidth;
-    slider.scrollLeft = slider.scrollLeft - width;
+    slider.scrollLeft = slider.scrollLeft - 600;
   };
   const slideRight = () => {
     var slider = document.getElementById("slider");
     var width = slider.clientWidth;
-    slider.scrollLeft = slider.scrollLeft + width;
+    slider.scrollLeft = slider.scrollLeft + 600;
   };
   return (
     <div className="card-container relative container max-w-7xl mx-auto">
