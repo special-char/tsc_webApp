@@ -31,7 +31,7 @@ const Footer = () => {
             eiusmod tempor incididunt aliqua.
           </p>
         </div>
-        <div className="pb-4 py-16 lg:p-0 md:flex md:justify-around border-b-2 lg:w-full mx-auto border-b-slate-400">
+        <div className="pb-4 py-16 lg:p-0 lg:pt-5 md:flex md:justify-around border-b-2 lg:w-full mx-auto border-b-slate-400">
           <div>
             <MailSvg className="rounded-full" />
             <h2 className="font-bold text-secondary1 py-4">
