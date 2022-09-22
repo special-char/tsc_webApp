@@ -1,5 +1,4 @@
 import React from "react";
-
 import ResourcesImg1 from "@public/img/resourcesImg1.jpeg";
 import Design from "@public/icons/design.svg";
 import TSCImage from "@components/TSCImage";

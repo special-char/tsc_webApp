@@ -35,7 +35,7 @@ const FeaturedTeacher = ({ data }) => {
               layout="fill"
               objectFit="cover"
               src={data?.teacher?.image?.url}
-            /> */}
+            />
           </div>
           <div className="border-spacing-2 rounded-3xl absolute px-4 mb-4 md:px-10 -bottom-52 md:-bottom-36 lg:-bottom-[87px] bg-neutral-100 py-11 max-w-[95%] mx-auto left-0 right-0 drop-shadow-md">
             <h6 className="bg-secondary1 text-primary font-bold w-44 text-center rounded-full py-2 mb-2">
