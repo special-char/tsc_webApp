@@ -1,4 +1,4 @@
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import Link from "next/link";
 import React from "react";
 
@@ -9,10 +9,10 @@ const FeaturedCourse = ({ data }) => {
         <h2 className="text-center ">{data.featuredCourse?.title}</h2>
         <div className="card-container">
           <Link href={`course/${data.course.id}`}>
-            <div className="card rounded-none md:rounded-t-2xl lg:rounded-l-2xl flex md:flex-col lg:flex-row relative">
+            <div className="card rounded-none rounded-t-2xl lg:rounded-l-2xl flex md:flex-col lg:flex-row relative">
               <figure className="flex-1 relative">
                 <div className="md:min-h-[320px]">
-                  <Image
+                  <TSCImage
                     className=""
                     layout="fill"
                     src={data.course?.courseImage?.url}

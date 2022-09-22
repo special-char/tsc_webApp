@@ -9,5 +9,6 @@ const Development = () => {
 Development.getLayout = function getLayout(page) {
   return <Layout path="development">{page}</Layout>;
 };
+
 Development.displayName = "Development";
 export default Development;

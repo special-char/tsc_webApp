@@ -8,6 +8,7 @@ import TeachersSection from "./teachersSection";
 import WorkValues from "./workValues";
 
 const AboutPage = ({ data }) => {
+  console.log("static data:", data);
   return (
     <>
       <BannerAbout data={data.aboutBanner} />

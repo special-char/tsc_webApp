@@ -1,13 +1,13 @@
 import React from "react";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
+import TSCImage from "@components/TSCImage";
 
 const BlogCourses = ({ ...obj }) => {
   return (
     <>
       <div className="card">
-        {" "}
         <figure className="relative h-80 ">
-          <Image
+          <TSCImage
             layout="fill"
             objectFit="cover"
             src={obj.bannerImage?.url}

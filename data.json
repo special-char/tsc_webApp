@@ -1,33 +1,28 @@
 {
-
-    "CompanyHistoryData" : [
+  "CompanyHistoryData": [
     {
       "year": "2023",
       "title": "Launched course#500",
-      "description":
-        "description"
+      "description": "description"
     },
     {
       "year": "2022",
       "title": "Reached 100 team members",
-      "description":
-        "description"
+      "description": "description"
     },
     {
       "year": "2021",
       "title": "Launched first course",
-      "description":
-        "description"
+      "description": "description"
     },
     {
       "year": "2020",
       "title": "Education founded",
-      "description":
-        "description"
+      "description": "description"
     }
   ],
 
-  "OfficesDetails":[
+  "OfficesDetails": [
     {
       "id": 1,
       "title": "Ahmedabad",
@@ -38,13 +33,11 @@
     }
   ],
 
-
-  "courses" : [
+  "courses": [
     {
       "id": 1,
       "title": "Graphic Design 101",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
       "name": "Kathie Corl",
       "chip": "7hr 25m",
       "chip2": "$99.00 USD",
@@ -54,8 +47,7 @@
     {
       "id": 2,
       "title": "Web Design & Development",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
       "name": "Kathie Corl",
       "chip": "7hr 25m",
       "chip2": "$99.00 USD",
@@ -65,8 +57,7 @@
     {
       "id": 3,
       "title": "Brand & Identity Design",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
       "name": "Kathie Corl",
       "chip": "7hr 25m",
       "chip2": "$99.00 USD",
@@ -76,8 +67,7 @@
     {
       "id": 4,
       "title": "Advanced Logo Design",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
       "name": "Kathie Corl",
       "chip": "7hr 25m",
       "chip2": "$99.00 USD",
@@ -87,8 +77,7 @@
     {
       "id": 5,
       "title": "Marketing Analytics 101",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
       "name": "Kathie Corl",
       "chip": "7hr 25m",
       "chip2": "$99.00 USD",
@@ -98,9 +87,8 @@
     {
       "id": 6,
       "title": "Mobile App Development",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
-     " name": "Kathie Corl",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
+      " name": "Kathie Corl",
       "chip": "7hr 25m",
       "chip2": "$99.00 USD",
 
@@ -108,14 +96,15 @@
       "img1": "https://res.cloudinary.com/pruthvish/image/upload/v1659967496/607f1ff9fd9e0e1686d26497_image-3-profile-picture-small-teacher-education-x-template_ic7rbl.webp"
     }
   ],
-  "courseCategories" : [
+
+  "courseCategories": [
     {
       "path": "#",
-     " title": "all"
+      " title": "all"
     },
     {
       "path": "/development",
-     " title": "development"
+      " title": "development"
     },
     {
       "path": "/design",
@@ -127,22 +116,17 @@
     }
   ],
 
-
-  "testiDetails" : [
+  "testiDetails": [
     {
       "id": 1,
       "name": "Kathie Corl",
       "chip": "Design",
-      "description":
-        "Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus vestibulum lorem sed risus ultricies.",
+      "description": "Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus vestibulum lorem sed risus ultricies.",
       "img": "https://placeimg.com/192/192/people"
     }
   ],
 
-
-
-
-  "icons" : [
+  "icons": [
     {
       "svg": "<RightSvg />",
       "id": 1
@@ -157,15 +141,11 @@
     }
   ],
 
-
-
-
-     "course" : [
+  "course": [
     {
       "id": 1,
       "title": "Graphic Design 101",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
       "name": "Kathie Corl",
       "chip": "7hr 25m",
       "chip2": "$99.00 USD",
@@ -175,8 +155,7 @@
     {
       "id": 2,
       "title": "Web Design & Development",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
       "name": "Kathie Corl",
       "chip": "7hr 25m",
       "chip2": "$99.00 USD",
@@ -186,8 +165,7 @@
     {
       "id": 3,
       "title": "Brand & Identity Design",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
       "name": "Kathie Corl",
       "chip": "7hr 25m",
       "chip2": "$99.00 USD",
@@ -196,15 +174,13 @@
     }
   ],
 
-
-  "testimonialDetails" : [
+  "testimonialDetails": [
     {
       "id": 1,
       "firstName": "Pruthvish",
       "lastName": "Modi",
       "designation": "Junior Designer at Facebook",
-      "description":
-        "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
+      "description": "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
       "img": "https://placeimg.com/192/192/people",
       "svg": "<StarSvg />"
     },
@@ -213,8 +189,7 @@
       "firstName": "Pruthvish",
       "lastName": "Modi",
       "designation": "Junior Designer at Facebook",
-      "description":
-        "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
+      "description": "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
       "img": "https://placeimg.com/192/192/people",
       "svg": "<StarSvg />"
     },
@@ -223,29 +198,28 @@
       "firstName": "Pruthvish",
       "lastName": "Modi",
       "designation": "Junior Designer at Facebook",
-      "description":
-        "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
+      "description": "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
       "img": "https://placeimg.com/192/192/people",
-     " svg": "<StarSvg />"
+      " svg": "<StarSvg />"
     },
     {
       "id": 3,
       "firstName": "Pruthvish",
       "lastName": "Modi",
       "designation": "Junior Designer at Facebook",
-      "description":
-        "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
+      "description": "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
       "img": "https://placeimg.com/192/192/people",
       "svg": "<StarSvg />"
     }
   ],
-  "numberDetails" : [
+
+  "numberDetails": [
     {
-     "numbers": "100,000+",
+      "numbers": "100,000+",
       "title": "students worldwide"
     },
     {
-     " numbers": "200,000+",
+      " numbers": "200,000+",
       "title": "Total course views"
     },
     {
@@ -256,37 +230,30 @@
       "numbers": "75,000+",
       "title": "Students community"
     }
-  ], 
+  ],
 
-
-  "WhylearnDetails" : [
+  "WhylearnDetails": [
     {
       "id": 1,
       "title": "Learn",
-      "description":
-        "“Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.”",
+      "description": "“Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.”",
       "svg": "<LearnSvg />"
     },
     {
       "id": 1,
       "title": "Graduate",
-      "description":
-        "“Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.”",
+      "description": "“Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.”",
       "svg": "<WorkSvg />"
     },
     {
       "id": 1,
-     " title": "Work",
-      "description":
-        "“Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.”",
+      " title": "Work",
+      "description": "“Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.”",
       "svg": "<GraduateSvg />"
     }
   ],
 
-
-
-
-  "AchievementsData" : [
+  "AchievementsData": [
     {
       "Number": "100,000+",
       "heading": "Students",
@@ -299,20 +266,16 @@
     },
     {
       "Number": "75,000+",
-     " heading": "Students community",
-     " description": "Lorem ipsum dolor sit amet,consectetur adipiscing."
+      " heading": "Students community",
+      " description": "Lorem ipsum dolor sit amet,consectetur adipiscing."
     }
   ],
 
-
-
-
-  "TeachersDetails" : [
+  "TeachersDetails": [
     {
       "id": 1,
       "title": "John Carter",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
       "svgData": [
         {
           "id": 1,
@@ -335,8 +298,7 @@
     {
       "id": 2,
       "title": "Sophie Moore",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
       "svgData": [
         {
           "id": 1,
@@ -359,8 +321,7 @@
     {
       "id": 3,
       "title": "Matt Cannon",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
       "svgData": [
         {
           "id": 1,
@@ -374,7 +335,7 @@
         },
         {
           "id": 3,
-          "svg":"<BrigeSvg />",
+          "svg": "<BrigeSvg />",
           "svgLink": "/facebook.com"
         }
       ],
@@ -383,17 +344,16 @@
     {
       "id": 4,
       "title": "Kathie Corl",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
       "svgData": [
         {
-         " id": 1,
+          " id": 1,
           "svg": "<RightSvg/>",
-         " svgLink": "/twitter.com"
+          " svgLink": "/twitter.com"
         },
         {
           "id": 2,
-          "svg":"<BrigeSvg />",
+          "svg": "<BrigeSvg />",
           "svgLink": "/linkedin."
         },
         {
@@ -407,9 +367,8 @@
     {
       "id": 5,
       "title": "Mike Warren",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
-     " svgData": [
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit.",
+      " svgData": [
         {
           "id": 1,
           "svg": "<RightSvg/>",
@@ -417,7 +376,7 @@
         },
         {
           "id": 2,
-         "svg": "<SearchSvg/>",
+          "svg": "<SearchSvg/>",
           "svgLink": "/linkedin.com"
         },
         {
@@ -430,14 +389,11 @@
     }
   ],
 
-
-
-  "BlogCoursesDetails" : [
+  "BlogCoursesDetails": [
     {
       "id": 1,
       "date": "April 20, 2021",
-      "description":
-        "How to design a simple, yet unique and memorable brand identity",
+      "description": "How to design a simple, yet unique and memorable brand identity",
       "blogType": "Design",
       "svg": "<Blog1Svg />",
       "img": "https://res.cloudinary.com/pruthvish/image/upload/v1659963040/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-800_zhw8fb.webp"
@@ -445,8 +401,7 @@
     {
       "id": 2,
       "date": "April 20, 2021",
-      "description":
-        "How to design a simple, yet unique and memorable brand identity",
+      "description": "How to design a simple, yet unique and memorable brand identity",
       "blogType": "Marketing",
       "svg": "<Blog2Svg />",
 
@@ -455,8 +410,7 @@
     {
       "id": 3,
       "date": "April 20, 2021",
-      "description":
-        "How to design a simple, yet unique and memorable brand identity",
+      "description": "How to design a simple, yet unique and memorable brand identity",
       "blogType": "Design",
       "svg": "<Blog1Svg />",
 
@@ -465,8 +419,7 @@
     {
       "id": 4,
       "date": "April 20, 2021",
-     " description":
-        "How to design a simple, yet unique and memorable brand identity",
+      " description": "How to design a simple, yet unique and memorable brand identity",
       "blogType": "Marketing",
       "svg": "<Blog2Svg />",
 
@@ -475,8 +428,7 @@
     {
       "id": 5,
       "date": "April 20, 2021",
-      "description":
-        "How to design a simple, yet unique and memorable brand identity",
+      "description": "How to design a simple, yet unique and memorable brand identity",
       "blogType": "Development",
       "svg": "<Blog5Svg />",
       "img": "https://res.cloudinary.com/pruthvish/image/upload/v1659963040/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-800_zhw8fb.webp"
@@ -484,14 +436,14 @@
     {
       "id": 6,
       "date": "April 20, 2021",
-      "description":
-        "How to design a simple, yet unique and memorable brand identity",
+      "description": "How to design a simple, yet unique and memorable brand identity",
       "blogType": "Marketing",
       "svg": "<Blog2Svg />",
       "img": "https://res.cloudinary.com/pruthvish/image/upload/v1659963040/607f2e01cbd8323965e6629a_image-6-courses-education-x-template-p-800_zhw8fb.webp"
     }
   ],
-  "blogCategories" : [
+
+  "blogCategories": [
     {
       "path": "#",
       "title": "all"
@@ -510,125 +462,223 @@
     }
   ],
 
-
-
-
-
-  "AskDetails" : [
+  "AskDetails": [
     {
       "id": 1,
       "title": "Do you offer discounts for students?",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
       "icon": "+"
     },
     {
       "id": 2,
       "title": "Do you offer discounts for students?",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
       "icon": "+"
     },
     {
       "id": 3,
       "title": "Do you offer discounts for students?",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
       "icon": "+"
     },
     {
       "id": 4,
       "title": "Do you offer discounts for students?",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-     " icon": "+"
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      " icon": "+"
     },
     {
       "id": 5,
       "title": "Do you offer discounts for students?",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
       "icon": "+"
     }
   ],
 
-
-
-
-  "EducationData" : [
+  "EducationData": [
     {
       "icon": "<SVG1/>",
       "heading": "Industry expert teachers",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id dolor"
+      "description": "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id dolor"
     },
     {
-      "icon": 
-       "<SVG2/>" ,
+      "icon": "<SVG2/>",
       "heading": "Up-to-date course content",
-     " description":
-        " Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id dolor"
+      " description": " Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id dolor"
     },
     {
-      "icon": 
-        "<SVG3/>",
+      "icon": "<SVG3/>",
       "heading": "Students community",
-      "description":
-        " Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id dolor"
+      "description": " Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id dolor"
     }
   ],
 
-
-
-
- " CourseCategoryData" : [
+  " CourseCategoryData": [
     {
       "photo": "<DesignCourse />",
       "label": "Design",
-      "description":
-        "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+      "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
       "icon": "<Play/>",
       "courses": "12 Courses"
     },
     {
       "photo": "<Development />",
       "label": "Development",
-      "description":
-        "lorem ipsum dolor sit amet,dolor sit consectetor adipiscing elit.",
+      "description": "lorem ipsum dolor sit amet,dolor sit consectetor adipiscing elit.",
       "icon": "<Play/>",
       "courses": "5 Courses"
     },
     {
-     "photo": "<Marketing />",
+      "photo": "<Marketing />",
       "label": "Marketing",
-      "description":
-        "lorem ipsum dolor sit amet,dolor sit consectetor adipiscing elit.",
-      "icon":"<Play/>",
+      "description": "lorem ipsum dolor sit amet,dolor sit consectetor adipiscing elit.",
+      "icon": "<Play/>",
       "courses": "7 Courses"
     }
   ],
 
-
-
-
-  "ResourcesSectionData" : [
+  "ResourcesSectionData": [
     {
-      "photo":
-        "https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2623f3809724753fbc65_image-5-blog-education-x-template-p-800.jpeg",
+      "photo": "https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2623f3809724753fbc65_image-5-blog-education-x-template-p-800.jpeg",
       "description": "5 marketing trends that you should be prepared for in 2022"
     },
     {
-      "photo":
-        "https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f256ca6388c4207dbfb28_image-3-blog-education-x-template-p-800.jpeg",
-      "description":
-        "How to be more creative: 5 cool tips to find inspiration everywhere"
+      "photo": "https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f256ca6388c4207dbfb28_image-3-blog-education-x-template-p-800.jpeg",
+      "description": "How to be more creative: 5 cool tips to find inspiration everywhere"
     },
     {
-      "photo":
-        "https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2405097a4b97dde4f6d2_image-1-blog-education-x-template-p-500.jpeg",
+      "photo": "https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f2405097a4b97dde4f6d2_image-1-blog-education-x-template-p-500.jpeg",
       "description": "19 ways to optimize your ad marketing budget efficiently"
     }
-  ]
+  ],
 
-   
+  "AboutDevelopment": {
+    "aboutBanner": {
+      "header": {
+        "id": 1,
+        "title": "We have a bigger mission",
+        "description": "To Impart Tech-Ed to create exemplary workforce\n"
+      }
+    },
+    "aboutSuccess": {
+      "heading": {
+        "id": 1,
+        "title": "A few numbers that we are proud of",
+        "description": "lorem ipsum dolor sit amet,dolor sit consectetor adipiscing elit."
+      },
+      "success": [
+        {
+          "id": 3,
+          "number": 10000,
+          "title": "'Clients', description: 'Tell me and I forget, teach me and I may remember,…ster focussed, indulgent and persistent learning.'"
+        },
+        {
+          "id": 4,
+          "number": 1000,
+          "title": "'Projects reviews', description: 'Tell me and I forget, teach me and I may remember,…ster focussed, indulgent and persistent learning.'"
+        },
+        {
+          "id": 5,
+          "number": 75000,
+          "title": "'Technologies we work', description: 'Tell me and I forget, teach me and I may remember,…ster focussed, indulgent and persistent learning.'"
+        }
+      ]
+    },
+    "aboutMission": {
+      "id": 1,
+      "mission": [
+        {
+          "id": 5,
+          "description": "TSC is specializes in Applications, Websites and Software. Also, our team has expertise in UI UX Design, Blockchain and NFT development, etc.",
+          "title": "What we do",
+          "image": { "url": "url" }
+        },
+        {
+          "id": 6,
+          "description": "TSC is a young, energetic, and enthusiastic team of members bringing to the table a whole new set of innovative and fresh ideas to solve industry challenges and difficulties.",
+          "title": "About",
+          "image": { "url": "url" }
+        }
+      ]
+    },
+    "aboutTeam": {
+      "heading": {
+        "id": 15,
+        "title": "our team",
+        "description": "pending"
+      },
+      "members": [
+        {
+          "id": 1,
+          "fullName": "Yagnesh Modh",
+          "description": "Yagnesh Modh, a powerhouse of learning and driving energy has been a corporate trainer since 2018. He hails his B.Tech degree with computers from Nirma University. His experience varies with HP and varied startups like Turing.com, Jupiter and Thoughtworks.",
+          "image": {
+            "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+          },
+          "jobTitle": "Business",
+          "socialMedia": []
+        },
+        {
+          "id": 2,
+          "fullName": "Shreya Patel",
+          "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+          "image": {
+            "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+          },
+          "jobTitle": "Manager",
+          "socialMedia": []
+        },
+        {
+          "id": 3,
+          "fullName": "Jay Thakkar",
+          "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+          "image": {
+            "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+          },
+          "jobTitle": "Administrative",
+          "socialMedia": []
+        },
+        {
+          "id": 4,
+          "fullName": "Parin Rajpar",
+          "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+          "image": {
+            "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+          },
+          "jobTitle": "Project Manager",
+          "socialMedia": []
+        },
+        {
+          "id": 5,
+          "fullName": "Pratik Navlani",
+          "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+          "image": {
+            "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+          },
+          "jobTitle": "Business",
+          "socialMedia": []
+        },
+        {
+          "id": 6,
+          "fullName": "Devanshi Desai",
+          "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+          "image": {
+            "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+          },
+          "jobTitle": "Full-stack Developer",
+          "socialMedia": []
+        },
+        {
+          "id": 6,
+          "fullName": "Pruthvish Modi",
+          "description": "lorem ipsum dolor sit amet,dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, accusantium? sit consectetor adipiscing elit.",
+          "image": {
+            "url": "https://ik.imagekit.io/mdzi40eohii/production/images/yagnesh_cfa1c377ac_xIWTmlJ5z.jpeg"
+          },
+          "jobTitle": "Front-end Developer",
+          "socialMedia": []
+        }
+      ]
+    }
+  }
 }

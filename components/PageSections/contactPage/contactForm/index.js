@@ -1,5 +1,5 @@
 import { Field, Form, Formik } from "formik";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import Link from "next/link";
 import React from "react";
 
@@ -19,7 +19,7 @@ const ContactForm = ({ data, path }) => {
   return (
     <>
       <section className="w-full h-auto relative overflow-hidden">
-        <div className="wrapper max-w-7xl mx-auto px-4 py-24">
+        <div className="wrapper max-w-7xl mx-auto px-8 py-24">
           <div className="flex flex-col text-center max-w-lg mx-auto">
             <h1>{data.bannerHeading?.title}</h1>
             <p>{data.bannerHeading?.description}</p>
@@ -119,7 +119,7 @@ const ContactForm = ({ data, path }) => {
                       <a>
                         <button
                           type="submit"
-                          className="btn btn--primary btn--small md:w-1/3 lg:w-1/3"
+                          className="btn btn--primary btn--small w-full mt-6 md:w-1/3 lg:w-1/3"
                         >
                           SUBMIT
                         </button>
@@ -136,7 +136,7 @@ const ContactForm = ({ data, path }) => {
                   className="rounded-3xl w-full mx-auto shadow-base hover:shadow-dark h-auto bg-neutral-100 py-10 px-5 flex flex-col gap-2 items-center justify-around  hover:-translate-y-3 duration-200"
                 >
                   <div className="rounded-full relative w-10 h-10">
-                    <Image
+                    <TSCImage
                       className="rounded-full"
                       layout="fill"
                       objectFit="cover"
