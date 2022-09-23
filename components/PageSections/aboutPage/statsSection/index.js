@@ -1,3 +1,4 @@
+import CountUp from "@components/CountUp";
 import React from "react";
 
 const Achievements = ({ data }) => {
@@ -15,7 +16,9 @@ const Achievements = ({ data }) => {
               key={val.id}
             >
               <div>
-                <h1 className="text-secondary3 mb-2">{val.number}+</h1>
+                <h1 className="text-secondary3 mb-2">
+                  <CountUp end={val.number} start={0} />
+                </h1>
               </div>
               <h3 className="mb-1">{val.title}</h3>
               <p className="line-clamp-3 mb-0">{val.description}</p>
