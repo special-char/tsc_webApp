@@ -12,8 +12,6 @@ const TeacherIntro = ({ data }) => {
       img: "https://placeimg.com/192/192/people",
     },
   ];
-  console.log("TeacherIntro data:", data);
-  console.log("data firstName:", data.teachers?.firstName);
 
   return (
     <>

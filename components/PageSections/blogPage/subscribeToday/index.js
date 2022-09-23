@@ -10,12 +10,7 @@ const SubscribeToday = ({ data }) => {
           <h2 className="text-center z-20 flex-1 text-neutral-100 lg:text-left">
             {data.heading?.title}
           </h2>
-          <Formik
-            initialValues={{ email: " " }}
-            onSubmit={(values) => {
-              console.log(values);
-            }}
-          >
+          <Formik initialValues={{ email: " " }} onSubmit={(values) => {}}>
             <Form
               action=""
               className="flex flex-col flex-1 z-20 w-full md:relative md:w-11/12 md:p-0 md:mt-4 gap-4 py-4"

@@ -35,9 +35,7 @@ const ContactForm = ({ data, path }) => {
                   subject: "",
                   message: "",
                 }}
-                onSubmit={(values) => {
-                  console.log(values);
-                }}
+                onSubmit={(values) => {}}
               >
                 {({ errors, touched }) => (
                   <Form className="flex flex-col gap-3">

@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 
 const EducationCourses = ({ data }) => {
-  // console.log("success data", data);
   return (
     <>
       <section className="wrapper relative w-full h-full bg-primary overflow-hidden">

@@ -20,7 +20,7 @@ const TestimonialSection = ({ data, data2 }) => {
       title: "Students community",
     },
   ];
-  console.log("TestimonialSection data2:", data2);
+
   return (
     <>
       <section className="relative overflow-hidden px-8 md:p-6 pt-28 py-36 lg:py-44 bg-neutral-200  ">
