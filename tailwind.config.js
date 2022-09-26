@@ -59,8 +59,20 @@ module.exports = {
       },
       animation: {
         "bounce-slow": "bounce 10s linear infinite",
+        fadeIn: "fadeIn 1s ease-in forwards",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { transform: "translateX(-50%) " },
+          "100%": { transform: "translateX(0%)" },
+        },
+        fadeOut: {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
       },
     },
+    animation: ["motion-safe"],
   },
   plugins: [
     require("@tailwindcss/typography"),
