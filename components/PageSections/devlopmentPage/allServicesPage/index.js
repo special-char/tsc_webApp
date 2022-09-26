@@ -12,7 +12,7 @@ const AllServicesPage = ({ children, service, index }) => {
             } flex-wrap gap-4 items-center justify-center `}
           >
             <div className="w-full md:w-[45%] flex-1  items-center justify-center">
-              <figure className="relative h-96 ">
+              <figure className="relative h-96 motion-safe:animate-fadeIn js-show-on-scroll">
                 <TSCImage
                   layout="fill"
                   objectFit="cover"
@@ -21,7 +21,7 @@ const AllServicesPage = ({ children, service, index }) => {
                 />
               </figure>
             </div>
-            <div className="w-full md:w-[41.6%]  flex-col text-left ">
+            <div className="w-full md:w-[41.6%]  flex-col text-left motion-safe:animate-fadeIn js-show-on-scroll">
               {children}
             </div>
           </div>
