@@ -21,6 +21,9 @@ const toBase64 = (str) =>
     : window.btoa(str);
 
 const myLoader = ({ src, width, quality, maxWidth }) => {
+  // console.log("src", src);
+  // console.log("width", width);
+  // console.log("quality", quality);
   const imgWidth = maxWidth || width;
 
   return `${src}?w=${imgWidth}&q=${quality || 75}`;
