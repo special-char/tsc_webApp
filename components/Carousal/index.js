@@ -11,14 +11,12 @@ const Carousal = ({ data, testimonial, href, carousalID }) => {
     var child = document.getElementById("child");
     var width = child.offsetWidth;
     slider.scrollLeft = slider.scrollLeft - width;
-    console.log("clientWidth", data);
   };
   const slideRight = () => {
     var slider = document.getElementById(carousalID);
     var child = document.getElementById("child");
     var width = child.offsetWidth;
     slider.scrollLeft = slider.scrollLeft + width;
-    console.log("clientWidth", data);
   };
   return (
     <div className="card-container relative container max-w-7xl mx-auto">

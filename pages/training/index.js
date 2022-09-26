@@ -9,15 +9,12 @@ const Training = ({ data }) => {
 };
 
 export async function getServerSideProps() {
-  console.log("called getserver");
   try {
     const res = await axiosInstance.post("graphql", {
       query: HomeQuery,
       variables: {},
     });
-    console.log("====================================");
-    console.log(res.data.data);
-    console.log("====================================");
+
     return {
       props: {
         data: res?.data?.data,

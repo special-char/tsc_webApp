@@ -2,7 +2,6 @@ import React from "react";
 import Carousal from "@components/Carousal";
 
 const PopularCourses = ({ data }) => {
-  console.log("popular courses data:", data);
   return (
     <>
       <section className="py-20 overflow-hidden">

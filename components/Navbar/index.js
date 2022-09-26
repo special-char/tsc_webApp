@@ -5,9 +5,6 @@ import TscSvg from "/public/icons/tsc.svg";
 const Navbar = ({ path }) => {
   const router = useRouter();
   const current_route = router.pathname;
-  console.log("====================================");
-  console.log(current_route);
-  console.log("====================================");
   const navLinks =
     path === "development"
       ? [

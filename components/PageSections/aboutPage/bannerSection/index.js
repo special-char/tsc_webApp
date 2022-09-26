@@ -3,7 +3,6 @@ import BlueArrow from "@public/icons/blueArrow.svg";
 import Link from "next/link";
 
 const BannerAbout = ({ data }) => {
-  console.log("about static data:", data);
   return (
     <>
       <section className="h-auto w-full ">

@@ -3,7 +3,6 @@ import TSCImage from "@components/TSCImage";
 import Link from "next/link";
 
 const FeaturedTeacher = ({ data }) => {
-  console.log("featuredTeacher data:", data);
   return (
     <section className="wrapper flex py-24  md:py-44 h-auto mb-24 lg:mb-0">
       <div className="flex w-full lg:max-w-7xl mx-auto px-8 items-center justify-center flex-wrap gap-4 md:gap-12">
