@@ -6,6 +6,7 @@ import React from "react";
 const AllEvents = () => {
   const data = [
     {
+      id: 1,
       title: "Social Media Marketing Masterclass",
       description:
         "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
@@ -18,6 +19,7 @@ const AllEvents = () => {
       endTime: "6:00 pm",
     },
     {
+      id: 2,
       title: "Brand & Identity Design QA with Sophie Moore",
       description:
         "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
@@ -30,6 +32,7 @@ const AllEvents = () => {
       endTime: "6:00 pm",
     },
     {
+      id: 3,
       title: "Business Analytics Free Webinar",
       description:
         "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
@@ -49,8 +52,9 @@ const AllEvents = () => {
         <div className="card-container flex flex-col gap-10">
           {/* map start here */}
           {data.map((obj) => {
+            console.log("obj id:", obj.id);
             return (
-              <Link href="#">
+              <Link key={obj.id} href={`event/${obj.id}`}>
                 <div className="card rounded-none rounded-t-2xl lg:rounded-l-2xl flex md:flex-col lg:flex-row relative">
                   <figure className="flex-1 relative">
                     <div className="md:min-h-[320px]">
@@ -64,7 +68,7 @@ const AllEvents = () => {
                   </figure>
                   <div className="card__body flex-1 flex">
                     <div className="px-8 py-8 flex">
-                      <div className="flex flex-col gap-3">
+                      <div className="flex flex-col gap-3 ">
                         <div className="flex items-start justify-between gap-4">
                           <div className="flex flex-col md:flex-row gap-4">
                             <DateIcon className="w-6 pt-1" />
