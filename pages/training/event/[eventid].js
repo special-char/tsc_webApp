@@ -1,20 +1,20 @@
-import IndividualEvent from "@components/individualEvent";
-import IndividualCourse from "@components/pageSections/individualCourse";
+import IndividualEventBanner from "@components/PageSections/eventPage/individualEventBanner";
+import IndividualEvent from "@components/pageSections/individualEvent";
 import { useRouter } from "next/router";
 import React from "react";
 
 const data = [
   {
     id: 1,
-    title: "React",
+    title: "React crash Course",
   },
   {
     id: 2,
-    title: "Flutter",
+    title: "Flutter crash Course",
   },
   {
     id: 3,
-    title: "Node js",
+    title: "Node js crash Course",
   },
   {
     id: 4,
