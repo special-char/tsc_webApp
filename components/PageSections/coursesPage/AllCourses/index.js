@@ -25,7 +25,7 @@ const AllCoursesSection = ({ data }) => {
   return (
     <>
       <section className="courses-section-wrapper lg:w-full pt-28">
-        <div className="container mx-auto max-w-7xl px-8 flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
+        <div className="container mx-auto max-w-7xl px-8 flex flex-wrap flex-col lg:flex-row md:items-center  md:justify-center lg:justify-between ">
           <h2 className="text-neutral-800 text-center lg:text-left ">
             All Courses
           </h2>

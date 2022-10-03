@@ -143,8 +143,8 @@ const ContactForm = ({ data, path }) => {
                       objectPosition={"center"}
                     />
                   </div>
-                  <div className="text-center text-xl">
-                    <span className="font-bold text-neutral-700 ">
+                  <div className="text-center text-[15px] md:text-xl lg:text-xl">
+                    <span className="font-bold text-neutral-700">
                       {val.contactType}
                     </span>
                     <a href={val.link}>
