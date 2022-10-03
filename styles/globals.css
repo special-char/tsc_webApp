@@ -508,3 +508,20 @@ select {
 .active-link {
   color: #f99d77 !important;
 }
+
+.loader-container {
+  background: rgba(0, 0, 0, 0.834);
+}
+
+.spinner {
+  animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
