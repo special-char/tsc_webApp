@@ -60,6 +60,8 @@ module.exports = {
       animation: {
         "bounce-slow": "bounce 10s linear infinite",
         fadeIn: "fadeIn 1s ease-in forwards",
+        slideUp: "slideUp 1s linear",
+        slideDown: "slideDown linear",
       },
       keyframes: {
         fadeIn: {
@@ -69,6 +71,14 @@ module.exports = {
         fadeOut: {
           "0%": { transform: "translateX(-50%)" },
           "100%": { transform: "translateX(0%)" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(100vh)" },
+          "100%": { transform: "translateY(0%)" },
+        },
+        slideDown: {
+          "0%": { transform: "translateY(0%)" },
+          "100%": { transform: "translateY(-100vh)" },
         },
       },
     },
