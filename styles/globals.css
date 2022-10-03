@@ -405,7 +405,7 @@ select {
 }
 
 .custom-transition {
-  transition: all 1000ms ease-in-out;
+  transition: all 700ms linear;
 }
 
 .rotate-right-arrow {

@@ -21,25 +21,25 @@ const toBase64 = (str) =>
     : window.btoa(str);
 
 const myLoader = ({ src, width, quality, maxWidth }) => {
-    console.log("src", src);
-    console.log("width", width);
-    console.log("quality", quality);
-    const imgWidth = maxWidth || width;
+  // console.log("src", src);
+  // console.log("width", width);
+  // console.log("quality", quality);
+  const imgWidth = maxWidth || width;
 
   return `${src}?w=${imgWidth}&q=${quality || 75}`;
 };
 
-const TSCImage = ({ maxWidth, src,...props }) => {
+const TSCImage = ({ maxWidth, src, ...props }) => {
   return (
     <Image
       src={src || require("@public/images/noImage.png")}
-      loader={(props) => myLoader({...props, maxWidth})}
+      loader={(props) => myLoader({ ...props, maxWidth })}
       placeholder="blur"
       blurDataURL={`data:image/svg+xml;base64,${toBase64(
         shimmer(props?.height || "100%", props?.width || "100%")
       )}`}
       {...props}
-      objectFit={src ? "cover": 'contain'}
+      objectFit={src ? "cover" : "contain"}
     />
   );
 };

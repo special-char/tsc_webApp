@@ -35,9 +35,7 @@ const ContactForm = ({ data, path }) => {
                   subject: "",
                   message: "",
                 }}
-                onSubmit={(values) => {
-                  console.log(values);
-                }}
+                onSubmit={(values) => {}}
               >
                 {({ errors, touched }) => (
                   <Form className="flex flex-col gap-3">
@@ -146,7 +144,7 @@ const ContactForm = ({ data, path }) => {
                     />
                   </div>
                   <div className="text-center text-xl">
-                    <span className="font-bold  text-neutral-700">
+                    <span className="font-bold text-neutral-700 ">
                       {val.contactType}
                     </span>
                     <a href={val.link}>

@@ -12,7 +12,7 @@ const BlogCourses = ({ ...obj }) => {
             src={obj.bannerImage?.url}
             alt=""
           />
-        </figure>{" "}
+        </figure>
         <div className="card__body p-8 relative border-spacing-2 shadow-2xl bg-neutral-100  ">
           <div className="card__title text-base font-bold text-neutral-600">
             {/* {date} */}

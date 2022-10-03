@@ -62,9 +62,7 @@ const CareerForm = () => {
                   selectdesignation: "",
                   message: "",
                 }}
-                onSubmit={(values) => {
-                  console.log("values:", values);
-                }}
+                onSubmit={(values) => {}}
               >
                 {({ errors, touched }) => (
                   <Form className="flex flex-col gap-3">

@@ -1,4 +1,3 @@
-import StarSvg from "@public/icons/star.svg";
 import Link from "next/link";
 import Carousal from "@components/Carousal";
 
@@ -21,15 +20,15 @@ const TestimonialSection = ({ data, data2 }) => {
       title: "Students community",
     },
   ];
-  console.log("TestimonialSection data2:", data2);
+
   return (
     <>
       <section className="relative overflow-hidden px-8 md:p-6 md:pt-20 pt-28 py-36 lg:py-44 bg-neutral-200  ">
         <h2 className="md:py-6 md:p-12 text-center justify-center">
           {data.heading?.title}
         </h2>
-        <Carousal data={data2} testimonial />
-        <div className="grid grid-cols-2 grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 gap-6 lg:w-full md:gap-8 md:w-full text-center lg:flex-row mx-auto py-14 ">
+        <Carousal data={data2} testimonial carousalID="testimonial" />
+        <div className="grid grid-cols-2 grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 gap-6 lg:w-full md:gap-8 md:w-2/3 text-center lg:flex-row mx-auto py-14 ">
           {numberDetails?.map((e, i) => (
             <div
               key={i}
@@ -45,9 +44,7 @@ const TestimonialSection = ({ data, data2 }) => {
         <div className="flex items-center justify-center ">
           <Link href={"/Courses"}>
             <a>
-              <button className="btn btn--primary  md:w-full lg:w-80 ">
-                EXPLORE COURSES
-              </button>
+              <button className="btn btn--primary">EXPLORE COURSES</button>
             </a>
           </Link>
         </div>

@@ -1,12 +1,10 @@
 import React, { memo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import TscSvg from "/public/icons/tsc.svg";
 const Navbar = ({ path }) => {
   const router = useRouter();
   const current_route = router.pathname;
-  console.log("====================================");
-  console.log(current_route);
-  console.log("====================================");
   const navLinks =
     path === "development"
       ? [
@@ -78,8 +76,12 @@ const Navbar = ({ path }) => {
       >
         <div className="navbar-container container mx-auto flex justify-between  py-7 px-5 max-w-7xl">
           <a href="/">
-            <h2 className="m-0">The Special Character</h2>
+            <h2 className="m-0 flex items-center gap-2">
+              {" "}
+              <TscSvg className="w-16" /> The Special Character
+            </h2>
           </a>
+
           <nav className={`nav lg:flex lg:justify-between lg:items-center`}>
             <ul
               className={`nav-link-mobile nav-link gap-10 pt-24 lg:pt-0 md:pt-0 m-0 p-0 lg:inline-flex ${

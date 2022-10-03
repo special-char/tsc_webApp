@@ -5,10 +5,7 @@ import axiosInstance from "lib/axiosInstance";
 import React, { useEffect, useState } from "react";
 import data from "../../data/data.json";
 
-console.log("data:", data);
-
 const About = () => {
-  console.log("about static data:", data);
   return <AboutPage data={data} />;
 };
 About.getLayout = function getLayout(page) {

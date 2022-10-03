@@ -1,6 +1,9 @@
 import Layout from "@components/Layouts";
-import DevelopmentPage from "@components/PageSections/devlopmentPage";
 import React from "react";
+import DevelopmentPage from "@components/PageSections/devlopmentPage";
+// const DevelopmentPage = React.lazy(() =>
+//   import("@components/PageSections/devlopmentPage")
+// );
 
 const Development = () => {
   return <DevelopmentPage />;
