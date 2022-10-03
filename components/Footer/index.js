@@ -92,14 +92,14 @@ const Footer = () => {
           </div>
         </div>
         <div className=" flex lg:flex-row-reverse justify-between ">
-          {/* <div className=" pl-20 pt-3 pb-4 flex gap-3 lg:pb-0">
+          {/* <div className=" pl-18 pt-3 pb-4 flex gap-3 lg:pb-0">
             <FacebookSvg className=" w-9 rounded-full" />
             <TwitterSvg className="w-9 rounded-full" />
             <InstagramSvg className="w-9 rounded-full" />
             <LinkedInSvg className="w-9 rounded-full" />
             <YoutubeSvg className="w-9 rounded-full" />
             <WhatsAppSvg className="w-9 rounded-full" />
-          </div> */}
+          </div>  */}
           <div className="pl-20 flex items-center justify-start">
             <div className="text-lg text-secondary1">Copyright © TSC</div>
           </div>
