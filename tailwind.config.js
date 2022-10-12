@@ -94,9 +94,9 @@ module.exports = {
       },
       animation: ["motion-safe"],
     },
-    plugins: [
-      require("@tailwindcss/typography"),
-      require("@tailwindcss/line-clamp"),
-    ],
   },
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
+  ],
 };
