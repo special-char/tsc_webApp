@@ -81,6 +81,7 @@ module.exports = {
             opacity: "1",
             transform: "translateY(0px)",
           },
+        },
         slideUp: {
           "0%": { transform: "translateY(100vh)" },
           "100%": { transform: "translateY(0%)" },
@@ -90,11 +91,11 @@ module.exports = {
           "100%": { transform: "translateY(-100vh)" },
         },
       },
+      animation: ["motion-safe"],
     },
-    animation: ["motion-safe"],
+    plugins: [
+      require("@tailwindcss/typography"),
+      require("@tailwindcss/line-clamp"),
+    ],
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/line-clamp"),
-  ],
 };
