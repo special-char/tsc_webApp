@@ -1,12 +1,8 @@
 import React from "react";
 import MailSvg from "@public/icons/mail.svg";
 import Link from "next/link";
-import FacebookSvg from "@public/icons/facebook.svg";
-import TwitterSvg from "@public/icons/twitter.svg";
-import InstagramSvg from "@public/icons/instagram.svg";
-import LinkedInSvg from "@public/icons/linkedin.svg";
-import WhatsAppSvg from "@public/icons/whatsapp.svg";
-import YoutubeSvg from "@public/icons/youtube.svg";
+import { LocaleContext } from "context/locale.context";
+import { data } from "autoprefixer";
 
 const UtilityLink = [
   {
@@ -25,9 +21,14 @@ const UtilityLink = [
 
 const Footer = () => {
   return (
-    <footer className="wrapper bg-neutral-700 overflow-hidden relative md:pt-20">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="flex flex-col border-b-2 pt-10 md:justify-between md:w-full lg:w-full border-b-slate-400 md:flex-row">
+    <footer className="wrapper bg-neutral-700 p-4 md:pt-20">
+      <LocaleContext.Consumer>
+        {(data) => {
+          return <h2 className="text-secondary3">{data.locale}</h2>
+        }}
+      </LocaleContext.Consumer>
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col border-b-2 md:justify-between md:w-4/5 md:mx-auto border-b-slate-400 md:flex-row">
           <h1 className="text-neutral-100">TSC</h1>
           <p className="text-neutral-100 md:max-w-[468px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
