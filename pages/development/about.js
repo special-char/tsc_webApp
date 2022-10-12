@@ -12,24 +12,24 @@ About.getLayout = function getLayout(page) {
   return <Layout path="development">{page}</Layout>;
 };
 
-// export async function getServerSideProps() {
-//   try {
-//     const res = await axiosInstance.post("graphql", {
-//       query: AboutQuery,
-//       variables: {},
-//     });
-//     return {
-//       props: {
-//         data: res.data.data,
-//       },
-//     };
-//   } catch (error) {
-//     return {
-//       props: {
-//         data: error,
-//       },
-//     };
-//   }
-// }
+export async function getServerSideProps() {
+  try {
+    const res = await axiosInstance.post("graphql", {
+      query: developmentAboutQuery,
+      variables: {},
+    });
+    return {
+      props: {
+        data: res.data.data,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        data: error,
+      },
+    };
+  }
+}
 
 export default About;

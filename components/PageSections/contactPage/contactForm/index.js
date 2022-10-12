@@ -1,5 +1,5 @@
 import { Field, Form, Formik } from "formik";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import Link from "next/link";
 import React from "react";
 
@@ -16,9 +16,11 @@ const ContactSchema = Yup.object({
 });
 
 const ContactForm = ({ data, path }) => {
-  return <div>
-    <h1>Contact Form</h1>
-  </div>
+  return (
+    <div>
+      <h1>Contact Form</h1>
+    </div>
+  );
 
   // return (
   //   <>

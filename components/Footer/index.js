@@ -24,7 +24,7 @@ const Footer = () => {
     <footer className="wrapper bg-neutral-700 p-4 md:pt-20">
       <LocaleContext.Consumer>
         {(data) => {
-          return <h2 className="text-secondary3">{data.locale}</h2>
+          return <h2 className="text-secondary3">{data.locale}</h2>;
         }}
       </LocaleContext.Consumer>
       <div className="max-w-7xl mx-auto">

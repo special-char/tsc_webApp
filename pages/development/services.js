@@ -55,5 +55,26 @@ const Services = () => {
 Services.getLayout = function getLayout(page) {
   return <Layout path="development">{page}</Layout>;
 };
+
+export async function getServerSideProps() {
+  try {
+    const res = await axiosInstance.post("graphql", {
+      query: ServicesQuery,
+      variables: {},
+    });
+    return {
+      props: {
+        data: res.data.data,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        data: error,
+      },
+    };
+  }
+}
+
 Services.displayName = "Services";
 export default Services;
