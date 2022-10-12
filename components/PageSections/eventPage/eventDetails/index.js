@@ -4,6 +4,7 @@ import TSCImage from "@components/TSCImage";
 import Link from "next/link";
 
 const EventDetails = () => {
+  
   return (
     <section className="w-full bg-neutral-200 ">
       <div className="max-w-7xl mx-auto gap-8 flex flex-col px-4 md:px-6">

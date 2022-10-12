@@ -3,7 +3,7 @@ import React from "react";
 const IndividualEventBanner = () => {
   return (
     <section className="h-auto w-full ">
-      <div>
+      <div className="">
         <div className="relative overflow-hidden bg-neutral-200">
           <div className="py-20 px-8 max-w-7xl mx-auto ">
             <div className="text-center flex items-center justify-center  md:w-4/5  mx-auto">

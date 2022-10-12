@@ -1,3 +1,4 @@
+import Loader from "../loader";
 import HeaderSection from "./headerSection";
 import OurProjectsSection from "./ourProjects";
 import OurServices from "./ourServices";
@@ -10,6 +11,7 @@ const DevelopmentPage = () => {
       <OurServices />
       <OurProjectsSection />
       <TestimonialSection />
+      <Loader />
     </>
   );
 };

@@ -5,8 +5,8 @@ import ContactForm from "./contactForm";
 const ContactPage = ({ data, path }) => {
   return (
     <>
-      <ContactForm data={data.contactPage} path={path} />
-      <AskQuesList data={data.contactPage} />
+      <ContactForm />
+      {/* <AskQuesList data={data.contactPage} /> */}
     </>
   );
 };
