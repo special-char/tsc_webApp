@@ -1,6 +1,8 @@
 import React from "react";
 import MailSvg from "@public/icons/mail.svg";
 import Link from "next/link";
+import { LocaleContext } from "context/locale.context";
+import { data } from "autoprefixer";
 
 const UtilityLink = [
   {
@@ -17,6 +19,11 @@ const UtilityLink = [
 const Footer = () => {
   return (
     <footer className="wrapper bg-neutral-700 p-4 md:pt-20">
+      <LocaleContext.Consumer>
+        {(data) => {
+          return <h2 className="text-secondary3">{data.locale}</h2>
+        }}
+      </LocaleContext.Consumer>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col border-b-2 md:justify-between md:w-4/5 md:mx-auto border-b-slate-400 md:flex-row">
           <h1 className="text-neutral-100">TSC</h1>
