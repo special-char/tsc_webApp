@@ -5,9 +5,6 @@ import TscSvg from "/public/icons/tsc.svg";
 const Navbar = ({ path }) => {
   const router = useRouter();
   const current_route = router.pathname;
-  console.log("====================================");
-  console.log(current_route);
-  console.log("====================================");
   const navLinks =
     path === "development"
       ? [
@@ -77,10 +74,9 @@ const Navbar = ({ path }) => {
         className="navbar-wrapper shadow-dark overflow-hidden"
         id="navbar"
       >
-        <div className="navbar-container container mx-auto flex justify-between  py-7 px-5 max-w-7xl">
+        <div className="navbar-container container mx-auto flex justify-between p-5 max-w-7xl">
           <a href="/">
             <h2 className="m-0 flex items-center gap-2">
-              {" "}
               <TscSvg className="w-16" /> The Special Character
             </h2>
           </a>

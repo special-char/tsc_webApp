@@ -1,4 +1,6 @@
-import Loader from "../loader";
+import Layout from "@components/Layouts";
+import Loader from "@components/loader";
+import { useEffect, useState } from "react";
 import HeaderSection from "./headerSection";
 import OurProjectsSection from "./ourProjects";
 import OurServices from "./ourServices";

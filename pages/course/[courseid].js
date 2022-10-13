@@ -6,8 +6,7 @@ import CoursesQuery from "@queries/coursesQuery";
 const CourseId = ({ data }) => {
   const router = useRouter();
   const { courseid } = router.query;
-  // we have to put courses data here
-  // console.log("indiividual courses data:", data);
+
   return (
     <>
       {data.courses

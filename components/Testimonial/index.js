@@ -2,7 +2,6 @@ import React from "react";
 import TSCImage from "@components/TSCImage";
 
 const Testimonial = ({ data }) => {
-  //console.log("Testimonial data:", data);
   return (
     <>
       <div className="relative flex flex-col md:flex-row items-center w-full py-11 md:py-12 md:px-14 md:p-12 gap-4 rounded-3xl drop-shadow-sm border-spacing-2 bg-neutral-100">

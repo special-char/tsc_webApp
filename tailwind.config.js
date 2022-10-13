@@ -61,6 +61,8 @@ module.exports = {
       animation: {
         "bounce-slow": "bounce 10s linear infinite",
         fadeIn: "fadeIn 1s ease-in forwards",
+        slideUp: "slideUp 1s linear",
+        slideDown: "slideDown linear",
       },
       keyframes: {
         fadeIn: {
@@ -71,9 +73,27 @@ module.exports = {
           "0%": { transform: "translateX(-50%)" },
           "100%": { transform: "translateX(0%)" },
         },
+        fadeInDown: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-50px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0px)",
+          },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(100vh)" },
+          "100%": { transform: "translateY(0%)" },
+        },
+        slideDown: {
+          "0%": { transform: "translateY(0%)" },
+          "100%": { transform: "translateY(-100vh)" },
+        },
       },
+      animation: ["motion-safe"],
     },
-    animation: ["motion-safe"],
   },
   plugins: [
     require("@tailwindcss/typography"),

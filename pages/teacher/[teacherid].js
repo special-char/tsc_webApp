@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 const TeacherId = ({ data }) => {
   const router = useRouter();
   const { teacherid } = router.query;
-  console.log("all teachers data:", data);
+
   return (
     <>
       {data.aboutTeacher?.teachers

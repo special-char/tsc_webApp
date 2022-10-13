@@ -28,8 +28,6 @@ const ChipData = [
 ];
 
 const IndividualCourse = ({ data }) => {
-  console.log("IndividualCourse data:", data);
-  // console.log("courseMinimalDetails data : ", data.courseMinimalDetails);
   return (
     <section className="h-auto w-full overflow-clip">
       <div className="relative h-full w-full ">
@@ -95,7 +93,6 @@ const IndividualCourse = ({ data }) => {
                 <h2>What will you learn</h2>
                 <p>{data.result?.description}</p>
                 {data.curriculum.map((val) => {
-                  // console.log("carriculum:", val);
                   return (
                     <ol className="pl-0" key={val.id}>
                       <li>
