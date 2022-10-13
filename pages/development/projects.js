@@ -2,6 +2,7 @@ import Layout from "@components/Layouts";
 import Header from "@components/PageSections/devlopmentPage/header";
 import React, { useEffect, useState } from "react";
 import ProjectsPage from "@components/PageSections/devlopmentPage/projectsPage";
+import ProjectsPageSkeleton from "@components/PageSections/devlopmentPage/projectsPage/projectsPageSkeleton";
 
 const AllProjects = () => {
   const [scroll, setScroll] = useState(false);
@@ -419,17 +420,18 @@ const AllProjects = () => {
       <div className="mt-32">
         {allprojects.map((project, index) => {
           return (
-            <ProjectsPage data={project} index={index} key={index}>
-              <ol className="list-decimal">
-                {project?.list?.map((item, i) => {
-                  return (
-                    <li key={i} className="m-0">
-                      {item}
-                    </li>
-                  );
-                })}
-              </ol>
-            </ProjectsPage>
+            // <ProjectsPage data={project} index={index} key={index}>
+            //   <ol className="list-decimal">
+            //     {project?.list?.map((item, i) => {
+            //       return (
+            //         <li key={i} className="m-0">
+            //           {item}
+            //         </li>
+            //       );
+            //     })}
+            //   </ol>
+            // </ProjectsPage>
+            <ProjectsPageSkeleton />
           );
         })}
       </div>

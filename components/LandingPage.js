@@ -203,7 +203,7 @@ const LandingPage = ({ homeData }) => {
         }`}
       >
         {isHeaderVisible && (
-          <Layout>
+          <Layout path={"development"}>
             <Development />
           </Layout>
         )}
