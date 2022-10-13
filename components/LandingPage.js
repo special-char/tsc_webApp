@@ -203,46 +203,46 @@ const LandingPage = ({ homeData }) => {
         }`}
       >
         {isHeaderVisible && (
-          <Layout>
+          <Layout path={"development"}>
             <Development />
           </Layout>
         )}
       </section>
-      <section
-        className={`custom-transition ${animate && "animate-slideUp"} ${
-          trainingPage ? "h-full flex flex-col" : "h-0 hidden"
-        } `}
-      >
-        {isHeaderVisible && (
-          <Layout>
-            <HomePage data={homeData} />
-          </Layout>
-        )}
-      </section>
+      {/* <section
+          className={`custom-transition ${animate && "animate-slideUp"} ${
+            trainingPage ? "h-full flex flex-col" : "h-0 hidden"
+          } `}
+        >
+          {isHeaderVisible && (
+            <Layout>
+              <HomePage data={homeData} />
+            </Layout>
+          )}
+        </section> */}
     </>
   );
 };
 
-export async function getServerSideProps() {
-  try {
-    const res = await axiosInstance.post("graphql", {
-      query: HomeQuery,
-      variables: {},
-    });
+// export async function getServerSideProps() {
+//   try {
+//     const res = await axiosInstance.post("graphql", {
+//       query: HomeQuery,
+//       variables: {},
+//     });
 
-    return {
-      props: {
-        homeData: res?.data?.data,
-      },
-    };
-  } catch (error) {
-    console.log(error);
-    return {
-      props: {
-        homeData: error,
-      },
-    };
-  }
-}
+//     return {
+//       props: {
+//         homeData: res?.data?.data,
+//       },
+//     };
+//   } catch (error) {
+//     console.log(error);
+//     return {
+//       props: {
+//         homeData: error,
+//       },
+//     };
+//   }
+// }
 
 export default LandingPage;
