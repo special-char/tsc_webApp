@@ -1,6 +1,7 @@
 import Layout from "@components/Layouts";
 import { useEffect, useState } from "react";
 import HeaderSection from "./headerSection";
+import Headerskeleton from "./headerSection/headerskeleton";
 import OurProjectsSection from "./ourProjects";
 import OurServices from "./ourServices";
 import TestimonialSection from "./TestimonialSection";
@@ -9,6 +10,7 @@ const DevelopmentPage = () => {
   return (
     <>
       <HeaderSection />
+      <Headerskeleton />
       <OurServices />
       <OurProjectsSection />
       <TestimonialSection />
