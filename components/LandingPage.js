@@ -223,26 +223,26 @@ const LandingPage = ({ data, homeData }) => {
   );
 };
 
-export async function getServerSideProps() {
-  try {
-    const res = await axiosInstance.post("graphql", {
-      query: HomeQuery,
-      variables: {},
-    });
+// export async function getServerSideProps() {
+//   try {
+//     const res = await axiosInstance.post("graphql", {
+//       query: HomeQuery,
+//       variables: {},
+//     });
 
-    return {
-      props: {
-        homeData: res?.data?.data,
-      },
-    };
-  } catch (error) {
-    console.log(error);
-    return {
-      props: {
-        homeData: error,
-      },
-    };
-  }
-}
+//     return {
+//       props: {
+//         homeData: res?.data?.data,
+//       },
+//     };
+//   } catch (error) {
+//     console.log(error);
+//     return {
+//       props: {
+//         homeData: error,
+//       },
+//     };
+//   }
+// }
 
 export default LandingPage;
