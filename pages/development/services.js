@@ -1,5 +1,6 @@
 import Layout from "@components/Layouts";
 import AllServicesPage from "@components/PageSections/devlopmentPage/allServicesPage";
+import ServicesPageSkeleton from "@components/PageSections/devlopmentPage/allServicesPage/servicesPageSkeleton";
 import Header from "@components/PageSections/devlopmentPage/header";
 
 import React from "react";
@@ -42,10 +43,11 @@ const Services = () => {
       <Header data={bannerData} />
       {services.map((service, index) => {
         return (
-          <AllServicesPage service={service} index={index}>
-            <h4>{service.title}</h4>
-            <p>{service.description}</p>
-          </AllServicesPage>
+          // <AllServicesPage service={service} index={index}>
+          //   <h4>{service.title}</h4>
+          //   <p>{service.description}</p>
+          // </AllServicesPage>
+          <ServicesPageSkeleton index={index} />
         );
       })}
     </>
