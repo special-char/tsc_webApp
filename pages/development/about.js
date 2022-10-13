@@ -1,6 +1,7 @@
 import Layout from "@components/Layouts";
 import AboutPage from "@components/pageSections/aboutPage";
 import AboutQuery from "@queries/aboutQuery";
+import developmentAboutQuery from "@queries/developmentAboutQuery";
 import axiosInstance from "lib/axiosInstance";
 import React, { useEffect, useState } from "react";
 import data from "../../data/data.json";
@@ -18,9 +19,11 @@ export async function getServerSideProps() {
       query: developmentAboutQuery,
       variables: {},
     });
+    const dot = res.json();
+
     return {
       props: {
-        data: res.data.data,
+        data: dot.data.data,
       },
     };
   } catch (error) {
