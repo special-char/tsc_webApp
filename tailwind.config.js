@@ -62,6 +62,7 @@ module.exports = {
         fadeIn: "fadeIn 1s ease-in forwards",
         slideUp: "slideUp 1s linear",
         slideDown: "slideDown linear",
+        pulse: "2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       keyframes: {
         fadeIn: {
@@ -79,6 +80,11 @@ module.exports = {
         slideDown: {
           "0%": { transform: "translateY(0%)" },
           "100%": { transform: "translateY(-100vh)" },
+        },
+        pulse: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 1 },
+          "50%": { opacity: 0.5 },
         },
       },
     },
