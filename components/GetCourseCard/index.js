@@ -36,12 +36,7 @@ const GetCourseCard = ({ data, price, enroll }) => {
           Lorem ipsum dolor sit amet, dolor consectetur adipiscing elit purus
           vivera.
         </p>
-        <Formik
-          initialValues={{ selectcourse: " " }}
-          onSubmit={(values) => {
-            console.log(values);
-          }}
-        >
+        <Formik initialValues={{ selectcourse: " " }} onSubmit={(values) => {}}>
           <Form className="flex flex-col gap-3">
             <Field
               name="selectcourse"

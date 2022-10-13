@@ -1,6 +1,6 @@
 import React from "react";
 import Design from "@public/icons/design.svg";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import CourseReview from "./courseReview";
 import Testimonial from "@components/testimonial";
 import PlayVideo from "@public/icons/playVideo.svg";
@@ -28,8 +28,6 @@ const ChipData = [
 ];
 
 const IndividualCourse = ({ data }) => {
-  console.log("IndividualCourse data:", data);
-  // console.log("courseMinimalDetails data : ", data.courseMinimalDetails);
   return (
     <section className="h-auto w-full overflow-clip">
       <div className="relative h-full w-full ">
@@ -48,7 +46,7 @@ const IndividualCourse = ({ data }) => {
             <h1 className="text-neutral-100 mb-0">{data?.title}</h1>
             <p className="text-secondary1">{data?.titleDescription}</p>
             <div className="course-preview mb-10 relative w-full min-h-[162px] sm:min-h-[333px] md:min-h-[400px]">
-              <Image
+              <TSCImage
                 className="rounded-3xl brightness-50"
                 objectFit="cover"
                 layout="fill"
@@ -95,7 +93,6 @@ const IndividualCourse = ({ data }) => {
                 <h2>What will you learn</h2>
                 <p>{data.result?.description}</p>
                 {data.curriculum.map((val) => {
-                  // console.log("carriculum:", val);
                   return (
                     <ol className="pl-0" key={val.id}>
                       <li>
@@ -115,7 +112,7 @@ const IndividualCourse = ({ data }) => {
                 <p>{data.result?.description}</p>
 
                 <div className="course-preview relative w-full min-h-[162px] md:min-h-[400px]">
-                  <Image
+                  <TSCImage
                     className="rounded-3xl"
                     objectFit="cover"
                     layout="fill"

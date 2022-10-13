@@ -1,5 +1,5 @@
 import { Field, Form, Formik, ErrorMessage } from "formik";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import TrashIcon from "@public/images/filled-trash.png";
 import React from "react";
 
@@ -43,7 +43,7 @@ const CareerForm = () => {
   return (
     <>
       <section className="w-full h-auto relative overflow-hidden">
-        <div className="wrapper max-w-7xl mx-auto px-4 py-24">
+        <div className="wrapper max-w-7xl mx-auto px-8 py-24">
           <div className="flex flex-col text-center max-w-lg mx-auto">
             <h1 className="capitalize">Career</h1>
             <p>
@@ -62,9 +62,7 @@ const CareerForm = () => {
                   selectdesignation: "",
                   message: "",
                 }}
-                onSubmit={(values) => {
-                  console.log("values:", values);
-                }}
+                onSubmit={(values) => {}}
               >
                 {({ errors, touched }) => (
                   <Form className="flex flex-col gap-3">
@@ -150,7 +148,7 @@ const CareerForm = () => {
                           />
                         </label>
                         <div className="items-center">
-                          <Image src={TrashIcon} height="28" width="28" />
+                          <TSCImage src={TrashIcon} height="28" width="28" />
                         </div>
                       </div>
                     </div>

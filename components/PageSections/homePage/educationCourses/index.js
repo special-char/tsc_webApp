@@ -2,11 +2,10 @@ import Link from "next/link";
 import React from "react";
 
 const EducationCourses = ({ data }) => {
-  // console.log("success data", data);
   return (
     <>
       <section className="wrapper relative w-full h-full bg-primary overflow-hidden">
-        <div className="container mx-auto max-w-7xl px-4 py-20 ">
+        <div className="container mx-auto max-w-7xl px-8 py-20 ">
           <div className="content md:w-[90%] max-w-7xl lg:w-full mx-auto flex flex-col flex-wrap xs:flex-row md:flex-col lg:flex-row  gap-6">
             <div className="left-text-content flex flex-col flex-wrap flex-1 items-start justify-center max-w-2xl md:w-4/5 md:mb-14 mx-auto">
               <h2 className="text-neutral-100 text-center sm:text-left md:text-center lg:text-left">
@@ -36,10 +35,10 @@ const EducationCourses = ({ data }) => {
                   <p className="mb-0">Completition rate on all courses</p>
                 </div> */}
               </div>
-              <div className="flex-start w-full md:max-w-[220px] flex items-center justify-start ">
+              <div className="flex md:max-w-[220px] items-center justify-start">
                 {data.rightCards.map((val) => {
                   return (
-                    <div className="course-card" key={val.id}>
+                    <div className="course-card px-[50px] md:px-0" key={val.id}>
                       <h1 className="mb-0">{val.title}</h1>
                       <p className="mb-0">{val.description}</p>
                     </div>

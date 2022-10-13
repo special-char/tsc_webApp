@@ -42,7 +42,7 @@ const AskQuesList = ({ data }) => {
 
   return (
     <>
-      <section className="bg-neutral-200 md:py-44 py-24 px-4 md:px-6">
+      <section className="bg-neutral-200 md:py-44 py-24 px-8 md:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center justify-center flex flex-col w-80 mb-10 md:w-[587px] mx-auto lg:px-6 md:mb-14 ">
             <h2 className="text-3xl md:text-6xl">{data.faqsHeading?.title}</h2>

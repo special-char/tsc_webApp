@@ -5,8 +5,8 @@ const Header = ({ data }) => {
   return (
     <>
       <section className="w-full h-auto bg-neutral-200 relative overflow-hidden py-32 z-10">
-        <div className="container max-w-7xl mx-auto">
-          <div className="text-center px-7 md:px-28 lg:px-28">
+        <div className="container max-w-7xl mx-auto px-8">
+          <div className="text-center  md:px-28 lg:px-0">
             <h1>{data.heading?.title}</h1>
             <p className="lg:mx-16">{data.heading?.description}</p>
           </div>

@@ -1,16 +1,15 @@
 import React from "react";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import Link from "next/link";
 const Teachers = ({ data }) => {
-  console.log("Teachers data", data);
   return (
     <>
-      <div className="card">
+      <div className="card drop-shadow-md">
         <figure className="relative h-80">
-          <Image
+          <TSCImage
             layout="fill"
             objectFit="cover"
-            src={data?.image?.url}
+            src={data.image?.url}
             alt=""
           />
         </figure>

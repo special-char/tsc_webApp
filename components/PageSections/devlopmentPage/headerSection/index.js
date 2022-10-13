@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import { useRef } from "react";
 
 const DevelopmentHeader = ({ data }) => {
@@ -13,7 +13,7 @@ const DevelopmentHeader = ({ data }) => {
   return (
     <>
       <section className="main flex items-center h-[30vh] sm:h-screen relative overflow-hidden py-16">
-        <div className="container flex flex-wrap items-center justify-center gap-16 max-w-7xl mx-auto px-4">
+        <div className="container flex flex-wrap items-center justify-center gap-16 max-w-7xl mx-auto px-8">
           <div className="aspect-h-9 w-11/12 ">
             <video
               className="rounded-xl"

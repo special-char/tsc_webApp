@@ -1,13 +1,12 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import TSCImage from "@components/TSCImage";
 
 const Card = ({ ...obj }) => {
   return (
     <>
-      <div className="card">
+      <div className="card max-w-screen-xs sm:max-w-xl">
         <figure className="relative md:h-80">
-          <Image
+          <TSCImage
             layout="fill"
             objectFit="cover"
             src={obj.courseImage?.url}

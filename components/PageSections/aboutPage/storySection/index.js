@@ -1,11 +1,11 @@
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import React from "react";
 import cn from "classnames";
 
 const StorySection = ({ data }) => {
   return (
     <section className="wrapper relative py-32">
-      <div className="container max-w-7xl relative w-full mx-auto px-3 flex flex-wrap gap-8">
+      <div className="container max-w-7xl relative w-full mx-auto px-8 flex flex-wrap gap-8">
         {data.mission.map((val, index) => {
           return (
             <div
@@ -17,15 +17,15 @@ const StorySection = ({ data }) => {
                 }
               )}
             >
-              <div className="md:flex-[1.1] relative aspect-square hover:scale-90 duration-1000">
-                <Image
+              <div className="md:flex-[1.1] relative aspect-square">
+                <TSCImage
                   objectFit="fill"
                   className="rounded-2xl"
                   layout="fill"
                   src={val.image?.url}
                 />
               </div>
-              <div className="md:flex-1 mt-8">
+              <div className="slide-in from-right md:flex-1 mt-8">
                 <h2>{val.title}</h2>
                 <p>{val.description}</p>
               </div>

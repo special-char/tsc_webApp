@@ -1,13 +1,19 @@
+import Layout from "@components/Layouts";
+import { useEffect, useState } from "react";
 import HeaderSection from "./headerSection";
 import OurProjectsSection from "./ourProjects";
+import SkeletonOurProjects from "./ourProjects/skeletonOurProjects";
 import OurServices from "./ourServices";
+import TestimonialSection from "./TestimonialSection";
 
 const DevelopmentPage = () => {
   return (
     <>
       <HeaderSection />
       <OurServices />
+      <SkeletonOurProjects />
       <OurProjectsSection />
+      <TestimonialSection />
     </>
   );
 };

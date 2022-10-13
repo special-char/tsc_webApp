@@ -22,15 +22,25 @@ const TeachersSection = ({ data }) => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 text-left justify-center gap-9 md:p-8 w-full px-4">
-            {data.teachers.map((obj) => {
-              return (
-                <Link href={`teacher/${obj.id}`} key={obj.id}>
-                  <a>
-                    <Teachers data={obj} />
-                  </a>
-                </Link>
-              );
-            })}
+            {data.teachers
+              ? data?.teachers.map((obj) => {
+                  return (
+                    <Link href={`teacher/${obj.id}`} key={obj.id}>
+                      <a>
+                        <Teachers data={obj} />
+                      </a>
+                    </Link>
+                  );
+                })
+              : data.developers.map((obj) => {
+                  return (
+                    <Link href={`teacher/${obj.id}`} key={obj.id}>
+                      <a>
+                        <Teachers data={obj} />
+                      </a>
+                    </Link>
+                  );
+                })}
           </div>
         </div>
       </section>

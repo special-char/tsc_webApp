@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import TSCImage from "@components/TSCImage";
 import Svg from "@public/icons/newblog.svg";
 const IndividualBlog = () => {
   return (
@@ -10,7 +10,7 @@ const IndividualBlog = () => {
       </div>
       <div className="px-4 md:px-8 lg:px-12">
         <div className="w-[90%] h-1/3 md:h-[80%] lg:h-full absolute top-20 lg:top-32">
-          <Image
+          <TSCImage
             src={
               "https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f23fe55a94aa127fb47b2_image-6-blog-education-x-template-p-1600.jpeg"
             }
