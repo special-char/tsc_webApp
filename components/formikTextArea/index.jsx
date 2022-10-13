@@ -9,7 +9,7 @@ const TextArea = ({
   ...props
 }) => {
   return (
-    <div className="last:col-span-2">
+    <div className="md:last:col-span-2">
       <label htmlFor={id}>{label}</label>
       <textarea
         id={id}
@@ -27,3 +27,5 @@ const TextArea = ({
 };
 
 export default TextArea;
+
+// last:col-span-2

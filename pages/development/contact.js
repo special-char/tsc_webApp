@@ -51,7 +51,7 @@ const Contact = ({ data }) => {
     <section className="relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-3 md:py-20 ">
         {/* <ContactPage data={data} path="development" /> */}
-        <div className="max-w-lg ">
+        <div className="max-w-lg">
           <h1 className="capitalize">get in touch!</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id qui iste
@@ -59,7 +59,7 @@ const Contact = ({ data }) => {
           </p>
         </div>
         <div className="flex flex-col lg:flex-row  mx-auto gap-3">
-          <div className="flex flex-col shadow-dark px-3 py-4 md:py-10 md:px-6 bg-neutral-100 rounded-2xl">
+          <div className="flex flex-col w-full lg:w-[60%] shadow-dark px-3 py-4 md:py-10 md:px-6 bg-neutral-100 rounded-2xl">
             <Formik
               initialValues={{
                 name: "",
@@ -106,7 +106,7 @@ const Contact = ({ data }) => {
               }) => {
                 return (
                   <form onSubmit={handleSubmit}>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 last:col-span-2">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4">
                       {fields.map((x) => (
                         <FastField {...x} />
                       ))}
@@ -126,7 +126,7 @@ const Contact = ({ data }) => {
               }}
             </Formik>
           </div>
-          <div className="flex-1 rounded-2xl flex flex-col gap-3 justify-between">
+          <div className="w-full lg:w-[40%] rounded-2xl flex flex-col gap-3 justify-between">
             {Data.map((val) => (
               <div className="rounded-3xl w-full mx-auto shadow-base hover:shadow-dark h-auto bg-neutral-100 py-10 px-5 flex flex-col gap-2 items-center justify-around  hover:-translate-y-3 duration-200">
                 <div className="rounded-full relative w-10 h-10">
@@ -185,3 +185,5 @@ Contact.getLayout = function getLayout(page) {
 // }
 
 export default Contact;
+
+// grid grid-cols-2 md:grid-cols-2 gap-x-10

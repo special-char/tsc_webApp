@@ -1,5 +1,5 @@
 import React from "react";
-import cn from 'classnames'
+import cn from "classnames";
 
 const Input = ({ field, form: { touched, errors }, id, label, ...props }) => {
   return (
@@ -9,7 +9,7 @@ const Input = ({ field, form: { touched, errors }, id, label, ...props }) => {
         type="text"
         id={id}
         className={cn(
-          "bg-neutral-200 w-full focus:outline-neutral-500 rounded-full py-4 px-7",
+          "bg-neutral-200 w-full focus:outline-neutral-500 rounded-full  py-4 px-7",
           {
             "border-2 border-error focus:outline-error":
               !!touched[field.name] && !!errors[field.name],
