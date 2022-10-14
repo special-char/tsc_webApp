@@ -5,6 +5,7 @@ import HeaderSection from "./headerSection";
 import OurProjectsSection from "./ourProjects";
 import OurServices from "./ourServices";
 import TestimonialSection from "./TestimonialSection";
+import Testimonialskeletan from "./TestimonialSection/testimonialskeletan";
 
 const DevelopmentPage = () => {
   return (
@@ -13,6 +14,7 @@ const DevelopmentPage = () => {
       <OurServices />
       <OurProjectsSection />
       <TestimonialSection />
+      <Testimonialskeletan />
       <Loader />
     </>
   );
