@@ -1,14 +1,16 @@
 import React from "react";
-import EmployeeAchievementSection from "./EmployeeAchievementSction";
+import EmployeeAchievementSection from "./EmployeeAchievementSection";
 import EmployeeCertificateSection from "./EmployeeCertificateSection";
 import EmployeeHeaderSection from "./EmployeeHeaderSection";
+import EmployeeProjectsSection from "./EmployeeProjectsSection";
 
 const EmployeeDetails = () => {
   return (
     <>
-      {/* <EmployeeHeaderSection /> */}
+      <EmployeeHeaderSection />
       <EmployeeCertificateSection />
       <EmployeeAchievementSection />
+      <EmployeeProjectsSection />
     </>
   );
 };

@@ -2,12 +2,10 @@ import React from "react";
 
 const EmployeeAchievementSection = () => {
   return (
-    <section className="py-24 bg-neutral-300/25">
+    <section className="py-24">
       <div id="container" className="max-w-7xl mx-auto px-8">
         <div className="flex flex-col md:flex-row lg:flex-row">
-          <div className="flex-1 px-4">
-            <h2>Achievements</h2>
-          </div>
+          <h2 className="lg:flex-[0.8] flex-1 px-4">Achievements</h2>
           <div className="px-4 flex-[2]">
             <ul
               id="list "

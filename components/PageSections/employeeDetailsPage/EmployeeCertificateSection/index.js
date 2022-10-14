@@ -5,9 +5,7 @@ const EmployeeCertificateSection = () => {
     <section className="py-24">
       <div id="container" className="max-w-7xl mx-auto px-8">
         <div className="flex flex-col md:flex-row lg:flex-row">
-          <div className="flex-1 px-4">
-            <h2>Certificates</h2>
-          </div>
+          <h2 className="lg:flex-[0.8] flex-1 px-4">Certificates</h2>
           <div className="px-4 flex-[2]">
             <ul
               id="list "
