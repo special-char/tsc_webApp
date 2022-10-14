@@ -9,7 +9,7 @@ const EmployeeCertificateSection = () => {
   ];
   return (
     <section className="py-24">
-      <div id="container" className="max-w-7xl mx-auto px-8">
+      <div id="container" className="max-w-7xl mx-auto px-2 md:px-8">
         <div className="flex flex-col md:flex-row lg:flex-row">
           <div className="lg:flex-[0.8] flex-1 px-4 flex flex-col">
             <h2 className="m-0">Certificates</h2>

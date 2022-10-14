@@ -38,9 +38,9 @@ const EmployeeProjectsSection = () => {
             return (
               <>
                 <div className="relative flex flex-wrap gap-8">
-                  <div className="flex-1 flex flex-col gap-6">
+                  <div className="flex-1 min-w-[250px] flex flex-col gap-6">
                     <div className="flex flex-col gap-2">
-                      <span className="text-xl md:text-2xl text-primary font-semibold">
+                      <span className="text-xl md:text-2xl text-neutral-700 font-semibold">
                         Project Name
                       </span>
                       <span className="text-neutral-700 font-medium">
@@ -48,7 +48,7 @@ const EmployeeProjectsSection = () => {
                       </span>
                     </div>
                     <div className="flex flex-col gap-2">
-                      <span className="text-xl md:text-2xl text-primary font-semibold">
+                      <span className="text-xl md:text-2xl text-neutral-700 font-semibold">
                         Role
                       </span>
                       <span className="text-neutral-700 font-medium">
@@ -56,7 +56,7 @@ const EmployeeProjectsSection = () => {
                       </span>
                     </div>
                     <div className="flex flex-col gap-2">
-                      <span className="text-xl md:text-2xl text-primary font-semibold">
+                      <span className="text-xl md:text-2xl text-neutral-700 font-semibold">
                         Category
                       </span>
                       <span className="text-neutral-700 font-medium">
@@ -64,13 +64,13 @@ const EmployeeProjectsSection = () => {
                       </span>
                     </div>
                     <div className="flex flex-col gap-4">
-                      <span className="text-xl md:text-2xl text-primary font-semibold">
+                      <span className="text-xl md:text-2xl text-neutral-700 font-semibold">
                         Technologies Used
                       </span>
                       <div className="flex gap-2 flex-wrap">
                         {projectDetail.technologies.map((technology) => {
                           return (
-                            <span className="bg-primary text-neutral-100 px-3 py-1 text-xs font-medium">
+                            <span className="bg-neutral-700 text-neutral-100 px-3 py-1 text-xs font-medium">
                               {technology}
                             </span>
                           );
