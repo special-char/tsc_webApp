@@ -11,6 +11,7 @@ module.exports = {
       secondary2: "#FCDF69",
       secondary3: "#F99D77",
       secondary4: "#7EB7FB",
+      error: "#ff9494",
       neutral: {
         100: "#FFFFFF",
         200: "#F9FAFB",
@@ -73,6 +74,16 @@ module.exports = {
           "0%": { transform: "translateX(-50%)" },
           "100%": { transform: "translateX(0%)" },
         },
+        fadeInDown: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-50px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0px)",
+          },
+        },
         slideUp: {
           "0%": { transform: "translateY(100vh)" },
           "100%": { transform: "translateY(0%)" },
@@ -87,9 +98,10 @@ module.exports = {
           "50%": { opacity: 0.5 },
         },
       },
+      animation: ["motion-safe"],
     },
-    animation: ["motion-safe"],
   },
+
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/line-clamp"),

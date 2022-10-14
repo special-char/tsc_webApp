@@ -10,7 +10,7 @@ import React from "react";
 const Contact = ({ data }) => {
   return (
     <>
-      <ContactPage data={data} />
+      {/* <ContactPage data={data} /> */}
     </>
   );
 };
@@ -18,24 +18,24 @@ Contact.getLayout = function getLayout(page) {
   return <Layout path="training">{page}</Layout>;
 };
 
-export async function getServerSideProps() {
-  try {
-    const res = await axiosInstance.post("graphql", {
-      query: ContactQuery,
-      variables: {},
-    });
-    return {
-      props: {
-        data: res.data.data,
-      },
-    };
-  } catch (error) {
-    return {
-      props: {
-        data: error,
-      },
-    };
-  }
-}
+// export async function getServerSideProps() {
+//   try {
+//     const res = await axiosInstance.post("graphql", {
+//       query: ContactQuery,
+//       variables: {},
+//     });
+//     return {
+//       props: {
+//         data: res.data.data,
+//       },
+//     };
+//   } catch (error) {
+//     return {
+//       props: {
+//         data: error,
+//       },
+//     };
+//   }
+// }
 
 export default Contact;
