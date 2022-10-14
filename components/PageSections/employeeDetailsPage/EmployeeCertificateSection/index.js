@@ -8,12 +8,12 @@ const EmployeeCertificateSection = () => {
     "Lorem ipsum dolor sit amet.",
   ];
   return (
-    <section className="py-24">
+    <section className="py-24 bg-neutral-200">
       <div id="container" className="max-w-7xl mx-auto px-2 md:px-8">
         <div className="flex flex-col md:flex-row lg:flex-row">
           <div className="lg:flex-[0.8] flex-1 px-4 flex flex-col">
             <h2 className="m-0">Certificates</h2>
-            <span className="w-1/4 rounded-md h-1 bg-primary" />
+            <span className="w-1/5 rounded-md h-1 bg-neutral-800" />
           </div>
           <div className="px-4 flex-[2]">
             <ul

@@ -46,12 +46,11 @@ const Experince = () => {
   ];
 
   return (
-    <section className="px-4 md:px-8 w-screen py-10 bg-neutral-200">
+    <section className="px-4 md:px-8 w-screen py-24 bg-neutral-200">
       <div className="flex max-w-7xl mx-auto flex-col md:flex-row ">
-        <div className="flex-1 lg:flex-[0.8] md:px-4 w-full mb-4">
-          <h2 className="border-b-4 w-24 border-secondary2 hover:w-40 duration-200 ">
-            Experience
-          </h2>
+        <div className="lg:flex-[0.8] flex-1 px-4 flex flex-col">
+          <h2 className="m-0">Experience</h2>
+          <span className="w-1/5 rounded-md h-1 bg-neutral-800" />
         </div>
         <div className="flex-[2] md:px-4 ">
           {info.map((val) => (

@@ -25,7 +25,10 @@ const EmployeeEducationSection = () => {
   return (
     <section className="w-full">
       <div className="max-w-7xl mx-auto px-2 md:px-8 flex flex-col md:flex-row min-h-screen py-24">
-        <h2 className="lg:flex-[0.8] flex-1 px-4 capitalize">Education</h2>
+        <div className="lg:flex-[0.8] flex-1 px-4 flex flex-col">
+          <h2 className="m-0">Education</h2>
+          <span className="w-1/5 rounded-md h-1 bg-neutral-800" />
+        </div>
         <div className="flex-[2] px-4 h-full">
           {educations.map((education, index) => {
             return (

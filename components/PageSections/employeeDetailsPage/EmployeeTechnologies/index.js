@@ -55,12 +55,11 @@ const EmployeeTechnologies = () => {
   });
   return (
     <>
-      <section className="h-auto py-20">
+      <section className="h-auto py-24">
         <div className="flex flex-col md:flex-row max-w-7xl mx-auto px-4">
-          <div className="flex-1 lg:flex-[0.8]">
-            <h2 className=" capitalize border-b-4 w-20 hover:w-40 hover:duration-200 border-secondary2">
-              technologies
-            </h2>
+          <div className="lg:flex-[0.8] flex-1 px-4 flex flex-col">
+            <h2 className="m-0">Technologies</h2>
+            <span className="w-1/5 rounded-md h-1 bg-neutral-800" />
           </div>
           <div className="flex-[2]">
             <div

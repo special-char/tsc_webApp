@@ -6,8 +6,7 @@ const EmployeeProjectsSection = () => {
     {
       id: 1,
       projectName: "Food Coutuer",
-      role: "Front-end Developer",
-      category: "Mobile Application",
+      categories: ["Mobile Application"],
       technologies: ["React Native", "Graphql", "ProstgreSQL/MongoDB"],
       projectImage:
         "https://res.cloudinary.com/dnxzgxivo/image/upload/c_fill/c_scale,w_auto,dpr_auto/v1614922817/Simulator_Screen_Shot_i_Phone_11_2021_03_05_at_11_09_33_397a24f03e.png",
@@ -15,8 +14,7 @@ const EmployeeProjectsSection = () => {
     {
       id: 2,
       projectName: "Personal Portfolio",
-      role: "Full-stack Developer",
-      category: "Web Application",
+      categories: ["Web Application"],
       technologies: [
         "HTML 5/CSS 3/Javascript",
         "Next.js/Gatsby",
@@ -27,11 +25,11 @@ const EmployeeProjectsSection = () => {
     },
   ];
   return (
-    <section className="w-full py-24">
+    <section className="w-full py-24 bg-neutral-200">
       <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row min-h-screen">
         <div className="lg:flex-[0.8] flex-1 px-4 flex flex-col">
           <h2 className="m-0">Projects</h2>
-          <span className="w-1/4 rounded-md h-1 bg-primary" />
+          <span className="w-1/5 rounded-md h-1 bg-neutral-800" />
         </div>
         <div className="flex-[2] px-4 h-full">
           {projectDetails.map((projectDetail, index) => {
@@ -49,19 +47,17 @@ const EmployeeProjectsSection = () => {
                     </div>
                     <div className="flex flex-col gap-2">
                       <span className="text-xl md:text-2xl text-neutral-700 font-semibold">
-                        Role
-                      </span>
-                      <span className="text-neutral-700 font-medium">
-                        {projectDetail.role}
-                      </span>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                      <span className="text-xl md:text-2xl text-neutral-700 font-semibold">
                         Category
                       </span>
-                      <span className="text-neutral-700 font-medium">
-                        {projectDetail.category}
-                      </span>
+                      <div className="flex gap-2 flex-wrap">
+                        {projectDetail.categories.map((category) => {
+                          return (
+                            <span className="bg-neutral-700 text-neutral-100 px-3 py-1 text-xs font-medium">
+                              {category}
+                            </span>
+                          );
+                        })}
+                      </div>
                     </div>
                     <div className="flex flex-col gap-4">
                       <span className="text-xl md:text-2xl text-neutral-700 font-semibold">
