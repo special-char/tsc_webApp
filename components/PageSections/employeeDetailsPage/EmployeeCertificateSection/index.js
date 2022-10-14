@@ -15,7 +15,6 @@ const EmployeeCertificateSection = () => {
             <h2 className="m-0">Certificates</h2>
             <span className="w-1/4 rounded-md h-1 bg-primary" />
           </div>
-
           <div className="px-4 flex-[2]">
             <ul
               id="list "
