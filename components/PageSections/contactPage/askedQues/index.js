@@ -8,11 +8,11 @@ const AskedQues = ({ data }) => {
         setOpen((prev) => !prev);
       }}
       className={`w-full  px-2 ${
-        !open ? "h-28" : "h-full md:h-full"
+        !open ? "min-h-[100px]" : "h-full md:h-full"
       } cursor-pointer items-start transition-all duration-300 gap-2 overflow-y-hidden md:gap-6 md:py-8 md:px-9 shadow-sm rounded-xl bg-neutral-100 md:mb-6 mb-5 py-[30px] max-w-3xl mx-auto`}
     >
       <div
-        className={`w-full gap-4 flex ${
+        className={`w-full gap-2 flex ${
           open ? "items-start" : "items-center"
         } justify-start `}
       >
@@ -31,7 +31,7 @@ const AskedQues = ({ data }) => {
         </div>
         <div className="flex-2">
           <h3
-            className={`flex-1 text-xl md:text-2xl ${
+            className={`flex-1 text-xl md:text-2xl pb-1 ${
               !open ? "text-neutral-600" : "text-neutral-800"
             } `}
           >

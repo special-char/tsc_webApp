@@ -1,4 +1,4 @@
-const developmentAboutQuery = `{
+export const developmentAboutQuery = `{
     developmentAboutPage{
       id
       heading{

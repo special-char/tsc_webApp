@@ -6,7 +6,7 @@ const BlogBanner = ({ data }) => {
   return (
     <>
       <section className="h-auto w-full ">
-        <div className="relative overflow-hidden bg-neutral-200">
+        <div className="relative overflow-hidden bg-neutral-200/100">
           <div className="py-20 px-8 max-w-7xl mx-auto ">
             <div className="text-center md:w-1/2 lg:pb-20 mx-auto">
               <h1 className="text-neutral-700">{data.heading?.title}</h1>
@@ -18,7 +18,7 @@ const BlogBanner = ({ data }) => {
         </div>
       </section>
       <div className="relative w-8 mx-auto">
-        <YellowArrow className="w-14 absolute -top-16" />
+        <YellowArrow className="w-12 md:w-14 lg:w-16 absolute -top-14 md:-top-16 lg:-top-16" />
       </div>
     </>
   );

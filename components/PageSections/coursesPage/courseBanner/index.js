@@ -17,7 +17,7 @@ const CourseBanner = ({ data }) => {
         </div>
       </section>
       <div className="relative w-8 mx-auto">
-        <BlueArrow className="w-14 absolute -top-10" />
+        <BlueArrow className="w-12 absolute -top-14" />
       </div>
     </>
   );

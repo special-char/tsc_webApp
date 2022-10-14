@@ -23,8 +23,8 @@ const TestimonialSection = ({ data, data2 }) => {
 
   return (
     <>
-      <section className="relative overflow-hidden px-8 md:p-6 pt-28 py-36 lg:py-44 bg-neutral-200  ">
-        <h2 className="md:py-8 md:p-12 text-center justify-center">
+      <section className="relative overflow-hidden px-8 md:p-6 md:pt-20 pt-28 py-36 lg:py-44 bg-neutral-200  ">
+        <h2 className="md:py-6 md:p-12 text-center justify-center">
           {data.heading?.title}
         </h2>
         <Carousal data={data2} testimonial carousalID="testimonial" />

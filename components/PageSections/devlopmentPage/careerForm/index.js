@@ -132,7 +132,7 @@ const CareerForm = () => {
                     </div>
                     <div className="flex flex-col">
                       <label for="myfile gap-6">Upload CV</label>
-                      <div className="flex items-center md:w-[280px]">
+                      <div className="flex items-center w-[260px]">
                         <label class="block">
                           <span class="sr-only ">Choose profile photo</span>
 

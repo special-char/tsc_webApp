@@ -22,7 +22,7 @@ export class LocaleProvider extends PureComponent {
       <LocaleContext.Provider
         value={{
           locale: this.state.locale,
-          changeLocale: this.changeLocale
+          changeLocale: this.changeLocale,
         }}
       >
         {this.props.children}

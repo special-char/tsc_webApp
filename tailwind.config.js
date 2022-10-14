@@ -101,6 +101,7 @@ module.exports = {
       animation: ["motion-safe"],
     },
   },
+
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/line-clamp"),
