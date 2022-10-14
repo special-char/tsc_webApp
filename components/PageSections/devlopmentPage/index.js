@@ -16,6 +16,7 @@ const DevelopmentPage = () => {
       <OurServices />
       <OurExpertiseSkeleton />
       <OurProjectsSection />
+      <SkeletonOurProjects />
       <TestimonialSection />
     </>
   );
