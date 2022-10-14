@@ -29,7 +29,10 @@ const EmployeeProjectsSection = () => {
   return (
     <section className="w-full py-24">
       <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row min-h-screen">
-        <h2 className="lg:flex-[0.8] flex-1 px-4 capitalize">Projects</h2>
+        <div className="lg:flex-[0.8] flex-1 px-4 flex flex-col">
+          <h2 className="m-0">Projects</h2>
+          <span className="w-1/4 rounded-md h-1 bg-primary" />
+        </div>
         <div className="flex-[2] px-4 h-full">
           {projectDetails.map((projectDetail, index) => {
             return (
