@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const FeaturedTeacher = ({ data }) => {
   return (
-    <section className="wrapper flex py-24  md:py-44 h-auto mb-24 lg:mb-0">
+    <section className="wrapper flex py-24 pb-44 md:py-44 h-auto mb-24 lg:mb-0">
       <div className="flex w-full lg:max-w-7xl mx-auto px-8 items-center justify-center flex-wrap gap-4 md:gap-12">
         <div className=" flex flex-col md:text-center md:mx-auto lg:text-left lg:flex-1 text-center justify-center">
           <h2>{data.heading?.title}</h2>

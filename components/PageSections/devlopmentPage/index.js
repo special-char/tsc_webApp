@@ -4,6 +4,7 @@ import HeaderSection from "./headerSection";
 import Headerskeleton from "./headerSection/headerskeleton";
 import OurProjectsSection from "./ourProjects";
 import OurServices from "./ourServices";
+import OurExpertiseSkeleton from "./ourServices/OurExpertiseSkeleton";
 import TestimonialSection from "./TestimonialSection";
 
 const DevelopmentPage = () => {
@@ -12,6 +13,7 @@ const DevelopmentPage = () => {
       <HeaderSection />
       <Headerskeleton />
       <OurServices />
+      <OurExpertiseSkeleton />
       <OurProjectsSection />
       <TestimonialSection />
     </>

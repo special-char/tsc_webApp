@@ -86,8 +86,8 @@ const BlogCoursesSection = ({ data }) => {
   ];
   return (
     <>
-      <section className="blog-section-wrapper lg:w-full px-8 pt-28">
-        <div className="container w-full mx-auto max-w-7xl flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
+      <section className="blog-section-wrapper lg:w-full lg:px-8 pt-28">
+        <div className="container w-full mx-auto max-w-7xl px-8 flex flex-wrap flex-col lg:flex-row md:items-center md:justify-center lg:justify-between ">
           <h2 className="text-neutral-800 text-center lg:text-left ">
             Resources & News
           </h2>

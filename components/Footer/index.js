@@ -24,6 +24,7 @@ const Footer = () => {
     <footer className="wrapper bg-neutral-700 p-4 md:pt-20">
       <LocaleContext.Consumer>
         {(data) => {
+          console.log("data", data);
           return <h2 className="text-secondary3">{data.locale}</h2>;
         }}
       </LocaleContext.Consumer>
@@ -90,6 +91,20 @@ const Footer = () => {
                 })}
               </ul> */}
             </div>
+          </div>
+          <div className="md:flex-col">
+            <h4 className="text-secondary1 py-8 pl-6">Utility Pages</h4>
+            <ul className="links text-neutral-400 pl-6">
+              {UtilityLink.map((val) => {
+                return (
+                  <li>
+                    <Link href={val.link}>
+                      <a>{val.title}</a>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
         <div className=" flex lg:flex-row-reverse justify-between ">
