@@ -7,11 +7,11 @@ import DevelopmentPage from "./PageSections/devlopmentPage";
 import HomePage from "./PageSections/homePage";
 import Layout from "./Layouts";
 import Development from "pages/development";
-import { LayoutContext } from "context/layoutContext";
 
-const LandingPage = ({ homeData }) => {
-  const value = useContext(LayoutContext);
-  const { isHeaderVisible, setIsHeaderVisible } = value;
+const LandingPage = ({ data, homeData }) => {
+  console.log("data in landing page:", data);
+  //   const value = useContext(LayoutContext);
+  //   const { isHeaderVisible, setIsHeaderVisible } = value;
 
   const [exploreTraining, setExploreTraining] = useState(false);
   const [exploreDevelopment, setExploreDevelopment] = useState(false);
@@ -23,13 +23,13 @@ const LandingPage = ({ homeData }) => {
     if (explorePage) {
       setPage(true);
       setAnimate(true);
-      setIsHeaderVisible(true);
+      //   setIsHeaderVisible(true);
     } else {
       setAnimate(false);
       setExplorePage(true);
     }
   };
-  console.log("HEADER ::: ", isHeaderVisible);
+  //   console.log("HEADER ::: ", isHeaderVisible);
   return (
     <>
       <section
@@ -202,23 +202,23 @@ const LandingPage = ({ homeData }) => {
           developmentPage ? "h-full flex flex-col" : "h-0 hidden"
         }`}
       >
-        {isHeaderVisible && (
-          <Layout>
-            <Development />
-          </Layout>
-        )}
+        {/* {isHeaderVisible && ( */}
+        <Layout>
+          <Development />
+        </Layout>
+        {/* )} */}
       </section>
-      {/* <section
-          className={`custom-transition ${animate && "animate-slideUp"} ${
-            trainingPage ? "h-full flex flex-col" : "h-0 hidden"
-          } `}
-        >
-          {isHeaderVisible && (
-            <Layout>
-              <HomePage data={homeData} />
-            </Layout>
-          )}
-        </section> */}
+      <section
+        className={`custom-transition ${animate && "animate-slideUp"} ${
+          trainingPage ? "h-full flex flex-col" : "h-0 hidden"
+        } `}
+      >
+        {/* {isHeaderVisible && ( */}
+        {/* <Layout>
+          <HomePage data={homeData} />
+        </Layout> */}
+        {/* )} */}
+      </section>
     </>
   );
 };

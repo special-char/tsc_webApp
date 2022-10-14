@@ -2,6 +2,7 @@ import Layout from "@components/Layouts";
 import Header from "@components/PageSections/devlopmentPage/header";
 import React, { useEffect, useState } from "react";
 import ProjectsPage from "@components/PageSections/devlopmentPage/projectsPage";
+import ProjectsPageSkeleton from "@components/PageSections/devlopmentPage/projectsPage/projectsPageSkeleton";
 
 const AllProjects = () => {
   const [scroll, setScroll] = useState(false);
@@ -419,17 +420,18 @@ const AllProjects = () => {
       <div className="mt-32">
         {allprojects.map((project, index) => {
           return (
-            <ProjectsPage data={project} index={index} key={index}>
-              <ol className="list-decimal">
-                {project?.list?.map((item, i) => {
-                  return (
-                    <li key={i} className="m-0">
-                      {item}
-                    </li>
-                  );
-                })}
-              </ol>
-            </ProjectsPage>
+            // <ProjectsPage data={project} index={index} key={index}>
+            //   <ol className="list-decimal">
+            //     {project?.list?.map((item, i) => {
+            //       return (
+            //         <li key={i} className="m-0">
+            //           {item}
+            //         </li>
+            //       );
+            //     })}
+            //   </ol>
+            // </ProjectsPage>
+            <ProjectsPageSkeleton />
           );
         })}
       </div>
@@ -449,25 +451,25 @@ AllProjects.getLayout = function getLayout(page) {
   return <Layout path="development">{page}</Layout>;
 };
 
-export async function getServerSideProps() {
-  try {
-    const res = await axiosInstance.post("graphql", {
-      query: ProjectsQuery,
-      variables: {},
-    });
-    return {
-      props: {
-        data: res.data.data,
-      },
-    };
-  } catch (error) {
-    return {
-      props: {
-        data: error,
-      },
-    };
-  }
-}
+// export async function getServerSideProps() {
+//   try {
+//     const res = await axiosInstance.post("graphql", {
+//       query: ProjectsQuery,
+//       variables: {},
+//     });
+//     return {
+//       props: {
+//         data: res.data.data,
+//       },
+//     };
+//   } catch (error) {
+//     return {
+//       props: {
+//         data: error,
+//       },
+//     };
+//   }
+// }
 
 AllProjects.displayName = "AllProjects";
 export default AllProjects;

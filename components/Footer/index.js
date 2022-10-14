@@ -24,6 +24,7 @@ const Footer = () => {
     <footer className="wrapper bg-neutral-700 p-4 md:pt-20">
       <LocaleContext.Consumer>
         {(data) => {
+          console.log("data", data);
           return <h2 className="text-secondary3">{data.locale}</h2>;
         }}
       </LocaleContext.Consumer>
@@ -91,8 +92,30 @@ const Footer = () => {
               </ul> */}
             </div>
           </div>
+          <div className="md:flex-col">
+            <h4 className="text-secondary1 py-8 pl-6">Utility Pages</h4>
+            <ul className="links text-neutral-400 pl-6">
+              {UtilityLink.map((val) => {
+                return (
+                  <li>
+                    <Link href={val.link}>
+                      <a>{val.title}</a>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
         <div className=" flex lg:flex-row-reverse justify-between ">
+          {/* <div className=" pl-18 pt-3 pb-4 flex gap-3 lg:pb-0">
+            <FacebookSvg className=" w-9 rounded-full" />
+            <TwitterSvg className="w-9 rounded-full" />
+            <InstagramSvg className="w-9 rounded-full" />
+            <LinkedInSvg className="w-9 rounded-full" />
+            <YoutubeSvg className="w-9 rounded-full" />
+            <WhatsAppSvg className="w-9 rounded-full" />
+          </div>  */}
           <div className="pl-20 flex items-center justify-start">
             <div className="text-lg text-secondary1">Copyright © TSC</div>
           </div>

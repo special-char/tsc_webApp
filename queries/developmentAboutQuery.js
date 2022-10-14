@@ -1,4 +1,4 @@
-const developmentAboutQuery = `{
+export const developmentAboutQuery = `{
     developmentAboutPage{
       id
       heading{
@@ -86,3 +86,4 @@ const developmentAboutQuery = `{
           }
         }
   }`;
+export default developmentAboutQuery;
