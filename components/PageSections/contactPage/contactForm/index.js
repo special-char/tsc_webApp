@@ -18,7 +18,7 @@ const ContactSchema = Yup.object({
 const ContactForm = ({ data, path }) => {
   return (
     <div>
-      <h1>Contact Form</h1>
+      <h1>Contact Form...</h1>
     </div>
   );
 

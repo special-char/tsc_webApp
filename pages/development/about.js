@@ -22,7 +22,7 @@ export async function getServerSideProps() {
     console.log("data", res);
     return {
       props: {
-        data: res.data.data,
+        data: dot.data.data,
       },
     };
   } catch (error) {

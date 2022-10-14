@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import HeaderSection from "./headerSection";
 import Headerskeleton from "./headerSection/headerskeleton";
 import OurProjectsSection from "./ourProjects";
+import SkeletonOurProjects from "./ourProjects/skeletonOurProjects";
 import OurServices from "./ourServices";
 import OurExpertiseSkeleton from "./ourServices/OurExpertiseSkeleton";
 import TestimonialSection from "./TestimonialSection";
@@ -15,6 +16,7 @@ const DevelopmentPage = () => {
       <OurServices />
       <OurExpertiseSkeleton />
       <OurProjectsSection />
+      <SkeletonOurProjects />
       <TestimonialSection />
     </>
   );

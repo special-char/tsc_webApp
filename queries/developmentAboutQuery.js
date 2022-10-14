@@ -86,3 +86,4 @@ export const developmentAboutQuery = `{
           }
         }
   }`;
+export default developmentAboutQuery;
