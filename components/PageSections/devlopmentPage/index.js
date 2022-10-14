@@ -6,6 +6,7 @@ import OurProjectsSection from "./ourProjects";
 import SkeletonOurProjects from "./ourProjects/skeletonOurProjects";
 import OurServices from "./ourServices";
 import OurExpertiseSkeleton from "./ourServices/OurExpertiseSkeleton";
+import OurTeam from "./ourTeam";
 import TestimonialSection from "./TestimonialSection";
 
 const DevelopmentPage = () => {
@@ -14,6 +15,7 @@ const DevelopmentPage = () => {
       <HeaderSection />
       <Headerskeleton />
       <OurServices />
+
       <OurExpertiseSkeleton />
       <OurProjectsSection />
       <SkeletonOurProjects />
