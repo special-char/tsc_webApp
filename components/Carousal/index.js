@@ -19,8 +19,8 @@ const Carousal = ({ data, testimonial, href, carousalID }) => {
     slider.scrollLeft = slider.scrollLeft + width;
   };
   return (
-    <div className="card-container relative container max-w-7xl mx-auto ">
-      <div className="navigation flex flex-row justify-between w-full overflow-hidden absolute z-10 h-full items-center">
+    <div className="card-container relative container max-w-7xl mx-auto">
+      <div className="navigation flex px-2 flex-row justify-between w-full overflow-hidden absolute z-10 h-full items-center">
         <div
           onClick={slideLeft}
           className="avatar placeholder bg-neutral-100 hover:bg-primary hover:fill-neutral-100 rounded-full"
