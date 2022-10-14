@@ -6,6 +6,7 @@ import OurProjectsSection from "./ourProjects";
 import SkeletonOurProjects from "./ourProjects/skeletonOurProjects";
 import OurServices from "./ourServices";
 import OurExpertiseSkeleton from "./ourServices/OurExpertiseSkeleton";
+import SkillBar from "../employeeDetailsPage/skillBar";
 import TestimonialSection from "./TestimonialSection";
 
 const DevelopmentPage = () => {
