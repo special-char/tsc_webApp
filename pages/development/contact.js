@@ -48,18 +48,18 @@ const fields = [
 
 const Contact = ({ data }) => {
   return (
-    <section className="relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-3 md:py-20 ">
+    <section className="relative overflow-hidden py-16 md:py-28">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 ">
         {/* <ContactPage data={data} path="development" /> */}
-        <div className="max-w-lg">
+        <div className="text-center lg:text-left">
           <h1 className="capitalize">get in touch!</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id qui iste
             nostrum nulla autem, architecto magnam sit quis.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row  mx-auto gap-3">
-          <div className="flex flex-col w-full lg:w-[60%] shadow-dark px-3 py-4 md:py-10 md:px-6 bg-neutral-100 rounded-2xl">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-4 gap-y-10 md:gap-y-16 w-full">
+          <div className="w-full shadow-dark col-span-2 py-9 px-6 md:py-12 md:px-10 bg-neutral-100 rounded-2xl">
             <Formik
               initialValues={{
                 name: "",
@@ -106,7 +106,7 @@ const Contact = ({ data }) => {
               }) => {
                 return (
                   <form onSubmit={handleSubmit}>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-y-10 md:gap-x-6">
                       {fields.map((x) => (
                         <FastField {...x} />
                       ))}
@@ -116,7 +116,7 @@ const Contact = ({ data }) => {
                       type="submit"
                       disabled={!(dirty && isValid)}
                       className={cn(
-                        "btn btn--primary btn--small disabled:cursor-not-allowed w-full md:w-1/3 "
+                        "btn btn--primary btn--small disabled:cursor-not-allowed w-full md:w-1/3 mt-8"
                       )}
                     >
                       Submit
@@ -126,9 +126,9 @@ const Contact = ({ data }) => {
               }}
             </Formik>
           </div>
-          <div className="w-full lg:w-[40%] rounded-2xl flex flex-col gap-3 justify-between">
+          <div className="grid gap-y-5 rounded-2xl">
             {Data.map((val) => (
-              <div className="rounded-3xl w-full mx-auto shadow-base hover:shadow-dark h-auto bg-neutral-100 py-10 px-5 flex flex-col gap-2 items-center justify-around  hover:-translate-y-3 duration-200">
+              <div className="rounded-3xl w-full shadow-base hover:shadow-dark h-auto bg-neutral-100 py-9 px-0 md:py-10 flex flex-col gap-2 items-center justify-around  hover:-translate-y-3 duration-200">
                 <div className="rounded-full relative w-10 h-10">
                   <Image
                     className="rounded-full"
@@ -155,7 +155,7 @@ const Contact = ({ data }) => {
         </div>
       </div>
       <div className="bg-secondary2 rounded-full w-[400px] h-[400px] absolute md:top-[10%] md:-right-[49%] lg:top-24 lg:-right-48 -z-10"></div>
-      <div className="bg-secondary3 rounded-full w-[400px] h-[400px] top-[68%] -left-[90%] absolute md:top-[63%] md:-left-36 lg:top-[65%] lg:-left-20 -z-10"></div>
+      <div className="bg-secondary3 rounded-full w-[400px] h-[400px] top-[68%] -left-[90%] absolute md:top-[68%] md:-left-40 lg:top-[65%] lg:-left-20 -z-10"></div>
       <div className="bg-secondary1 rounded-full w-[400px] h-[400px] absolute md:-top-80 md:-left-44 lg:-top-[24%] lg:-left-20 -z-10"></div>
     </section>
   );

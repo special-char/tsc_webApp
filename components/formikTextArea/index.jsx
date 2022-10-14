@@ -15,7 +15,7 @@ const TextArea = ({
         id={id}
         cols="30"
         rows="5"
-        className="bg-neutral-200 w-full rounded-lg focus:outline-neutral-500 py-4 px-7"
+        className="bg-neutral-200 w-full rounded-lg focus:outline-neutral-500 py-8 px-4"
         {...field}
         {...props}
       ></textarea>
