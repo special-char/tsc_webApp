@@ -3,7 +3,7 @@ import React from "react";
 const SkeletonOurProjects = () => {
   return (
     <>
-      <section className="overflow-hidden">
+      <section className="overflow-hidden bg-neutral-200 h-screen py-32">
         <div className="max-w-7xl animate-pulse mx-auto ">
           <h2 className="text-center mb-20 bg-neutral-300 h-10 w-[40%] mx-auto rounded-xl"></h2>
           <div className="w-full flex gap-4">
