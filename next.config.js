@@ -11,6 +11,7 @@ const nextConfig = {
       "ik.imagekit.io",
       "cdn-dhggl.nitrocdn.com",
       "uxwing.com",
+      "res.cloudinary.com",
     ],
     formats: ["image/avif", "image/webp"],
   },

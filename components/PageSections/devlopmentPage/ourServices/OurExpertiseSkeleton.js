@@ -7,7 +7,7 @@ const OurExpertiseSkeleton = () => {
     <section className="main h-auto w-full bg-neutral-100">
       <div className="main-container animate-pulse container max-w-7xl mx-auto px-8 md:px-6 pt-16 pb-28 md:pt-28 md:pb-36 lg:pt-32 lg:pb-44">
         <center>
-          <div class="md:mb-14 h-2 w-1/5 bg-neutral-300 rounded"></div>
+          <div class="mb-14 h-2 w-1/5  bg-neutral-300 rounded"></div>
         </center>
         <div className="flex flex-col gap-6 md:w-[552px] md:mx-auto lg:w-full lg:flex-row lg:gap-6">
           <Link href="/development/services">
