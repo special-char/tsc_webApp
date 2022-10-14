@@ -16,9 +16,6 @@ const AllServicesPage = ({ children, service, index }) => {
     if (topPosition < scrollPosition) {
       // trigger animation
       setanimate((prev) => true);
-      console.log("====================================");
-      console.log("hi", index);
-      console.log("====================================");
     } else {
       setanimate((prev) => false);
     }

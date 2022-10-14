@@ -1,4 +1,5 @@
 import Layout from "@components/Layouts";
+import Loader from "@components/loader";
 import { useEffect, useState } from "react";
 import HeaderSection from "./headerSection";
 import Headerskeleton from "./headerSection/headerskeleton";
@@ -8,6 +9,7 @@ import OurServices from "./ourServices";
 import OurExpertiseSkeleton from "./ourServices/OurExpertiseSkeleton";
 import OurTeam from "./ourTeam";
 import TestimonialSection from "./TestimonialSection";
+import Testimonialskeletan from "./TestimonialSection/testimonialskeletan";
 
 const DevelopmentPage = () => {
   return (
@@ -20,6 +22,8 @@ const DevelopmentPage = () => {
       <OurProjectsSection />
       <SkeletonOurProjects />
       <TestimonialSection />
+      <Testimonialskeletan />
+      <Loader />
     </>
   );
 };
