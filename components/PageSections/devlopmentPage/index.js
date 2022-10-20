@@ -11,14 +11,19 @@ import SkillBar from "../employeeDetailsPage/EmployeeTechnologies";
 import OurTeam from "./ourTeam";
 import TestimonialSection from "./TestimonialSection";
 import Testimonialskeletan from "./TestimonialSection/testimonialskeletan";
+import OurTeamQuery from "@queries/ourTeamQuery";
+import axiosInstance from "lib/axiosInstance";
+import EmpHeaderQuery from "@queries/new/employeeHeaderQuery";
 
-const DevelopmentPage = () => {
+const DevelopmentPage = ({ data }) => {
+  //console.log("DevelopmentPage inner data:", data);
   return (
     <>
       <HeaderSection />
       <Headerskeleton />
       <OurServices />
       <OurExpertiseSkeleton />
+      <OurTeam data={data} />
       <OurProjectsSection />
       <SkeletonOurProjects />
       <TestimonialSection />
@@ -28,47 +33,46 @@ const DevelopmentPage = () => {
   );
 };
 
+// export async function getServerSideProps() {
+//   try {
+//     const res = await fetch("http://65.20.70.84:1337/graphql", {
+//       method: "POST",
+//       body: JSON.stringify({
+//         query: `
+//           {
+//             teams {
+//               data {
+//                 id
+//                 attributes {
+//                   firstName
+//                   lastName
+//                 }
+//               }
+//             }
+//           }`,
+//       }),
+//       headers: {
+//         "Content-Type": "application/json",
+//         Accept: "application/json",
+//       },
+//     });
+//     const json = await res.json();
+//     return {
+//       props: {
+//         teams: json?.data?.teams?.data,
+//       },
+//     };
+//   } catch (error) {
+//     return {
+//       props: {
+//         data: error,
+//       },
+//     };
+//   }
+// }
+
 DevelopmentPage.getLayout = function getLayout(page) {
   return <Layout path="development">{page}</Layout>;
 };
 
 export default DevelopmentPage;
-
-// const data = [
-//   {
-//     id: 1,
-//     name: "Company Name",
-//     designation: "Junior Designer at Facebook",
-//     description:
-//       "“Hemang Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
-//     avatar: { url: "https://placeimg.com/192/192/people" },
-//     // svg: <StarSvg />,
-//   },
-//   {
-//     id: 2,
-//     name: "Company Name",
-//     designation: "Junior Designer at Facebook",
-//     description:
-//       "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
-//     avatar: { url: "https://placeimg.com/192/192/people" },
-//     // svg: <StarSvg />,
-//   },
-//   {
-//     id: 3,
-//     name: "Company Name",
-//     designation: "Junior Designer at Facebook",
-//     description:
-//       "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
-//     avatar: { url: "https://placeimg.com/192/192/people" },
-//     // svg: <StarSvg />,
-//   },
-//   {
-//     id: 4,
-//     name: "Company Name",
-//     designation: "Junior Designer at Facebook",
-//     description:
-//       "“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint”",
-//     avatar: { url: "https://placeimg.com/192/192/people" },
-//     // svg: <StarSvg />,
-//   },
-// ];

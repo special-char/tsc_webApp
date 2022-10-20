@@ -1,6 +1,7 @@
 import React from "react";
 
-const EmployeeEducationSection = () => {
+const EmployeeEducationSection = ({ data }) => {
+  console.log("EmployeeEducationSection:", data);
   const educations = [
     {
       id: "1",
@@ -23,19 +24,23 @@ const EmployeeEducationSection = () => {
     },
   ];
   return (
-    <section className="w-full">
-      <div className="max-w-7xl mx-auto px-2 md:px-8 flex flex-col md:flex-row min-h-screen py-24">
-        <h2 className="lg:flex-[0.8] flex-1 px-4 capitalize">Education</h2>
-        <div className="flex-[2] px-4 h-full">
-          {educations.map((education, index) => {
+    <section className="w-full h-auto py-24">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row">
+        <div className="lg:flex-[0.8] md:flex-1">
+          <h2 className="capitalize border-b-4 w-20 hover:w-36 hover:duration-200 border-secondary2">
+            Education
+          </h2>
+        </div>
+        <div className="flex-[2] h-full">
+          {data.map((education, index) => {
             return (
               <>
                 <div className="flex flex-col">
                   <span className="mb-4 text-xl md:text-2xl text-neutral-700 font-semibold">
-                    {education.course}
+                    {education.degree}
                   </span>
                   <span className="text-sm md:text-base text-neutral-700 font-semibold">
-                    {education.university}
+                    {education.school}
                   </span>
                   <span className="italic text-xs md:text-sm mb-4">{`${education.startDate} - ${education.endDate}`}</span>
                   <p className="text-sm text-neutral-700 font-medium">

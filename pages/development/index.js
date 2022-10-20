@@ -3,7 +3,7 @@ import Loader from "@components/loader";
 import DevelopmentPage from "@components/PageSections/devlopmentPage";
 import React, { useEffect, useState } from "react";
 
-const Development = () => {
+const Development = ({ teams }) => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -11,12 +11,64 @@ const Development = () => {
       setLoading(false);
     }, 4000);
   }, []);
-  return <>{loading ? <Loader /> : <DevelopmentPage />}</>;
+  console.log("Development page data:", teams);
+  return <>{loading ? <Loader /> : <DevelopmentPage data={teams} />}</>;
 };
 
 Development.getLayout = function getLayout(page) {
   return <Layout path="development">{page}</Layout>;
 };
+
+export async function getServerSideProps() {
+  try {
+    const res = await fetch("http://65.20.70.84:1337/graphql", {
+      method: "POST",
+      body: JSON.stringify({
+        query: `
+          {
+            teams {
+              data {
+                id
+                attributes {
+                  firstName
+                  lastName
+                  avatar{
+                    data{
+                      attributes{
+                        url
+                      }
+                    }
+                  }
+                  experience{
+                    Title
+                  }
+                }
+              }
+            }
+          }`,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const json = await res.json();
+    return {
+      props: {
+        teams: json?.data?.teams?.data,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        data: error,
+      },
+    };
+  }
+}
+
+Development.displayName = "Development";
+export default Development;
 
 // export async function getServerSideProps() {
 //   try {
@@ -37,6 +89,3 @@ Development.getLayout = function getLayout(page) {
 //     };
 //   }
 // }
-
-Development.displayName = "Development";
-export default Development;

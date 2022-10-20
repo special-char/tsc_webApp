@@ -1,33 +1,11 @@
 import React, { useEffect } from "react";
 
-const EmployeeTechnologies = () => {
-  const data = [
-    {
-      technology: "React",
-      dataprogress: "90",
-    },
-    {
-      technology: "flutter",
-      dataprogress: "50",
-    },
-    {
-      technology: "Node",
-      dataprogress: "30",
-    },
-    {
-      technology: "React Native",
-      dataprogress: "20",
-    },
-    {
-      technology: "python",
-      dataprogress: "80",
-    },
-  ];
+const EmployeeTechnologies = ({ data }) => {
+  console.log("EmployeeTechnologies data:", data);
+
   useEffect(() => {
     const technologies = document.getElementById("technologies");
     const progressBars = document.querySelectorAll(".progress-in");
-    console.log("technologies", technologies);
-    console.log("progressBars", progressBars);
 
     const showProgress = () => {
       progressBars.forEach((progressBars) => {
@@ -56,7 +34,7 @@ const EmployeeTechnologies = () => {
   return (
     <>
       <section className="h-auto py-20">
-        <div className="flex flex-col md:flex-row max-w-7xl mx-auto px-4">
+        <div className="flex flex-col md:flex-row max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex-1 lg:flex-[0.8]">
             <h2 className=" capitalize border-b-4 w-20 hover:w-40 hover:duration-200 border-secondary2">
               technologies
@@ -67,16 +45,16 @@ const EmployeeTechnologies = () => {
               id="technologies"
               className="grid grid-cols-1 md:grid-cols-2 gap-x-10"
             >
-              {data.map((val) => (
+              {data?.map((val) => (
                 <div className="skill-item">
                   <span className="m-0 p-0 text-primary font-bold flex justify-between px-3">
-                    <p className="m-0">{val.technology}</p>
-                    <p className="m-0">{val.dataprogress}%</p>
+                    <p className="m-0">{val.technology.data.attributes.name}</p>
+                    <p className="m-0">{val.proficiency}</p>
                   </span>
-                  <div className="rounded-full m-3">
+                  <div className="rounded-full m-3 bg-neutral-300">
                     <div
-                      className="progress-in duration-500 ease-linear bg-gradient-to-r from-primary to-secondary3 w-[100%] h-2.5 rounded-full"
-                      data-progress={val.dataprogress}
+                      className="progress-in duration-500 ease-linear bg-gradient-to-r from-primary to-secondary3 w-[100%] h-2 rounded-full"
+                      data-progress={val.proficiency * 10}
                     ></div>
                   </div>
                 </div>

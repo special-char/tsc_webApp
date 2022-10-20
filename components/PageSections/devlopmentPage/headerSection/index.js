@@ -2,7 +2,7 @@ import React from "react";
 import TSCImage from "@components/TSCImage";
 import { useRef } from "react";
 
-const DevelopmentHeader = ({ data }) => {
+const DevelopmentHeader = () => {
   // const DevelopmentHeader = () => {
   const videoRef = useRef();
 

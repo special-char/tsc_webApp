@@ -1,6 +1,7 @@
 import React from "react";
 
-const EmployeeCertificateSection = () => {
+const EmployeeCertificateSection = ({ data }) => {
+  console.log("certi data:", data);
   const CertificateData = [
     "Lorem ipsum dolor sit amet.",
     "Lorem ipsum dolor sit amet.",
@@ -8,23 +9,27 @@ const EmployeeCertificateSection = () => {
     "Lorem ipsum dolor sit amet.",
   ];
   return (
-    <section className="py-24">
-      <div id="container" className="max-w-7xl mx-auto px-2 md:px-8">
+    <section className="py-24 ">
+      <div id="container" className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row lg:flex-row">
-          <div className="lg:flex-[0.8] flex-1 px-4 flex flex-col">
-            <h2 className="m-0">Certificates</h2>
-            <span className="w-1/4 rounded-md h-1 bg-primary" />
+          <div className="lg:flex-[0.8] flex-1 flex flex-col">
+            <h2 className="border-b-4 w-20 hover:w-40 hover:duration-200 border-secondary2">
+              Certificates
+            </h2>
           </div>
-          <div className="px-4 flex-[2]">
+          <div className="flex-[2]">
             <ul
               id="list "
               className="flex flex-col p-0 m-0 items-start justify-start"
             >
-              {CertificateData.map((item) => {
+              {data.map((val) => {
                 return (
                   <li className="flex gap-4 items-center ">
-                    <span className="w-2 h-2 rounded-full bg-primary" />
-                    {item}
+                    <div>
+                      <h3>{val.name}</h3>
+                      <p>{val.issuingOrganization}</p>
+                      <p>{val.issueDate}</p>
+                    </div>
                   </li>
                 );
               })}
