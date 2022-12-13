@@ -7,19 +7,6 @@ const AllEvents = () => {
   const data = [
     {
       id: 1,
-      title: "Social Media Marketing Masterclass",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
-      Image:
-        "https://assets.website-files.com/607de2d8e8911ebf197a3f0f/6081bcda0eb70e6127b5b859_image-4-events-education-x-template-p-1600.jpeg",
-      month: "july",
-      date: 28,
-      day: "sunday",
-      startTime: "5:00 pm",
-      endTime: "6:00 pm",
-    },
-    {
-      id: 2,
       title: "Brand & Identity Design QA with Sophie Moore",
       description:
         "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",
@@ -32,7 +19,7 @@ const AllEvents = () => {
       endTime: "6:00 pm",
     },
     {
-      id: 3,
+      id: 2,
       title: "Business Analytics Free Webinar",
       description:
         "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliquam id.",

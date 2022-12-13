@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutPage = ({ svg, id, title, description, chip, ...props }) => {
+const rAboutPage = ({ svg, id, title, description, chip, ...props }) => {
   return (
     <>
       <div className="rounded-3xl shadow-2xl border-spacing-2 p-8 drop-shadow-md bg-neutral-100">
